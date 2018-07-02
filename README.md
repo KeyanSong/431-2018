@@ -7,7 +7,7 @@ This will, in time, be the front page for course materials in Section 1 of the 4
 **If you are a student interested in taking 431 in Fall 2018**
 
 - Thank you for your interest.
-- We will begin to permit students interested in taking 431 into the course in **July 2018**. 
+- We will begin to permit students interested in taking 431 into the course in **mid-July 2018**. 
     - All CWRU students who have taken any prior coursework in statistics or epidemiology are welcome in 431. 
     - If you have no prior exposure to statistics at all, not even in high school, that may be an issue, but you are welcome to just let Dr Love know via email (details below) about your background and why you're interested in taking the course. 
 - All CWRU students who are interested in taking the course will be admitted **either** into Section 1 (taught by Dr. Love on Tuesdays and Thursdays from 1:00 to 2:15 PM) **or** Section 2 (taught by another CWRU faculty member, Ming Li, on Tuesdays and Thursdays from 4:30 to 5:45 PM.) These decisions (regarding Section placement) will be made starting in July.
