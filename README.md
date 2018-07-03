@@ -7,7 +7,7 @@ This will, in time, be the front page for course materials in Section 1 of the 4
 **If you are a student interested in taking 431 in Fall 2018**
 
 - Thank you for your interest.
-- We will begin to permit students interested in taking 431 into the course in **mid-July 2018**. 
+- We will begin to permit students interested in taking 431 into the course on or about **July 12, 2018**. 
     - All CWRU students who have taken any prior coursework in statistics or epidemiology are welcome in 431. 
     - If you have no prior exposure to statistics at all, not even in high school, that may be an issue, but you are welcome to just let Dr Love know via email (details below) about your background and why you're interested in taking the course. 
 - All CWRU students who are interested in taking the course will be admitted **either** into Section 1 (taught by Dr. Love on Tuesdays and Thursdays from 1:00 to 2:15 PM) **or** Section 2 (taught by another CWRU faculty member, Ming Li, on Tuesdays and Thursdays from 4:30 to 5:45 PM.) These decisions (regarding Section placement) will be made starting in July.
@@ -15,7 +15,7 @@ This will, in time, be the front page for course materials in Section 1 of the 4
     - Section 2 uses most of the same materials, but will again be taught by Professor Ming Li, as it was last year. We expect Section 2 to have 25-30 students. The cap is, again, 48 students.
     - Each course leads into our Spring course (432) where the two sections are combined. Dr. Love teaches 432, and so students who plan to continue with 432 are generally encouraged to take 431 with him, as well, to facilitate the transition.
     - If you prefer (perhaps because of a scheduling conflict) to take Section 2 of 431, that should not be a problem. Only Section 1 is likely to run into space problems.
-- All students in degree programs headed by the Department of Population and Quantitative Health Sciences will be admitted into Section 1, and should expect to take both 431, and its sequel, 432. Many students from other Departments will also be admitted into Section 1, but this will begin to happen in July.
+- All students in degree programs headed by the Department of Population and Quantitative Health Sciences will be admitted into Section 1, and should expect to take both 431, and its sequel, 432. Many students from other Departments will also be admitted into Section 1, but this will begin to happen in mid-July.
 - 431 involves statistical programming using the free, open-source [statistical software R](https://cran.case.edu/), as well as the free desktop version of [R Studio](https://www.rstudio.com/products/rstudio/download/#download). We write R code [using R Markdown](https://rmarkdown.rstudio.com/index.html) in the class. 
     - We will provide substantial information in July to people who are interested in the course about R, and about how to get started with it, if you haven't used it before.
 - An enormous amount of additional information about 431 will be posted, on this site, as the Fall semester approaches. We encourage you to visit this page later this year for more information.
