@@ -1,6 +1,6 @@
 # Calendar
 
-This is an initial and tentative draft of the calendar for Dr. Love's Section 1 of 431 in Fall 2018. It will be replaced in time by a far more detailed document. All class meetings are scheduled for 1:00 PM to 2:15 PM in room E321 in the Robbins building at the School of Medicine.
+This is an initial and tentative draft of the calendar for Dr. Love's Section 1 of 431 in Fall 2018. It will be replaced in time by a far more detailed document. All class meetings are scheduled for 1:00 PM to 2:15 PM in room E321 in the Robbins building at the School of Medicine. You are expected to attend a minimum of 24 of the 27 planned sessions.
 
 Date | Class | Description and Materials
 -----------: | :---: | -----------------------------------
