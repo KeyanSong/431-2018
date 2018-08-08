@@ -4,7 +4,7 @@
 
 Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly EPBI 431) Section 1
 
-## Details on Section 1 (Professor Love's class)
+## This page is a work in progress. Please pardon the construction.
 
 This page will eventually serve as the front page for course materials in Section 1 of the 431 course. 431 is the first part of a two-semester sequence (PQHS 431-432). We expect the page to fill out considerably before class begins on 2018-08-28.
 
