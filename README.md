@@ -1,10 +1,8 @@
+**If you are a student interested in taking 431 in Fall 2018**, please visit [this link first](https://github.com/THOMASELOVE/431-2018/blob/master/interest.md)
+
 # 431-2018
 
 Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly EPBI 431) Section 1
-
-## If you are a student interested in taking 431 in Fall 2018
-
-Please visit https://github.com/THOMASELOVE/431-2018/blob/master/interest.md
 
 ## Details on Section 1 (Professor Love's class)
 
