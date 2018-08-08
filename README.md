@@ -1,4 +1,4 @@
-**If you are a student interested in taking 431 in Fall 2018**, please visit [this link first](https://github.com/THOMASELOVE/431-2018/blob/master/interest.md)
+## If you are a student interested in taking 431 in Fall 2018, please visit [this link first](https://github.com/THOMASELOVE/431-2018/blob/master/interest.md)
 
 # 431-2018
 
