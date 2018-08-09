@@ -1,6 +1,8 @@
 # 431 Homework Information, Fall 2018
 
-Each assignment requires you to analyze some data, and prepare a report using R Markdown. Sometimes you will also need to write a short essay, for which you also need to use R Markdown, and not, for instance, Word. You will submit both your Markdown file, and an HTML, PDF or Word document built from that R Markdown file through Canvas. Our preference in 431 is an HTML submission. The schedule is
+Each assignment requires you to analyze some data, and prepare a report using R Markdown. Sometimes you will also need to write a short essay, for which you also need to use R Markdown, and not, for instance, a Word document. 
+
+## Schedule
 
 1. **[Assignment 1]**
 2. **[Assignment 2]**
@@ -8,17 +10,26 @@ Each assignment requires you to analyze some data, and prepare a report using R 
 4. **[Assignment 4]**
 5. **[Assignment 5]**
 6. **[Assignment 6]**
+Etc.
 
 ## Logistics
 
-You will turn in your Assignments using the Canvas system at https://canvas.case.edu. 
+You will turn in your Assignments using the Canvas system at https://canvas.case.edu. You will submit both your Markdown file, and an HTML, PDF or Word document built from that R Markdown file through Canvas. Our preference in 431 is an HTML submission. 
 
-- The course’s primary listing is PQHS 431, but students in CRSP 431 and MPHP 431 should find the same information. 
-- The link to post your responses for each new Assignment will appear a day or two after the deadline for the preceding assignment has passed.
+- The course’s primary listing on Canvas is PQHS 431, but students in CRSP 431 and MPHP 431 should find the same information. 
+- The Canvas link to post your responses for each new Assignment should appear a day or two after the deadline for the preceding assignment has passed.
+
+## Using a new Project for Each Homework
+
+Your life will be far happier if you use an R Project every time you open R to do work. Just start your R Studio session with File ... New Project or File ... Open Project, as appropriate. We recommend that you use a separate R project for each homework.
+
+## A Template for Homework Assignments
+
+At least until you get your feet under you, a template for producing a homework document in R Markdown may be helpful. **Here's where you'll find it.**
 
 ## Grading Errors?
 
-As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **this Google Form** before **noon on 2017-12-13**.
+As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **this Google Form** before **noon on 2017-12-13**. See the **Syllabus** for more details.
 
 ## Tips on Homework Submission
 
@@ -29,8 +40,7 @@ As the semester progresses, you may find an error in grading that you would like
 5. Name every chunk, with no characters other than letters, numbers and underscores. No repetition!
 6. Use headings to indicate the question being solved. Then leave a blank line before continuing with text.
 7. Avoid repeating Dr. Love's questions verbatim.
-8. Use the approach laid out in the **[YOURNAME-hw_template.Rmd]** file posted above.
-9. Your life will be far happier if you use an R Project every time you open R to do work. Just start your R Studio session with File ... New Project or File ... Open Project, as appropriate. We recommend that you use a separate R project for each homework assignment.
+8. Use the approach laid out in the template posted above.
 
 More details available in the Assignments themselves, and the **[Course Syllabus]**.
 
