@@ -25,11 +25,11 @@ Your life will be far happier if you use an R Project every time you open R to d
 
 ## A Template for Homework Assignments
 
-At least until you get your feet under you, a template for producing a homework document in R Markdown may be helpful. **Here's where you'll find it.**
+At least until you get your feet under you, a template for producing a homework document in R Markdown may be helpful. **[Here's where you'll find it.]**
 
 ## Grading Errors?
 
-As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **this Google Form** before **noon on 2017-12-13**. See the **Syllabus** for more details.
+As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **[this Google Form]** before **[noon on 2018-12-13]**. See the **Syllabus** for more details.
 
 ## Tips on Homework Submission
 
