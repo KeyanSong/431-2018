@@ -1,6 +1,7 @@
 431 Assignment 1
 ================
 Thomas E. Love
+
 Due **[TBD]** at noon. Version: 2018-08-09
 
 -   [General Instructions](#general-instructions)
