@@ -15,7 +15,21 @@
     - The Section 2 web page will be housed on [Canvas](https://canvas.case.edu). Dr. Li's personal page is [here](http://epbiwww.case.edu/ming-li-phd/). 
     - If you prefer (perhaps because of a scheduling conflict) to take Section 2 of 431, that should not be a problem. Only Section 1 is likely to run into space problems.
 - Each section leads into our Spring course (432) where the two sections are combined. Dr. Love teaches 432, and so students who plan to continue with 432 are strongly encouraged to take 431 with him, as well, to facilitate the transition.
-    
+
+## Update on Enrolling in Section 1 (vs. Section 2)
+
+As mentioned, 431 is given in two sections. I teach Section 1 on Tuesday and Thursday 1:00 - 2:15, and Professor Ming Li will teach Section 2, on Tuesday and Thursday 4:30 - 5:45. Section 1 is nearly full at this time, and many of the remaining seats are on hold for students in degree programs in our Population and Quantitative Health Sciences department. We will be making final decisions about enrollment into specific sections up to the start of the class on August 28. We prioritize students for Section 1 that:
+
+a. plan to continue by taking the follow-up course, PQHS 432, in the Spring of 2019 or
+b. who have a demonstrated interest in Section 1 and a meaningful conflict which makes taking Section 2 impossible, or at least problematic.
+
+If you are not in a degree program in PQHS, please feel encouraged to write to Professor Love at the email address below if you are interested in enrolling in Section 1, especially if either a. or b. applies to you. 
+
+- Students from degree programs outside our department who do not meet either a. or b. above should expect a relatively low probability of being able to take Section 1, but are 100% welcome to instead take Section 2.
+- Students who take Section 2 are still welcome in 432 in the Spring, but if you're planning to take 432, it's definitely to your advantage to take Section 1 in the Fall, since Dr. Love teaches 432.
+
+If you are interested instead in taking Section 2, Professor Li's email is mxl675@case.edu and her other contact information may be found at http://epbiwww.case.edu/ming-li-phd/.
+
 ## If you are in Section 1
 
 An enormous amount of additional information about 431 will be posted at https://github.com/THOMASELOVE/431-2018 as the Fall semester approaches. We encourage you to visit that page for more information.
