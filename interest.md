@@ -11,24 +11,16 @@
 - **There are two sections of 431.** All CWRU students who are interested in taking the course will be admitted **either** into Section 1 (taught by Dr. Love on Tuesdays and Thursdays from 1:00 to 2:15 PM) **or** Section 2 (taught by another CWRU faculty member, Ming Li, on Tuesdays and Thursdays from 4:30 to 5:45 PM.) These decisions (regarding Section placement) will be made starting in July.
     - Dr. Love teaches **Section 1**, and that Section is capped at 48 students. The main course web page for that Section is https://github.com/THOMASELOVE/431-2018.
     - All students in degree programs headed by the Department of Population and Quantitative Health Sciences will be admitted into Section 1, and should expect to take both 431, and its sequel, 432. Many students from other Departments will also be admitted into Section 1, but this is an ongoing process.
+    - We will be making final decisions about enrollment into specific sections up to the start of the class on August 28. We prioritize students for Section 1 that:
+        - a. plan to continue by taking the follow-up course, PQHS 432, in the Spring of 2019 or
+        - b. who have a demonstrated interest in Section 1 and a meaningful conflict which makes taking Section 2 impossible, or at least problematic.
+    - If you are not in a degree program in PQHS, please feel encouraged to write to Professor Love at the email address below if you are interested in enrolling in Section 1, especially if either a. or b. applies to you. 
+        - Students from degree programs outside our department who do not meet either a. or b. above should expect a relatively low probability of being able to take Section 1, but are 100% welcome to instead take Section 2.
+        - Students who take Section 2 are still welcome in 432 in the Spring, but if you're planning to take 432, it's definitely to your advantage to take Section 1 in the Fall, since Dr. Love teaches 432.
     - **Section 2** uses many of the same materials, but will be taught by Professor Ming Li, as it was last year. We expect Section 2 to have 25-30 students. The cap is, again, 48 students. 
     - The Section 2 web page will be housed on [Canvas](https://canvas.case.edu). Dr. Li's personal page is [here](http://epbiwww.case.edu/ming-li-phd/). 
     - If you prefer (perhaps because of a scheduling conflict) to take Section 2 of 431, that should not be a problem. Only Section 1 is likely to run into space problems.
 - Each section leads into our Spring course (432) where the two sections are combined. Dr. Love teaches 432, and so students who plan to continue with 432 are strongly encouraged to take 431 with him, as well, to facilitate the transition.
-
-## Update on Enrolling in Section 1 (vs. Section 2)
-
-As mentioned, 431 is given in two sections. I teach Section 1 on Tuesday and Thursday 1:00 - 2:15, and Professor Ming Li will teach Section 2, on Tuesday and Thursday 4:30 - 5:45. Section 1 is nearly full at this time, and many of the remaining seats are on hold for students in degree programs in our Population and Quantitative Health Sciences department. We will be making final decisions about enrollment into specific sections up to the start of the class on August 28. We prioritize students for Section 1 that:
-
-a. plan to continue by taking the follow-up course, PQHS 432, in the Spring of 2019 or
-b. who have a demonstrated interest in Section 1 and a meaningful conflict which makes taking Section 2 impossible, or at least problematic.
-
-If you are not in a degree program in PQHS, please feel encouraged to write to Professor Love at the email address below if you are interested in enrolling in Section 1, especially if either a. or b. applies to you. 
-
-- Students from degree programs outside our department who do not meet either a. or b. above should expect a relatively low probability of being able to take Section 1, but are 100% welcome to instead take Section 2.
-- Students who take Section 2 are still welcome in 432 in the Spring, but if you're planning to take 432, it's definitely to your advantage to take Section 1 in the Fall, since Dr. Love teaches 432.
-
-If you are interested instead in taking Section 2, Professor Li's email is mxl675@case.edu and her other contact information may be found at http://epbiwww.case.edu/ming-li-phd/.
 
 ## If you are in Section 1
 
