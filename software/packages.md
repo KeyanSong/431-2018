@@ -1,4 +1,4 @@
-**R Packages Used in 431**
+# R Packages Used in 431
 
 Copy and paste the following two lines of code into the Console window of R Studio to install the packages you'll need for this course.
 
