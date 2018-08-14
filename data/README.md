@@ -1,4 +1,4 @@
-# Data for 431, Fall 2018
+# Data (and Code) for 431, Fall 2018
 
 This is the repository for Data and Code for PQHS 431/CRSP 431, Section 1.
 
