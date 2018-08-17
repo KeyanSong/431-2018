@@ -8,6 +8,10 @@
 
 If you need more help, you might look at [this terrific resource for Installing R and R Studio](http://stat545.com/block000_r-rstudio-install.html) from Jenny Bryan and the STAT 545 project. These are the people responsible for the great [Happy Git with R](http://happygitwithr.com/) project, which is worth your time, too, if you intend to use Git and GitHub.
 
+##  Getting Started with R, R Studio and R Markdown
+
+Once you've installed the software, Dr. Love's document [Getting Started with R](https://github.com/THOMASELOVE/431-2018/blob/master/software/431-getting-started-with-R.pdf) is a good first step. It demonstrates some of the details on how to use these tools to actually analyze data. Of course, we'll also do this in class.
+
 ## Advice on Technology / System Requirements
 
 You will need a laptop computer in this class, not just an iPad or other tablet, but an actual computer. All of the software we will use in this class is either free and open source, or available to you for free through your affiliation with CWRU, so there is nothing to buy if you have a laptop.
@@ -19,6 +23,3 @@ You will need a laptop computer in this class, not just an iPad or other tablet,
     - I **do not** recommend the use of a Chrome device for this class.
     - If you have a Linux system, you can certainly run R and R Studio well, and you definitely know better than I do how to accomplish that.
 
-##  Getting Started with R
-
-Dr. Love's document [Getting Started with R] is a good first step. It demonstrates some of the details on how to use these tools to actually analyze data.
