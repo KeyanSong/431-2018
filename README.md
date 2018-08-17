@@ -6,7 +6,7 @@ Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly E
 
 ## The Syllabus
 
-An initial draft of the course syllabus is now available at [this link](https://thomaselove.github.io/2018-431-syllabus/)
+The most recent draft of [the course syllabus](https://thomaselove.github.io/2018-431-syllabus/) is now available.
 
 ## This page is a work in progress. Please pardon the construction.
 
