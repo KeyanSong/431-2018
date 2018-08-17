@@ -52,7 +52,7 @@ Instructions for Windows Machines
 
 3.  Select the **base** subdirectory on the next screen, to install R for the first time.
 
-4.  You will then see a link to **Download R 3.x.x for Windows**. (As I write, we're on version `3.4.1` but you may see a later version number.) Select this link, and, if given the option, **save** the resulting file.
+4.  You will then see a link to **Download R 3.x.x for Windows**. (As I write, we're on version `3.5.1` but you may see a later version number.) Select this link, and, if given the option, **save** the resulting file.
 
 5.  Once R has downloaded, close all other programs (including your browser), then double-click the downloaded file and follow the instructions to start the setup process.
 
@@ -64,11 +64,10 @@ Instructions for Windows Machines
 
 ### Windows: Installing R Studio
 
-1.  Close all other programs and point your browser to the page for the preview version of R Studio, at <https://www.rstudio.com/products/rstudio/download/preview/>
+1.  Close all other programs and point your browser to the download page for the desktop version of R Studio, at https://www.rstudio.com/products/rstudio/download/#download
+    - If you prefer, you can instead [download the preview version](https://www.rstudio.com/products/rstudio/download/preview/) so as to be able to take advantage of the latest and greatest things available from R Studio. This isn't necessary for our course, though.
 
--   We use the preview version so as to be able to take advantage of the latest and greatest things available from R Studio.
-
-1.  R Studio will display a link to **Desktop Version Installers**. Select the version of R Studio (likely to be `1.1` followed by some additional numbers, at the moment it is `1.1.345` but you may see a later number) which is recommended for your operating system (most probably this is **Windows Vista/7/8/10** and is listed at the top. Click to download.
+2.  R Studio will display a link to **Desktop Version Installers**. Select the version of R Studio (likely to be `1.1` followed by some additional numbers, at the moment it is `1.1.456` but you may see a later number) which is recommended for your operating system (most probably this is **Windows Vista/7/8/10** and is listed at the top. Click to download.
 
 2.  Once the package has been downloaded to your desktop, close all other programs (including your browser), then double-click the package, and follow the instructions to start the setup process.
 
@@ -78,7 +77,9 @@ Instructions for Windows Machines
 
 ### Windows: Installing R Packages
 
-1.  Now, you're ready to install some of the packages you will need. Copy and paste the following two lines of code into the Console window of R Studio to install the packages you'll need for this course.
+1.  Now, you're ready to install some of the packages you will need. Visit our [Packages page](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md) for an up-to-date list of the R packages we are using in this course, and complete installation instructions. 
+
+Copy and paste the following two lines of code into the Console window of R Studio to install the packages you'll need for this course.
 
 <!-- -->
 
@@ -116,7 +117,7 @@ Instructions for Apple / Macintosh Machines
     -   Try <http://cran.us.r-project.org/> if the Case site is busy.
 2.  In the **Download and Install R** box of precompiled binary distributions, click on **Download R for (Mac) OS X**.
 
-3.  Click on the package containing the latest version (most likely **R-3.x.x.pkg**, where the version as of `Sys.Date()` is 3.4.1, but you may see a later number) on the next screen. Download the package, to install R for the first time.
+3.  Click on the package containing the latest version (most likely **R-3.x.x.pkg**, where the version as of `Sys.Date()` is `3.5.1`, but you may see a later number) on the next screen. Download the package, to install R for the first time.
 
 4.  Follow the installation instructions, and select all of the default options.
 
@@ -126,15 +127,14 @@ Instructions for Apple / Macintosh Machines
 
 ### Mac: Installing R Studio
 
-1.  Close all other programs and point your browser to the page for the preview version of R Studio, at <https://www.rstudio.com/products/rstudio/download/preview/>
+1.  Close all other programs and point your browser to the download page for the desktop version of R Studio, at https://www.rstudio.com/products/rstudio/download/#download
+    - If you prefer, you can instead [download the preview version](https://www.rstudio.com/products/rstudio/download/preview/) so as to be able to take advantage of the latest and greatest things available from R Studio. This isn't necessary for our course, though.
 
--   We use the preview version so as to be able to take advantage of the latest and greatest things available from R Studio.
+2.  R Studio will display a link to **Desktop Version Installers**. Select the version of R Studio (likely to be `1.1` followed by some additional numbers, at the moment it is `1.1.456` but you may see a later number) which is recommended for your operating system (most probably this is **Mac OS X 10.6+ (64-bit)** and is listed near the top. Click to download.
 
-1.  R Studio will display a link to **Desktop Version Installers**. Select the version of R Studio (likely to be `1.1` followed by some additional numbers, at the moment it is `1.1.345` but you may see a later number) which is recommended for your operating system (most probably this is **Mac OS X 10.6+ (64-bit)** and is listed near the top. Click to download.
+3.  Once the package has been downloaded to your desktop, double-click on the download to show the folder where the `.dmg` file was placed. Then double-click it to install R Studio.
 
-2.  Once the package has been downloaded to your desktop, double-click on the download to show the folder where the `.dmg` file was placed. Then double-click it to install R Studio.
-
-3.  Click on the R Studio icon (when it appears) to open it. This will connect your newly installed R to R Studio, and you will be ready to install some **R packages**.
+4.  Click on the R Studio icon (when it appears) to open it. This will connect your newly installed R to R Studio, and you will be ready to install some **R packages**.
 
 ### Mac: Installing R Packages
 
