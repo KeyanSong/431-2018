@@ -11,9 +11,9 @@ If you need more help, you might look at [this terrific resource for Installing 
 ## Advice on Technology / System Requirements
 
 - You will need a laptop computer in this class, not just an iPad or other tablet, but an actual computer.
-- I wouldn't recommend a Chrome device for this purpose. Any reasonably recent PC or Macintosh machine will work well. You do not need a state of the art machine.
-    - We've made some effort in terms of course requirements to set the bar low. 
+    - We've made some effort in terms of course requirements to set the bar low. You do not need a state of the art machine, nor should you need any special hardware to run things for this course.
     - You will need a laptop, either PC or Mac, but the style should be determined by your personal preferences and how you believe you will use the machine in your research life, I think. Dr. Love has a fairly old MacBook Air which he uses in class, and a series of desktop PCs at offices around Cleveland.
     - In this class, you'll be using R Studio and R, which look the same on either a PC or a Mac, and are free and open-source, so it's really your call. 
+    - Any reasonably recent PC or Macintosh machine will work well. I do not recommend the use of a Chrome device for this class, and if you have a Linux system, you can certainly run R and R Studio well, but you definitely know better than I do how to accomplish that. 
 - All of the software we will use in this class is either free and open source, or available to you for free through your affiliation with CWRU.
 
