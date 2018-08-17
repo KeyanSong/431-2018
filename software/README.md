@@ -19,4 +19,6 @@ You will need a laptop computer in this class, not just an iPad or other tablet,
     - I **do not** recommend the use of a Chrome device for this class.
     - If you have a Linux system, you can certainly run R and R Studio well, and you definitely know better than I do how to accomplish that.
 
+##  Getting Started with R
 
+Dr. Love's document [Getting Started with R] is a good first step. It demonstrates some of the details on how to use these tools to actually analyze data.
