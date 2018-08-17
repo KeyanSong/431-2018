@@ -1,4 +1,4 @@
-# R Packages Used in 431
+# R Packages in 431
 
 ## Installing All Necessary R Packages (Do once, at the start of the semester)
 
@@ -49,4 +49,5 @@ You should update your R packages about once a week, and also whenever you encou
     - A popup box may appear, asking "Do you want to install from sources the packages which need compilation?" to which I usually asnwer **No**. A **Yes** response leads to a slower installation, but can solve problems if you still have them after updating.
     - This may take a few minutes. As long as you're seeing activity in the Console window, things are progressing.
     - Eventually, you'll get a message that "The downloaded source packages are in ..." with a directory name. That's the sign that the updating is done.
+
 
