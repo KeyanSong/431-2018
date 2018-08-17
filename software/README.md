@@ -17,6 +17,6 @@ You will need a laptop computer in this class, not just an iPad or other tablet,
     - In this class, you'll be using R Studio and R, which look and work the same on either a PC or a Mac. 
     - Any reasonably recent PC or Macintosh machine will work well. 
     - I **do not** recommend the use of a Chrome device for this class.
-    - If you have a Linux system, you can certainly run R and R Studio well, but you definitely know better than I do how to accomplish that.
+    - If you have a Linux system, you can certainly run R and R Studio well, and you definitely know better than I do how to accomplish that.
 
 
