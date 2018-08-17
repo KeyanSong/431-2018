@@ -9,8 +9,8 @@ Note that these package instructions should be used after you've [followed these
 <!-- -->
 
     pkgs <- c("aplpack", "arm", "babynames", "boot", "broom", "car", "cowplot", 
-              "devtools", "Epi", "faraway", "forcats", "foreign", "gapminder", 
-              "GGally", "ggridges", "gridExtra", "Hmisc", "knitr", "lme4", 
+              "devtools", "Epi", "faraway", "fivethirtyeight", "forcats", "foreign", 
+              "gapminder", "GGally", "ggridges", "gridExtra", "Hmisc", "knitr", "lme4", 
               "magrittr", "markdown", "MASS", "mice", "mosaic", "multcomp", 
               "NHANES", "pander", "psych", "pwr", "qcc", "rmarkdown", "rms", 
               "sandwich", "survival", "tableone", "tidyverse", "vcd", "viridis")
