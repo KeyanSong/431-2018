@@ -17,25 +17,36 @@
 
 2.  Execute those commands by hitting Enter.
 
-3.  Now, go to the **Packages** tab on the right side of your screen, and click on **Update**. Select and install all available updates. This may take a few minutes.
+3.  Now, go to the **Packages** tab on the right side of your screen, and click on **Update**. 
 
-4.  Finally, choose **File ... Quit R** from the top menu, and accept R Studio's request to save your workspace. This will eliminate the need to re-do these steps every time you work in R.
+4.  This will bring up a dialog box. I usually click **Select All**, then click **Install Updates**. 
 
-## Installing a Single Package (Do when you need to add a new package)
+    - A popup box may appear, asking "Do you want to install from sources the packages which need compilation?" to which I usually asnwer **No**. A **Yes** response leads to a slower installation, but can solve problems if you still have them after updating.
+    - This may take a few minutes. As long as you're seeing activity in the Console window, things are progressing.
+    - Eventually, you'll get a message that "The downloaded source packages are in ..." with a directory name. That's the sign that the updating is done.
+
+5.  Finally, choose **File ... Quit Session** from the top menu, and accept R Studio's request to save your workspace. This will eliminate the need to re-do these steps every time you work in R.
+
+## Installing a Single Package
 
 If you want to install a single package, you can do so by finding the word **Packages** on the right side of your screen. 
 
-- Click on the **Packages** menu to start installing the packages you'll need. 
-- Then click **Install**, which will bring up a dialog box, where you can type in the names of the packages that you need. these should be separated by a space or comma. 
-- Be sure to leave the Install dependencies box checked.
+1. Click on the **Packages** tab on the right side of your screen to start installing the packages you'll need. 
+2. Click **Install**, which will bring up a dialog box, where you can type in the names of the packages that you need. These should be separated by a space or comma. Be sure to leave the Install dependencies box checked.
+    - A popup box may appear, asking "Do you want to install from sources the packages which need compilation?" to which I usually asnwer **No**. A **Yes** response leads to a slower installation, but can solve problems if you still have them after updating.
+    - This may take a few minutes. As long as you're seeing activity in the Console window, things are progressing.
+    - Eventually, you'll get a message that "The downloaded source packages are in ..." with a directory name. That's the sign that the updating is done.
+4. 
 
 ## Updating Your Packages (About once per week)
 
 You should update your R packages about once a week, and also whenever you encounter a problem in R that you can't solve otherwise.
 
-- Click on the **Packages** tab on the right side of your screen, and click on **Update**. 
-- This will bring up a dialog box. Select and install all available updates. 
-- A popup box may ask you whether you want to install from sources the packages which need compilation. Yes is fine, but No is faster, usually.
-- This may take a minute or two, but definitely not more than five minutes.
-- Choose **File ... Quit R** from the top menu, and accept R Studio's request to save your workspace.
+1.  Select the **Packages** tab on the right side of your screen, and click on **Update**. 
+
+2.  This will bring up a dialog box. I usually click **Select All**, then click **Install Updates**. 
+
+    - A popup box may appear, asking "Do you want to install from sources the packages which need compilation?" to which I usually asnwer **No**. A **Yes** response leads to a slower installation, but can solve problems if you still have them after updating.
+    - This may take a few minutes. As long as you're seeing activity in the Console window, things are progressing.
+    - Eventually, you'll get a message that "The downloaded source packages are in ..." with a directory name. That's the sign that the updating is done.
 
