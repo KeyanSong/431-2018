@@ -1,8 +1,10 @@
 # R Packages in 431
 
+Note that these package instructions should be used after you've [followed these instructions and installed R and R Studio](https://github.com/THOMASELOVE/431-2018/blob/master/software/installation.md).
+
 ## Installing All Necessary R Packages (Do once, at the start of the semester)
 
-1. Copy and paste the following two lines of code into the Console window of R Studio to install the packages you'll need for this course.
+1. Copy and paste the following two lines of code into the **Console** window of R Studio to install the packages you'll need for this course.
 
 <!-- -->
 
