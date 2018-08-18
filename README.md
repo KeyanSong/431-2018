@@ -12,19 +12,23 @@ The most recent draft of [the course syllabus](https://thomaselove.github.io/201
 
 ### What Do I Need to Buy Before Class Begins?
 
-Two books, which should cost you a combined $25. See the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) for details.
+- Two books, which should cost you a combined $25. See the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) for details.
 
 ### When and Where is the First Class?
 
-2018-08-28 (Tuesday) from 1 PM until 2:15 PM, in Room E321-323 in the Robbins building at the School of Medicine.
+- 2018-08-28 (Tuesday) from 1 PM until 2:15 PM, in Room E321-323 in the Robbins building at the School of Medicine.
 
 ## Course Notes
 
-The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. Think of this as your main textbook for the course.
+The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. 
+
+- This will serve as your main textbook for the course, although there are several other resources listed in the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) which you'll need, as well.
 
 ## Course Calendar
 
-The most recent draft of the [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) will keep you up-to-date on all deadlines and assignments.
+The most recent draft of the [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is available. 
+
+- As the semester continues, this calendar will be the final word for all deadlines and assignment details.
 
 ## In-Class Presentation Slides
 
@@ -32,11 +36,17 @@ Slides from each class will appear on [the slides page](https://github.com/THOMA
 
 ## Software
 
-This course requires you to download and install the (free) R software, as well as the (equally free) R Studio development environment. Instructions for [installing (and updating) the software are here](https://github.com/THOMASELOVE/431-2018/tree/master/software).
+This course requires you to download and install the (free) R software, as well as the (equally free) R Studio development environment. 
+
+- Instructions for [installing (and updating) the software are here](https://github.com/THOMASELOVE/431-2018/tree/master/software).
 
 ## Data and Code
 
 Data and code for the course is available at [this page](https://github.com/THOMASELOVE/431-2018-data).
+
+## Course Project
+
+Rather than a final examination, you'll do a Course Project for 431, and the [details on that project are here](https://github.com/THOMASELOVE/431-2018-project).
 
 ## Contact Us
 
