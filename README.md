@@ -42,6 +42,6 @@ Data and code for the course is available at [this page](https://github.com/THOM
 
 ## Contact Us
 
-Once the semester begins, the main email address to contact Dr. Love (and the Teaching Assistants) is **431-help at case dot edu**.
+Once the semester begins, contact Dr. Love (and the Teaching Assistants) by emailing **431-help at case dot edu**.
 
 If you have questions about the course that are not answered here before the semester begins, please email Dr. Love at `Thomas dot Love at case dot edu`.
