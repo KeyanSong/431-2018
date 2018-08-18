@@ -6,15 +6,31 @@ Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly E
 
 ## This page is a work in progress. Please pardon the construction.
 
-This page will serve as the front page for course materials in Section 1 of the 431 course. 431 is the first part of a two-semester sequence (PQHS 431-432). We expect the page to fill out considerably before class begins on 2018-08-28.
+This page will serve as the front page for course materials in Section 1 of the 431 course. 431 is the first part of a two-semester sequence (PQHS 431-432) taught by Professor Thomas Love. We expect the page to fill out considerably before class begins on 2018-08-28.
 
 ## The Syllabus
 
-The most recent draft of [the course syllabus](https://thomaselove.github.io/2018-431-syllabus/) is now available.
+The most recent draft of [the course syllabus](https://thomaselove.github.io/2018-431-syllabus/) is now available, and is reasonably complete.
+
+### What Do I Need to Buy Before Class Begins?
+
+Two books, which should cost you a combined $25. See the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) for details.
+
+### When and Where is the First Class?
+
+2018-08-28 (Tuesday) from 1 PM until 2:15 PM, in Room E321-323 in the Robbins building at the School of Medicine.
 
 ## Course Notes
 
-The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available.
+The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. Think of this as your main textbook for the course.
+
+## Course Calendar
+
+The most recent draft of the [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) will keep you up-to-date on all deadlines and assignments.
+
+## In-Class Presentation Slides
+
+Slides from each class will appear on [the slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides) as the semester progresses.
 
 ## Software
 
@@ -24,8 +40,8 @@ This course requires you to download and install the (free) R software, as well 
 
 Data and code for the course is available at [this page](https://github.com/THOMASELOVE/431-2018-data).
 
-
-
 ## Contact Us
 
-If you have questions about the course that are not answered on this page, please email Dr. Love at `Thomas dot Love at case dot edu`.
+Once the semester begins, the main email address to contact Dr. Love (and the Teaching Assistants) is **431-help at case dot edu**.
+
+If you have questions about the course that are not answered here before the semester begins, please email Dr. Love at `Thomas dot Love at case dot edu`.
