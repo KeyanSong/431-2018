@@ -39,14 +39,15 @@ Slides from each class will appear on [the slides page](https://github.com/THOMA
 This course requires you to download and install the (free) R software, as well as the (equally free) R Studio development environment. 
 
 - Instructions for [installing (and updating) the software are here](https://github.com/THOMASELOVE/431-2018/tree/master/software).
-
-## Data and Code
-
-Data and code for the course is available at [this page](https://github.com/THOMASELOVE/431-2018-data).
+- Data and code for the course are available at [this page](https://github.com/THOMASELOVE/431-2018-data).
 
 ## Course Project
 
 Rather than a final examination, you'll do a Course Project for 431, and the [details on that project are here](https://github.com/THOMASELOVE/431-2018-project).
+
+## Homework Assignments
+
+There are a series of homework assignments for the class, and the [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
 
 ## Contact Us
 
