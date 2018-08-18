@@ -16,6 +16,16 @@ The most recent draft of [the course syllabus](https://thomaselove.github.io/201
 
 The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available.
 
+## Software
+
+This course requires you to download and install the (free) R software, as well as the (equally free) R Studio development environment. Instructions for [installing (and updating) the software are here](https://github.com/THOMASELOVE/431-2018/tree/master/software).
+
+## Data and Code
+
+Data and code for the course is available at [this page](https://github.com/THOMASELOVE/431-2018-data).
+
+
+
 ## Contact Us
 
 If you have questions about the course that are not answered on this page, please email Dr. Love at `Thomas dot Love at case dot edu`.
