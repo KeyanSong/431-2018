@@ -9,11 +9,12 @@ Note that these package instructions should be used after you've [followed these
 <!-- -->
 
     pkgs <- c("aplpack", "arm", "babynames", "boot", "broom", "car", "cowplot", 
-              "devtools", "Epi", "faraway", "fivethirtyeight", "forcats", "foreign", 
-              "gapminder", "GGally", "ggridges", "gridExtra", "Hmisc", "knitr", "lme4", 
-              "magrittr", "markdown", "MASS", "mice", "mosaic", "multcomp", 
+              "devtools", "Epi", "faraway", "fivethirtyeight", "foreign", 
+              "gapminder", "GGally", "ggridges", "grid", "gridExtra", "Hmisc", 
+              "knitr", "lme4", "markdown", "MASS", "mice", "mosaic", "multcomp", 
               "NHANES", "pander", "psych", "pwr", "qcc", "rmarkdown", "rms", 
-              "sandwich", "survival", "tableone", "tidyverse", "vcd", "viridis")
+              "sandwich", "simputation", "survival", "tableone", "tidyverse", 
+              "vcd", "viridis")
 
     install.packages(pkgs)
 
