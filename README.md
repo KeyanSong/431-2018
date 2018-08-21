@@ -23,7 +23,7 @@ The most recent draft of [the course syllabus](https://thomaselove.github.io/201
 ### What Should I do before the First Class?
 
 - There is no pre-class assignment. 
-- If you're looking to get a jump on things, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), buy [the two required books](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy) (about $25), and [install the (free) software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software). That's going to be the bulk of your assignment for our second class, on Thursday 2018-08-30.
+- If you're looking to get a jump on things, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), buy [the two required books](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy) (about $25), and [install the (free) software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software). That's going to be the bulk of your assignment for Class 2, on 2018-08-30.
 
 ## Course Calendar
 
