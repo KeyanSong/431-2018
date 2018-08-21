@@ -34,7 +34,7 @@ At least until you get your feet under you, a template for producing a homework 
 
 ## Grading Errors?
 
-As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **[this Google Form]** before **[noon on 2018-12-13]**. See the **Syllabus** for more details.
+As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **[this Google Form]** before **[noon on 2018-12-13]**. See the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 
 ## Tips on Homework Submission
 
