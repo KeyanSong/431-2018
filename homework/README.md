@@ -6,7 +6,7 @@ Each assignment requires you to analyze some data, and prepare a report using R 
 
 There are 8 planned homework assignments.
 
-Date | Time | Assignment 
+Due Date | Time | Assignment 
 -----: | ------: | --------------------------------------------------------
 2018-09-07 | Noon | **Homework 1**
 2018-09-14 | Noon | **Homework 2**
