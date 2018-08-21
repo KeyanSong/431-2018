@@ -51,7 +51,7 @@ Rather than a final examination, you'll do a Course Project for 431, and the [de
 
 ## Homework Assignments
 
-There are a series of homework assignments for the class, and the [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
+This class requires several homework assignments, and the [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
 
 ## Contact Us
 
