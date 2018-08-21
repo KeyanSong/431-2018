@@ -7,6 +7,7 @@ The early classes (especially Classes 2-6) are more about R and R Studio than ab
 Date | Class | Description or Deliverable
 -----------: | :---: | ---------------------------------------------------------
 2018-08-28 | 1 | Getting Started, Website, R and R Studio, Syllabus
+2018-08-30 | -- | Before Class 2, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), and [install the software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software).
 2018-08-30 | 2 | **Part A** begins (Visualizing Data)
 2018-09-04 | 3 | 
 2018-09-06 | 4 | 
