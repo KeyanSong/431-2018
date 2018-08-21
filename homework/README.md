@@ -8,7 +8,7 @@ There are 8 planned homework assignments.
 
 Due Date | Time | Assignment 
 -----: | ------: | --------------------------------------------------------
-2018-09-07 | Noon | [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is now available.
+2018-09-07 | Noon | [Homework 1 is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1)!
 2018-09-14 | Noon | **Homework 2** is coming soon.
 2018-09-21 | Noon | **Homework 3** is coming soon.
 2018-09-28 | Noon | **Homework 4** is coming soon.
@@ -19,7 +19,7 @@ Due Date | Time | Assignment
 
 ## Logistics
 
-You will turn in your Assignments using the Canvas system at https://canvas.case.edu. You will submit both your Markdown file, and an HTML document built from that R Markdown file through Canvas. Our preference in 431 is an HTML submission, even though it is possible to generate Word or PDF versions, as well. 
+You will turn in your Homework using the Canvas system at https://canvas.case.edu. You will submit both your Markdown file, and an HTML document built from that R Markdown file through Canvas. Our preference in 431 is an HTML submission, even though it is possible to generate Word or PDF versions, as well. 
 
 - The course’s primary listing on Canvas is PQHS 431, but students in CRSP 431 and MPHP 431 should find the same information. 
 - The Canvas link to post your responses for each new Homework assignment will appear a day or two after the deadline for the preceding assignment has passed.
