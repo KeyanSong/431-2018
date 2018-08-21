@@ -30,7 +30,7 @@ Your life will be far happier if you use an R Project every time you open R to d
 
 ## A Template for Homework Assignments
 
-At least until you get your feet under you, a template for producing a homework document in R Markdown may be helpful. **[Here's where you'll find it.]**
+At least until you get your feet under you, use the provided template for producing a homework assignment, which is included in the specific Homework instructions.
 
 ## Grading Errors?
 
