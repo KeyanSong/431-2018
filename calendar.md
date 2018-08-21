@@ -1,6 +1,6 @@
 # Calendar
 
-This is an initial and tentative draft of the calendar for Dr. Love's Section 1 of 431 in Fall 2018. It will be replaced in time by a far more detailed document. All class meetings are scheduled for 1:00 PM to 2:15 PM in room E321 in the Robbins building at the School of Medicine. 
+This is the calendar for Dr. Love's Section 1 of 431 in Fall 2018. All class meetings are scheduled for 1:00 PM to 2:15 PM in room E321-323 on the third floor of the Robbins building at the School of Medicine. 
 
 The early classes (especially Classes 2-6) are more about R and R Studio than about "statistics". Once everyone's gotten rolling, our approach changes a bit to focus more on statistical concerns, and less on the technology. 
 
@@ -26,7 +26,7 @@ Date | Class | Description or Deliverable
 2018-10-08 | -- | **Quiz 1 due at noon**
 2018-10-09 | 13 |
 2018-10-11 | 14 |
-2018-10-12 | -- | **Student Project Registration/Scheduling due at noon**
+2018-10-12 | -- | **Project Registration/Scheduling forms** due at noon
 2018-10-16 | 15 |
 2018-10-18 | -- | Special Session, Professor Love will be out of town.
 2018-10-19 | -- | **Homework 4 due** at noon
