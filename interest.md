@@ -3,7 +3,7 @@
 431 is the first part of a two-semester sequence (PQHS 431-432).
 
 - Thank you for your interest.
-- We have begun to permit students interested in taking 431 into the course. We will review these requests approximately weekly until mid-August. 
+- We have begun to permit students interested in taking 431 into the course. We will review these requests daily until the course begins on 2018-08-28.
     - All CWRU students who have taken any prior coursework in statistics or epidemiology are welcome in 431. 
     - If you have no prior exposure to statistics at all, not even in high school, that may be an issue, but you are welcome to just let Dr Love know via email (details below) about your background and why you're interested in taking the course. 
 - 431 involves statistical programming using the free, open-source [statistical software R](https://cran.case.edu/), as well as the free desktop version of [R Studio](https://www.rstudio.com/products/rstudio/download/#download). We write R code [using R Markdown](https://rmarkdown.rstudio.com/index.html) in the class. 
@@ -22,8 +22,8 @@
     - If you prefer (perhaps because of a scheduling conflict) to take Section 2 of 431, that should not be a problem. Only Section 1 is likely to run into space problems.
 - Each section leads into our Spring course (432) where the two sections are combined. Dr. Love teaches 432, and so students who plan to continue with 432 are strongly encouraged to take 431 with him, as well, to facilitate the transition.
 
-## If you are in Section 1
+## If you are enrolled in Section 1
 
-An enormous amount of additional information about 431 will be posted at https://github.com/THOMASELOVE/431-2018 as the Fall semester approaches. We encourage you to visit that page for more information.
+Please visit https://github.com/THOMASELOVE/431-2018 for more information.
 
-If you have questions about the course that are not answered on this page, please email Dr. Love at `Thomas dot Love at case dot edu`.
+If you have questions about the course prior to the start of class on 2018-08-28, please email Dr. Love at `Thomas dot Love at case dot edu`.
