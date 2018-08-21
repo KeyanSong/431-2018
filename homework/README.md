@@ -8,14 +8,14 @@ There are 8 planned homework assignments.
 
 Due Date | Time | Assignment 
 -----: | ------: | --------------------------------------------------------
-2018-09-07 | Noon | **Homework 1**
-2018-09-14 | Noon | **Homework 2**
-2018-09-21 | Noon | **Homework 3**
-2018-09-28 | Noon | **Homework 4**
-2018-10-19 | Noon | **Homework 5**
-2018-10-26 | Noon | **Homework 6**
-2018-11-16 | Noon | **Homework 7**
-2018-11-30 | Noon | **Homework 8**
+2018-09-07 | Noon | [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is now available.
+2018-09-14 | Noon | **Homework 2** is coming soon.
+2018-09-21 | Noon | **Homework 3** is coming soon.
+2018-09-28 | Noon | **Homework 4** is coming soon.
+2018-10-19 | Noon | **Homework 5** is coming soon.
+2018-10-26 | Noon | **Homework 6** is coming soon.
+2018-11-16 | Noon | **Homework 7** is coming soon.
+2018-11-30 | Noon | **Homework 8** is coming soon.
 
 ## Logistics
 
