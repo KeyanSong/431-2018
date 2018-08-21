@@ -4,7 +4,9 @@
 
 Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly EPBI 431) Section 1
 
-This page will serve as the front page for course materials in Section 1 of the 431 course. 431 is the first part of a two-semester sequence (PQHS 431-432) taught by Professor Thomas Love in the Department of Population and Quantitative Health Sciences.
+This page will serve as the front page for course materials in Section 1 of the 431 course. 
+
+431 is the first part of a two-semester sequence (PQHS 431-432) taught by Professor Thomas Love in the Department of Population and Quantitative Health Sciences.
 
 ## The Syllabus
 
@@ -32,7 +34,6 @@ The [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
 The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. 
 
 - This will serve as your main textbook for the course, although there are several other resources listed in the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) which you'll need, as well.
-
 
 ## In-Class Presentation Slides
 
