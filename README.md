@@ -1,4 +1,4 @@
-## [Information for prospective students](https://github.com/THOMASELOVE/431-2018/blob/master/interest.md) not yet enrolled in the class.
+## [Prospective Students: Click here for information](https://github.com/THOMASELOVE/431-2018/blob/master/interest.md), especially if you are not yet enrolled in the class.
 
 # 431-2018
 
