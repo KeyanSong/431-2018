@@ -18,17 +18,21 @@ The most recent draft of [the course syllabus](https://thomaselove.github.io/201
 
 - 2018-08-28 (Tuesday) from 1 PM until 2:15 PM, in Room E321-323 in the Robbins building at the School of Medicine.
 
+## What Should I do before the First Class?
+
+- There is no pre-class assignment. 
+- If you're looking to get a jump on things, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), and [install the software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software). That's going to be the bulk of your assignment for our second class, on Thursday 2018-08-30.
+
+## Course Calendar
+
+The [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is available. As the semester continues, this calendar will be the final word for all deadlines and contain links to all deliverables.
+
 ## Course Notes
 
 The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. 
 
 - This will serve as your main textbook for the course, although there are several other resources listed in the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) which you'll need, as well.
 
-## Course Calendar
-
-The most recent draft of the [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is available. 
-
-- As the semester continues, this calendar will be the final word for all deadlines and assignment details.
 
 ## In-Class Presentation Slides
 
