@@ -30,11 +30,11 @@ Your life will be far happier if you use an R Project every time you open R to d
 
 ## A Template for Homework Assignments
 
-At least until you get your feet under you, use the provided template for producing a homework assignment, which is included in the specific Homework instructions.
+For the first two homeworks, we have provided a template (one per assignment) that will help you produce your result. These are described in the instructions for those two homeworks. You'll find the actual templates on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
 
 ## Grading Errors?
 
-As the semester progresses, you may find an error in grading that you would like Dr. Love to review. You would do this by filling out **[this Google Form]** before **[noon on 2018-12-13]**. See the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
+As the semester progresses, you may find an error in homework grading that you would like Dr. Love to review. You would do this by filling out **[this Google Form]** before **noon on 2018-12-13**. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 
 ## Tips on Homework Submission
 
@@ -47,6 +47,6 @@ As the semester progresses, you may find an error in grading that you would like
 7. Avoid repeating Dr. Love's questions verbatim.
 8. Use the approach laid out in the template posted above.
 
-More details available in the Assignments themselves, and the **[Course Syllabus]**.
+More details are available in the individual assignments, and in the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/), specifically in the [General Writing and Presenting tips section](https://thomaselove.github.io/2018-431-syllabus/a-few-general-writingpresenting-tips.html).
 
-The main site for the course is https://github.com/THOMASELOVE/431-2018
+The main site for the course is https://github.com/THOMASELOVE/431-2018.
