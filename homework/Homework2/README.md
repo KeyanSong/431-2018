@@ -11,7 +11,7 @@ Any assignment received more than 60 minutes after the deadline is considered la
 Here are the steps I would take to do the homework, after I read [the instructions](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework2/431-2018-hw2.md).
 
 1. Create a new directory called something like `431HW2`, specifically for this homework assignment.
-2. Use the **YOURNAME-hw2.Rmd** file to get started. You'll find it at the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data). Download a zip file (by clicking on the green Clone or Download button) of all needed materials, then unzip the file, and copy the YOURNAME-hw1.Rmd file to the `431HW1` directory you have created.
+2. Use the **YOURNAME-hw2.Rmd** file to get started. You'll find it at the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data). Download a zip file (by clicking on the green Clone or Download button) of all needed materials, then unzip the file, and copy the **YOURNAME-hw2.Rmd** file to the `431HW2` directory you have created. Note that this is NOT the same thing as the HW 1 template.
 3. Open R Studio, and create a new R Project in this existing `431HW2` directory. 
 4. Edit the R Markdown file in R Studio to get what you want, and then be sure to save it using your actual name in the file name.
 5. Knit the file in R Studio to create an HTML file, which should have your actual name in it, not `YOURNAME-hw2.html`
