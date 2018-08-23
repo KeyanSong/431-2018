@@ -8,8 +8,8 @@ There are 8 planned homework assignments.
 
 Due Date | Time | Assignment 
 -----: | ------: | --------------------------------------------------------
-2018-09-07 | Noon | [Homework 1 is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1)!
-2018-09-14 | Noon | **Homework 2** is coming soon.
+2018-09-07 | Noon | [Homework 1 is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1)
+2018-09-14 | Noon | [Homework 2 is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2)
 2018-09-21 | Noon | **Homework 3** is coming soon.
 2018-09-28 | Noon | **Homework 4** is coming soon.
 2018-10-19 | Noon | **Homework 5** is coming soon.
@@ -30,7 +30,7 @@ Your life will be far happier if you use an R Project every time you open R to d
 
 ## A Template for Homework Assignments
 
-For the first two homeworks, we have provided a template (one per assignment) that will help you produce your result. These are described in the instructions for those two homeworks. You'll find the actual templates on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
+For the first two homeworks, we have provided a template (a different template for each assignment) that will help you produce your response. These are described in the instructions for those two homeworks. You'll find the actual templates on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
 
 ## Grading Errors?
 
