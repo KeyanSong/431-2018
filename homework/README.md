@@ -11,8 +11,8 @@ Due Date | Time | Assignment
 2018-09-07 | Noon | Homework 1 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1)
 2018-09-14 | Noon | Homework 2 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2)
 2018-09-21 | Noon | Homework 3 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3)
-2018-09-28 | Noon | **Homework 4** is coming soon.
-2018-10-19 | Noon | **Homework 5** is coming soon.
+2018-09-28 | Noon | Homework 4 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4)
+2018-10-19 | Noon | **Homework 5** will appear here in late September.
 2018-10-26 | Noon | **Homework 6** is coming soon.
 2018-11-16 | Noon | **Homework 7** is coming soon.
 2018-11-30 | Noon | **Homework 8** is coming soon.
