@@ -50,7 +50,7 @@ This course requires you to download and install the (free) R software, as well 
 
 ## Course Project
 
-Rather than a final examination, you'll do a Course Project for 431, and the [details on that project are here](https://github.com/THOMASELOVE/431-2018-project).
+You'll do a Course Project for 431, and the [details on that project are here](https://github.com/THOMASELOVE/431-2018-project). We'll start discussing the Project in September.
 
 ## Homework Assignments
 
