@@ -4,36 +4,47 @@ This is the calendar for Dr. Love's Section 1 of 431 in Fall 2018. All class mee
 
 The early classes (especially Classes 2-6) are more about R and R Studio than about "statistics". Once everyone's gotten rolling, our approach changes a bit to focus more on statistical concerns, and less on the technology. 
 
+You'll find references to several books, specifically:
+
+- **R4DS** - this is [R for Data Science](http://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham 
+- **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
+- **Leek** - this is *The Elements of Data Analytic Style* by Jeff Leek, which you must also [purchase](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
+
 Date | Class | Description or Deliverable
 -----------: | :---: | ---------------------------------------------------------
 08-28 | 1 | Getting Started, Website, R and R Studio, Syllabus, Logistics, Data
-08-30 | -- | Before Class 2, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), and [install the software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software).
+08-29 | -- | Before Class 2, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), and [install the software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software).
 08-30 | 2 | **Part A** begins (Visualizing Data)
 09-04 | 3 | 
+09-05 | -- | By Class 4, read **Leek** Chapters 5, 9, 10 and 13. (Or the whole book - it's short.)
 09-06 | 4 | 
 09-07 | -- | **Homework 1 due** at noon
 09-11 | 5 | 
 09-13 | 6 | 
 09-14 | -- | **Homework 2 due** at noon
-09-17 | -- | Read *The Signal and the Noise* (Introduction & Chapter 1) by now, for Homework 3.
+09-17 | -- | Read **Silver** Introduction & Chapter 1 by now, for Homework 3.
 09-18 | 7 | 
 09-20 | 8 | 
 09-21 | -- | **Homework 3 due** at noon
-09-24 | -- | Read *The Signal and the Noise* Chapters 2-3 by now, for Homework 4.
+09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4.
 09-25 | 9 | 
+09-26 | 10 | Before Class 10, read **Leek** Chapters 1-4 and 12.
 09-27 | 10 | 
 09-28 | -- | **Homework 4 due** at noon
+10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
 10-02 | 11 | **Part B** begins (Making Comparisons)
 10-04 | 12 |
 10-05 | -- | **Quiz 1 released to you**
 10-08 | -- | **Quiz 1 due at noon**
 10-09 | 13 |
+10-10 | -- | Before Class 14, finish reading **Leek**
 10-11 | 14 |
 10-12 | -- | **Project Registration/Scheduling forms** due at noon
 10-16 | 15 |
 10-18 | -- | Special Session, Professor Love will be out of town.
 10-19 | -- | **Homework 5 due** at noon
 10-23 | -- | No class, CWRU Fall Break.
+10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
 10-25 | 16 | **Part C** begins (Regression Models)
 10-26 | -- | **Homework 6 due** at noon
 10-30 | 17 | 
@@ -47,6 +58,7 @@ Date | Class | Description or Deliverable
 11-16 | -- | **Homework 7 due** at noon
 11-20 | -- | No class, Professor Love will be out of town.
 11-22 | -- | No class, CWRU Thanksgiving Break.
+11-26 | -- | By Class 23, finish reading **Silver** 
 11-27 | 23 |
 11-29 | 24 |
 11-30 | -- | **Homework 8 due** at noon
