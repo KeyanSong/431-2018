@@ -15,11 +15,11 @@ Date | Class | Description or Deliverable
 09-11 | 5 | 
 09-13 | 6 | 
 09-14 | -- | **Homework 2 due** at noon
-09-17 | -- | Read the Introduction and Chapter 1 of *The Signal and the Noise* by now, in preparation for Homework 3.
+09-17 | -- | Read *The Signal and the Noise* (Introduction & Chapter 1) by now, for Homework 3.
 09-18 | 7 | 
 09-20 | 8 | 
 09-21 | -- | **Homework 3 due** at noon
-09-24 | -- | Read Chapters 2-3 of *The Signal and the Noise* by now, in preparation for Homework 4.
+09-24 | -- | *The Signal and the Noise* Chapters 2-3 by now, for Homework 4.
 09-25 | 9 | 
 09-27 | 10 | 
 09-28 | -- | **Homework 4 due** at noon
