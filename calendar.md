@@ -4,6 +4,12 @@ This is the calendar for Dr. Love's Section 1 of 431 in Fall 2018. All class mee
 
 The early classes (especially Classes 2-6) are more about R and R Studio than about "statistics". Once everyone's gotten rolling, our approach changes a bit to focus more on statistical concerns, and less on the technology. 
 
+Books we are reading: 
+
+- **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
+- **Leek** - this is *The Elements of Data Analytic Style* by Jeff Leek, which you must also [purchase](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
+- **R4DS** - this is [R for Data Science] by Garrett Grolemund and Hadley Wickham.
+
 Date | Class | Description or Deliverable
 -----------: | :---: | ---------------------------------------------------------
 08-28 | 1 | Getting Started, Website, R and R Studio, Syllabus, Logistics, Data
@@ -68,8 +74,3 @@ Date | Class | Description or Deliverable
 
 Student project presentations will be scheduled on **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete by 2018-10-12, and you will know your schedule on 2018-10-16.
 
-Books we are reading: 
-
-- **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
-- **Leek** - this is *The Elements of Data Analytic Style* by Jeff Leek, which you must also [purchase](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
-- **R4DS** - this is [R for Data Science] by Garrett Grolemund and Hadley Wickham.
