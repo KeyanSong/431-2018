@@ -18,19 +18,19 @@ Date | Class | Description or Deliverable
 09-04 | 3 | 
 09-05 | -- | By Class 4, read **Leek** Chapters 5, 9, 10 and 13. (Or the whole book - it's short.)
 09-06 | 4 | 
-09-07 | -- | **Homework 1 due** at noon
+09-07 | -- | **[Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-11 | 5 | 
 09-13 | 6 | 
-09-14 | -- | **Homework 2 due** at noon
+09-14 | -- | **[Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-17 | -- | Read **Silver** Introduction & Chapter 1 by now, for Homework 3.
 09-18 | 7 | 
 09-20 | 8 | 
-09-21 | -- | **Homework 3 due** at noon
+09-21 | -- | **[Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4.
 09-25 | 9 | 
 09-26 | 10 | Before Class 10, read **Leek** Chapters 1-4 and 12.
 09-27 | 10 | 
-09-28 | -- | **Homework 4 due** at noon
+09-28 | -- | **[Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
 10-02 | 11 | **Part B** begins (Making Comparisons)
 10-04 | 12 |
@@ -39,14 +39,14 @@ Date | Class | Description or Deliverable
 10-09 | 13 |
 10-10 | -- | Before Class 14, finish reading **Leek**
 10-11 | 14 |
-10-12 | -- | **Project Registration/Scheduling forms** due at noon
+10-12 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Registration/Scheduling forms** due at noon
 10-16 | 15 |
 10-18 | -- | Special Session, Professor Love will be out of town.
-10-19 | -- | **Homework 5 due** at noon
+10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-23 | -- | No class, CWRU Fall Break.
 10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
 10-25 | 16 | **Part C** begins (Regression Models)
-10-26 | -- | **Homework 6 due** at noon
+10-26 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-30 | 17 | 
 11-01 | 18 | 
 11-02 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
@@ -55,22 +55,22 @@ Date | Class | Description or Deliverable
 11-08 | 20 |
 11-13 | 21 |
 11-15 | 22 |
-11-16 | -- | **Homework 7 due** at noon
+11-16 | -- | **[Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 11-20 | -- | No class, Professor Love will be out of town.
 11-22 | -- | No class, CWRU Thanksgiving Break.
 11-26 | -- | By Class 23, finish reading **Silver** 
 11-27 | 23 |
 11-29 | 24 |
-11-30 | -- | **Homework 8 due** at noon
+11-30 | -- | **[Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 12-04 | 25 |
 12-06 | 26 | Final class of the semester
 12-07 | -- | **[Quiz 3](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
 12-10 | -- | **Quiz 3 due at noon**
-12-10 | -- | First Set of Student Project presentations
-12-11 | -- | Second Set of Student Project presentations
-12-13 | -- | Third Set of Student Project presentations
-12-13 | -- | All Project Materials due at noon
-12-13 | -- | All Regrading Requests due at noon
+12-10 | -- | First Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
+12-11 | -- | Second Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
+12-13 | -- | Third Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
+12-13 | -- | All [Course Project](https://github.com/THOMASELOVE/431-2018-project) Materials due at noon
+12-13 | -- | All [Homework Regrading Requests](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon
 
 Student project presentations will be scheduled on **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete by 2018-10-12, and you will know your schedule on 2018-10-16.
 
