@@ -34,7 +34,7 @@ Date | Class | Description or Deliverable
 10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
 10-02 | 11 | **Part B** begins (Making Comparisons)
 10-04 | 12 |
-10-05 | -- | **Quiz 1 released to you** 
+10-05 | -- | **[Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** 
 10-08 | -- | **Quiz 1 due at noon**
 10-09 | 13 |
 10-10 | -- | Before Class 14, finish reading **Leek**
@@ -49,7 +49,7 @@ Date | Class | Description or Deliverable
 10-26 | -- | **Homework 6 due** at noon
 10-30 | 17 | 
 11-01 | 18 | 
-11-02 | -- | **Quiz 2 released to you**
+11-02 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
 11-05 | -- | **Quiz 2 due at noon**
 11-06 | 19 |
 11-08 | 20 |
@@ -64,7 +64,7 @@ Date | Class | Description or Deliverable
 11-30 | -- | **Homework 8 due** at noon
 12-04 | 25 |
 12-06 | 26 | Final class of the semester
-12-07 | -- | **Quiz 3 released to you**
+12-07 | -- | **[Quiz 3](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
 12-10 | -- | **Quiz 3 due at noon**
 12-10 | -- | First Set of Student Project presentations
 12-11 | -- | Second Set of Student Project presentations
