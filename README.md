@@ -1,43 +1,20 @@
-## [Prospective Students: Click here for information](https://github.com/THOMASELOVE/431-2018/blob/master/interest.md), especially if you are not yet enrolled in the class.
-
 # 431-2018
 
-Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly EPBI 431) Section 1
-
-This page will serve as the front page for course materials in Section 1 of the 431 course. 
+Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly EPBI 431), Section 1
 
 431 is the first part of a two-semester sequence (PQHS 431-432) taught by Professor Thomas Love in the Department of Population and Quantitative Health Sciences.
 
-## The Syllabus
+## Key Links
 
-The most recent draft of [the course syllabus](https://thomaselove.github.io/2018-431-syllabus/) is now available, and is reasonably complete.
-
-### What Do I Need to Buy Before Class Begins?
-
-- Two books, which should cost you a combined $25. See the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) for details.
-
-### When and Where is the First Class?
-
-- 2018-08-28 (Tuesday) from 1 PM until 2:15 PM, in Room E321-323 in the Robbins building at the School of Medicine.
-
-### What Should I do before the First Class?
-
-- There is no pre-class assignment. 
-- If you're looking to get a jump on things, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), buy [the two required books](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy) (about $25), and [install the (free) software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software). That's going to be the bulk of your assignment for Class 2, on 2018-08-30.
-
-## Course Calendar
-
-The [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is available. As the semester continues, this calendar will be the final word for all deadlines and contain links to all deliverables.
-
-## Course Notes
-
-The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. 
-
-- This will serve as your main textbook for the course, although there are other key resources listed in the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) which you'll need, as well.
-
-## In-Class Materials
-
-Slides and other materials (including frequently asked questions) from each class appear on [the slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides) as the semester progresses.
+- The [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/) 
+- The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word for all deadlines, and provides links for all deliverables.
+- Dr. Love's [Course Notes](https://thomaselove.github.io/2018-431-book/)
+    - This is the main textbook for this course, and is updated regularly throughout the semester.
+- Slides and other materials for each class appear at [the Slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides).
+- Deliverables
+      - The [Course Project](https://github.com/THOMASELOVE/431-2018-project)
+      - The [Homework Assignments](https://github.com/THOMASELOVE/431-2018/tree/master/homework)
+      - The [Quizzes](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes)
 
 ## Software
 
@@ -48,20 +25,23 @@ This course requires you to download and install the (free) R software, as well 
 
 431 is also supported by [DataCamp](https://www.datacamp.com), a terrific learning platform for data science, and you'll get more details on that in the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html), and after the course starts.
 
-## Course Project
+## When and Where?
 
-You'll do a Course Project for 431, and the [details on that project are here](https://github.com/THOMASELOVE/431-2018-project). We'll start discussing the Project in September.
+- 2018-08-28 (Tuesday) from 1 PM until 2:15 PM, in Room E321-323 in the Robbins building at the School of Medicine.
+- Subsequent classes meet as listed on the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md).
 
-## Homework Assignments
+## What Should I do before the First Class?
 
-This class requires several homework assignments, and the [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
+There is no pre-class assignment. If you're looking to get a jump on things:
 
-## Quizzes
+1. Read the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/).
+2. Buy [the two required books](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy) (about $25).
+3. [Install the (free) software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software). 
 
-There are three Quizzes in this class, and [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes).
+We will expect you to have accomplished all of these things by the start of Class 2, on 2018-08-30.
 
 ## Contact Us
 
 Once the semester begins, contact Dr. Love (and the Teaching Assistants) by emailing **431-help at case dot edu**.
 
-If you have questions about the course that are not answered here before the semester begins, please email Dr. Love at `Thomas dot Love at case dot edu`.
+If you have questions about the course before the semester begins, email Dr. Love at `Thomas dot Love at case dot edu`.
