@@ -32,7 +32,7 @@ Your life will be far happier if you use an R Project every time you open R to d
 
 For the first two homeworks, we have provided a template (a different template for each assignment) that will help you produce your response. These are described in the instructions for those two homeworks. You'll find the actual templates on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
 
-## Grading Errors?
+## Grading Errors? Regrade Requests? Here's the form!
 
 As the semester progresses, you may find an error in homework grading that you would like Dr. Love to review. You would do this by filling out [this Google Form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) before **noon on 2018-12-13**. Note that you'll need to log into Google via CWRU to see the form. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 
