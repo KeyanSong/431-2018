@@ -33,11 +33,11 @@ The [course calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
 
 The most recent draft of [the course notes](https://thomaselove.github.io/2018-431-book/) is now available. 
 
-- This will serve as your main textbook for the course, although there are several other resources listed in the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) which you'll need, as well.
+- This will serve as your main textbook for the course, although there are other key resources listed in the [syllabus](https://thomaselove.github.io/2018-431-syllabus/) which you'll need, as well.
 
-## In-Class Presentation Slides
+## In-Class Materials
 
-Slides from each class will appear on [the slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides) as the semester progresses.
+Slides and other materials (including frequently asked questions) from each class appear on [the slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides) as the semester progresses.
 
 ## Software
 
@@ -55,6 +55,10 @@ You'll do a Course Project for 431, and the [details on that project are here](h
 ## Homework Assignments
 
 This class requires several homework assignments, and the [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
+
+## Quizzes
+
+There are three Quizzes in this class, and [details on those are here](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes).
 
 ## Contact Us
 
