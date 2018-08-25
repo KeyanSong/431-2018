@@ -6,9 +6,9 @@ The early classes (especially Classes 2-6) are more about R and R Studio than ab
 
 Books we are reading: 
 
-- **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
-- **Leek** - this is *The Elements of Data Analytic Style* by Jeff Leek, which you must also [purchase](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy).
-- **R4DS** - this is [R for Data Science] by Garrett Grolemund and Hadley Wickham.
+- **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy). Some chapters are going to feel more relevant to you than others, and that's fine.
+- **Leek** - this is *The Elements of Data Analytic Style* by Jeff Leek, which you must also [purchase](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy). The book is short, and I encourage you to simply read it, as soon as possible (it won't take more than a couple of hours), then refer to it later in the term as specific issues arise.
+- **R4DS** - this is [R for Data Science](http://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham. This semester, we'll focus on the Explore (Section I) and Communicate (Section V) materials, mostly, with some additional pieces from the other parts of the book.
 
 Date | Class | Description or Deliverable
 -----------: | :---: | ---------------------------------------------------------
@@ -34,7 +34,7 @@ Date | Class | Description or Deliverable
 10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
 10-02 | 11 | **Part B** begins (Making Comparisons)
 10-04 | 12 |
-10-05 | -- | **Quiz 1 released to you**
+10-05 | -- | **Quiz 1 released to you** 
 10-08 | -- | **Quiz 1 due at noon**
 10-09 | 13 |
 10-10 | -- | Before Class 14, finish reading **Leek**
