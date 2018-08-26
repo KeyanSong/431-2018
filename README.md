@@ -38,7 +38,7 @@ This course requires you to download and install the (free) R software, as well 
 There is no pre-class assignment. If you're looking to get a jump on things:
 
 1. Read the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/).
-2. Buy [the two required books](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy) (about $25).
+2. Order or obtain [the two required books](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy) (combined cost: about $25).
 3. [Install the (free) software we'll use](https://github.com/THOMASELOVE/431-2018/tree/master/software) on your computer. 
 
 That's most of your assignment for the start of Class 2, on 2018-08-30.
