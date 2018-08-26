@@ -12,6 +12,8 @@ Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly E
 - Dr. Love's [Course Notes](https://thomaselove.github.io/2018-431-book/)
     - This is the main textbook for this course, and is updated regularly throughout the semester.
 - Slides and other materials for each class appear at [the Slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides).
+    - That's where we'll start, in every class session. 
+    - Here's [the direct link for Class 1's material](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class01).
 - Deliverables:
     - The [Course Project](https://github.com/THOMASELOVE/431-2018-project)
     - The [Homework Assignments](https://github.com/THOMASELOVE/431-2018/tree/master/homework)
