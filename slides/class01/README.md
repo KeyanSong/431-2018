@@ -8,12 +8,17 @@ Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-
 
 Welcome to PQHS / CRSP / MPHP 431!
 
-When you arrive in class, we'll ask you to take:
-- a copy of a **survey** as well as 
-- an **index card** from the teaching assistants. 
-- Please wait for further instructions before writing anything down.
+## As you arrive
 
-- One task you can accomplish in slack moments before or during today's class is to visit the spreadsheet at http://bit.ly/431-2018-names (you'll need to log into Google via CWRU to see it) and specify your preferred email address for communication regarding this course, and the name you want me to use when speaking with you.
+When you arrive in class, we'll ask you to take:
+- a copy of a **survey** as well as an **index card** from the teaching assistants. 
+- Please wait for further instructions **before** writing anything down.
+
+## Task One
+
+If you have spare time before or during today's class is to visit the spreadsheet at http://bit.ly/431-2018-names (you'll need to log into Google via CWRU to see it) and specify 
+  - your preferred email address for communication regarding this course, and
+  - the name you want me to use when speaking with you.
 
 ## Today's Links
 
