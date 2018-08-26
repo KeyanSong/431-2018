@@ -8,18 +8,18 @@ Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-
 
 Welcome to PQHS / CRSP / MPHP 431! Get help at any time by emailing **431-help at case dot edu**.
 
-## As you arrive
+### As you arrive
 
 When you arrive in class, we'll ask you to take:
 - a copy of a **survey** as well as an **index card** from the teaching assistants. 
 - Please wait for further instructions **before** writing anything down.
 
-## Please Do This As Soon As Possible
+### Please Do This As Soon As Possible
 
 Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into Google via CWRU to see it.)
   - There, you'll specify your preferred **email address** for communication regarding this course (if your listed Case email is OK, you can just type OK), and the **name** you want me to use when addressing you.
 
-## What Do You Need To Do Before Class 2, on Thursday at 1 PM?
+### What Do You Need To Do Before Class 2, on Thursday at 1 PM?
 
 1. Provide your preferred name and email at http://bit.ly/431-2018-names
 2. Turn in the **survey** and the **index card** we've provided, after you've completed what you need to do in class.
