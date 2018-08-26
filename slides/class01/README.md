@@ -2,7 +2,7 @@
 
 ## Today's Slides
 
-Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class01/431_class-01-slides_2018.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class01/431_class-01-slides_2018.Rmd).
+Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class01/431_class-01-slides_2018.pdf), as well as in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class01/431_class-01-slides_2018.Rmd).
 
 ## Today's Announcements
 
