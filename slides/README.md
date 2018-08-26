@@ -2,6 +2,6 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
-[Class 01](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class01) | 2018-08-28 | Welcome to PQHS / CRSP / MPHP 431!
-Class 02 | 2018-08-30 | **Part A: Visualization**. R, R Studio and R Markdown: Startup and Visualization, Exploratory Data Analysis
+[Class 01](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class01) | 08-28 | Welcome to PQHS / CRSP / MPHP 431!
+Class 02 | 08-30 | **Part A: Visualization**. R, R Studio and R Markdown: Startup and Visualization, Exploratory Data Analysis
 
