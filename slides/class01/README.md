@@ -35,13 +35,6 @@ Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into G
 7. If you are interested in / capable of taking on the task of audio-recording the class, then making those recordings available for the group, please let Dr. Love know. Thanks.
 8. If you have questions about the course, please ask us at **431-help at case dot edu**. TA office hours begin next week.
 
-## One Last Thing
-
-- If you're interested in reading about a scientific model to explain the data analysis process, you might enjoy this article by Hadley Wickham and Garrett Grolemund called [A Cognitive Interpretation of Data Analysis](http://vita.had.co.nz/papers/sensemaking.html)
-- Or, you might be more interested in some slightly lighter fare, in which case, I'd recommend these two pieces from FiveThirtyEight.
-    - [Your Tweets Are Somehow Worthy of Scientific Study](https://fivethirtyeight.com/features/your-tweets-are-somehow-worthy-of-scientific-study/) by Maggie Koerth-Baker
-    - Or, for a local touch: try [The Browns’ Suckiness Defies Math And Reason](https://fivethirtyeight.com/features/the-browns-suckiness-defies-math-and-reason/) by Neal Paine
-
 ## Today's Links
 
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018. There, you'll find links to:
@@ -67,3 +60,9 @@ Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into G
     - Jeff Leek's [The Elements of Data Analytic Style](https://leanpub.com/datastyle)
     - Nate Silver's [The Signal and the Noise](http://goo.gl/lS9LQ2)
 
+## One Last Thing
+
+- If you're interested in reading about a scientific model to explain the data analysis process, you might enjoy this article by Hadley Wickham and Garrett Grolemund called [A Cognitive Interpretation of Data Analysis](http://vita.had.co.nz/papers/sensemaking.html)
+- You might be more interested in some slightly lighter fare, in which case, I'd recommend these two pieces from [FiveThirtyEight](https://fivethirtyeight.com).
+    - [Your Tweets Are Somehow Worthy of Scientific Study](https://fivethirtyeight.com/features/your-tweets-are-somehow-worthy-of-scientific-study/) by Maggie Koerth-Baker
+    - For a local touch, try [The Browns’ Suckiness Defies Math And Reason](https://fivethirtyeight.com/features/the-browns-suckiness-defies-math-and-reason/) by Neal Paine
