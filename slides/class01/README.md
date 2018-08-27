@@ -6,7 +6,10 @@ Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-
 
 ## Today's Announcements
 
-Welcome to PQHS / CRSP / MPHP 431! Get help at any time by emailing **431-help at case dot edu**. The main web site for this course is https://github.com/THOMASELOVE/431-2018.
+Welcome to PQHS / CRSP / MPHP 431! 
+
+- Get help at any time by emailing **431-help at case dot edu**. 
+- The main web site for this course is https://github.com/THOMASELOVE/431-2018.
 
 ### As you arrive
 
