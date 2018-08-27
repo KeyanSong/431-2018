@@ -62,7 +62,7 @@ Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into G
 
 ## One Last Thing
 
-- If you're interested in reading about a scientific model to explain the data analysis process, you might enjoy this article by Hadley Wickham and Garrett Grolemund called [A Cognitive Interpretation of Data Analysis](http://vita.had.co.nz/papers/sensemaking.html)
+- If you're interested in reading about a scientific model to explain the data analysis process, you might enjoy this article by Hadley Wickham and Garrett Grolemund called [A Cognitive Interpretation of Data Analysis](http://vita.had.co.nz/papers/sensemaking.html).
 - You might be more interested in some slightly lighter fare, in which case, I'd recommend these two pieces from [FiveThirtyEight](https://fivethirtyeight.com).
     - [Your Tweets Are Somehow Worthy of Scientific Study](https://fivethirtyeight.com/features/your-tweets-are-somehow-worthy-of-scientific-study/) by Maggie Koerth-Baker
     - For a local touch, try [The Browns’ Suckiness Defies Math And Reason](https://fivethirtyeight.com/features/the-browns-suckiness-defies-math-and-reason/) by Neal Paine
