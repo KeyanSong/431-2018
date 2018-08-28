@@ -20,7 +20,7 @@ Wednesdays | 12:00 PM to 1:30 PM
 Thursdays | 11:30 AM to 12:45 PM, 2:30 - 4 PM and 5:30 - 7 PM
 Fridays | 10:30 AM to Noon
 
-For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas)
+For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
 
 ### If you haven't done this yet, please do it
 
