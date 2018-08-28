@@ -74,3 +74,18 @@ Date | Class | Description or Deliverable
 
 Student project presentations will be scheduled on **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete by 2018-10-12, and you will know your schedule on 2018-10-16.
 
+## Teaching Assistant Office Hours 
+
+Office Hours are held by the teaching asistants in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. 
+
+TA office hours start on Tuesday, September 4. The schedule will be:
+
+Day | Time 
+-------------: | --------------------
+Tuesdays | 11:30 AM to 12:45 PM
+Wednesdays | 12:00 PM to 1:30 PM
+Thursdays | 11:30 AM to 12:45 PM, 2:30 - 4 PM and 5:30 - 7 PM
+Fridays | 10:30 AM to Noon
+
+For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
+
