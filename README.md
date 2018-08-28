@@ -8,7 +8,8 @@ Fall 2018 Materials for PQHS 431/CRSP 431/BIOL 431/ANAT 431/MPHP 431 (formerly E
 
 - The [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/) 
     - This includes details on [Dr. Love](https://thomaselove.github.io/2018-431-syllabus/dr-love.html) and the [teaching assistants](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html), [software](https://thomaselove.github.io/2018-431-syllabus/software.html), the [course texts](https://thomaselove.github.io/2018-431-syllabus/software.html), and much more.
-- The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word for all deadlines, and provides links for all deliverables. It also provides the schedule of teaching assistant office hours, which begin on 2018-09-04.
+- The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word for all deadlines, and provides links for all deliverables. 
+    - The bottom of the [Calendar page](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) also provides the schedule of teaching assistant **office hours**, which begin on 2018-09-04.
 - Dr. Love's [Course Notes](https://thomaselove.github.io/2018-431-book/)
     - This is the main textbook for this course, and is updated regularly throughout the semester.
 - Slides and other materials for each class appear at [the Slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides).
