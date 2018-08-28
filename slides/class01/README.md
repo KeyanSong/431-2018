@@ -39,7 +39,7 @@ Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into G
 
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018. There, you'll find links to:
     - The [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/)
-    - The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md)
+    - The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md), which also includes the schedule of **Office Hours** for the teaching assistants.
     - The [Course Notes](https://thomaselove.github.io/2018-431-book/)
     - The [Slides page](https://github.com/THOMASELOVE/431-2018/tree/master/slides) (which gets you to in-class materials for every class, in particular [Class 01](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class01))
     - [Software](https://github.com/THOMASELOVE/431-2018/tree/master/software) installation instructions and other details
