@@ -4,14 +4,16 @@
 
 Class 2 slides will be posted here when available.
 
+Class 2 audio files will be posted here after class. The Class 1 audio recording [is available on the Class 01 page](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class01).
+
 - Get help at any time by emailing **431-help at case dot edu**. 
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018.
 
 ## Today's Announcements
 
-## Teaching Assistant Office Hours
+### Teaching Assistant Office Hours
 
-Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. TA office hours will commence on Tuesday, September 4. The schedule will be:
+Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. TA office hours will commence on Tuesday, September 4. You'll find the schedule on the bottom of the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md), and it is:
 
 Day | Time 
 -------------: | --------------------
@@ -20,7 +22,8 @@ Wednesdays | 12:00 PM to 1:30 PM
 Thursdays | 11:30 AM to 12:45 PM, 2:30 - 4 PM and 5:30 - 7 PM
 Fridays | 10:30 AM to Noon
 
-For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
+- For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
+- Note that homework assignments are due on Fridays at Noon.
 
 ### If you haven't done this yet, please do it
 
