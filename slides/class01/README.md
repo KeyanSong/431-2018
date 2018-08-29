@@ -4,7 +4,7 @@
 
 Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class01/431_class-01-slides_2018.pdf), as well as in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class01/431_class-01-slides_2018.Rmd).
 
-Audio of the key parts of Class 1 is now available in two .mp3 files, above.
+Audio of the key parts of Class 1 is now available. [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class01/431_class01audio_2018-08-28_part1.mp3) and [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class01/431_class01audio_2018-08-28_part2.mp3)
 
 ## Today's Announcements
 
