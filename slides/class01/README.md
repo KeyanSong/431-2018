@@ -4,6 +4,8 @@
 
 Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class01/431_class-01-slides_2018.pdf), as well as in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class01/431_class-01-slides_2018.Rmd).
 
+Audio of the key parts of Class 1 is now available in two .mp3 files, above.
+
 ## Today's Announcements
 
 Welcome to PQHS / CRSP / MPHP 431! 
