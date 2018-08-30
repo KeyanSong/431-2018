@@ -25,9 +25,10 @@ Fridays | 10:30 AM to Noon
 - For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
 - Note that homework assignments are due on Fridays at Noon. [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is due next Friday, 2018-09-07, at noon. You should get started after today's class, and please ask questions of us at **431-help at case dot edu**.
 
-### Check Your Email Very Soon for an Invitation from Datacamp
+### Check Your Email for an Invitation from Datacamp
 
-- Please see the [Datacamp section of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html) for more details on this terrific learning platform for data science, and some suggested R courses available there. Please accept the invitation to join us at DataCamp, once you receive it.
+- Please see the [Datacamp section of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html) for more details on this terrific learning platform for data science, and some suggested R courses available there. 
+- I sent you an invitation to join our group at Datacamp this morning. Please accept the invitation, and let Dr. Love know if you haven't received it.
 
 ### Things You Need to do...
 
