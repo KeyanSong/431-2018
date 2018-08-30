@@ -39,7 +39,7 @@ At http://bit.ly/431-day1-2018-card-age-guesses, you will find a summary spreads
 
 ## Other Data Gathered During Class 1
 
-- A [csv file of the data from the Class 1 survey from 2014-2018](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/surveyday1_2018.csv) is provided above. It's called [surveyday1_2018.csv](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/surveyday1_2018.csv)
+- A [csv file of the data from the Class 1 survey from 2014-2018](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/surveyday1_2018.csv) is provided above. It's called [surveyday1_2018.csv](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/surveyday1_2018.csv).
     - You'll want to click Raw in order to download the file in the format you'll want.
 
 - Also available is a [csv file of the index card guesses of my age](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/love-age-guess-2018.csv). It's called [love-age-guess-2018.csv](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/love-age-guess-2018.csv).
