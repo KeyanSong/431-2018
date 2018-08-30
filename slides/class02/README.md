@@ -2,7 +2,7 @@
 
 ## Today's Slides
 
-Class 2 slides will be posted here when available.
+Class 1 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/431_class-02-slides_2018.pdf), as well as in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/431_class-02-slides_2018.Rmd).
 
 Class 2 audio files will be posted here after class. The Class 1 audio recording [is available on the Class 01 page](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class01).
 
@@ -10,6 +10,11 @@ Class 2 audio files will be posted here after class. The Class 1 audio recording
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018.
 
 ## Today's Announcements
+
+### If you haven't done this yet, please do it NOW
+
+Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into Google via CWRU to see it.)
+  - There, you'll specify your preferred **email address** for communication regarding this course (if your listed Case email is OK, you can just type OK), and the **name** you want me to use when addressing you.
 
 ### Teaching Assistant Office Hours
 
@@ -25,12 +30,11 @@ Fridays | 10:30 AM to Noon
 - For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
 - Note that homework assignments are due on Fridays at Noon.
 
-### If you haven't done this yet, please do it
+### Check Your Email Soon for an Invitation from Datacamp
 
-Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into Google via CWRU to see it.)
-  - There, you'll specify your preferred **email address** for communication regarding this course (if your listed Case email is OK, you can just type OK), and the **name** you want me to use when addressing you.
+Please see the [Datacamp section of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html) for more details, and some suggested R courses available there.
 
-### What Do You Need To Do Before Class 2, on Thursday at 1 PM?
+### What We Asked You To Do Before Class 2...
 
 1. Provide your preferred name and email at http://bit.ly/431-2018-names
 2. Turn in the **survey** and the **index card** we've provided, after you've completed what you need to do in class.
@@ -40,12 +44,8 @@ Visit the spreadsheet at http://bit.ly/431-2018-names (You'll need to log into G
     - Nate Silver's [The Signal and the Noise](http://goo.gl/lS9LQ2)
 5. Read the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/), check out the [Course Notes](https://thomaselove.github.io/2018-431-book/), and familiarize yourself with what's available on the [Course Website](https://github.com/THOMASELOVE/431-2018).
 6. Once I have your preferred email address, you'll receive an invitation soon from DataCamp, a terrific learning platform for data science. More details are in the [DataCamp chapter of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html). Please accept the invitation to join us at DataCamp, once you receive it.
-7. If you have questions about the course, please ask us at **431-help at case dot edu**. TA office hours begin next week.
-
-## Today's Links
-
-Coming soon.
+7. If you have questions about the course, please ask us at **431-help at case dot edu**. 
 
 ## One Last Thing
 
-Coming soon.
+If you're interested in getting even more useful things to read, you might want to take a look at Kieran Healy's upcoming book: [Data Visualization: A practical introduction](http://socviz.co/) which sure looks like a useful book to me.
