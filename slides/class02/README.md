@@ -23,7 +23,7 @@ Thursdays | 11:30 AM to 12:45 PM, 2:30 - 4 PM and 5:30 - 7 PM
 Fridays | 10:30 AM to Noon
 
 - For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
-- Note that homework assignments are due on Fridays at Noon.
+- Note that homework assignments are due on Fridays at Noon. [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is due next Friday, 2018-09-07, at noon. You should get started after today's class, and please ask questions of us at **431-help at case dot edu**.
 
 ### Check Your Email Very Soon for an Invitation from Datacamp
 
@@ -36,7 +36,7 @@ Fridays | 10:30 AM to Noon
     - Jeff Leek's [The Elements of Data Analytic Style](https://leanpub.com/datastyle)
     - Nate Silver's [The Signal and the Noise](http://goo.gl/lS9LQ2)
 3. Read the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/), check out the [Course Notes](https://thomaselove.github.io/2018-431-book/), and familiarize yourself with what's available on the [Course Website](https://github.com/THOMASELOVE/431-2018).
-4. [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is due next Friday, 2018-09-07, at noon. You should get started after today's class, and please ask questions of us at **431-help at case dot edu**.
+4. As mentioned, [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is due next Friday, 2018-09-07, at noon. You should get started after today's class, and please ask questions of us at **431-help at case dot edu**.
 
 ## One Last Thing
 
