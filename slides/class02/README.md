@@ -30,6 +30,13 @@ Fridays | 10:30 AM to Noon
 - Please see the [Datacamp section of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html) for more details on this terrific learning platform for data science, and some suggested R courses available there. 
 - I sent you an invitation to join our group at Datacamp this morning. Please accept the invitation, and let Dr. Love know if you haven't received it.
 
+## Class 1 Age Guessing Data
+
+At http://bit.ly/431-day1-2018-card-age-guesses, you will find a summary spreadsheet describing 2014-2018 data from this class on guessing the ages from the photographs we looked at last time. 
+
+- Your class (2018) actually had the best average class guess pattern of any of the five years in which I've conducted this exercise. 
+- Congratulations to groups I and D, which had the smallest average absolute errors.
+
 ### Things You Need to do...
 
 1. Follow the [software instructions](https://github.com/THOMASELOVE/431-2018/tree/master/software) to get everything loaded on your laptop.
