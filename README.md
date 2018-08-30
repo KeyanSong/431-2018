@@ -27,7 +27,7 @@ This course requires you to download and install the (free) R software, as well 
 - Instructions for [installing (and updating) the software are here](https://github.com/THOMASELOVE/431-2018/tree/master/software).
 - Data and code for the course are available at [this page](https://github.com/THOMASELOVE/431-2018-data).
 
-431 is also supported by [DataCamp](https://www.datacamp.com), a terrific learning platform for data science, and you'll get more details on that in the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html), and an invitation to join us in that community after the course starts.
+431 is also supported by [DataCamp](https://www.datacamp.com), a terrific learning platform for data science, and you'll get more details on that in the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html). On 2018-08-30, I sent you an invitation to join us in that community. Please do.
 
 ## When and Where?
 
