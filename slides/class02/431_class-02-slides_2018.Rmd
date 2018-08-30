@@ -1,0 +1,616 @@
+---
+title: "431 Class 02"
+author: "Thomas E. Love"
+date: "2018-08-30"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+
+library(magrittr); library(tidyverse)
+```
+
+---
+
+![](images/dilbert-nodata.jpg)
+
+
+## Today's Agenda
+
+1. Administration
+2. The Class 1 Survey and How To Ask Questions
+3. Using R, R Studio and R Markdown
+
+
+
+## TA Office Hours start Tuesday 2018-09-04
+
+This schedule is also part of the Course Calendar.
+
+- Tuesdays 11:30 AM to 12:45 PM
+- Wednesdays 12 noon to 1:30 PM
+- Thursdays 11:30 AM to 12:45 PM, 2:30 - 4 PM, 5:30 - 7 PM
+- Fridays 10:30 AM to 12 noon
+
+TA office hours are held in Wood WG-56 (Computing Lab) or WG-67 (Student Lounge), so be sure to look in both places.
+
+Contact us at \color{blue} `431-help@case.edu` \color{black}
+
+Our web site: \color{blue} https://github.com/THOMASELOVE/431-2018 \color{black}
+
+
+## Data Science
+
+![](images/data-science-emphasize-import-and-tidy.png)
+
+
+## Types of Data (see Course Notes, section 4.3)
+
+Data can be **quantitative (numerical)** or **qualitative (categorical)**
+
+- **Quantitative**
+    + Variables recorded in numbers that we use as numbers.
+    + All quantitative variables must have units of measurement.
+    + Can break into *continuous* (may take any value in a range) or *discrete* (limited set of potential values.)
+        - Height is certainly continuous as a concept, but how precise is our ruler?
+        - Piano vs. Violin
+    + (less common) *interval* (equal distances between values, but zero point is arbitrary) as compared to *ratio* variables (a meaningful zero point.)
+        - Is *weight* an interval or ratio variable? How about *IQ*?
+    + Taking a mean or median is a reasonable idea.
+
+## Types of Data 
+
+Data can be **quantitative (numerical)** or **qualitative (categorical)**
+
+- Qualitative 
+    + Variables consisting of names of categories.
+    + Each possible value is a code for a category (could use numerical or non-numerical codes.)
+        + *Binary* categorical variables (two categories, often labeled 1 or 0)
+        + *Multi-categorical* variables (usually taken to be 3+ categories)
+    + Also, *nominal* (no underlying order) or *ordinal* (categories are ordered.)
+        - How is your overall health? (Excellent, Very Good, Good, Fair, Poor)
+        - Which candidate would you vote for if the election were held today?
+        - Did this patient receive this procedure?
+
+## Day 1 Survey Handout
+
+![](images/day1form.png)
+
+## Evaluating some Day 1 Survey variables
+
+1. Do you **smoke**? (1 = Non-Smoker, 2 = Former Smoker, 3 = Smoker)
+2. How much did you pay for your most recent **haircut**? (in $)
+3. What is your favorite **color**?
+4. How many hours did you **sleep** last night?
+5. Has statistical thinking been important in your life? (1 = Not at all important to 7 = Extremely important)
+
+### Are these quantitative or qualitative?
+
+- If quantitative, are they *discrete* or *continuous*? Do they have a meaningful *zero point*?
+- If qualitative, how many categories? *Nominal* or *ordinal*?
+    
+## Day 1 Survey
+
+![](images/2017-setup.png)
+
+## Day 1 Survey
+
+- 51 people completed it Tuesday. Prior counts:
+
+Fall | 2018 | 2017 | 2016 | 2015 | 2014 | Total
+----: | ----: |----: | ----: | ----: | ----: | -----:
+*n* | 51 | 48 | 64 | 49 | 42 | **254**
+
+### Question 1
+
+About how many of those 254 surveys caused *no problems* in recording responses?
+
+## Day 1 Survey Handout
+
+![](images/day1form.png)
+
+## The 15 Survey Items
+
+\#  | Topic         | \#  | Topic
+--: | -----------   | --: | -----------
+Q1 | `sex`          | Q9  | `lectures v activities`
+Q2 | `english`      | Q10 | `projects alone`
+Q3 | `stats so far` | Q11 | `height`
+Q4 | `guess TL age` | Q12 | `hand span`
+Q5 | `smoke`        | Q13 | `color`
+Q6 | `handedness`   | Q14 | `sleep`
+Q7 | `stats future` | Q15 | `pulse rate`
+Q8 | `haircut`      | -   | -
+
+## Question 1
+
+About how many of those 254 surveys caused *no problems* in recording responses?
+
+> - Guesses?
+
+> - 90/254 (34%)
+
+> - 16 of the 51 surveys turned in Tuesday had **no** problems (31%)
+
+## Guess My Age
+
+![](images/q04a.png) 
+
+![](images/q04b.png)
+
+![](images/2018-04.png)
+
+What should we do in these cases?
+
+## English best language?
+
+![](images/q02a.png) 
+
+![](images/q02b.png)
+
+![](images/2017-q02c-withdecision.png)
+
+## Favorite color
+
+![](images/q13a.png)
+
+![](images/q13b.png)
+
+![](images/2018-13.png)
+
+## Following the Rules?
+
+![](images/2017-q15a.png)
+
+### 2018 `pulse` responses, sorted (*n* = 51)
+
+```
+48 52 54 56 56 58 60                  4 | 8
+62 62 64 64 64 64 64                  5 | 24668
+66 66 66 66 68 68 68                  6 | 022444446666888
+70 70 70 70 72 74 74                  7 | 0000244446688
+74 74 76 76 78 78 80                  8 | 0000024456
+80 80 80 80 82 84 84                  9 | 22258
+85 86 92 92 92 95 98 100 104         10 | 04
+```
+
+## Stem and Leaf: Haircut $ (Thanks, John **Tukey**)
+
+![](images/2014-2018_q08stem.png)
+
+## Haircut Histogram
+
+```{r get-data, echo=FALSE, message = FALSE, warning=FALSE}
+surv1 <- read_csv("surveyday1_2018.csv")
+
+ggplot(surv1, aes(x = haircut)) +
+  geom_histogram(bins = 25, col = "white", fill = "blue") +
+  annotate("text", x = 210, y = 5, label = "$210?", col="red", size = 7) +
+  labs(title = "Histogram of 251 Haircut Prices from Day 1 Survey")
+```
+
+## Hand Span (in cm)
+
+![](images/q12problem.png) 
+
+## Hand Span Numerical Summaries
+
+```{r}
+summary(surv1$hand.span)
+```
+
+## Hand Span (cm) Histogram
+
+```{r, echo = F}
+ggplot(data = surv1, aes(x = hand.span)) +
+  geom_histogram(bins = 18, col = "white", fill = "blue") +
+  labs(x = "Hand Span (in cm)",
+       y = "# of Students",
+       title = "2014-2018 431 student hand span measurements")
+```
+
+## Hand Span (cm) Histogram (Code)
+
+```{r, eval = F}
+ggplot(data = surv1, aes(x = hand.span)) +
+  geom_histogram(bins = 18, col = "white", fill = "blue") +
+  labs(x = "Hand Span (in cm)",
+       y = "# of Students",
+       title = "2014-2018 431 student hand span measurements")
+```
+
+
+## Hand Span Stem-and-Leaf, (Two digits per stem)
+
+```{r, echo = F}
+stem(surv1$hand.span, width = 60, scale = 0.5)
+```
+
+## Eight Items had just a few problems
+
+\#  | Topic           | \#  | Topic
+--: | -----------     | --: | -----------
+-  | `sex`            | -   | `lectures v activities`
+Q2 | *english*      | Q10 | *projects alone*
+-  | `stats so far`   | -   | `height`
+Q4 | *guess TL age* | Q12 | *hand span*
+-  | `smoke`          | Q13 | *color*
+-  | `handedness`     | Q14 | *sleep*
+-  | `stats future`   | Q15 | *pulse rate*
+Q8 | *haircut*      | -   | -
+
+### Question 2
+
+Of the remaining 7 (sex, stats so far, smoke, handedness, stats future, lectures vs activities, height), 5 had no real problems, and two were messy. Which two?
+
+## Height
+
+![](images/q11-issues.png)
+
+## Handedness Scale (2014-15 version)
+
+![](images/q06a.png)
+
+## Handedness Scale (2016-18 version)
+
+![](images/q06b.png)
+
+## Garbage in, garbage out ...
+
+![](images/lastlineofdefense.png)
+
+## Today's Steps
+
+We assume you were able to follow the software installation instructions.
+
+1. Get data from our site to a new directory on your machine.
+2. Open R Studio and start a new Project, in the new directory.
+3. Open and set up an R Markdown file to do the work.
+4. Write code in your R Markdown file to 
+
+    - load the data in R
+    - load up the `tidyverse` suite of R packages you'll need
+    - explore and visualize the data
+    - summarize the data numerically
+    - compare the data
+    - build a model for the data
+
+5. Compile your R Markdown file to generate an HTML document.
+
+## Analyzing the Index Card Guesses of My Age
+
+47 students turned in an index card, meant to contain both a first and a second guess of my age. 
+
+Step 1: Get the Data
+
+- I've stored the data in a .csv file on our web site, for instance, at 
+
+\color{blue} https://github.com/THOMASELOVE/431-2018-data \color{black}
+
+and also at 
+
+\color{blue} https://github.com/THOMASELOVE/431-2018/tree/master/slides/class02 \color{black}
+
+- We'll grab just that data file, for now, by clicking on it, selecting Raw, and saving the resulting **love-age-guess-2018.csv** file to our computer.
+- Specifically, we'll save it to a new directory called **431class02**.
+
+## Class 2 Github page - love-age-guess-2018.csv file
+
+![](images/ss01.png)
+
+## Right-click Raw to download (just) this file, into a 431class02 directory, please.
+
+![](images/ss02.png)
+
+## What the file looks like
+
+![](images/ss02a.png)
+
+## Open R Studio and start a New Project
+
+![](images/ss03.png)
+
+## We'll select our existing 431class2 directory for this project.
+
+![](images/ss04.png)
+
+##
+
+![](images/ss05.png)
+
+##
+
+![](images/ss06.png)
+
+##
+
+![](images/ss07.png)
+
+## Now we are in our new Project space.
+
+![](images/ss08.png)
+
+## Start a new R Markdown file
+
+![](images/ss09.png)
+
+## Fill in your name and title for the analysis
+
+![](images/ss10.png)
+
+## A sample Markdown file is generated. Let's knit it into an HTML file.
+
+![](images/ss11.png)
+
+## Save your work as age-love-analysis.Rmd
+
+![](images/ss12.png)
+
+## Now knit the R Markdown file.
+
+![](images/ss12a.png)
+
+## The result - a web file!
+
+![](images/ss13.png)
+
+## Edit the file to change the date and setup code
+
+![](images/ss14.png)
+
+## Insert a new "chunk" of R code
+
+![](images/ss15.png)
+
+## A blank "chunk"
+
+![](images/ss16.png)
+
+## Load up two packages in R (should be installed already)
+
+![](images/ss17.png)
+
+## Import the .csv data set
+
+![](images/ss18.png)
+
+## Import window
+
+![](images/ss19.png)
+
+## After we make our choices...
+
+![](images/ss20.png)
+
+## Result (note code in Console)
+
+![](images/ss21.png)
+
+## Add data load code to Markdown and also look at the data
+
+![](images/ss22.png)
+
+## Running the code so we can see results
+
+![](images/ss23.png)
+
+## Or run all of the "chunks" up to a particular point
+
+![](images/ss24.png)
+
+## Running the first three chunks of code
+
+![](images/ss25.png)
+
+## Now, let's look at the data
+
+![](images/ss26.png)
+
+## The `love_2018` tibble
+
+![](images/ss27.png)
+
+## Add some documentation, mixing text with code
+
+![](images/ss28.png)
+
+## Let's make a histogram
+
+![](images/ss29.png)
+
+## The result. Can we do better?
+
+![](images/ss30.png)
+
+## A second attempt at the histogram
+
+![](images/ss31.png)
+
+## A numerical summary of the data
+
+![](images/ss32.png)
+
+## Calculating and Summarizing the Errors
+
+![](images/ss33.png)
+
+## What do these summaries suggest?
+
+![](images/ss34.png)
+
+## Build a scatterplot to compare the errors
+
+![](images/ss35.png)
+
+## The Result
+
+![](images/ss35a.png)
+
+## A new scatterplot, with a model for the relationship of age1 to age2
+
+![](images/ss36.png)
+
+## The Result
+
+![](images/ss36a.png)
+
+## Plot the age1 - age2 differences
+
+![](images/ss37.png)
+
+## The Result
+
+![](images/ss37a.png)
+
+## Numerical summary of the age1 - age2 differences
+
+![](images/ss38.png)
+
+## How many people thought I looked younger the second time?
+
+![](images/ss39.png)
+
+
+## T tests - making a statistical inference
+
+![](images/ss40.png)
+
+## Knit the file into an HTML document
+
+![](images/ss41.png)
+
+## Adjust the YAML to fold the code on demand
+
+![](images/ss42.png)
+
+## New, more final, report
+
+![](images/ss43.png)
+
+
+## Analyzing the Survey Data - A little challenge
+
+We have data on the site in a file called `surveyday1_2018.csv`. Build a project to study those data. 
+
+Put the data in a file called `surv1` in R. 
+
+- I'd call my R Markdown file `day1surveyanalysis`
+
+Can you reproduce the following...
+
+## A. That fill color is called *salmon*, I used 20 bins.
+
+```{r, echo = FALSE, warning = FALSE}
+ggplot(surv1, aes(x = pulse)) +
+    geom_histogram(bins = 20, col = "blue", fill = "salmon") +
+    labs(x = "Pulse Rate of 254 students in 431", 
+         y = "# of Students",
+         title = "Pulse Rates of 254 students in 431",
+         subtitle = "One student had a missing pulse value")
+```
+
+## Code for Plot A.
+
+```{r, eval = FALSE}
+ggplot(surv1, aes(x = pulse)) +
+    geom_histogram(bins = 20, 
+                   col = "blue", fill = "salmon") +
+    labs(x = "Pulse Rate of 254 students in 431", 
+         y = "# of Students",
+         title = "Pulse Rates of 254 students in 431",
+         subtitle = "One student had a missing pulse value")
+```
+
+## B. Histograms of Pulse Rates, Faceted by Year
+
+```{r, echo = FALSE, warning = FALSE}
+ggplot(surv1, aes(x = pulse, fill = year)) + 
+    geom_histogram(bins = 15, col = "white") + 
+    facet_wrap(~ year) +
+    guides(fill = FALSE) +
+    labs(title = "Pulse Rate, by Year")
+```
+
+## Code for Plot B.
+
+```{r, eval = FALSE}
+ggplot(surv1, aes(x = pulse, fill = year)) + 
+    geom_histogram(bins = 15, col = "white") + 
+    facet_wrap(~ year) +
+    guides(fill = FALSE) +
+    labs(title = "Pulse Rate, by Year")
+```
+
+
+## C. Boxplots of Age Guesses, by Year
+
+```{r, echo = FALSE, warning = FALSE}
+ggplot(surv1, aes(x = factor(year), y = ageguess, fill = factor(year))) + 
+    geom_boxplot() + 
+    labs(title = "Age Guess, by Year")
+```
+
+## Code for Plot C
+
+```{r , eval = FALSE}
+ggplot(surv1, aes(x = factor(year), y = ageguess, 
+                  fill = factor(year))) + 
+    geom_boxplot() + 
+    labs(title = "Age Guess, by Year")
+```
+
+## Summary Table of Age Guesses, by Year
+
+```{r, echo = FALSE, warning = FALSE}
+surv1 %>%
+    group_by(year) %>%
+    summarize(n = n(),
+              mean = mean(ageguess, na.rm=TRUE), 
+              sd = sd(ageguess, na.rm=TRUE), 
+              median = median(ageguess, na.rm=TRUE) 
+              )
+```
+
+## Code for Summary Table
+
+```{r, eval = FALSE}
+surv1 %>%
+    group_by(year) %>%
+    summarize(n = n(),
+              mean = mean(ageguess, na.rm=TRUE), 
+              sd = sd(ageguess, na.rm=TRUE), 
+              median = median(ageguess, na.rm=TRUE) 
+              )
+```
+
+## HELP!!!
+
+Visit our Software page for:
+
+- complete installation instructions
+- a document I've written called Getting Started with R, which demonstrates more of these tools.
+
+Don't forget about **431-help at case dot edu**.
+
+**TA office hours** start Tuesday at 11:30 AM. See the Course Calendar for all the details.
+
+**Datacamp** has several courses that will help you learn R. Watch for the email invitation.
+
+## What's coming up?
+
+- Running more involved analyses in R and R Studio, live
+- More on exploratory data analysis for distributions and associations
+- Discussion of the project requirements is coming next week
+- Never too early to get started 
+    + Read Leek Chapters 5, 9, 10 and 13 (about 30 pages in total) by 2017-09-06 (Class 4)
+    + Read Silver Introduction and Chapter 1 (about 50 denser pages) by 2017-09-18 (Class 7)
+    + Homework 1 is due 2017-09-07 at noon
+
