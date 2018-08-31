@@ -1,0 +1,108 @@
+---
+title: "Class 2 Age Guess Analysis"
+author: "Thomas E. Love"
+date: "2018-08-29"
+output: 
+    html_document:
+        code_folding: show
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment=NA)
+```
+
+```{r packages}
+library(magrittr); library(tidyverse)
+```
+
+```{r load_data}
+love_2018 <- read_csv("love-age-guess-2018.csv")
+```
+
+```{r view data}
+love_2018
+```
+
+Our data set has `r nrow(love_2018)` rows, and `r ncol(love_2018)` columns.
+
+# Build a Histogram of the First Guesses
+
+```{r}
+ggplot(data = love_2018, aes(x = age1)) +
+    geom_histogram()
+```
+
+## A Nicer Histogram
+
+```{r histogram2}
+ggplot(data = love_2018, aes(x = age1)) +
+    geom_histogram(bins = 7, fill = "royalblue", col = "yellow") +
+    labs(x = "First Guess of Dr. Love's Age on 2018-08-28",
+         y = "# of Students",
+         title = "2018 First Guesses of Dr. Love's Age",
+         subtitle = "His true age was 51.5 years")
+```
+
+# A numerical summary
+
+```{r}
+summary(love_2018)
+```
+
+# Better First or Second Guess?
+
+```{r calculate-errors}
+love_2018 <- love_2018 %>%
+    mutate(error1 = abs(age1 - 51.5),
+           error2 = abs(age2 - 51.5))
+
+summary(love_2018)
+```
+
+# Compare the Guesses
+
+```{r guess1vs2}
+ggplot(data = love_2018, aes(x = error1, y = error2)) +
+    geom_point()
+```
+
+## Add a Prediction Model?
+
+```{r}
+ggplot(data = love_2018, aes(x = age1, y = age2)) +
+    geom_point(size = 3) +
+    geom_smooth(method = "loess")
+```
+
+# Plot the (matched) differences
+
+```{r}
+ggplot(love_2018, aes(x = age1 - age2)) +
+    geom_histogram(binwidth = 2,
+                   col = "green", fill = "royalblue")
+```
+
+# Numerical Summary of Difference in Age Guesses
+
+```{r}
+love_2018 %$%
+    summary(age1 - age2)
+```
+
+# How many people thought I looked younger in Guess 2?
+
+```{r}
+love_2018 %>%
+    count(age1 - age2 < 0)
+```
+
+# The Much-Dreaded t test
+
+```{r}
+love_2018 %$%
+    t.test(age1 - age2)
+```
+
+
+
+
