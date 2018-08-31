@@ -4,7 +4,13 @@
 
 Class 2 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/431_class-02-slides_2018.pdf), as well as in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/431_class-02-slides_2018.Rmd).
 
-Class 2 audio files are now available for download, above. As will usually be the case, the mp3 is split into three files. Please let us know if you have any trouble with these files - we hope they are helpful.
+Class 2 audio files are now available for download now on this page. As will usually be the case, the mp3 is split into 
+    - [part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/431_class02audio_2018-08-30_part1.mp3), 
+    - [part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/431_class02audio_2018-08-30_part2.mp3) and 
+    - [part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class02/431_class02audio_2018-08-30_part3.mp3), each about 25 minutes long. 
+    - Please let us know if you have any trouble with these files - we hope they are helpful.
+
+**POST-CLASS NOTE**: I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) for you to download if you want to copy my work and save some typing. This is what I used to generate the materials included in the slides presented in Class 02.
 
 - Get help at any time by emailing **431-help at case dot edu**. 
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018.
