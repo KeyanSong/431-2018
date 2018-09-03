@@ -9,7 +9,7 @@ Class 3 audio files will appear above, after class.
 - Get help at any time by emailing **431-help at case dot edu**. 
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018.
 
-## Deliverables Coming SOon
+## Deliverables Coming Soon
 
 - Before Thursday' class
     - Read Chapters 5, 9, 10 and 13 of Jeff Leek's [The Elements of Data Analytic Style](https://leanpub.com/datastyle).
