@@ -28,8 +28,7 @@ Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for 
     - We treat work that arrives before 1 PM as on time. 
     - Work after that is late. **Don't be late**. It is **far, far** better to be incomplete than late for homework in this class.
 - You need the [course software](https://github.com/THOMASELOVE/431-2018/tree/master/software) up and running on your computer now. 
-    - This means you have R, R Studio, the necessary R Packages, and the data for 431 working properly. 
-    - **We'll walk through the steps in class 3, quickly.** 
+    - This means you have R, R Studio, the necessary R Packages, **and** the data for 431 working properly. 
     - If you're still having trouble after class, contact a teaching assistant or Dr. Love (perhaps through **431-help**), as you'll need this working to do the homework assignment.
 - Dr. Love is available in/near this classroom or in his office (Wood WG 82-L) for 15 minutes before and 30 minutes after every class.
 
