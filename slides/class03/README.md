@@ -11,7 +11,7 @@ Class 3 audio files will appear above, after class.
     - A .csv file of the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv)
     - An R Markdown template called [YOURNAME-hw1.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/YOURNAME-hw1.Rmd) that I'll actually use in class as my starting point for live coding.
     - An R Markdown file called [class3-pre.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/class3-pre.Rmd): my pre-class version, to save some typing.
-        - You can also see [the HTML result of this class3-pre file here]().
+        - You can also see [the HTML result of knitting this class3-pre file here](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/class3-pre.html).
     - I'll also post the version I build live, to be called **class3live.Rmd**, after class.
 
 ## Get help at any time by emailing **431-help at case dot edu**.
@@ -37,8 +37,7 @@ Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for 
 
 ### Materials added to our [Data and Code](https://github.com/THOMASELOVE/431-2018-data) page
 
-- I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the [slides for Class 2](https://github.com/THOMASELOVE/431-2018/edit/master/slides/class02).
-- I've also added the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv) as a .csv file, and we'll use that data today in today's class.
+- I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the [slides for Class 2](https://github.com/THOMASELOVE/431-2018/edit/master/slides/class02), and if you want to see [the HTML result, here it is](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/age-love-analysis.html).
 
 ### On Getting Help from 431-help
 
