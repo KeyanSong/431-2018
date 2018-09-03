@@ -6,6 +6,12 @@ Class 3 slides are available in [PDF format](https://github.com/THOMASELOVE/431-
 
 Class 3 audio files will appear above, after class.
 
+- The Getting Started in R document is available in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/431-getting-started-with-R.Rmd) and as [a PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.pdf).
+- Today, we'll do some live coding. Useful files for that include:
+    - A .csv file of the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv)
+    - An R Markdown file called [class3-pre.Rmd] that is my pre-class version of what we'll do live.
+    - I'll also post the version I build live, to be called **class3live.Rmd**, after class.
+
 - Get help at any time by emailing **431-help at case dot edu**. 
 - The main web site for this course is https://github.com/THOMASELOVE/431-2018.
 
@@ -29,7 +35,6 @@ Class 3 audio files will appear above, after class.
 
 - I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the [slides for Class 2](https://github.com/THOMASELOVE/431-2018/edit/master/slides/class02).
 - I've also added the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv) as a .csv file, and we'll use that data today in today's class.
-- I'm going to do some live coding in today's class, during which **I will produce a file called Class3.Rmd. My pre-class version is also now posted to the page. Download it by clicking here.**
 
 ### On Getting Help from 431-help
 
