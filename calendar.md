@@ -15,7 +15,7 @@ Date | Class | Description or Deliverable
 08-28 | 1 | Getting Started, Website, R and R Studio, Syllabus, Logistics, Data
 08-29 | -- | Before Class 2, read the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/), and [install the software we'll use on your computer](https://github.com/THOMASELOVE/431-2018/tree/master/software).
 08-30 | 2 | **Part A** begins (Visualizing Data: see **R4DS** Explore and Communicate sections)
-09-04 | 3 | 
+09-04 | 3 | Using R, R Studio and R Markdown to visualize and summarize quantitative and categorical data
 09-05 | -- | By Class 4, read **Leek** Chapters 5, 9, 10 and 13. (Or the whole book - it's short.)
 09-06 | 4 | 
 09-07 | -- | **[Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
