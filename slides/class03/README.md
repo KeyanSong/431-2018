@@ -18,9 +18,10 @@ Class 3 audio files will appear above, after class.
     - We treat work that arrives before 1 PM as on time. 
     - Work after that is late. **Don't be late**. It is **far, far** better to be incomplete than late for homework in this class.
 - You need the [course software](https://github.com/THOMASELOVE/431-2018/tree/master/software) up and running on your computer now. 
-    - This means you have R, R Studio, the necessary R Packages, and the data for 431 on your machine and working for you. 
-    - **We'll walk through everything today in class.** 
+    - This means you have R, R Studio, the necessary R Packages, and the data for 431 working properly. 
+    - **We'll walk through the steps in class 3, quickly.** 
     - If you're still having trouble after class, contact a teaching assistant or Dr. Love (perhaps through **431-help**), as you'll need this working to do the homework assignment.
+        - Dr. Love is available in/near this classroom or in his office (Wood WG 82-L) for 15 minutes before and 30 minutes after every class.
 
 ## Today's Announcements
 
@@ -43,7 +44,7 @@ With the R Markdown file, and a detailed explanation of the problem you see, we 
 
 ### Teaching Assistant Office Hours
 
-A reminder that Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. TA office hours started today. You'll find the schedule on the bottom of the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md).
+A reminder that Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. TA office hours started this morning, and continue Wednesday at noon. You'll find the complete schedule on the bottom of the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md), and remember to contact us at **431-help at case dot edu** if you have questions at other times.
 
 ## One Last Thing
 
