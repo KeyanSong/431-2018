@@ -49,4 +49,10 @@ As the semester progresses, you may find an error in homework grading that you w
 
 More details are available in the individual assignments, and in the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/), specifically in the [General Writing and Presenting tips section](https://thomaselove.github.io/2018-431-syllabus/a-few-general-writingpresenting-tips.html).
 
+## On getting help.
+
+Apply the 15-minute rule.
+    - If you can't solve a problem in 15 minutes, ask for help.
+    - You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
+
 The main site for the course is https://github.com/THOMASELOVE/431-2018.
