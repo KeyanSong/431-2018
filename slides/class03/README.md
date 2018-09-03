@@ -17,7 +17,7 @@ Class 3 audio files will appear above, after class.
 ## Deliverables Coming Soon
 
 - By Wednesday at Noon
-    - Complete the [Minute Paper After Class 03](http://bit.ly/431-2018-minute03) at http://bit.ly/431-2018-minute03. You must log into Google via CWRU to do this.
+    - Complete the [Minute Paper After Class 03](http://bit.ly/431-2018-minute03) at http://bit.ly/431-2018-minute03. Log into Google via CWRU to do so.
 - Before Thursday' class
     - Read Chapters 5, 9, 10 and 13 of Jeff Leek's [The Elements of Data Analytic Style](https://leanpub.com/datastyle).
 - [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is due on Friday 2018-09-07 at Noon. Submit your R Markdown and HTML files via Canvas. 
