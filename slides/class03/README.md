@@ -9,8 +9,8 @@ Class 3 audio files will appear above, after class.
 - The Getting Started in R document is available in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/431-getting-started-with-R.Rmd) and as [a PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.pdf).
 - Today, we'll do some live coding. Useful files for that include:
     - A .csv file of the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv)
-    - An R Markdown template called [YOURNAME-hw1.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/YOURNAME-hw1.Rmd) that I'll actually use in class as my starting point for live coding.
-    - An R Markdown file called [class3-pre.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/class3-pre.Rmd): my pre-class version, to save some typing.
+    - An R Markdown template called [YOURNAME-hw1.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/YOURNAME-hw1.Rmd) that I'll use as my starting point for live coding.
+    - An R Markdown file called [class3-pre.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/class3-pre.Rmd): my pre-class version, to save you the typing.
         - You can also see [the HTML result of knitting this class3-pre file here](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/class3-pre.html).
     - I'll also post the version I build live, to be called **class3live.Rmd**, after class.
 
