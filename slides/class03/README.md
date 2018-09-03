@@ -12,8 +12,9 @@ Class 3 audio files will appear above, after class.
     - An R Markdown file called [class3-pre.Rmd] that is my pre-class version of what we'll do live.
     - I'll also post the version I build live, to be called **class3live.Rmd**, after class.
 
-- Get help at any time by emailing **431-help at case dot edu**. 
-- The main web site for this course is https://github.com/THOMASELOVE/431-2018.
+- Get help at any time by emailing **431-help at case dot edu**.
+    - Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for help** either from us or from Google.
+    - You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
 
 ## Deliverables Coming Soon
 
@@ -27,7 +28,7 @@ Class 3 audio files will appear above, after class.
     - This means you have R, R Studio, the necessary R Packages, and the data for 431 working properly. 
     - **We'll walk through the steps in class 3, quickly.** 
     - If you're still having trouble after class, contact a teaching assistant or Dr. Love (perhaps through **431-help**), as you'll need this working to do the homework assignment.
-        - Dr. Love is available in/near this classroom or in his office (Wood WG 82-L) for 15 minutes before and 30 minutes after every class.
+- Dr. Love is available in/near this classroom or in his office (Wood WG 82-L) for 15 minutes before and 30 minutes after every class.
 
 ## Today's Announcements
 
@@ -53,3 +54,4 @@ A reminder that Teaching Assistant Office Hours are held in WG-56 (Computing Lab
 
 ## One Last Thing
 
+- The main web site for this course is https://github.com/THOMASELOVE/431-2018.
