@@ -27,7 +27,7 @@ Class 3 audio files will appear above, after class.
 
 ### Materials added to our [Data and Code](https://github.com/THOMASELOVE/431-2018-data) page
 
-- I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the slides presented in Class 02.
+- I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the [slides for Class 2](https://github.com/THOMASELOVE/431-2018/edit/master/slides/class02).
 - I've also added the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv) as a .csv file, and we'll use that data today in today's class.
 - I'm going to do some live coding in today's class, during which **I will produce a file called Class3.Rmd. My pre-class version is also now posted to the page. Download it by clicking here.**
 
