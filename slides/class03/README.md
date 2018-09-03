@@ -14,11 +14,6 @@ Class 3 audio files will appear above, after class.
         - You can also see [the HTML result of knitting this class3-pre file here](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/class3-pre.html).
     - I'll also post the version I build live, to be called **class3live.Rmd**, after class.
 
-## Get help at any time by emailing **431-help at case dot edu**.
-
-Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for help** either from us or from Google.
-    - You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
-
 ## Deliverables Coming Soon
 
 - Before Thursday' class
@@ -38,9 +33,12 @@ Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for 
 
 - I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the [slides for Class 2](https://github.com/THOMASELOVE/431-2018/edit/master/slides/class02), and if you want to see [the HTML result, here it is](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/age-love-analysis.html).
 
-### On Getting Help from 431-help
+### Get help at any time by emailing **431-help at case dot edu**.
 
-When asking for help with an R problem from **431-help at case dot edu**, we ask you to try to make it easier for us to help you. Specifically...
+1. Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for help** either from us or from Google.
+    - You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
+
+2. When asking for help with an R problem from **431-help at case dot edu**, we ask you to try to make it easier for us to help you. Specifically...
 
 - attach a copy of the R Markdown file you are working on,
 - include a screenshot or copy-and-paste listing of the error you are generating, if that's the problem.
@@ -51,7 +49,9 @@ With the R Markdown file, and a detailed explanation of the problem you see, we 
 
 ### Teaching Assistant Office Hours
 
-A reminder that Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. TA office hours started this morning, and continue Wednesday at noon. You'll find the complete schedule on the bottom of the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md), and remember to contact us at **431-help at case dot edu** if you have questions at other times.
+Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places. TA office hours started this morning, and continue Wednesday at noon. 
+
+- You'll find the complete schedule on the bottom of the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md), and remember to contact us at **431-help at case dot edu** if you have questions at other times.
 
 ## One Last Thing
 
