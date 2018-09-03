@@ -118,8 +118,10 @@ Do most of the things that are done in the Getting Started with R document, but
 
 We will do a minute paper most Tuesdays, and I'll respond in class on most Thursdays.
 
-To get to the Minute Paper form, you'll need to log into Google via CWRU.
+- Completing the Minute Paper is an important part of your class participation grade.
+- Class Quizzes use the same technology as the Minute Papers.
+- To get to the Minute Paper form, you'll need to log into Google via CWRU.
 
-The Minute Paper after Class 3 will be available until Wednesday at noon at 
+The Minute Paper after Class 3 is open until Wednesday at noon at \color{blue} http://bit.ly/431-2018-minute03
 
-**INSERT LINK HERE**
+
