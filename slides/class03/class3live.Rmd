@@ -1,0 +1,97 @@
+---
+title: "Class 3 Live Analysis: Exploring Day 1 Survey"
+author: "TEL"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    code_folding: show
+---
+
+```{r setup, message=FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 70)
+```
+
+```{r load_packages, message = FALSE, warning = FALSE}
+library(magrittr); library(tidyverse)
+## always need tidyverse, can include other packages too
+```
+
+# Load The Data
+
+```{r}
+day1 <- read.csv("surveyday1_2018.csv") %>% tbl_df()
+
+day1
+```
+
+## Variables we're exploring today
+
+```{r}
+day1 %>%
+  select(sex, favcolor, haircut, ageguess, pulse, lastsleep) %>%
+  summary()
+```
+
+# What are the favorite colors of students in 431?
+
+We can count all responses...
+
+```{r}
+day1 %>%
+  count(favcolor)
+```
+
+We could restrict ourselves to 2018, and arrange them in descending order of the count...
+
+```{r}
+day1 %>%
+  filter(year == 2018) %>%
+  count(favcolor) %>%
+  arrange(desc(n))
+```
+
+```{r}
+day1 %>%
+  select(favcolor) %>%
+  table()
+```
+
+```{r}
+table(day1$favcolor)
+```
+
+## A more challenging question
+
+What is the percentage of students who preferred "blue" in each year?
+
+```{r}
+day1 %>%
+  group_by(year) %>%
+  summarize(blue_count = sum(favcolor == "blue", na.rm = TRUE),
+            total_count = sum(!is.na(favcolor)),
+            blue_percent = round(100 * blue_count / total_count, 1))
+```
+
+# What price did students pay for a haircut?
+
+Let's try a histogram.
+
+```{r}
+ggplot(data = day1, aes(x = haircut)) +
+  geom_histogram()
+```
+
+## Improving the Histogram
+
+```{r}
+ggplot(data = day1, aes(x = haircut)) +
+  geom_histogram(binwidth = 10, fill = "navy", color = "white") +
+  labs(x = "Price paid for last haircut in $",
+       y = "# of students",
+       title = "Histogram of Haircut Prices for 431 Students",
+       subtitle = "2014-2018: Most Recent Haircut") +
+  theme_bw()
+```
+
