@@ -61,6 +61,10 @@ Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Stud
 
 Thanks to the roughly 70% of you who've now signed up for our class on Datacamp. Please let us know if you have any questions. For suggested courses, please [visit the Datacamp section of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html), and if you've found any courses particularly useful, we'd love to hear about it.
 
+### Professor Love is giving a research talk (together with Dr. Shari Bolen) on Friday morning
+
+The talk is entitled "Racial and Ethnic Approaches to Community Health Grant: Hypertension Implementation in 9 Safety Net Clinics" and is from 9 to 10:30 AM in Room R219 at the Rammelkamp building on the campus of MetroHealth Medical Center. For more information, ask Dr. Love, or visit http://chrp.org/events/
+
 ## One Last Thing
 
 - Do you know about the [R Studio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)?
