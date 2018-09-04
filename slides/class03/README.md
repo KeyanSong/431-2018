@@ -63,4 +63,6 @@ Thanks to the roughly 70% of you who've now signed up for our class on Datacamp.
 
 ## One Last Thing
 
-- The main web site for this course is https://github.com/THOMASELOVE/431-2018.
+- Do you know about the [R Studio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)?
+
+The main web site for this course is https://github.com/THOMASELOVE/431-2018.
