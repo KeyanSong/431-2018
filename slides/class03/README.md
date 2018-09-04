@@ -6,7 +6,7 @@ Class 3 slides are available in [PDF format](https://github.com/THOMASELOVE/431-
 
 Class 3 audio files will appear above, after class.
 
-- The Getting Started in R document is available in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/431-getting-started-with-R.Rmd) and as [a PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.pdf).
+- The Getting Started in R document is available in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/431-getting-started-with-R.Rmd) and as [a PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.pdf), and can also be [viewed in HTML](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.html).
 - Today, we'll do some live coding. Useful files for that include:
     - A .csv file of the [2018 day 1 survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018-data/master/surveyday1_2018.csv)
     - An R Markdown template called [YOURNAME-hw1.Rmd](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/YOURNAME-hw1.Rmd) that I'll use as my starting point for live coding.
@@ -33,6 +33,7 @@ Class 3 audio files will appear above, after class.
 ### Materials added to our [Data and Code](https://github.com/THOMASELOVE/431-2018-data) page
 
 - I've added the age-love-analysis [R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class02/age-love-analysis.Rmd) used to generate the materials included in the [slides for Class 2](https://github.com/THOMASELOVE/431-2018/edit/master/slides/class02), and if you want to see [the HTML result, here it is](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/age-love-analysis.html).
+- I've edited the `YOURNAME-hw1.Rmd` file to correct a couple of typos. Thanks to the student who pointed them out, and thus earned herself some class participation credit. Please help us **kill typos**, by emailing 431-help (or Dr. Love directly) when you find them.
 
 ### Get help at any time by emailing **431-help at case dot edu**.
 
@@ -48,11 +49,17 @@ Class 3 audio files will appear above, after class.
 
 With the R Markdown file, and a detailed explanation of the problem you see, we can often solve the problem in an email. Without the R Markdown file, we can rarely do anything except ask more questions.
 
+3. When you get a response from one of us on **431-help at case dot edu** you'll notice we REPLY ALL so that all of the TAs (and Dr. Love) can see the result. If you need to respond, please fight your usual urge and **REPLY ALL** as well so that we can all still help. You want to be sure that `431-help at case dot edu` is in the list of recipients of each of your emails, even though replies will come from individuals.
+
 ### Teaching Assistant Office Hours
 
 Teaching Assistant Office Hours are held in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places. TA office hours started this morning, and continue Wednesday at noon. 
 
 - You'll find the complete schedule on the bottom of the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md), and remember to contact us at **431-help at case dot edu** if you have questions at other times.
+
+### Datacamp
+
+Thanks to the roughly 70% of you who've now signed up for our class on Datacamp. Please let us know if you have any questions. For suggested courses, please [visit the Datacamp section of the Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html), and if you've found any courses particularly useful, we'd love to hear about it.
 
 ## One Last Thing
 
