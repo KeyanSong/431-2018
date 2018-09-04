@@ -10,7 +10,9 @@ If you need more help, you might look at [this terrific resource for Installing 
 
 ##  Getting Started with R, R Studio and R Markdown
 
-Once you've installed the software, Dr. Love's document [Getting Started with R](https://github.com/THOMASELOVE/431-2018/blob/master/software/431-getting-started-with-R.pdf) is a good first step. It demonstrates some of the details on how to use these tools to actually analyze data. Of course, we'll also do this in class.
+Once you've installed the software, Dr. Love's document **Getting Started with R** is a good first step. It demonstrates some of the details on how to use these tools to actually analyze data. Of course, we'll also do this in class.
+
+- Here is the [raw R Markdown version](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/software/431-getting-started-with-R.Rmd), and the [downloadable PDF](https://github.com/THOMASELOVE/431-2018/blob/master/software/431-getting-started-with-R.pdf), and the [HTML file](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/software/431-getting-started-with-R.html) that the code produces.
 
 ## Advice on Technology / System Requirements
 
