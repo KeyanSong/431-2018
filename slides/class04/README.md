@@ -5,7 +5,7 @@
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class-04-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/431_class-04-slides_2018.Rmd).
 - The audio files will be posted after class.
 - We'll do two main demonstrations today. The first is an analysis of the Day 1 survey. 
-    - Here is [the .csv file of the data](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/surveyday1_2018.csv), the [R Markdown file for this analysis](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/class4-survey.Rmd), and the [HTML result](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/class4-survey.html) of knitting that Markdown file.
+    - Here is [the .csv file of the data](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/surveyday1_2018.csv), the [R Markdown file for this analysis](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/class4-survey.Rmd), and the [HTML result](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/class4-survey.html).
 - Today's second analysis involves some data from NHANES (which is the [National Health and Nutrition Examination Survey](https://www.cdc.gov/nchs/nhanes.htm)), and this example is covered (in greater depth) in Chapters 3-6 of [our Course Notes](https://thomaselove.github.io/2018-431-book/dataviz.html).
 
 ## Deliverables Coming Soon
