@@ -34,4 +34,9 @@ The talk is entitled "Racial and Ethnic Approaches to Community Health Grant: Hy
 
 ## One Last Thing
 
+Two links from today's class:
+
+- XKCS cartoon on the ISO standard for dates: entitled ISO 8601, is at https://xkcd.com/1179/
+- Michael Donohoe's tweet and map for how dates are actually used, by nation: https://twitter.com/donohoe/status/597876118688026624
+
 The main web site for this course is https://github.com/THOMASELOVE/431-2018.
