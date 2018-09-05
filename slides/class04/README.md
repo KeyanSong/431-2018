@@ -21,10 +21,9 @@ Details to come.
 
 ### Get help at any time by emailing **431-help at case dot edu** or visiting Office Hours.
 
-1. Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for help** either from us or from Google.
-    - You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
+1. Apply the 15-minute rule. If you can't solve a problem in 15 minutes, **ask for help** either from us or from Google. You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
 
-2. When asking for help with an R problem from **431-help at case dot edu**, we ask you to try to make it easier for us to help you. If you attach your R Markdown file, and a detailed explanation of the problem you see, we can often solve the problem in an email. Without the R Markdown file, we can rarely do anything except ask more questions.
+2. When asking for help with an R problem from **431-help at case dot edu**, we ask you to try to make it easier for us to help you. If you attach your **R Markdown file** (note this has the extension .Rmd), and a detailed explanation of the problem you see, we can often solve the problem in an email. Without the R Markdown file, we can rarely do anything except ask more questions.
 
 3. When you get a response from one of us on **431-help at case dot edu** you'll notice we REPLY ALL so that all of the TAs (and Dr. Love) can see the result. If you need to respond, please fight your usual urge and **REPLY ALL** as well so that we can all still help.
 
