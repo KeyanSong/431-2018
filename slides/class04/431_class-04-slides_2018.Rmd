@@ -1,0 +1,806 @@
+---
+title: "431 Class 04"
+author: "Thomas E. Love"
+date: "2018-09-06"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+
+library(NHANES); library(viridis); library(tidyverse)
+```
+
+## Today's Agenda
+
+1. Comments on Minute Papers after Class 3
+2. On Dates
+3. Day 1 Survey Data Example: A more polished version
+4. NHANES Example: Highlights from **Course Notes** Chapter 3
+
+and, maybe ...
+
+5. Jeff Leek *Elements of Data Analytic Style* 
+    + Chapter 5 is about Exploratory Analysis
+    + Chapter 9 is about Written Analyses (keep this in mind for Assignments!)
+    + Chapter 10 is about Creating Figures
+    + Chapter 13 highlights a few matters of form
+
+Course Project will be discussed Tuesday.
+
+---
+
+![](images/dates-psa.png) from XKCD: \color{blue} [ISO 8601](https://xkcd.com/1179/)
+
+## Dates
+
+![](images/donohoe_dates_map.png)
+
+https://twitter.com/donohoe/status/597876118688026624
+
+## Day 1 Survey Analysis
+
+Revised R Markdown and HTML posted to the Class 4 Slides page.
+
+- A "floating" table of contents
+- Key verbs in the tidyverse for data wrangling
+  - select, filter, count, arrange, mutate, group_by, summarize
+- Building Histograms to describe a single quantitative variable
+- Comparing a distribution of a quantity within groups
+  - Faceted histogram
+  - Comparison boxplot
+- Obtaining numerical summaries
+- Scatterplots with `ggplot`
+
+All of this is also in the Course Notes.
+
+## Course Notes, Chapter 3 on Visualization
+
+The packages we're using are `NHANES`, `viridis` and `tidyverse`.
+
+```
+library(NHANES)
+library(viridis)
+library(tidyverse)
+```
+
+## The NHANES data: Collecting a Sample
+
+To begin, we'll gather a random sample of 1,000 subjects participating in NHANES, and then identify several variables of interest about those subjects. See Baumer, Kaplan and Horton (2017) *Modern Data Science with R*. Use `?NHANES` to learn more about the data.
+
+```{r}
+set.seed(431001) 
+# use set.seed to ensure that we all 
+# get the same random sample 
+# of 1,000 NHANES subjects in nh_data
+
+nh_data <- sample_n(NHANES, size = 1000) %>%
+    select(ID, Gender, Age, Height, Weight, BMI, 
+           Pulse, Race1, HealthGen, Diabetes)
+```
+
+## The `nh_data` tibble
+
+```{r, echo=FALSE}
+nh_data
+```
+
+
+## Relationship of Height and Age - First Attempt
+
+```{r nh_data_heightbyage1-fig, fig.height = 3}
+ggplot(data = nh_data, aes(x = Age, y = Height)) +
+    geom_point()
+```
+
+## Interesting Results from Our First Attempt
+
+1. Only `r sum(!is.na(nh_data$Age) & !is.na(nh_data$Height))` subjects are plotted, because the remaining `r 1000 - sum(!is.na(nh_data$Age) & !is.na(nh_data$Height))` people have missing (NA) values for either Height, Age or both. 
+2. Unsurprisingly, the measured Heights of subjects grow from Age 0 to Age 20 or so, and we see that a typical Height increases rapidly across these Ages. The middle of the distribution at later Ages is pretty consistent at a Height somewhere between 150 and 175. The units aren't specified (must be cm). The Ages are in years.
+3. No Age is reported over 80, and it appears that there is a large cluster of Ages at 80. 
+
+## Subset of Subjects with Known Age and Height
+
+Before we move on, let's manipulate the data set a bit, to focus on only those subjects who have complete data on both Age and Height. This will help us avoid that warning message.
+
+```{r nh_data_datawithcompleteageandheight}
+nh_dat2 <- nh_data %>%
+    filter(complete.cases(Age, Height))
+
+dim(nh_dat2)
+```
+
+## Revised Height by Age plot (using `nh_dat2`)
+
+```{r nh_dat2_heightbyage2-fig, fig.height = 4}
+ggplot(data = nh_dat2, aes(x = Age, y = Height)) +
+    geom_point()
+```
+
+## Adding Gender to the picture
+
+**Goals**
+
+1. Add gender to the plot using color.
+2. Adjust axis labels to show units of measurement.
+
+```{r nh_data_heightbyageandgender1-figcode, eval = FALSE}
+ggplot(data = nh_dat2, 
+       aes(x = Age, y = Height, 
+           color = Gender)) +
+    geom_point() +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.")
+```
+
+Result on next slide...
+
+## Age-Height and Gender?
+
+```{r nh_data_heightbyageandgender1-fig, echo = FALSE, fig.align = "center"}
+ggplot(data = nh_dat2, 
+       aes(x = Age, y = Height, 
+           color = Gender)) +
+    geom_point() +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.")
+```
+
+
+## Can we show the Female and Male relationships in separate panels?
+
+Sure. Add `facet_wrap(~ Gender)` 
+
+- Don't forget to add the `+` sign at the end of the preceding line, too.
+
+```{r nh_data_heightbyageandgender2-figcode, eval = FALSE}
+ggplot(data = nh_dat2, 
+       aes(x = Age, y = Height, 
+           color = Gender)) +
+    geom_point() +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.") +
+    facet_wrap(~ Gender)
+```
+
+## Faceting by Gender
+
+```{r nh_data_heightbyageandgender2-fig, echo = FALSE}
+ggplot(data = nh_dat2, 
+       aes(x = Age, y = Height, 
+           color = Gender)) +
+    geom_point() +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.") +
+    facet_wrap(~ Gender)
+```
+
+
+## Can we add a smooth curve to show the relationship in each plot?
+
+Yep, and let's change the theme of the graph to remove the gray background, too.
+
+```{r nh_data_heightbyageandgender3-figcode, eval = FALSE}
+ggplot(data = nh_dat2, aes(x = Age, y = Height, 
+                           color = Gender)) +
+    geom_point() + 
+    geom_smooth(method = "loess") +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.") +
+    theme_bw() +
+    facet_wrap(~ Gender)
+```
+
+## With Smooth Curves (from `loess`)
+
+```{r nh_data_heightbyageandgender3-fig, echo = FALSE}
+ggplot(data = nh_dat2, aes(x = Age, y = Height, color = Gender)) +
+    geom_point() + 
+    geom_smooth(method = "loess") +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.") +
+    theme_bw() +
+    facet_wrap(~ Gender)
+```
+
+## What if we want to assume straight line relationships?
+
+We could look at a linear model in the plot. Does this make sense here?
+
+```{r nh_data_heightbyageandgender4-figcode, eval = FALSE}
+ggplot(data = nh_dat2, 
+       aes(x = Age, y = Height, color = Gender)) +
+    geom_point() + 
+    geom_smooth(method = "lm") +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.") +
+    theme_bw() +
+    facet_wrap(~ Gender)
+```
+
+## Linear Models for each Gender
+
+```{r nh_data_heightbyageandgender4-fig, echo = FALSE}
+ggplot(data = nh_dat2, 
+       aes(x = Age, y = Height, color = Gender)) +
+    geom_point() + 
+    geom_smooth(method = "lm") +
+    labs(title = "Height-Age Relationship in NHANES sample", 
+         y = "Height in cm.") +
+    theme_bw() +
+    facet_wrap(~ Gender)
+```
+
+## A Subset: Ages 21-79
+
+Suppose we wanted to look at a subset of our sample - those observations (subjects) whose Age is at least 21 and at most 79. We'll create that sample below, and also subset the variables to include nine of particular interest, and remove any observations with any missingness on *any* of the nine variables we're including here (note the use of `na.omit` here.) 
+
+```{r identify nh_data subjects ages 21-79}
+nh_data_2179 <- nh_data %>%
+    filter(Age > 20 & Age < 80) %>%
+    select(ID, Gender, Age, Height, Weight, BMI, 
+           Pulse, Race1, HealthGen, Diabetes) %>%
+    na.omit
+```
+
+## The `nh_data_2179` tibble
+
+```{r}
+nh_data_2179
+```
+
+## Distribution of Height
+
+[CWRU's color guide](https://case.edu/umc/our-brand/visual-guidelines/) specifies CWRU blue and CWRU gray.
+
+```{r nh_data_2179_histogramwithCWRUscheme-figcode, eval = FALSE}
+cwru.blue <- '#0a304e'
+cwru.gray <- '#626262'
+
+ggplot(data = nh_data_2179, aes(x = Height)) + 
+    geom_histogram(binwidth = 2, 
+                   col = cwru.gray, fill = cwru.blue) + 
+    labs(title = "Height of NHANES subjects ages 21-79",
+         x = "Height in cm.") +
+    theme_bw()
+```
+
+## Distribution of Height (in CWRU colors)
+
+```{r nh_data_2179_histogramwithCWRUscheme-fig, echo = FALSE}
+cwru.blue <- '#0a304e'
+cwru.gray <- '#626262'
+
+ggplot(data = nh_data_2179, aes(x = Height)) + 
+    geom_histogram(binwidth = 2, 
+                   col = cwru.gray, fill = cwru.blue) + 
+    labs(title = "Height of NHANES subjects ages 21-79",
+         x = "Height in cm.") +
+    theme_bw()
+```
+
+## A Boxplot of Height by Gender
+
+```{r nh_data_2179_heightbygenderbox-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = Gender, y = Height, fill = Gender)) + 
+    geom_boxplot() + 
+    labs(title = "Boxplot of Height by Gender 
+         for NHANES subjects ages 21-79",
+         y = "Height in cm.")
+```
+
+## Boxplot: Height by Gender (ages 21-79)
+
+```{r nh_data_2179_heightbygenderbox-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = Gender, y = Height, fill = Gender)) + 
+    geom_boxplot() + 
+    labs(title = "Height by Gender Boxplot (NHANES ages 21-79)",
+         y = "Height in cm.")
+```
+
+## Faceted Histograms of Height by Gender
+
+```{r nh_data_2179_heightbygenderhist2-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = Height, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "Height by Gender in NHANES (ages 21-79)",
+         x = "Height in cm.") + 
+    guides(fill = FALSE) +
+    facet_grid(Gender ~ .)
+```
+
+## Faceted Histograms of Height by Gender
+
+```{r nh_data_2179_heightbygenderhist2-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = Height, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "Height by Gender in NHANES (ages 21-79)",
+         x = "Height in cm.") + 
+    guides(fill = FALSE) +
+    facet_grid(Gender ~ .)
+```
+
+## A Look at Body-Mass Index
+
+Let's look at a different outcome, the *body-mass index*, or BMI. The definition of BMI for adult subjects (which is expressed in units of kg/m^2^) is:
+
+$$
+\mbox{BMI} = \frac{\mbox{weight in kg}}{(\mbox{height in meters})^2} = 703 \times \frac{\mbox{weight in pounds}}{(\mbox{height in inches})^2}
+$$
+
+BMI is, essentially, a measure of a person's *thinnness* or *thickness*.
+
+- BMI from 18.5 to 25 indicates optimal weight
+- BMI below 18.5 suggests person is underweight
+- BMI above 25 suggests overweight. 
+- BIM above 30 suggests obese.
+
+## Histogram of BMI
+
+Here's a histogram, again with CWRU colors, for the BMI data.
+
+```{r nh_data_2179_bmihistbin1-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, aes(x = BMI)) + 
+    geom_histogram(binwidth = 1, 
+                   fill = cwru.blue, col = cwru.gray) + 
+    labs(title = "Histogram of BMI (NHANES ages 21-79)",
+         x = "Body-mass index")
+```
+
+## Histogram of BMI with binwidth 1
+
+```{r nh_data_2179_bmihistbin1-fig, echo = FALSE}
+ggplot(data = nh_data_2179, aes(x = BMI)) + 
+    geom_histogram(binwidth = 1, 
+                   fill = cwru.blue, col = cwru.gray) + 
+    labs(title = "Histogram of BMI (NHANES ages 21-79)",
+         x = "Body-mass index")
+```
+
+## Histogram of BMI with binwidth 5
+
+```{r nh_data_2179_bmihistbin2-fig, echo = FALSE}
+ggplot(data = nh_data_2179, aes(x = BMI)) + 
+    geom_histogram(binwidth = 5, 
+                   fill = cwru.blue, col = cwru.gray) + 
+    labs(title = "Histogram of BMI (NHANES ages 21-79)",
+         x = "Body-mass index")
+```
+
+## BMI and Diabetes
+
+We can split up our histogram into groups based on whether the subjects have been told they have diabetes.
+
+```{r nh_data_2179_bmibydiabetes-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") + 
+    facet_grid(Diabetes ~ .)
+```
+
+## BMI and Diabetes
+
+```{r nh_data_2179_bmibydiabetes-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") + 
+    facet_grid(Diabetes ~ .)
+```
+
+## Remove the redundant legend with `guides`
+
+```{r nh_data_2179_bmibydiabetes-figcode2, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    guides(fill = FALSE) +
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") + 
+    facet_grid(Diabetes ~ .)
+```
+
+## BMI and Diabetes, Revised
+
+```{r nh_data_2179_bmibydiabetes-fig2, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    guides(fill = FALSE) +
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") + 
+    facet_grid(Diabetes ~ .)
+```
+
+## Numerical Summary: BMI and Diabetes
+
+How many people fall into each of these Diabetes categories, and what is their "average" BMI?
+
+```{r numerical_summary_bmi_and_diabetes_tab}
+nh_data_2179 %>%
+    group_by(Diabetes) %>%
+    summarize(count = n(), mean(BMI), median(BMI)) %>%
+    knitr::kable() 
+```
+
+## BMI by Race
+
+How many people fall into each of the five `Race1` categories, and what is their "average" BMI?
+
+```{r}
+nh_data_2179 %>%
+    group_by(Race1) %>%
+    summarize(count = n(), mean(BMI), median(BMI)) %>%
+    knitr::kable() 
+```
+
+## BMI and Race Boxplot
+
+```{r nh_data_2179_bmibyrace-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = Race1, y = BMI, fill = Race1)) + 
+    geom_boxplot() +
+    guides(fill = FALSE) +
+    labs(title = "BMI by Race (NHANES ages 21-79)",
+         x = "Body-mass index") 
+```    
+
+## BMI and Race Boxplot
+
+```{r nh_data_2179_bmibyrace-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = Race1, y = BMI, fill = Race1)) + 
+    geom_boxplot() +
+    guides(fill = FALSE) +
+    labs(title = "BMI by Race (NHANES ages 21-79)",
+         x = "Body-mass index") 
+```   
+
+
+## BMI and Pulse Rate
+
+```{r nh_data_2179_bmivspulse-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, aes(x = BMI, y = Pulse)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)")
+```
+
+## BMI and Pulse Rate
+
+```{r nh_data_2179_bmivspulse-fig, echo = FALSE}
+ggplot(data = nh_data_2179, aes(x = BMI, y = Pulse)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)")
+```
+
+## Diabetes vs. No Diabetes
+
+Could we see whether subjects who have been told they have diabetes show different BMI-pulse rate patterns than the subjects who haven't? 
+
+- Let's try doing this by changing the **shape** *and* the **color** of the points based on diabetes status.
+
+```{r nh_data_2179_bmivspulsewithdm-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, y = Pulse, 
+           color = Diabetes, shape = Diabetes)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)") +
+    facet_wrap(~ Diabetes)
+```
+
+
+## Does Diabetes status affect Pulse-BMI relationship?
+
+```{r nh_data_2179_bmivspulsewithdm-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, y = Pulse, 
+           color = Diabetes, shape = Diabetes)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)") +
+    facet_wrap(~ Diabetes)
+```
+
+## General Health Status
+
+Here's a Table of the General Health Status results. This is a self-reported rating of each subject's health on a five point scale (Excellent, Very Good, Good, Fair, Poor.)
+
+```{r tabHealthGen1-tab}
+nh_data_2179 %>%
+    select(HealthGen) %>%
+    table() %>%
+    addmargins()
+```
+
+
+The HealthGen data are categorical, which means that summarizing them with averages isn't as appealing as looking at percentages, proportions and rates.
+
+## Bar Chart for Categorical Data
+
+Usually, a **bar chart** is the best choice for a graphing a variable made up of categories.
+
+```{r HealthGengraph1-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, aes(x = HealthGen)) + 
+    geom_bar()
+```
+
+## Original Bar Chart of General Health
+
+```{r HealthGengraph1-fig, echo = FALSE}
+ggplot(data = nh_data_2179, aes(x = HealthGen)) + 
+    geom_bar()
+```
+
+## Improving the Bar Chart
+
+There are lots of things we can do to make this plot fancier.
+
+```{r HealthGengraph2-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = HealthGen, fill = HealthGen)) + 
+    geom_bar() + 
+    guides(fill = FALSE) +
+    labs(x = "Self-Reported Health Status",
+         y = "Number of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)")
+```
+
+
+## The Improved Bar Chart
+
+```{r HealthGengraph2-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = HealthGen, fill = HealthGen)) + 
+    geom_bar() + 
+    guides(fill = FALSE) +
+    labs(x = "Self-Reported Health Status",
+         y = "Number of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)")
+```
+
+## Or, we can really go crazy... (code on next slide)
+
+```{r HealthGengraph3-fig, echo = FALSE}
+nh_data_2179 %>%
+    count(HealthGen) %>%
+    ungroup() %>%
+    mutate(pct = round(prop.table(n) * 100, 1)) %>%
+    ggplot(aes(x = HealthGen, y = pct, fill = HealthGen)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_viridis(discrete = TRUE) +
+    guides(fill = FALSE) +
+    geom_text(aes(y = pct + 1,    # nudge above top of bar
+                  label = paste0(pct, '%')),  # prettify
+              position = position_dodge(width = .9), 
+              size = 4) +
+    labs(x = "Self-Reported Health Status",
+         y = "Percentage of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)") +
+    theme_bw()
+```
+
+## What crazy looks like...
+
+```{r HealthGengraph3-figcode, eval = FALSE}
+nh_data_2179 %>%
+    count(HealthGen) %>%
+    ungroup() %>%
+    mutate(pct = round(prop.table(n) * 100, 1)) %>%
+    ggplot(aes(x = HealthGen, y = pct, fill = HealthGen)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_viridis(discrete = TRUE) +
+    guides(fill = FALSE) +
+    geom_text(aes(y = pct + 1,    # nudge above top of bar
+                  label = paste0(pct, '%')),  # prettify
+              position = position_dodge(width = .9), 
+              size = 4) +
+    labs(x = "Self-Reported Health Status",
+         y = "Percentage of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)") +
+    theme_bw()
+```
+
+
+## Working with Tables
+
+We can add a marginal total, and compare subjects by Gender, as follows...
+
+```{r tabHealthGen2kable-tab}
+nh_data_2179 %>%
+    select(Gender, HealthGen) %>%
+    table() %>%
+    addmargins() %>%
+    knitr::kable()
+```
+
+## Getting Row Proportions
+
+We'll use `prop.table` and get the row proportions by feeding it a 1.
+
+```{r tabHealthGen4-tab}
+nh_data_2179 %>%
+    select(Gender, HealthGen) %>%
+    table() %>%
+    prop.table(.,1) %>%
+    round(.,2) %>%
+    knitr::kable()
+```
+
+## BMI by General Health Status
+
+Let's consider now the relationship between self-reported overall health and body-mass index.
+
+```{r nh_data_2179_bmibyhealth-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) 
+```
+
+## What happens with the `Poor` category?
+
+```{r nh_data_2179_bmibyhealth-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) 
+```
+
+## Not many people self-identify with the `Poor` category
+
+```{r}
+nh_data_2179 %>%
+    group_by(HealthGen) %>%
+    summarize(count = n(), mean(BMI), median(BMI)) %>%
+    knitr::kable() 
+```
+
+## BMI by Gender and General Health Status
+
+We'll start with two panels of boxplots to try to understand the relationships between BMI, General Health Status and Gender. Note the use of `coord_flip` to rotate the graph 90 degrees.
+
+```{r nh_data_2179_bmibyhealthbygender1-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES ages 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) +
+    facet_wrap(~ Gender) + 
+    coord_flip()
+```
+
+## BMI by Gender and General Health Status Boxplots
+
+
+```{r nh_data_2179_bmibyhealthbygender1-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES ages 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) +
+    facet_wrap(~ Gender) + 
+    coord_flip()
+```
+
+## Histograms of BMI by Health and Gender
+
+Here's a plot of faceted histograms, which might be used to address similar questions.
+
+```{r nh_data_2179_bmibyhealthbygender2-figcode, eval = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI by Gender, Overall Health (ages 21-79)",
+         x = "Body-mass index") + 
+    guides(fill = FALSE) +
+    facet_grid(HealthGen ~ Gender)
+```
+
+- Note the new approach with `facet_grid`...
+
+## Histograms of BMI by Health and Gender
+
+```{r nh_data_2179_bmibyhealthbygender2-fig, echo = FALSE}
+ggplot(data = nh_data_2179, 
+       aes(x = BMI, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI by Gender, Overall Health (ages 21-79)",
+         x = "Body-mass index") + 
+    guides(fill = FALSE) +
+    facet_grid(HealthGen ~ Gender)
+```
+
+## Conclusions
+
+This is just a small piece of the toolbox for visualizations that we'll create in this class. Many additional tools are on the way, but the main idea won't change. Using the `ggplot2` package, we can accomplish several critical tasks in creating a visualization, including:
+
+- Identifying (and labeling) the axes and titles
+- Identifying a type of `geom` to use, like a point, bar or histogram
+- Changing fill, color, shape, size to facilitate comparisons
+- Building "small multiples" of plots with faceting
+
+Good data visualizations make it easy to see the data, and `ggplot2`'s tools make it relatively difficult to make a really bad graph.
+
+
+# The Elements of Data Analytic Style
+
+## Leek Chapter 5: Exploratory Analysis
+
+- EDA To understand properties of the data and discover new patterns
+- Visualize and inspect qualitative features rather than a huge table of raw data
+
+1. Make big data as small as possible as quickly as possible
+2. Plot as much of the actual data as you can
+3. For large data sets, subsample before plotting
+4. Use log transforms for ratio measurements
+5. Missing values can have a mighty impact on conclusions
+
+## Leek: Chapter 9 Written Analyses
+
+Elements: title, introduction/motivation, description of statistical tools used, results with measures of uncertainty, conclusions indicating potential problems, references
+
+1. What is the question you are answering?
+2. Lead with a table summarizing your tidy data set (critical to identify data versioning issues)
+3. For each parameter of interest report an estimate and measure of uncertainty on the scientific scale of interest
+4. Summarize the importance of reported estimates
+5. Do not report every analysis you performed
+
+## Leek: Chapter 10 Creating Figures
+
+Communicating effectively with figures is non-trivial. The goal is clarity.
+
+> When viewed with an appropriately detailed caption, (a figure should) stand alone without any further explanation as a unit of information.
+
+1. Humans are best at perceiving position along a single axis with a common scale
+2. Avoid chartjunk (gratuitous flourishes) in favor of high-density displays
+3. Axis labels should be large, easy to read, in plain language
+4. Figure titles should communicate the plot's message
+5. Use a palette (like `viridis`) that color-blind people can see (and distinguish) well
+
+Karl Broman's **[excellent presentation on displaying data badly](https://github.com/kbroman/Talk_Graphs)** and related issues.
+
+## Leek Chapter 13: A Few Matters of Form
+
+- Variable names should always be reported in plain language.
+- If measurements are only accurate to the tenths digit, don't report estimates with more digits.
+- Report estimates followed by parentheses that hold a 95% CI or other measure of uncertainty.
+- When reporting *p* values, censor small values (*p* < 0.0001, not *p* = 0 or *p* = 1.6 x 10^-25^)
+
+## Assignment 1 (due Friday at Noon)
+
+1. Use the `YOURNAME-hw1.Rmd` template to your advantage.
+2. Use the documents we've discussed to help guide you.
+3. The Course Notes contain all the code you might possibly need.
+4. Grading will be very light on this assignment compared to later ones.
+5. Submit the assignment (two files: R Markdown, plus either HTML or Word files) via canvas.case.edu
+6. Apply the 15-minute rule.
+    + If you can't solve a problem in 15 minutes, ask for help.
+    + You are **absolutely supposed** to use Google and the TAs (and me) to improve your code.
+
