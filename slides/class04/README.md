@@ -18,7 +18,7 @@
     
 ## Minute Papers after Class 3
 
-Details to come.
+I've gathered our response in a Google Document at http://bit.ly/431-2018-minute03-response. Log into Google via CWRU to see it.
 
 ## Today's Announcements
 
