@@ -4,7 +4,7 @@
 
 Class 3 slides are available in [PDF format](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431_class-03-slides_2018.pdf), as well as in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/431_class-03-slides_2018.Rmd).
 
-Class 3 audio files will appear above, after class.
+Class 3 audio files are now available for download: [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431_class03audio_2018-09-04_part1.mp3), [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431_class03audio_2018-09-04_part2.mp3) and [Part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431_class03audio_2018-09-04_part3.mp3).
 
 - The Getting Started in R document is available in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class03/431-getting-started-with-R.Rmd) and as [a PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.pdf), and can also be [viewed in HTML](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class03/431-getting-started-with-R.html).
 - Today, we'll do some live coding. Useful files for that include:
