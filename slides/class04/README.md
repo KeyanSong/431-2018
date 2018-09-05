@@ -28,17 +28,24 @@ Details to come.
 
 2. When asking for help with an R problem from **431-help at case dot edu**, we ask you to try to make it easier for us to help you. If you attach your **R Markdown file** (note this has the extension .Rmd), and a detailed explanation of the problem you see, we can often solve the problem in an email. Without the R Markdown file, we can rarely do anything except ask more questions.
 
-3. When you get a response from one of us on **431-help at case dot edu** you'll notice we REPLY ALL so that all of the TAs (and Dr. Love) can see the result. If you need to respond, please fight your usual urge and **REPLY ALL** as well so that we can all still help.
+3. When you get a response from one of us on **431-help at case dot edu** we REPLY ALL so that all of the TAs (and Dr. Love) can see the result. If you need to respond, please fight your usual urge and **REPLY ALL** as well so that we can all still help.
 
 ### Professor Love is giving a research talk (together with Dr. Shari Bolen) on Friday morning
 
 The talk is entitled "Racial and Ethnic Approaches to Community Health Grant: Hypertension Implementation in 9 Safety Net Clinics" and is from 9 to 10:30 AM in Room R219 at the Rammelkamp building on the campus of MetroHealth Medical Center. For more information, ask Dr. Love, or visit http://chrp.org/events/
 
-## One Last Thing
-
-Two links from today's class:
+## Some Links from Today
 
 - XKCS cartoon on the ISO standard for dates: entitled ISO 8601, is at https://xkcd.com/1179/
 - Michael Donohoe's tweet and map for how dates are actually used, by nation: https://twitter.com/donohoe/status/597876118688026624
+- The Colors in R PDF I like is at http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+- I reference a text by Baumer, Kaplan and Horton (2017) *Modern Data Science with R* which gave me the idea for the NHANES example.
+- CWRU's color branding guidelines are at https://case.edu/umc/our-brand/visual-guidelines/color
+- I also reference [Karl Broman's excellent presentation on displaying data badly](https://github.com/kbroman/Talk_Graphs)
+
+
+## One Last Thing
+
+- If you're interested in watching a course in Data Analysis taught by Jeff Leek, here's a [YouTube playlist](https://www.youtube.com/playlist?list=PLycnP7USbo1Ux7pFnWecWg-UWHVdCDuou).
 
 The main web site for this course is https://github.com/THOMASELOVE/431-2018.
