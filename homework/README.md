@@ -46,7 +46,7 @@ As the semester progresses, you may find an error in homework grading that you w
 6. Use headings to indicate the question being solved. Then leave a blank line before continuing with text.
 7. Avoid repeating Dr. Love's questions verbatim.
 8. We encourage you to edit your code ruthlessly, and submit only the pieces you actually want us to review.
-9. Use the approach laid out in the template posted above.
+9. The most important thing you should do before submitting your work is read over the HTML and see that it includes what you mean it to include, and that (for instance) axis labels show up properly, etc. and that various "false starts" don't turn up in the final result.
 
 More details are available in the individual assignments, and in the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/), specifically in the [General Writing and Presenting tips section](https://thomaselove.github.io/2018-431-syllabus/a-few-general-writingpresenting-tips.html).
 
