@@ -18,7 +18,7 @@
     
 ## Minute Papers after Class 3
 
-I've gathered our response in a Google Document at http://bit.ly/431-2018-minute03-response. Log into Google via CWRU to see it.
+Everyone responded! Thanks! I've gathered feedback into a PDF [displayed above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431-2018_minute03_feedback.pdf). We'll do this again after each Tuesday class.
 
 ## Today's Announcements
 
