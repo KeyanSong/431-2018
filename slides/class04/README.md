@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class-04-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/431_class-04-slides_2018.Rmd).
-- The audio files will be posted after class.
+- Class 4 audio files are now available for download: [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class04audio_2018-09-06_part1.mp3), [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class04audio_2018-09-06_part2.mp3) and [Part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class04audio_2018-09-06_part3.mp3).
 - Today's main analysis involves some data from NHANES (which is the [National Health and Nutrition Examination Survey](https://www.cdc.gov/nchs/nhanes.htm)), and this example is covered (in great depth) in Chapters 3-6 of [our Course Notes](https://thomaselove.github.io/2018-431-book/dataviz.html).
 - Another item that may be useful to you is a more polished analysis of the Day 1 survey, building on Class 3.
     - Here is [the .csv file of the survey data](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/surveyday1_2018.csv), the [R Markdown file for this survey analysis](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class04/class4-survey.Rmd), and the [HTML result](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/class4-survey.html).
