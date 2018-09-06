@@ -12,7 +12,7 @@
 
 - [Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) is due on Friday 2018-09-07 at Noon. Submit your R Markdown and HTML files via Canvas. 
     - We treat work arriving before 1 PM as on time. It is **far** better to turn in incomplete work on time than complete work late for these homework assignments.
-    - We encourage you to edit your code ruthlessly, and submit only the pieces you actually want us to review.
+    - We encourage you to edit your code ruthlessly, and submit a Markdown document and HTML result that includes only the pieces you actually want us to review. The most important thing you should do before submitting your work is read over the HTML and see that it includes what you mean it to include, and that (for instance) axis labels show up properly, etc. and that various "false starts" don't turn up in the final result.
     - The answer sketch for Homework 1 should be [available here](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) on Friday sometime after 1 PM.
 - [Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) is due the following Friday 2018-09-14, also at noon.
 - Read Nate Silver's *The Signal and the Noise* (Introduction and Chapter 1) before 2018-09-17.
