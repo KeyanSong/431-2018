@@ -45,7 +45,8 @@ As the semester progresses, you may find an error in homework grading that you w
 5. Name every chunk, with no characters other than letters, numbers and underscores. No repetition!
 6. Use headings to indicate the question being solved. Then leave a blank line before continuing with text.
 7. Avoid repeating Dr. Love's questions verbatim.
-8. Use the approach laid out in the template posted above.
+8. We encourage you to edit your code ruthlessly, and submit only the pieces you actually want us to review.
+9. Use the approach laid out in the template posted above.
 
 More details are available in the individual assignments, and in the [Course Syllabus](https://thomaselove.github.io/2018-431-syllabus/), specifically in the [General Writing and Presenting tips section](https://thomaselove.github.io/2018-431-syllabus/a-few-general-writingpresenting-tips.html).
 
