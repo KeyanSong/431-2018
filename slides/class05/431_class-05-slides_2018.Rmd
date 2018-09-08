@@ -1,0 +1,681 @@
+---
+title: "431 Class 05"
+author: "Thomas E. Love"
+date: "2018-09-11"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+
+library(NHANES); library(magrittr); library(tidyverse)
+```
+
+## Today's Agenda
+
+1. Homework 1 review
+2. Announcing the Course Project
+3. NHANES Example: see **Course Notes** Chapters 3-6
+4. Jeff Leek *Elements of Data Analytic Style* 
+    + Chapter 5 is about Exploratory Analysis
+    + Chapter 9 is about Written Analyses
+    + Chapter 10 is about Creating Figures
+    + Chapter 13 highlights a few matters of form
+5. Minute Paper after Class 5
+
+## Reminders
+
+### The Course Project
+
+Take a look at the web site. We'll start taking questions about the Project at `431-help` after class today.
+
+### Homework 2 
+
+Due Friday at Noon.
+
+### Minute Paper after Class 5
+
+Please complete today's Minute Paper (by noon Wednesday).
+
+## What You'll Need Later Today
+
+Write down (so that someone else can read it) the most important/interesting/surprising thing you learned from reading the four chapters of Jeff Leek's *Elements of Data Analytic Style*.
+
+- One sentence is plenty.
+- If you cannot limit yourself to one thing, try to keep it to two.
+- Later in today's class (about 2 PM), you'll share these with a colleague.
+
+## Course Notes, Chapters 3-6
+
+The packages we're using today are `NHANES`, `magrittr` and `tidyverse`.
+
+```
+library(NHANES)
+library(magrittr)
+library(tidyverse)
+```
+
+## What We Did Previously
+
+- Gathered a random sample of 1,000 NHANES subjects into `nh_data`, selecting 10 variables for further study
+  - In the Class 4 slides, and in the Course Notes, I used `set.seed(431001)` so I obtained the same sample, and results. 
+  - Today, I'll switch the seed value, to obtain a new sample called `nh_2`.
+- Variables we discuss today: BMI, Pulse, Race1, HealthGen, Diabetes, Gender (also collect ID, Age, Height, Weight).
+- Built a subset of that sample who were ages 21-79 and had complete data on those 10 variables, and today, I'll do that again (with my new seed) and call it `nh_3`. 
+- Built a little code to specify the CWRU colors:
+
+```{r}
+cwru.blue <- '#0a304e'
+cwru.gray <- '#626262'
+```
+
+## Code to create `nh_2` and `nh_3`
+
+```{r}
+set.seed(20180911) # note different seed than we've seen
+
+nh_2 <- sample_n(NHANES, size = 1000) %>%
+    select(ID, Gender, Age, Height, Weight, BMI, 
+           Pulse, Race1, HealthGen, Diabetes)
+
+nh_3 <- nh_2 %>%
+    filter(Age > 20 & Age < 80) %>%
+    select(ID, Gender, Age, Height, Weight, BMI, 
+           Pulse, Race1, HealthGen, Diabetes) %>%
+    na.omit
+```
+
+## The `nh_3` tibble
+
+```{r}
+nh_3
+```
+
+# Some Analyses related to Body-Mass Index in NHANES
+
+## A Look at Body-Mass Index
+
+Let's look at the *body-mass index*, or BMI. The definition of BMI for adult subjects (which is expressed in units of kg/m^2^) is:
+
+$$
+\mbox{BMI} = \frac{\mbox{weight in kg}}{(\mbox{height in meters})^2} = 703 \times \frac{\mbox{weight in pounds}}{(\mbox{height in inches})^2}
+$$
+
+BMI is, essentially, a measure of a person's *thinnness* or *thickness*.
+
+- BMI from 18.5 to 25 indicates optimal weight
+- BMI below 18.5 suggests person is underweight
+- BMI above 25 suggests overweight. 
+- BMI above 30 suggests obese.
+
+## A First Set of Exploratory Questions
+
+Variables of Interest: `BMI`, `Diabetes`, `Race1`, `Pulse`
+
+1. What is the distribution of BMI in our `nh_3` sample of adults?
+2. How does the distribution of BMI vary by whether the subject has been told that they have diabetes?
+3. How does the distribution of BMI vary by the subject's Race?
+4. What is the association between BMI and the subject's Pulse Rate?
+5. Does that BMI-Pulse association differ in subjects who have been told they have diabetes, and those who have not?
+
+Note: These are NOT what anyone would call research questions, which involve generating scientific hypotheses, among other things. These are merely triggers for visualizations and (small) analyses.
+
+## Histogram of BMI with binwidth = 1 (code)
+
+Here's the code for a histogram, again with CWRU colors, for the BMI data in `nh_3`. 
+
+```{r nh_3-bmi-hist1-figcode, eval = FALSE}
+ggplot(data = nh_3, aes(x = BMI)) + 
+    geom_histogram(binwidth = 1, 
+                   fill = cwru.blue, col = cwru.gray) + 
+    labs(title = "Histogram of BMI (NHANES ages 21-79)",
+         x = "Body-mass index")
+```
+
+- I'll set the `binwidth` to be 1 here.
+- The `nh_3` data set contains `r nrow(nh_3)` observations.
+
+## Histogram of BMI with binwidth = 1
+
+```{r nh_3-bmi-hist1-fig, echo = FALSE}
+ggplot(data = nh_3, aes(x = BMI)) + 
+    geom_histogram(binwidth = 1, 
+                   fill = cwru.blue, col = cwru.gray) + 
+    labs(title = "Histogram of BMI (NHANES ages 21-79)",
+         x = "Body-mass index")
+```
+
+## Histogram of BMI with binwidth 5
+
+```{r nh_3-bmi-hist2-fig, echo = FALSE}
+ggplot(data = nh_3, aes(x = BMI)) + 
+    geom_histogram(binwidth = 5, 
+                   fill = cwru.blue, col = cwru.gray) + 
+    labs(title = "Histogram of BMI (NHANES ages 21-79)",
+         x = "Body-mass index")
+```
+
+## BMI Histograms faceted by Diabetes status (code)
+
+We can facet two histograms of our BMI data based on whether the subjects have been told they have diabetes. 
+
+```{r nh_3_bmibydiabetes-figcode, eval = FALSE}
+ggplot(data = nh_3, aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(bins = 20, col = "white") + 
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") +
+    facet_wrap(~ Diabetes, labeller = "label_both")
+```
+
+- We've let the fill of the bars change depending on diabetes status.
+- We've set the number of bins to be 20 in each plot, rather than specifying the binwidth.
+- We added an argument `labeller = "label_both"` to our `facet_wrap` request which will get the machine to specify the name of the variable we're using to facet the data as well as its values.
+
+## BMI Histograms faceted by Diabetes status 
+
+```{r nh_3_bmibydiabetes-fig, echo = FALSE}
+ggplot(data = nh_3, aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(bins = 20, col = "white") + 
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") +
+    facet_wrap(~ Diabetes, labeller = "label_both")
+```
+
+- Do we need this legend for the fill? 
+- To drop it, we would add `guides(fill = FALSE)`.
+
+## BMI Histograms by Diabetes status, II. (code)
+
+Let's drop the legend and also change the fill scheme to something more appropriate for color-blind folks.
+
+```{r nh_3_bmibydiabetes-fig2code, eval = FALSE}
+ggplot(data = nh_3, aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(bins = 20, col = "black") + 
+    scale_fill_viridis_d(option = "cividis") +
+    guides(fill = FALSE) +
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") +
+    facet_wrap(~ Diabetes, labeller = "label_both") +
+    theme_bw()
+```
+
+## BMI Histograms faceted by Diabetes status, II.
+
+
+```{r nh_3_bmibydiabetes-fig2, echo = FALSE}
+ggplot(data = nh_3, aes(x = BMI, fill = Diabetes)) + 
+    geom_histogram(bins = 20, col = "black") + 
+    scale_fill_viridis_d(option = "cividis") +
+    guides(fill = FALSE) +
+    labs(title = "BMI and Diabetes (NHANES ages 21-79)",
+         x = "Body-mass index") +
+    facet_wrap(~ Diabetes, labeller = "label_both") +
+    theme_bw()
+```
+
+## Numerical Summaries: BMI, by Diabetes Status
+
+How many people fall into each of these Diabetes categories, and what is their "average" BMI?
+
+```{r numerical_summary_bmi_and_diabetes_tab}
+nh_3 %>%
+    group_by(Diabetes) %>%
+    summarize(count = n(), mean(BMI), median(BMI))
+```
+
+## Numerical Summaries: BMI, by Diabetes Status, II
+
+Neatening up the presentation a little bit, with some rounding and the `kable` function from the `knitr` package...
+
+```{r numerical_summary_bmi_and_diabetes_tab2}
+nh_3 %>%
+    group_by(Diabetes) %>%
+    summarize("Count" = n(), 
+              "Mean(BMI)" = round(mean(BMI),2), 
+              "Median(BMI)" = median(BMI)) %>%
+    knitr::kable() 
+```
+
+## BMI by Race
+
+How many people fall into each of the available `Race1` categories, and what can we learn about "average" BMI in those groups?
+
+```{r}
+nh_3 %>%
+    group_by(Race1) %>%
+    summarize(count = n(), mean(BMI), median(BMI)) %>%
+    knitr::kable() 
+```
+
+## BMI and Race Comparison Boxplot (code)
+
+Let's consider a plot to compare the distribution of `BMI` across the five available levels of `Race1`.
+
+- It would be helpful to think in advance about what you expect to see here...
+
+```{r nh_3_bmibyrace-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = Race1, y = BMI, fill = Race1)) + 
+    geom_boxplot() +
+    guides(fill = FALSE) +
+    labs(title = "BMI by Race (NHANES ages 21-79)",
+         x = "Body-mass index") 
+```
+
+## BMI and Race Comparison Boxplot 
+
+```{r nh_3_bmibyrace-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = Race1, y = BMI, fill = Race1)) + 
+    geom_boxplot() +
+    guides(fill = FALSE) +
+    labs(title = "BMI by Race (NHANES ages 21-79)",
+         x = "Body-mass index") 
+```
+
+
+## BMI and Pulse Rate Scatterplot (code)
+
+Now, we'll look at the association between Pulse rate and BMI, and we'll fit a "loess" smooth curve to help us see the "center" of that association.
+
+- Do you think people with higher BMI will have lower or higher Pulse rates?
+
+```{r nh_3_bmivspulse-figcode, eval = FALSE}
+ggplot(data = nh_3, aes(x = BMI, y = Pulse)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)")
+```
+
+## BMI and Pulse Rate Scatterplot
+
+```{r nh_3_bmivspulse-fig, echo = FALSE}
+ggplot(data = nh_3, aes(x = BMI, y = Pulse)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)")
+```
+
+## Correlation Coefficient: Summarizing Association?
+
+The Pearson correlation coefficient is a very limited measure. It only describes the degree to which a **linear** relationship is present in the data. But we can look at it.
+
+```{r}
+nh_3 %$% cor(BMI, Pulse)
+```
+
+- The Pearson correlation ranges from -1 (perfect negative [as x rises, y falls] linear relationship) to +1 (perfect positive [as x rises, y rises] linear relationship.) 
+- Our correlation is very close to zero. This implies we have almost no linear association in this case, across the entire sample.
+
+## Does Diabetes affect Pulse-BMI association? (code)
+
+Could we see whether subjects who have been told they have diabetes show different BMI-pulse rate patterns than the subjects who haven't? 
+
+- Let's try doing this by changing the **shape** *and* the **color** of the points based on diabetes status.
+
+```{r nh_3_bmivspulsewithdm-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = BMI, y = Pulse, 
+           color = Diabetes, shape = Diabetes)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)") +
+    facet_wrap(~ Diabetes, labeller = "label_both") + 
+    theme_bw()
+```
+
+## Does Diabetes status affect Pulse-BMI association?
+
+```{r nh_3_bmivspulsewithdm-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = BMI, y = Pulse, 
+           color = Diabetes, shape = Diabetes)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    labs(title = "BMI vs. Pulse rate (NHANES ages 21-79)") +
+    facet_wrap(~ Diabetes, labeller = "label_both") + 
+    theme_bw()
+```
+
+## Correlation of BMI and Pulse by Diabetes?
+
+- Recall that the correlation coefficient for the relationship between BMI and Pulse in the full sample was quite close to zero. 
+  - Specifically, it was `r nh_3 %$% cor(BMI, Pulse) %>% round(.,4)`
+- Grouped by diabetes status, do we get a different story?
+
+```{r}
+nh_3 %>%
+  group_by(Diabetes) %>%
+  summarize(cor(BMI, Pulse)) 
+```
+
+# Working with a Categorical Outcome (Self-Reported General Health) in NHANES
+
+## General Health Status
+
+Here's a Table of the General Health Status results. This is a self-reported rating of each subject's health on a five point scale (Excellent, Very Good, Good, Fair, Poor.)
+
+```{r tabHealthGen1-tab}
+nh_3 %>%
+    select(HealthGen) %>%
+    table() %>%
+    addmargins()
+```
+
+
+The `HealthGen` data are categorical, which means that summarizing them with averages isn't as appealing as looking at percentages, proportions and rates.
+
+## Bar Chart for Categorical Data
+
+Usually, a **bar chart** is the best choice for a graphing a variable made up of categories.
+
+```{r HealthGengraph1-figcode, eval = FALSE}
+ggplot(data = nh_3, aes(x = HealthGen)) + 
+    geom_bar()
+```
+
+## Original Bar Chart of General Health
+
+```{r HealthGengraph1-fig, echo = FALSE}
+ggplot(data = nh_3, aes(x = HealthGen)) + 
+    geom_bar()
+```
+
+## Improving the Bar Chart
+
+There are lots of things we can do to make this plot fancier.
+
+```{r HealthGengraph2-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, fill = HealthGen)) + 
+    geom_bar() + 
+    guides(fill = FALSE) +
+    labs(x = "Self-Reported Health Status",
+         y = "Number of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)")
+```
+
+
+## The Improved Bar Chart
+
+```{r HealthGengraph2-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, fill = HealthGen)) + 
+    geom_bar() + 
+    guides(fill = FALSE) +
+    labs(x = "Self-Reported Health Status",
+         y = "Number of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)")
+```
+
+## Or, we can really go crazy... (code on next slide)
+
+```{r HealthGengraph3-fig, echo = FALSE}
+nh_3 %>%
+    count(HealthGen) %>%
+    ungroup() %>%
+    mutate(pct = round(prop.table(n) * 100, 1)) %>%
+    ggplot(aes(x = HealthGen, y = pct, fill = HealthGen)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_viridis_d() + 
+    guides(fill = FALSE, col = FALSE) +
+    geom_text(aes(y = pct + 1,    # nudge above top of bar
+                  label = paste0(pct, '%')),  # prettify
+              position = position_dodge(width = .9), 
+              size = 4) +
+    labs(x = "Self-Reported Health Status",
+         y = "Percentage of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)") +
+    theme_bw()
+```
+
+## What crazy looks like...
+
+```{r HealthGengraph3-figcode, eval = FALSE}
+nh_3 %>%
+    count(HealthGen) %>%
+    ungroup() %>%
+    mutate(pct = round(prop.table(n) * 100, 1)) %>%
+    ggplot(aes(x = HealthGen, y = pct, fill = HealthGen)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_viridis_d() + 
+    guides(fill = FALSE, col = FALSE) +
+    geom_text(aes(y = pct + 1,    # nudge above top of bar
+                  label = paste0(pct, '%')),  # prettify
+              position = position_dodge(width = .9), 
+              size = 4) +
+    labs(x = "Self-Reported Health Status",
+         y = "Percentage of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)") +
+    theme_bw()
+```
+
+## Working with Tables
+
+We can add a marginal total, and compare subjects by Gender, as follows...
+
+```{r tabHealthGen2kable-tab}
+nh_3 %>%
+    select(Gender, HealthGen) %>%
+    table() %>%
+    addmargins() %>%
+    knitr::kable()
+```
+
+## Getting Row Proportions
+
+We'll use `prop.table` and get the row proportions by feeding it a 1.
+
+```{r tabHealthGen4-tab}
+nh_3 %>%
+    select(Gender, HealthGen) %>%
+    table() %>%
+    prop.table(.,1) %>%
+    round(.,2) %>%
+    knitr::kable()
+```
+
+## BMI by General Health Status
+
+Let's consider now the relationship between self-reported overall health and body-mass index.
+
+```{r nh_3_bmibyhealth-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) 
+```
+
+## What happens with the `Poor` category?
+
+```{r nh_3_bmibyhealth-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) 
+```
+
+## Summary Table of BMI distribution by HealthGen
+
+```{r, eval = FALSE}
+nh_3 %>%
+    group_by(HealthGen) %>%
+    summarize("BMI n" = n(), 
+              "Mean" = round(mean(BMI),1), 
+              "SD" = round(sd(BMI),1),
+              "min" = round(min(BMI),1), 
+              "Q25" = round(quantile(BMI, 0.25),1),
+              "median" = round(median(BMI),1), 
+              "Q75" = round(quantile(BMI, 0.75),1),
+              "max" = round(max(BMI),1)) %>%
+    knitr::kable() 
+```
+
+- Resulting table is shown in the next slide.
+
+## Not many self-identify in the `Poor` category
+
+```{r, echo = FALSE}
+nh_3 %>%
+    group_by(HealthGen) %>%
+    summarize("BMI n" = n(), 
+              "Mean" = round(mean(BMI),1), 
+              "SD" = round(sd(BMI),1),
+              "min" = round(min(BMI),1), 
+              "Q25" = round(quantile(BMI, 0.25),1),
+              "median" = round(median(BMI),1), 
+              "Q75" = round(quantile(BMI, 0.75),1),
+              "max" = round(max(BMI),1)) %>%
+    knitr::kable() 
+```
+
+## BMI by Gender and General Health Status
+
+We'll start with two panels of boxplots to try to understand the relationships between BMI, General Health Status and Gender. 
+
+```{r nh_3_bmibyhealthbygender1-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    guides(fill = FALSE) +
+    facet_wrap(~ Gender) + 
+    coord_flip() + 
+    theme_light() +
+    labs(title = "BMI by Health Status (NHANES ages 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") 
+```
+
+- Note the use of `coord_flip` to rotate the graph 90 degrees.
+- Note the use of a new theme, called `theme_light()`.
+
+## BMI by Gender and General Health Status Boxplots
+
+```{r nh_3_bmibyhealthbygender1-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    guides(fill = FALSE) +
+    facet_wrap(~ Gender) + 
+    coord_flip() + 
+    theme_light() +
+    labs(title = "BMI by Health Status (NHANES ages 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") 
+```
+
+## Histograms of BMI by Health and Gender
+
+Here are doubly faceted histograms, which can help address similar questions.
+
+```{r nh_3_bmibyhealthbygender2-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = BMI, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI by Gender, Overall Health",
+         x = "Body-mass index") + 
+    guides(fill = FALSE) +
+    facet_grid(HealthGen ~ Gender) +
+    theme_dark()
+```
+
+- Note the use of `facet_grid` to specify rows and columns.
+- Note the use of a new theme, called `theme_dark()`.
+
+## Histograms of BMI by Health and Gender
+
+```{r nh_3_bmibyhealthbygender2-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = BMI, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI by Gender, Overall Health",
+         x = "Body-mass index") + 
+    guides(fill = FALSE) +
+    facet_grid(HealthGen ~ Gender) +
+    theme_dark()
+```
+
+
+
+
+## Conclusions
+
+This is just a small piece of the toolbox for visualizations that we'll create in this class. Many additional tools are on the way, but the main idea won't change. Using the `ggplot2` package, we can accomplish several critical tasks in creating a visualization, including:
+
+- Identifying (and labeling) the axes and titles
+- Identifying a type of `geom` to use, like a point, bar or histogram
+- Changing fill, color, shape, size to facilitate comparisons
+- Building "small multiples" of plots with faceting
+
+Good data visualizations make it easy to see the data, and `ggplot2`'s tools make it relatively difficult to make a really bad graph.
+
+# The Elements of Data Analytic Style
+
+## Leek Chapter 5: Exploratory Analysis
+
+- EDA To understand properties of the data and discover new patterns
+- Visualize and inspect qualitative features rather than a huge table of raw data
+
+1. Make big data as small as possible as quickly as possible
+2. Plot as much of the actual data as you can
+3. For large data sets, subsample before plotting
+4. Use log transforms for ratio measurements
+5. Missing values can have a mighty impact on conclusions
+
+## Leek: Chapter 9 Written Analyses
+
+Elements: title, introduction/motivation, description of statistical tools used, results with measures of uncertainty, conclusions indicating potential problems, references
+
+1. What is the question you are answering?
+2. Lead with a table summarizing your tidy data set (critical to identify data versioning issues)
+3. For each parameter of interest report an estimate and measure of uncertainty on the scientific scale of interest
+4. Summarize the importance of reported estimates
+5. Do not report every analysis you performed
+
+## Leek: Chapter 10 Creating Figures
+
+Communicating effectively with figures is non-trivial. The goal is clarity.
+
+> When viewed with an appropriately detailed caption, (a figure should) stand alone without any further explanation as a unit of information.
+
+1. Humans are best at perceiving position along a single axis with a common scale
+2. Avoid chartjunk (gratuitous flourishes) in favor of high-density displays
+3. Axis labels should be large, easy to read, in plain language
+4. Figure titles should communicate the plot's message
+5. Use a palette (like `viridis`) that color-blind people can see (and distinguish) well
+
+Karl Broman's excellent presentation on displaying data badly at  https://github.com/kbroman/Talk_Graphs may be helpful...
+
+## Leek Chapter 13: A Few Matters of Form
+
+- Variable names should always be reported in plain language.
+- If measurements are only accurate to the tenths digit, don't report estimates with more digits.
+- Report estimates followed by parentheses that hold a 95% CI or other measure of uncertainty.
+- When reporting *p* values, censor small values (*p* < 0.0001, not *p* = 0 or *p* = 1.6 x 10^-25^)
+
+## Reminders
+
+### The Course Project
+
+Take a look at the web site. We'll start taking questions about the Project at `431-help` after class today.
+
+### Homework 2 
+
+Due Friday at Noon.
+
+### Minute Paper after Class 5
+
+Please complete today's Minute Paper (by noon Wednesday).
