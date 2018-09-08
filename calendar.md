@@ -19,7 +19,7 @@ Date | Class | Description or Deliverable
 09-05 | -- | By Class 4, read **Leek** Chapters 5, 9, 10 and 13. (Or the whole book - it's short.)
 09-06 | 4 | Using R, R Studio and R Markdown to visualize and summarize data from NHANES
 09-07 | -- | **[Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon 
-09-11 | 5 | Visualizing data from NHANES, Thoughts on Leek chapters, Introduction to the Project
+09-11 | 5 | Visualizing data from NHANES, Leek: 5, 9, 10, 13, Announcing the Course Project
 09-13 | 6 | 
 09-14 | -- | **[Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-17 | -- | Read **Silver** Introduction & Chapter 1 by now, for Homework 3.
