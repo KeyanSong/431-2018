@@ -12,7 +12,7 @@
     - A PDF of the [Homework 1 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) was posted last Friday after the deadline, and there's an R Markdown version posted there now, too. 
     - Thanks to everyone for getting Homework 1 submitted on time! 
     - Grades should be available on Thursday, and we will discuss Homework 1 a little more in class on Thursday.
-- Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* (Introduction and Chapter 1) before Class 7.
+- Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* before Class 7.
     
 ## Today's Announcements
 
