@@ -7,16 +7,17 @@
 
 ## Deliverables Coming Soon
 
-- Please complete the **Minute Paper after Class 05** available at **THIS LINK**.
+- **NEW!** By noon tomorrow (2018-09-12) please complete the [Minute Paper after Class 05](http://bit.ly/431-2018-minute05), available at http://bit.ly/431-2018-minute05. Thanks!
 - [Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) is due Friday 2018-09-14 at Noon. Submit your work (again, R Markdown and HTML files) via Canvas.
     - A PDF of the [Homework 1 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) was posted last Friday after the deadline, and there's an R Markdown version posted there now, too. 
     - Thanks to everyone for getting Homework 1 submitted on time! 
-    - Grades should be available on Thursday, and we may discuss Homework 1 a little more in class Thursday.
+    - Grades should be available on Thursday, and we will discuss Homework 1 a little more in class on Thursday.
 - Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* (Introduction and Chapter 1) before Class 7.
     
 ## Today's Announcements
 
-1. Information on the Course Project has begun to appear at **THIS LINK**.
+1. Information on the Course Project has begun to appear at https://github.com/THOMASELOVE/431-2018-project.
+2. In responding to Question 7 on Homework 1, some of you asked questions of general interest. I'll comment on these in class.
 
 ## Some Links from Today
 
@@ -24,8 +25,8 @@
 - CWRU's color branding guidelines are at https://case.edu/umc/our-brand/visual-guidelines/color
 - I also reference [Karl Broman's excellent presentation on displaying data badly](https://github.com/kbroman/Talk_Graphs)
 
-
 ## One Last Thing
 
+- Coming soon.
 
 The main web site for this course is https://github.com/THOMASELOVE/431-2018.
