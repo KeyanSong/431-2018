@@ -2,8 +2,6 @@
 
 This is the calendar for Dr. Love's Section 1 of 431 in Fall 2018. All class meetings are scheduled for 1:00 PM to 2:15 PM in room E321-323 on the third floor of the Robbins building at the School of Medicine. 
 
-The early classes (especially Classes 2-6) are more about R and R Studio than about "statistics". Once everyone's gotten rolling, our approach changes a bit to focus more on statistical concerns, and less on the technology. 
-
 Books we are reading: 
 
 - **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy). Some chapters are going to feel more relevant to you than others, and that's fine.
@@ -76,9 +74,7 @@ Student project presentations will be scheduled on **2018-12-10, 2018-12-11 and 
 
 ## Teaching Assistant Office Hours 
 
-Office Hours are held by the teaching asistants in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. 
-
-TA office hours start on Tuesday, September 4. The schedule will be:
+Office Hours are held by the teaching asistants in WG-56 (Computing Lab) or WG-67 (Student Lounge) on the ground floor of the Wood building, so be sure to look in both places if you need help. The schedule is:
 
 Day | Time 
 -------------: | --------------------
