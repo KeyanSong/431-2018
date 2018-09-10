@@ -17,7 +17,7 @@
 ## Today's Announcements
 
 1. Information on the Course Project has begun to appear at https://github.com/THOMASELOVE/431-2018-project.
-2. In responding to Question 7 on Homework 1, some of you asked questions of general interest. I'll comment on these in class.
+2. In responding to Question 7 on Homework 1, some of you [asked questions of general interest](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class05/homework1q7.md). All of you should have an answer from me waiting for you as a comment on Canvas.
 
 ## Some Links from Today
 
