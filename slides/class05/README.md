@@ -7,7 +7,7 @@
 
 ## Deliverables Coming Soon
 
-- **NEW!** By noon tomorrow (2018-09-12) please complete the [Minute Paper after Class 05](http://bit.ly/431-2018-minute05), available at http://bit.ly/431-2018-minute05. Thanks!
+- **NEW!** By noon tomorrow (2018-09-12) please complete the [Minute Paper after Class 05](http://bit.ly/431-2018-minute05). Thanks!
 - [Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) is due Friday 2018-09-14 at Noon. Submit your work (again, R Markdown and HTML files) via Canvas.
     - A PDF of the [Homework 1 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) was posted last Friday after the deadline, and there's an R Markdown version posted there now, too. 
     - Thanks to everyone for getting Homework 1 submitted on time! 
