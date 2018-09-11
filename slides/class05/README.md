@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class05/431_class-05-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class05/431_class-05-slides_2018.Rmd).
-- Class 5 audio files will be available after class.
+- - Class 5 audio files are now available for download: [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class05audio_2018-09-11_part1.mp3), [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class05audio_2018-09-11_part2.mp3) and [Part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class05audio_2018-09-11_part3.mp3).
 
 ## Deliverables Coming Soon
 
