@@ -41,7 +41,7 @@ Date | Class | Description or Deliverable
 10-16 | 15 | Course Project Presentation Schedule to be announced.
 10-18 | -- | Group Work Session on Course Project Tasks C and D. Professor Love will be out of town.
 10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
-10-23 | -- | No class, CWRU Fall Break. **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task C (Survey Editing) and Task D (Survey Comparison Plan)**  due at noon
+10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks C and D**  due at noon.
 10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
 10-25 | 16 | **Part C** begins (Regression Models). Course Project Survey goes live.
 10-26 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
