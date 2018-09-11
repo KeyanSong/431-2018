@@ -6,6 +6,12 @@ Homework 1 is due at noon on Friday 2018-09-07. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
+## The Answer Sketch is now available.
+
+In [PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1sketch.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework1/431-2018-hw1sketch.Rmd).
+
+- Thursday, once the homework is graded, we'll post details on how you can get your grade on the assignment.
+
 ## Steps to a Successful Homework
 
 Here are the steps I would take to do the homework, after I read [the instructions](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1.md).
@@ -28,10 +34,5 @@ Here are the steps I would take to do the homework, after I read [the instructio
 6. Use headings to indicate the question being solved. Then leave a blank line before continuing with text.
 7. Avoid repeating Dr. Love's questions verbatim.
 8. When available, use the template, don't fight it.
-
-# Material to Come
-
-- We'll post the Homework 1 answer sketch very shortly after the deadline. This is why we don't accept late work. 
-- Later, once the homework is graded, we'll post details on how you can get your grade on the assignment, as well as a more detailed grading rubric.
 
 The main site for the course is https://github.com/THOMASELOVE/431-2018
