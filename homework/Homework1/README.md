@@ -6,9 +6,7 @@ Homework 1 is due at noon on Friday 2018-09-07. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
-## The Answer Sketch is now available.
-
-In [PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1sketch.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework1/431-2018-hw1sketch.Rmd).
+## The Answer Sketch is now available in [PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1sketch.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework1/431-2018-hw1sketch.Rmd).
 
 - Thursday, once the homework is graded, we'll post details on how you can get your grade on the assignment.
 
