@@ -19,7 +19,8 @@
 
 1. Information on the Course Project has begun to appear at https://github.com/THOMASELOVE/431-2018-project. I hope to have a more final version available by Thursday's class. You should plan to start working on the project around September 24.
 2. In responding to Question 7 on Homework 1, some of you [asked questions of general interest](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class05/homework1q7.md). 
-    
+3. In an exciting development, [Google Dataset Search](https://toolbox.google.com/datasetsearch) now exists in beta form. Here is an [article from The Verge](https://www.theverge.com/2018/9/5/17822562/google-dataset-search-service-scholar-scientific-journal-open-data-access) with some more details, and I'll also link to the weekly [Monday Morning Data Science](https://mailchi.mp/6dc32765278d/mmds-bouncing-into-the-week-93841?e=f2eec42851) newsletter posting. From there, I learned that the initial version will focus on environmental, social science, and government data. 
+    - If you're interested, subscribe to Monday Morning Data Science from the Johns Hopkins Data Science Lab [here](https://jhudatascience.us16.list-manage.com/subscribe?u=5ea551600fcdf84334e5aa6b0&id=26c0b7221a).
 
 ## Some Links from Today
 
