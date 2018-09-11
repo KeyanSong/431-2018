@@ -88,7 +88,33 @@ nh_3 <- nh_2 %>%
 ```{r}
 nh_3 %>%
     group_by(Gender) %>%
-    summarize("Count" = n(), "Mean BMI" = mean(BMI), "SD of BMI" = sd(BMI))
+    summarize("Count" = n(), "Mean BMI" = mean(BMI), 
+              "Skew1" = (mean(BMI) - median(BMI))/sd(BMI))
+```
+
+- If skew1 < 0.2, we rarely infer anything but symmetry.
+- If skew1 > 0.2, we might infer substantial skew, but DTDP.
+
+## Skew1 and A Relevant Picture (code on next slide)
+
+Do the female data appear skewed? Do the male data?
+
+```{r, echo = FALSE}
+ggplot(nh_3, aes(x = BMI, fill = Gender)) +
+  geom_histogram(bins = 20, col = "black") +
+  guides(fill = FALSE) +
+  theme_bw() +
+  facet_wrap(~ Gender)
+```
+
+## Skew1 and A Relevant Picture (code)
+
+```{r, eval = FALSE}
+ggplot(nh_3, aes(x = BMI, fill = Gender)) +
+  geom_histogram(bins = 20, col = "black") +
+  guides(fill = FALSE) +
+  theme_bw() +
+  facet_wrap(~ Gender)
 ```
 
 ## Numerical Summary of BMI by Gender: 2/3
@@ -116,8 +142,9 @@ mosaic::favstats(BMI ~ Gender, data = nh_3)
 ```{r}
 nh_3 %>%
     group_by(Gender, Diabetes) %>%
-    summarize("Count" = n(), "Mean BMI" = mean(BMI),
-              "SD of BMI" = sd(BMI))
+    summarize("Count" = n(), 
+              "skew1" = (mean(BMI) - median(BMI))/sd(BMI),
+              mean(BMI), median(BMI))
 ```
 
 ## BMI by Gender **and** Diabetes status? 2/2
@@ -126,6 +153,7 @@ nh_3 %>%
 mosaic::favstats(BMI ~ Gender + Diabetes, data = nh_3)
 ```
 
+This is clearly the easiest approach, in my view.
 
 ## Does Diabetes affect Pulse-BMI association? (code)
 
