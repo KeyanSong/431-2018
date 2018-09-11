@@ -38,13 +38,13 @@ Date | Class | Description or Deliverable
 10-10 | -- | Before Class 14, finish reading **Leek**
 10-11 | 14 |
 10-12 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task A (Proposal) and Task B (Presentation Sign-up)**  due at noon
-10-16 | 15 |
+10-16 | 15 | Course Project Presentation Schedule to be announced.
 10-18 | -- | Group Work Session on Course Project Tasks C and D. Professor Love will be out of town.
 10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
-10-23 | -- | No class, CWRU Fall Break. Before Class 16, read **Silver** Chapters 7-11.
-10-24 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task C (Survey Editing) and Task D (Survey Comparison Plan)**  due at noon
-10-25 | 16 | **Part C** begins (Regression Models)
-10-26 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. Course Project Survey becomes available.
+10-23 | -- | No class, CWRU Fall Break. **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task C (Survey Editing) and Task D (Survey Comparison Plan)**  due at noon
+10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
+10-25 | 16 | **Part C** begins (Regression Models). Course Project Survey goes live.
+10-26 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
 10-30 | 17 | 
 10-31 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task E (Taking the Survey)**  due at noon
 11-01 | 18 | 
@@ -53,12 +53,14 @@ Date | Class | Description or Deliverable
 11-06 | 19 |
 11-08 | 20 |
 11-13 | 21 |
+11-14 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task F (Sharing Study 2 Data)**  due at noon
 11-15 | 22 |
 11-16 | -- | **[Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 11-20 | -- | No class, Professor Love will be out of town.
 11-22 | -- | No class, CWRU Thanksgiving Break.
 11-26 | -- | By Class 23, finish reading **Silver** 
 11-27 | 23 |
+11-28 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task G (The Update)**  due at noon
 11-29 | 24 |
 11-30 | -- | **[Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 12-04 | 25 |
@@ -68,10 +70,10 @@ Date | Class | Description or Deliverable
 12-10 | -- | First Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
 12-11 | -- | Second Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
 12-13 | -- | Third Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
-12-13 | -- | All [Course Project](https://github.com/THOMASELOVE/431-2018-project) Materials due at noon
+12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Portfolio)**  due at noon
 12-13 | -- | All [Homework Regrading Requests](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon
 
-Student project presentations will be scheduled on **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete by 2018-10-12, and you will know your schedule on 2018-10-16.
+**Course Project](https://github.com/THOMASELOVE/431-2018-project) Task I (The Presentation)** work will be scheduled on **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete by 2018-10-12, and you should know your schedule on 2018-10-16.
 
 ## Teaching Assistant Office Hours 
 
