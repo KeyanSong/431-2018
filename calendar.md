@@ -37,7 +37,7 @@ Date | Class | Description or Deliverable
 10-09 | 13 |
 10-10 | -- | Before Class 14, finish reading **Leek**
 10-11 | 14 |
-10-12 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Registration/Scheduling forms** due at noon
+10-12 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task A (Proposal) and Task B (Presentation Sign-up)**  due at noon
 10-16 | 15 |
 10-18 | -- | Special Session, Professor Love will be out of town.
 10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
