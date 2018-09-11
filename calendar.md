@@ -18,7 +18,7 @@ Date | Class | Description or Deliverable
 09-06 | 4 | Using R, R Studio and R Markdown to visualize and summarize data from NHANES
 09-07 | -- | **[Homework 1](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon 
 09-11 | 5 | Visualizing a new sample from NHANES, Leek: 5, 9, 10, 13 discussion, Announcing the Course Project
-09-13 | 6 | 
+09-13 | 6 | Visualizing a new sample from NHANES, Leek, R in the News, Kidney Cancer Maps
 09-14 | -- | **[Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-17 | -- | Read **Silver** Introduction & Chapter 1 by now, for Homework 3.
 09-18 | 7 | 
