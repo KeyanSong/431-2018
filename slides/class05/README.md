@@ -9,7 +9,7 @@
 
 - **NEW!** By noon tomorrow (2018-09-12) please complete the [Minute Paper after Class 05](http://bit.ly/431-2018-minute05). Thanks!
 - [Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) is due Friday 2018-09-14 at Noon. Submit your work (again, R Markdown and HTML files) via Canvas.
-    - A PDF of the [Homework 1 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) was posted last Friday after the deadline, and there's an R Markdown version posted there now, too. 
+    - PDF and R Markdown versions of the [Homework 1 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework1) are now posted. 
     - Thanks to everyone for getting Homework 1 submitted on time! 
     - All of you should have an answer from me for your personal question as a comment on your Homework 1 submission in Canvas.
     - Grades should be available on Thursday, and we will discuss Homework 1 a little more in class on Thursday.
@@ -18,9 +18,9 @@
 ## Today's Announcements
 
 1. Information on the Course Project has begun to appear at https://github.com/THOMASELOVE/431-2018-project. I hope to have a more final version available by Thursday's class. You should plan to start working on the project around September 24.
-2. For Homework 1, Question 7, we had some [questions of general interest](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class05/homework1q7.md) that I'll discuss today. 
-3. In an exciting development, [Google Dataset Search](https://toolbox.google.com/datasetsearch) now exists in beta form. Here is an [article from The Verge](https://www.theverge.com/2018/9/5/17822562/google-dataset-search-service-scholar-scientific-journal-open-data-access) with some more details, and I'll also link to the weekly [Monday Morning Data Science](https://mailchi.mp/6dc32765278d/mmds-bouncing-into-the-week-93841?e=f2eec42851) newsletter posting. From there, I learned that the initial version will focus on environmental, social science, and government data. 
+2. In an exciting development, [Google Dataset Search](https://toolbox.google.com/datasetsearch) now exists in beta form. Here is an [article from The Verge](https://www.theverge.com/2018/9/5/17822562/google-dataset-search-service-scholar-scientific-journal-open-data-access) with some more details, and I'll also link to the weekly [Monday Morning Data Science](https://mailchi.mp/6dc32765278d/mmds-bouncing-into-the-week-93841?e=f2eec42851) newsletter posting. From there, I learned that the initial version will focus on environmental, social science, and government data. 
     - If you're interested, subscribe to Monday Morning Data Science from the Johns Hopkins Data Science Lab [here](https://jhudatascience.us16.list-manage.com/subscribe?u=5ea551600fcdf84334e5aa6b0&id=26c0b7221a).
+3. For Homework 1, Question 7, we had some [questions of general interest](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class05/homework1q7.md) that I'll discuss today. 
 
 ## Some Links from Today
 
