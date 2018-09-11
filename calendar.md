@@ -24,17 +24,17 @@ Date | Class | Description or Deliverable
 09-18 | 7 | 
 09-20 | 8 | 
 09-21 | -- | **[Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
-09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4. **Now** is the time to start work on the [Project](https://github.com/THOMASELOVE/431-2018-project)
-09-25 | 9 | 
+09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4. 
+09-25 | 9  | [Project](https://github.com/THOMASELOVE/431-2018-project) groups for Tasks A, C and D formed.
 09-26 | 10 | Before Class 10, read **Leek** Chapters 1-4 and 12.
 09-27 | 10 | 
 09-28 | -- | **[Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
 10-02 | 11 | **Part B** begins (Making Comparisons)
-10-04 | 12 |
+10-04 | 12 | 
 10-05 | -- | **[Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** 
 10-08 | -- | **Quiz 1 due at noon**
-10-09 | 13 |
+10-09 | 13 | 
 10-10 | -- | Before Class 14, finish reading **Leek**
 10-11 | 14 |
 10-12 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task A (Proposal) and Task B (Presentation Sign-up)**  due at noon
