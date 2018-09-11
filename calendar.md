@@ -24,7 +24,7 @@ Date | Class | Description or Deliverable
 09-18 | 7 | 
 09-20 | 8 | 
 09-21 | -- | **[Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
-09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4.
+09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4. **Now** is the time to start work on the [Project](https://github.com/THOMASELOVE/431-2018-project)
 09-25 | 9 | 
 09-26 | 10 | Before Class 10, read **Leek** Chapters 1-4 and 12.
 09-27 | 10 | 
