@@ -73,7 +73,7 @@ Date | Class | Description or Deliverable
 12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Portfolio)**  due at noon
 12-13 | -- | All [Homework Regrading Requests](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon
 
-**Course Project](https://github.com/THOMASELOVE/431-2018-project) Task I (The Presentation)** work will be scheduled on **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete by 2018-10-12, and you should know your schedule on 2018-10-16.
+**[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task I (The Presentation)** work will be scheduled for either **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete (Project Task B) by 2018-10-12, and you should know your schedule on 2018-10-16.
 
 ## Teaching Assistant Office Hours 
 
