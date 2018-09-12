@@ -26,4 +26,8 @@ We're going to ask you to do two tasks in a group of about 5 people today (we ne
 
 ## One Last Thing
 
+- I really need to get better at living up to this stereotype...
+
+![](http://phdcomics.com/comics/archive/phd072508s.gif) [Link](http://phdcomics.com/comics/archive/phd072508s.gif)
+
 The main web site for this course is https://github.com/THOMASELOVE/431-2018.
