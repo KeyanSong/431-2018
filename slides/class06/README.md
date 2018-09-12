@@ -12,13 +12,13 @@
     
 ## Today's Announcements
 
-1. Comments on Homework 1
-2. Comments on the Minute Paper After Class 5
+1. Comments on Homework 1.
+2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general comments that we'll discuss in class today.
 3. We're going to ask you to do two tasks in a group of about 5 people today (we need ten groups). One of those tasks will ask someone from your group to fill in the Google Form at http://bit.ly/431-2018-class6-leek.
 
 ## Some Links from Today
 
-- David Robinson's blog post is at http://varianceexplained.org/r/op-ed-text-analysis/
+- David Robinson's blog post discussed in today's slides is at http://varianceexplained.org/r/op-ed-text-analysis/
 
 ## One Last Thing
 
