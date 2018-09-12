@@ -14,7 +14,11 @@
 
 1. Comments on Homework 1.
 2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general responses. We'll discuss those in class today.
-3. We're going to ask you to do two tasks in a group of about 5 people today (we need ten groups). One of those tasks will ask someone from your group to fill in the Google Form at http://bit.ly/431-2018-class6-leek.
+3. You may be interested in becoming a [student member of the American Statistical Association](http://www.amstat.org/asa/education/Statistics-Students.aspx). It's been a great organization for me, and if you're looking into statistics or a related field as a career, you should definitely consider this seriously. The student rate is $25 per year, and some departments have occasionally sponsored their students as well. To join, [visit this link](https://www.amstat.org/ASA/JoinRenew/JoinMemberType.aspx?membertype=IREG&utm_source=informz&utm_medium=email&utm_campaign=asa&_zs=XgXOe1&_zl=gJ095). 
+
+## Today's In-Class Task about Jeff Leek's book requires a link.
+
+We're going to ask you to do two tasks in a group of about 5 people today (we need ten groups). One of those tasks will ask someone from your group to fill in the Google Form at http://bit.ly/431-2018-class6-leek.
 
 ## Some Links from Today
 
