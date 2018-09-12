@@ -8,12 +8,12 @@
 ## Deliverables Coming Soon
 
 - [Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) is due Friday 2018-09-14 at Noon. Submit your work (again, R Markdown and HTML files) via Canvas.
-- Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* before Class 7.
-    
+- Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* before our next class, although the main issue is to get these read so that you can react to them in one of the questions in Homework 3, which is due next Friday 2018-09-21 at Noon.
+
 ## Today's Announcements
 
 1. Comments on Homework 1.
-2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general comments that we'll discuss in class today.
+2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general responses. We'll discuss those in class today.
 3. We're going to ask you to do two tasks in a group of about 5 people today (we need ten groups). One of those tasks will ask someone from your group to fill in the Google Form at http://bit.ly/431-2018-class6-leek.
 
 ## Some Links from Today
