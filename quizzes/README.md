@@ -2,6 +2,8 @@
 
 This is the main page for our three Quizzes in 431, Section 1 for Fall 2018. Detailed information will be provided here as the semester progresses.
 
+All Quizzes are taken online, at home, requiring a connection to the Internet, and access to R and R Studio, and consist of a mix of multiple-choice and short answer questions.
+
 1. Quiz 1 will be released to you on 2018-10-05, and will be due on 2018-10-08 at noon.
     - Quiz 1 will include material from Part A of the course
         - This (at least potentially) includes material from **Leek** Chapters 1-4, 5, 9, 10, 12 and 13.
