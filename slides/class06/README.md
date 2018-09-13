@@ -11,7 +11,7 @@
 - Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* before our next class. 
   - The main issue is to get these read so that you can complete [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3).
   - [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) is due next Friday 2018-09-21 at Noon. 
-  - Another thing you'll want to read before doing Homework 3 is [Chapter 8 (on Assessing Normality)](https://thomaselove.github.io/2018-431-book/assessing-normality.html) of our Course Notes.
+  - Another thing to read before doing Homework 3 is [Chapter 8 (on Assessing Normality)](https://thomaselove.github.io/2018-431-book/assessing-normality.html) of our Course Notes.
 
 ## Today's Announcements
 
@@ -22,8 +22,8 @@
     - When we have grades for other Homeworks, they will appear in new tabs of the same sheet. 
     - HW 1 grades were excellent, as we'd expected, with the modal grade being 100/100. 
     - We anticipate that grades on HW1 and HW2 will be generally stronger than the grades on the later Homework.
-2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general responses. We'll discuss those in class today.
-3. There are some issues with dead links to materials from Duke and from Vanderbilt in Section 2.2.1.2 of the Project Instructions. I'll get that fixed as soon as I can, probably Friday. For now, this looks like the [right link for Duke](https://sites.duke.edu/urgws/files/2014/02/Research-Questions_WS-handout.pdf), and the [right link for Vanderbilt](https://www.vanderbilt.edu/writing/wp-content/uploads/sites/164/2016/10/Formulating-Your-Research-Question.pdf). More material on the Project Instructions will be in place on Tuesday, I hope. Everything will be up before we start work on the Project on 2018-09-25.
+2. Thanks to those of you who completed the **Minute Paper After Class 5** - please visit http://bit.ly/431-2018-minute05-response for my general responses, plus I sent some responses individually via email.
+3. There are some issues with dead links to materials from Duke and from Vanderbilt in Section 2.2.1.2 of the **Project Instructions**. I'll get that fixed as soon as I can, maybe Friday. For now, this looks like the [right link for Duke](https://sites.duke.edu/urgws/files/2014/02/Research-Questions_WS-handout.pdf), and the [right link for Vanderbilt](https://www.vanderbilt.edu/writing/wp-content/uploads/sites/164/2016/10/Formulating-Your-Research-Question.pdf). More material on the [Project Instructions](https://thomaselove.github.io/431-2018-project/) will be in place on Tuesday, I hope. I can promise that everything will be up before we start work on the Project on 2018-09-25.
 4. You may be interested in becoming a [student member of the American Statistical Association](http://www.amstat.org/asa/education/Statistics-Students.aspx). It's been a great organization for me, and if you're looking into statistics or a related field as a career, you should definitely consider this seriously. The student rate is $25 per year, and some departments have occasionally sponsored their students as well. To join, [visit this link](https://www.amstat.org/ASA/JoinRenew/JoinMemberType.aspx?membertype=IREG&utm_source=informz&utm_medium=email&utm_campaign=asa&_zs=XgXOe1&_zl=gJ095). 
 5. There is a brand new course on [Datacamp](https://www.datacamp.com) called **Working with Data in the Tidyverse**, by Alison Hill. This looks great. Also worth considering are the **Categorical Data in the Tidyverse** and **Working with Dates and Times in R** courses, which I'll add to the recommended list of courses in the [Datacamp section of our Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html) as soon I can.
 
