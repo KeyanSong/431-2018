@@ -8,7 +8,10 @@
 ## Deliverables Coming Soon
 
 - [Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) is due Friday 2018-09-14 at Noon. Submit your work (again, R Markdown and HTML files) via Canvas.
-- Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* before our next class. The main issue is to get these read so that you can complete [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3), which is due next Friday 2018-09-21 at Noon.
+- Read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise* before our next class. 
+  - The main issue is to get these read so that you can complete [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3).
+  - [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) is due next Friday 2018-09-21 at Noon. 
+  - Another thing you'll want to read before doing Homework 3 is [Chapter 8 (on Assessing Normality)](https://thomaselove.github.io/2018-431-book/assessing-normality.html) of our Course Notes.
 
 ## Today's Announcements
 
