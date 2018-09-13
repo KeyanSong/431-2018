@@ -8,7 +8,9 @@ Any assignment received more than 60 minutes after the deadline is considered la
 
 ## The Answer Sketch is now available in [PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1sketch.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework1/431-2018-hw1sketch.Rmd).
 
-- Thursday, once the homework is graded, we'll post details on how you can get your grade on the assignment.
+## Grades on Homework 1 are now available
+
+You'll find them in the Google Sheet at http://bit.ly/431-2018-hw-grades. Look for the Homework 1 Tab, and you'll need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13.
 
 ## Steps to a Successful Homework
 
