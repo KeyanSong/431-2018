@@ -21,6 +21,7 @@
     - We anticipate that grades on HW1 and HW2 will be generally stronger than the grades on the later Homework.
 2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general responses. We'll discuss those in class today.
 3. You may be interested in becoming a [student member of the American Statistical Association](http://www.amstat.org/asa/education/Statistics-Students.aspx). It's been a great organization for me, and if you're looking into statistics or a related field as a career, you should definitely consider this seriously. The student rate is $25 per year, and some departments have occasionally sponsored their students as well. To join, [visit this link](https://www.amstat.org/ASA/JoinRenew/JoinMemberType.aspx?membertype=IREG&utm_source=informz&utm_medium=email&utm_campaign=asa&_zs=XgXOe1&_zl=gJ095). 
+4. There is a brand new course on [Datacamp](https://www.datacamp.com) called **Working with Data in the Tidyverse**, by Alison Hill. This looks great. Also worth considering are the **Categorical Data in the Tidyverse** and **Working with Dates and Times in R** courses, which I'll add to the recommended list of courses in the [Datacamp section of our Syllabus](https://thomaselove.github.io/2018-431-syllabus/datacamp.html) as soon I can.
 
 ## Today's In-Class Task about Jeff Leek's book requires a link.
 
