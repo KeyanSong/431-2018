@@ -12,7 +12,12 @@
 
 ## Today's Announcements
 
-1. Comments on Homework 1.
+1. Homework 1
+  - The Answer Sketch is now available in [PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1sketch.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework1/431-2018-hw1sketch.Rmd).
+  - Homework 1 Grades are now part of the [Coded Grading Roster](http://bit.ly/431-2018-hw-grades). You'll find them in the Google Sheet at http://bit.ly/431-2018-hw-grades. Look for the Homework 1 Tab, and you'll need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13. 
+    - When we have grades for other Homeworks, they will appear here, too, in new tabs of the sheet. 
+    - The grades were excellent, as we'd expected, with the modal grade being 100/100. 
+    - We anticipate that grades on HW1 and HW2 will be generally stronger than the grades on the later Homework.
 2. Thanks to those of you who completed the Minute Paper After Class 5 - please visit http://bit.ly/431-2018-minute05-response for my general responses. We'll discuss those in class today.
 3. You may be interested in becoming a [student member of the American Statistical Association](http://www.amstat.org/asa/education/Statistics-Students.aspx). It's been a great organization for me, and if you're looking into statistics or a related field as a career, you should definitely consider this seriously. The student rate is $25 per year, and some departments have occasionally sponsored their students as well. To join, [visit this link](https://www.amstat.org/ASA/JoinRenew/JoinMemberType.aspx?membertype=IREG&utm_source=informz&utm_medium=email&utm_campaign=asa&_zs=XgXOe1&_zl=gJ095). 
 
