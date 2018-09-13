@@ -15,7 +15,7 @@
 1. Homework 1 is now complete.
   - The Answer Sketch is now available in [PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework1/431-2018-hw1sketch.pdf), and in [R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework1/431-2018-hw1sketch.Rmd).
   - Homework 1 Grades are now part of the [Coded Grading Roster](http://bit.ly/431-2018-hw-grades), which lives at http://bit.ly/431-2018-hw-grades in a Google Sheet which requires you to log in to Google via CWRU. 
-     -Look for the Homework 1 Tab, and you'll need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13. 
+     - Look for the Homework 1 Tab, and you'll need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13. 
     - When we have grades for other Homeworks, they will appear in new tabs of the same sheet. 
     - HW 1 grades were excellent, as we'd expected, with the modal grade being 100/100. 
     - We anticipate that grades on HW1 and HW2 will be generally stronger than the grades on the later Homework.
