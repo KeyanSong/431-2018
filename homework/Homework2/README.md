@@ -6,7 +6,7 @@ Homework 2 is due at noon on Friday 2018-09-14. It contains eleven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
-## The answer sketch has either been posted here, or will be posted here later this evening.
+## The answer sketch is coming soon, and here are the links.
 
 When it is available, [this will be the PDF link](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework2/431-2018-hw2sketch.pdf) and [this will link to the R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework2/431-2018-hw2sketch.Rmd). If you find those links to be dead, it isn't posted yet.
 
