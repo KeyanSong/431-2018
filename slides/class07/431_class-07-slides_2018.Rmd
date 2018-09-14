@@ -1,0 +1,600 @@
+---
+title: "431 Class 07"
+author: "Thomas E. Love"
+date: "2018-09-18"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+
+```
+
+## Today's Agenda
+
+1. Working with a Categorical Outcome 
+2. Assessing Normality through Visualization
+3. Kidney Cancer Maps
+
+## NHANES -- As we've seen before...
+
+```{r, warning = FALSE, message = FALSE}
+library(NHANES); library(magrittr); library(tidyverse)
+
+set.seed(20180911) # note same seed as Classes 5 and 6
+
+nh_2 <- sample_n(NHANES, size = 1000) %>%
+    select(ID, Gender, Age, Height, Weight, BMI, 
+           Pulse, Race1, HealthGen, Diabetes)
+
+nh_3 <- nh_2 %>%
+    filter(Age > 20 & Age < 80) %>%
+    select(ID, Gender, Age, Height, Weight, BMI, 
+           Pulse, Race1, HealthGen, Diabetes) %>%
+    na.omit
+```
+
+## General Health Status: A Categorical Outcome
+
+Here's a Table of the General Health Status results. This is a self-reported rating of each subject's health on a five point scale (Excellent, Very Good, Good, Fair, Poor.)
+
+```{r tabHealthGen1-tab}
+nh_3 %>%
+    select(HealthGen) %>%
+    table() %>%
+    addmargins()
+```
+
+The `HealthGen` data are categorical, which means that summarizing them with averages isn't as appealing as looking at percentages, proportions and rates.
+
+## Bar Chart for Categorical Data
+
+Usually, a **bar chart** is the best choice for a graphing a variable made up of categories.
+
+```{r HealthGengraph1-figcode, eval = FALSE}
+ggplot(data = nh_3, aes(x = HealthGen)) + 
+    geom_bar()
+```
+
+## Original Bar Chart of General Health
+
+```{r HealthGengraph1-fig, echo = FALSE}
+ggplot(data = nh_3, aes(x = HealthGen)) + 
+    geom_bar()
+```
+
+## Improving the Bar Chart
+
+There are lots of things we can do to make this plot fancier.
+
+```{r HealthGengraph2-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, fill = HealthGen)) + 
+    geom_bar() + 
+    guides(fill = FALSE) +
+    labs(x = "Self-Reported Health Status",
+         y = "Number of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)")
+```
+
+
+## The Improved Bar Chart
+
+```{r HealthGengraph2-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, fill = HealthGen)) + 
+    geom_bar() + 
+    guides(fill = FALSE) +
+    labs(x = "Self-Reported Health Status",
+         y = "Number of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)")
+```
+
+## Or, we can really go crazy... (code on next slide)
+
+```{r HealthGengraph3-fig, echo = FALSE}
+nh_3 %>%
+    count(HealthGen) %>%
+    ungroup() %>%
+    mutate(pct = round(prop.table(n) * 100, 1)) %>%
+    ggplot(aes(x = HealthGen, y = pct, fill = HealthGen)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_viridis_d() + 
+    guides(fill = FALSE, col = FALSE) +
+    geom_text(aes(y = pct + 1,    # nudge above top of bar
+                  label = paste0(pct, '%')),  # prettify
+              position = position_dodge(width = .9), 
+              size = 4) +
+    labs(x = "Self-Reported Health Status",
+         y = "Percentage of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)") +
+    theme_bw()
+```
+
+## What crazy looks like...
+
+```{r HealthGengraph3-figcode, eval = FALSE}
+nh_3 %>%
+    count(HealthGen) %>%
+    ungroup() %>%
+    mutate(pct = round(prop.table(n) * 100, 1)) %>%
+    ggplot(aes(x = HealthGen, y = pct, fill = HealthGen)) + 
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_viridis_d() + 
+    guides(fill = FALSE, col = FALSE) +
+    geom_text(aes(y = pct + 1,    # nudge above top of bar
+                  label = paste0(pct, '%')),  # prettify
+              position = position_dodge(width = .9), 
+              size = 4) +
+    labs(x = "Self-Reported Health Status",
+         y = "Percentage of NHANES subjects",
+         title = "Self-Reported Health (ages 21-79)") +
+    theme_bw()
+```
+
+## Working with Cross-Tabulations
+
+We can add a marginal total, and compare subjects by Gender, as follows...
+
+```{r tabHealthGen2kable-tab}
+nh_3 %>%
+    select(Gender, HealthGen) %>%
+    table() %>%
+    addmargins() %>%
+    knitr::kable()
+```
+
+## Getting Row Proportions
+
+We'll use `prop.table` and get the row proportions by feeding it a 1.
+
+```{r tabHealthGen4-tab}
+nh_3 %>%
+    select(Gender, HealthGen) %>%
+    table() %>%
+    prop.table(.,1) %>%
+    round(.,2) %>%
+    knitr::kable()
+```
+
+## BMI by General Health Status
+
+Let's consider now the relationship between self-reported overall health and body-mass index.
+
+```{r nh_3_bmibyhealth-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) 
+```
+
+## What happens with the `Poor` category?
+
+```{r nh_3_bmibyhealth-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    labs(title = "BMI by Health Status (NHANES 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") + 
+    guides(fill = FALSE) 
+```
+
+## Summary Table of BMI distribution by HealthGen
+
+```{r, eval = FALSE}
+nh_3 %>%
+    group_by(HealthGen) %>%
+    summarize("BMI n" = n(), 
+              "Mean" = round(mean(BMI),1), 
+              "SD" = round(sd(BMI),1),
+              "min" = round(min(BMI),1), 
+              "Q25" = round(quantile(BMI, 0.25),1),
+              "median" = round(median(BMI),1), 
+              "Q75" = round(quantile(BMI, 0.75),1),
+              "max" = round(max(BMI),1)) %>%
+    knitr::kable() 
+```
+
+- Resulting table is shown in the next slide.
+
+## Not many self-identify in the `Poor` category
+
+```{r, echo = FALSE}
+nh_3 %>%
+    group_by(HealthGen) %>%
+    summarize("BMI n" = n(), 
+              "Mean" = round(mean(BMI),1), 
+              "SD" = round(sd(BMI),1),
+              "min" = round(min(BMI),1), 
+              "Q25" = round(quantile(BMI, 0.25),1),
+              "median" = round(median(BMI),1), 
+              "Q75" = round(quantile(BMI, 0.75),1),
+              "max" = round(max(BMI),1)) %>%
+    knitr::kable() 
+```
+
+## BMI by Gender and General Health Status
+
+We'll start with two panels of boxplots to try to understand the relationships between BMI, General Health Status and Gender. 
+
+```{r nh_3_bmibyhealthbygender1-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    guides(fill = FALSE) +
+    facet_wrap(~ Gender) + 
+    coord_flip() + 
+    theme_light() +
+    labs(title = "BMI by Health Status (NHANES ages 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") 
+```
+
+- Note the use of `coord_flip` to rotate the graph 90 degrees.
+- Note the use of `theme_light()`.
+
+## BMI by Gender and General Health Status Boxplots
+
+```{r nh_3_bmibyhealthbygender1-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = HealthGen, y = BMI, fill = HealthGen)) + 
+    geom_boxplot() + 
+    guides(fill = FALSE) +
+    facet_wrap(~ Gender) + 
+    coord_flip() + 
+    theme_light() +
+    labs(title = "BMI by Health Status (NHANES ages 21-79)",
+         y = "Body-mass index", 
+         x = "Self-Reported Overall Health") 
+```
+
+## Histograms of BMI by Health and Gender
+
+Here are doubly faceted histograms, which can help address similar questions.
+
+```{r nh_3_bmibyhealthbygender2-figcode, eval = FALSE}
+ggplot(data = nh_3, 
+       aes(x = BMI, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI by Gender, Overall Health",
+         x = "Body-mass index") + 
+    guides(fill = FALSE) +
+    facet_grid(HealthGen ~ Gender) +
+    theme_dark()
+```
+
+- Note the use of `facet_grid` to specify rows and columns.
+- Note the use of a new theme, called `theme_dark()`.
+
+## Histograms of BMI by Health and Gender
+
+```{r nh_3_bmibyhealthbygender2-fig, echo = FALSE}
+ggplot(data = nh_3, 
+       aes(x = BMI, fill = Gender)) + 
+    geom_histogram(color = "white", bins = 20) + 
+    labs(title = "BMI by Gender, Overall Health",
+         x = "Body-mass index") + 
+    guides(fill = FALSE) +
+    facet_grid(HealthGen ~ Gender) +
+    theme_dark()
+```
+
+## Assessing whether a Normal Model could be useful
+
+Let's look at the distribution of Males who rate their health as Good.
+
+```{r, eval = FALSE}
+nh_3 %>% filter(Gender == "male" & HealthGen == "Good") %>%
+  ggplot(., aes(x = BMI)) +
+  geom_histogram(bins = 12, 
+                 fill = "royalblue", col = "white") +
+  labs(title = "BMI in Males who rate their health as Good")
+```
+
+## Could a Normal Model be useful here?
+
+```{r, echo = FALSE}
+nh_3 %>% filter(Gender == "male", HealthGen == "Good") %>%
+  ggplot(., aes(x = BMI)) +
+  geom_histogram(bins = 12, 
+                 fill = "royalblue", col = "white") +
+  labs(title = "BMI in Males who rate their health as Good")
+```
+
+## Normal Q-Q plot within `ggplot2`
+
+```{r, echo = FALSE}
+nh_3 %>% 
+  filter(Gender == "male", HealthGen == "Good") %>%
+  ggplot(., aes(sample = BMI)) +
+  geom_qq(col = "blue") + geom_qq_line(col = "red")
+```
+
+## Histogram of all BMI values in `nh_3`
+
+```{r, echo = FALSE}
+ggplot(nh_3, aes(x = BMI)) +
+  geom_histogram(bins = 20, fill = "blue", col = "white") + 
+  labs(title = "Histogram for all BMI data in nh_3")
+```
+
+## Normal Q-Q plot of all BMI values in `nh_3`
+
+```{r, echo = FALSE}
+ggplot(nh_3, aes(sample = BMI)) +
+  geom_qq(col = "blue") + geom_qq_line(col = "red") + 
+  labs(title = "Normal Q-Q plot for all BMI data in nh_3")
+```
+
+## Two plots, side by side
+
+```{r, echo = FALSE}
+plot_a <- ggplot(nh_3, aes(x = BMI)) +
+  geom_histogram(bins = 20, fill = "blue", col = "white") + 
+  labs(title = "Histogram of BMI in nh_3")
+
+plot_b <- ggplot(nh_3, aes(sample = BMI)) +
+  geom_qq(col = "blue") + geom_qq_line(col = "red") + 
+  labs(title = "Normal Q-Q plot of BMI in nh_3")
+
+gridExtra::grid.arrange(plot_a, plot_b, ncol = 2)
+```
+
+## Two plots, side by side (code)
+
+```{r, eval = FALSE}
+plot_a <- ggplot(nh_3, aes(x = BMI)) +
+  geom_histogram(bins = 20, fill = "blue", col = "white") + 
+  labs(title = "Histogram of BMI in nh_3")
+
+plot_b <- ggplot(nh_3, aes(sample = BMI)) +
+  geom_qq(col = "blue") + geom_qq_line(col = "red") + 
+  labs(title = "Normal Q-Q plot of BMI in nh_3")
+
+gridExtra::grid.arrange(plot_a, plot_b, ncol = 2)
+```
+
+## Superimpose a Normal model on histogram?
+
+A Normal distribution is completely specified by the mean and standard deviation. For our men who rate their health as Good, we have:
+
+```{r}
+nh_3 %>% filter(Gender == "male", HealthGen == "Good") %>%
+  summarize(count = n(), mean(BMI), sd(BMI))
+```
+
+So, we'd want a Normal model with that mean and standard deviation.
+
+## Superimposing a Normal model on a histogram
+
+```{r, echo = FALSE}
+nh_3_maleGood <- nh_3 %>% 
+  filter(Gender == "male", HealthGen == "Good") 
+
+ggplot(nh_3_maleGood, aes(x = BMI)) +
+  geom_histogram(binwidth = 1, fill = "royalblue", 
+                 col = "white") +
+  stat_function(fun = function(x, mean, sd, n) 
+    n * dnorm(x = x, mean = mean, sd = sd), 
+    args = with(nh_3_maleGood, 
+                c(mean = mean(BMI),
+                  sd = sd(BMI), 
+                  n = length(BMI))),
+    col = "red", lwd = 1.5) +
+  labs(title = "BMI in Males who rate their health as Good",
+       subtitle = "With superimposed Normal model")
+```
+
+## Code to superimpose a Normal model ("counts")
+
+```{r, eval = FALSE}
+nh_3_maleGood <- nh_3 %>% 
+  filter(Gender == "male", HealthGen == "Good") 
+
+ggplot(nh_3_maleGood, aes(x = BMI)) +
+  geom_histogram(binwidth = 1, fill = "royalblue", 
+                 col = "white") +
+  stat_function(fun = function(x, mean, sd, n) 
+    n * dnorm(x = x, mean = mean, sd = sd), 
+    args = with(nh_3_maleGood, 
+                c(mean = mean(BMI),
+                  sd = sd(BMI), 
+                  n = length(BMI))),
+    col = "red", lwd = 1.5) +
+  labs(title = "BMI in Males who rate their health as Good",
+       subtitle = "With superimposed Normal model")
+```
+
+## Could plot density function, add a Normal curve
+
+```{r, echo = FALSE}
+nh_3 %>% filter(Gender == "male", HealthGen == "Good") %>%
+  ggplot(., aes(x = BMI)) +
+  geom_histogram(aes(y = ..density..), binwidth = 1, 
+                 fill = "royalblue", col = "white") +
+  stat_function(fun = dnorm, col = "red", lwd = 1.5, 
+                args = list(mean = mean(nh_3$BMI, na.rm = T),
+                            sd = sd(nh_3$BMI, na.rm = T))) +
+  labs(title = "BMI in Males who rate their health as Good",
+       subtitle = "With superimposed Normal model")
+```
+
+## Code: Density version of Normal model superimposition
+
+```{r, eval = FALSE}
+nh_3 %>% filter(Gender == "male", HealthGen == "Good") %>%
+  ggplot(., aes(x = BMI)) +
+  geom_histogram(aes(y = ..density..), binwidth = 1, 
+                 fill = "royalblue", col = "white") +
+  stat_function(fun = dnorm, col = "red", lwd = 1.5, 
+                args = list(mean = mean(nh_3$BMI, na.rm = T),
+                            sd = sd(nh_3$BMI, na.rm = T))) +
+  labs(title = "BMI in Males who rate their health as Good",
+       subtitle = "With superimposed Normal model")
+```
+
+and see Section 8.3 of the Course Notes.
+
+## Does a Normal model fit well for my data?
+
+1. Is a Normal Q-Q plot showing something close to a straight line, without clear signs of skew or indications of lots of outliers (heavy-tailedness)?
+2. Does a boxplot, violin plot and/or histogram also show a symmetric distribution, where both the number of outliers is modest, and the distance of those outliers from the mean is modest?
+3. Do numerical measures match up with the expectations of a normal model?
+
+Let's start by looking at 1 and 2.
+
+## BMI among people without diabetes ages 31-49
+
+```{r, echo = FALSE}
+nh_3149nodm <- nh_3 %>% 
+  filter(Age > 30, Age < 50, Diabetes == "No") 
+
+plot_1 <- ggplot(nh_3149nodm, aes(x = BMI)) +
+  geom_histogram(binwidth = 1, 
+                 fill = "cyan4", col = "white") +
+  stat_function(fun = function(x, mean, sd, n) 
+    n * dnorm(x = x, mean = mean, sd = sd), 
+    args = with(nh_3149nodm, 
+                c(mean = mean(BMI),
+                  sd = sd(BMI), 
+                  n = length(BMI))),
+    col = "red", lwd = 1.5) +
+  labs(title = "Histogram with Normal model") +
+  theme_bw()
+
+plot_2 <- ggplot(nh_3149nodm, aes(x = "", y = BMI)) +
+  geom_boxplot(fill = "cyan4") +
+  coord_flip() +
+  labs(x = "", title = "Boxplot") +
+  theme_bw()
+
+plot_3 <- ggplot(nh_3149nodm, aes(sample = BMI)) +
+  geom_qq(col = "cyan4") + geom_qq_line(col = "blue") +
+  labs(title = "Normal Q-Q Plot") +
+  theme_bw()
+
+plot_4 <- ggplot(nh_3149nodm, aes(x = "", y = BMI)) +
+  geom_violin(fill = "white", col = "cyan4") +
+  geom_boxplot(fill = "cyan4", width = 0.2) +
+  coord_flip() +
+  labs(x = "", title = "Violin Plot and Boxplot") +
+  theme_bw()
+
+gridExtra::grid.arrange(plot_1, plot_2, plot_3, plot_4, 
+  ncol = 2, 
+  top = "BMI for nh_3 subjects ages 31-49, without Diabetes")
+```
+
+## Does a Normal model fit well for my data?
+
+3. Do numerical measures match up with the expectations of a normal model?
+  - Is the mean close to the median (perhaps so that the skew~1~ is less than 0.2 in absolute value)?
+  - In a Normal model, mean $\pm$ 1 standard deviation covers 68% of the data.
+  - In a Normal model, mean $\pm$ 2 standard deviations covers 95% of the data.
+  - In a Normal model, mean $\pm$ 3 standard deviations covers 99.7% of the data.
+
+## Normal model for nh_3 subjects ages 31-49, without Diabetes?
+
+```{r}
+nh_3149nodm <- nh_3 %>% 
+  filter(Age > 30, Age < 50, Diabetes == "No") 
+
+mosaic::favstats(~ BMI, data = nh_3149nodm)
+```
+
+## What is skew~1~ here?
+
+```{r}
+nh_3149nodm %>% 
+  summarize(skew1 = (mean(BMI) - median(BMI))/sd(BMI))
+```
+
+## How many of the observations are within 1 SD of the mean?
+
+```{r}
+nh_3149nodm %>%
+  count(BMI > mean(BMI) - sd(BMI), 
+        BMI < mean(BMI) + sd(BMI))
+```
+
+So 129 of the 194 (`r round(100*129/194, 1)`%) observations are within 1 SD of the mean. How does this compare to the expectation under a Normal model?
+
+## How about the mean $\pm$ 2 standard deviations rule?
+
+Remember the total sample size here is 194.
+
+```{r}
+nh_3149nodm %>%
+  count(BMI > mean(BMI) - 2*sd(BMI), 
+        BMI < mean(BMI) + 2*sd(BMI))
+```
+
+So 185 of the 194 (`r round(100*185/194, 1)`%) observations are within 2 SD of the mean. How does this compare to the expectation under a Normal model?
+
+## Conclusions
+
+This is just a small piece of the toolbox for visualizations that we'll create in this class. Many additional tools are on the way, but the main idea won't change. Using the `ggplot2` package, we can accomplish several critical tasks in creating a visualization, including:
+
+- Identifying (and labeling) the axes and titles
+- Identifying a type of `geom` to use, like a point, bar or histogram
+- Changing fill, color, shape, size to facilitate comparisons
+- Building "small multiples" of plots with faceting
+
+Good data visualizations make it easy to see the data, and `ggplot2`'s tools make it relatively difficult to make a really bad graph.
+
+## Group Task: Kidney Cancer Death Rates
+
+Your map shows U.S. counties. 
+
+- The shaded counties are in the top 10% of age-standardized rates for death due to cancer of the kidney/ureter for white males, in 1980-1989.
+
+### Your Tasks
+
+1. Describe the patterns you see in the map.
+2. Speculate as to the cause of these patterns.
+
+---
+
+![](images/kidney-highest.png)
+
+--- 
+
+![](images/kidney-lowest.png)
+
+
+## Reminders
+
+- Homework 3 is due Friday at Noon.
+- Minute Paper after Class 7.
+- So far, we've covered most of the material in Chapters 1-8 and 10 of our Course Notes. 
+  - Part A covers Chapters 1-14.
+  - Next Time: More on Studying Association with Scatterplots and Correlations (Chapters 11-12)
+  - Coming Soon: Using Transformations to "Normalize" data (Chapter 9)
+
+## Notes on the Kidney Cancer example, 1
+
+I first asked you what you noticed about the map, in the hope that someone would point out the obvious pattern, which is that many of the countries in the Great Plains but relatively few near the coasts are shaded.
+
+- Why might that be? Could these be the counties with more old people? Ah, but these rates are age-adjusted.
+- They're mostly in rural areas: could the health care there be worse than in major cities? Or perhaps people living in rural areas have less healthy diets, or are exposed to more harmful chemicals? Maybe, but the confusing fact is that the highest 10% and the lowest 10% each show disproportionately higher rates in those Great Plains counties.
+
+## Notes on the Kidney Cancer example, 2
+
+- Consider a county with 100 white males. If it has even one kidney death in the 1980s, its rate is 1 per thousand per year, which is among the highest in the nation. If it has no such deaths, its rate will be 0, which is the lowest in the nation.
+- The observed rates for smaller counties are *much* more variable, and hence they are more likely to be shaded, even if nothing special is truly going on.
+- If a small county has an observed rate of 1 per thousand per year, it's probably random fluctuation. But if a large county (like Cuyahoga) has a very high rate, it is probably a real phenomenon.
+
+### Source
+
+My source for this example was Andrew Gelman and Deborah Nolan's book *Teaching Statistics: a bag of tricks* which is the source of a number of things we'll see in the course, including some of the "age guessing" example we've previously done.
