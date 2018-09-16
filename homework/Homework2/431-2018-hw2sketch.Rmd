@@ -3,10 +3,10 @@ title: "Answer Sketch for Homework 2"
 author: "431 Staff and Professor Love"
 date: "`Due 2018-09-14, version `r Sys.Date()`"
 output:
+  pdf_document:
+    toc: yes
   html_document:
     code_folding: show
-    toc: yes
-  pdf_document:
     toc: yes
 ---
 
@@ -18,7 +18,7 @@ Here's the complete R setup we used.
 knitr::opts_chunk$set(comment=NA)
 options(width = 60)
 
-library(MASS); library(tidyverse)
+library(magrittr); library(tidyverse)
 ## make sure these packages are installed in R
 ```
 
@@ -59,7 +59,7 @@ This relatively simple histogram is just one of many possible plots we could use
 - We might consider a **stem-and-leaf display** to show the actual data values while retaining the shape of a histogram.
 
 ```{r q01_stem-and-leaf}
-stem(hw2$waiting)
+hw2 %$% stem(waiting) 
 ```
 
 - We might consider a **boxplot** or **box-and-whiskers plot** (as we'll see below in Question 4), or perhaps a variant of the boxplot called a **violin plot**.
@@ -75,19 +75,19 @@ The `summary` function in R provides the five-number summary (minimum, 25th, 50t
 
 ```{r q02_summaries}
 # summary provides mean and median, along with quartiles and min/max
-summary(hw2$waiting) 
+hw2 %$% summary(waiting) 
 ```
 
 ```{r q02_summaries2}
 # describe in the psych library also provides the trimmed mean we're looking for...
-psych::describe(hw2$waiting)
+hw2 %$% psych::describe(waiting)
 ```
 
 ```{r q02_trimmed_mean}
 # this trims 10% from the top and 10% of the bottom
 # of the distribution, and then takes the mean of
 # what remains, just as psych::describe does
-mean(hw2$waiting, trim = 0.1)
+hw2 %$% mean(waiting, trim = 0.1)
 ```
 
 ## Comments
@@ -129,21 +129,11 @@ Not all exploratory techniques are equally effective for these data. A **boxplot
 In the notes, we described one way to get a boxplot for a single distribution. That was as follows.
 
 ```{r q04_boxplot, fig.height = 3}
-boxplot(hw2$waiting, horizontal=TRUE, col = "royalblue",
-        main = "Boxplot of Old Faithful Waiting Times")
-```
-
-We also could obtain a boxplot using `ggplot` for just the waiting times distribution, with a couple of little tricks, as shown below.
-
-```{r q04_boxplot2, fig.height=2.5}
-ggplot(hw2, aes(x = 1, y = waiting)) + 
-  geom_boxplot(fill = "royalblue") + 
-  coord_flip() + 
+ggplot(hw2, aes(x = "n = 272", y = waiting)) +
+  geom_boxplot(fill = "royalblue") +
+  coord_flip() +
   labs(title = "Boxplot of Old Faithful Waiting Times",
-       y = "Waiting Times to Next Eruption (minutes)",
-       x = "") +
-  theme(axis.text.y = element_blank(),
-        axis.ticks.y = element_blank())
+       x = "", y = "Waiting Time to Next Eruption")
 ```
 
 A **dotplot** might help here. Though there are other ways to generate these plots, we like the following approach, which creates a dot plot augmented by a rug plot.
@@ -153,7 +143,8 @@ ggplot(hw2, aes(x=waiting)) +
   geom_dotplot(binwidth=1) +     ## create dot plot
   geom_rug(col = "royalblue") +  ## add rug 
   scale_y_continuous(breaks=NULL) + ## Remove ticks
-  theme(axis.title.y=element_blank())# # Remove label
+  theme(axis.title.y=element_blank()) + ## Remove label
+  labs(x = "Waiting Times (in minutes)")
 ```
 
 # Question 5
@@ -175,6 +166,13 @@ The formula is skew~1~ = $\frac{mean - median}{SD}$ where:
 - skew~1~ = 0 when the mean is equal to the median, an indication of potential symmetry.
 - skew~1~ values exceeding 0.2 in absolute value are sometimes taken to indicate fairly substantial skew (far enough from a Normal distribution to call into question whether the mean and standard deviation alone are sufficient to approximate the data well). 
 - If skew~1~ exceeds 0.5 in absolute value, that indicates very strong skew.
+
+In our data, we can calculate skew~1~ with, for instance:
+
+```{r}
+hw2 %>%
+  summarize(skew1 = (mean(waiting) - median(waiting))/sd(waiting))
+```
 
 ## Interpreting a Graph with help from skew~1~
 
@@ -202,48 +200,39 @@ The Z score for any particular observation X is (X - mean) / SD , so that our sk
 - less than 3 in 1,000 observations to have a Z score greater than 3 in absolute value.
 - less than 1 in 10,000 observations to have a Z score greater than 4 in absolute value.
 
-In this case, the maximum observed waiting time was `r max(hw2$waiting)`, which has a Z score of `r round((max(hw2$waiting) - mean(hw2$waiting)) / sd(hw2$waiting),2)`. The minimum observed time was `r min(hw2$waiting)`, which has a Z score of `r round((min(hw2$waiting) - mean(hw2$waiting)) / sd(hw2$waiting),2)`. With a sample of size `r length(hw2$waiting)` these particular values seem to suggest that the data is somewhat **less** outlier-prone than we might expect from a Normal distribution. This is also referred to as the distribution having **lighter tails** than the Normal distribution. But, in essence, we already know that the data don't follow a Normal distribution from our graphs.
+In this case, the maximum observed waiting time was `r max(hw2$waiting)`, which has a Z score of `r round((max(hw2$waiting) - mean(hw2$waiting)) / sd(hw2$waiting),2)`. 
+
+How do I know this? Well...
+
+```{r}
+hw2 %>% summarize(max(waiting), z = (max(waiting) - mean(waiting)) / sd(waiting))
+```
+
+The minimum observed time was `r min(hw2$waiting)`, which has a Z score of `r round((min(hw2$waiting) - mean(hw2$waiting)) / sd(hw2$waiting),2)`. With a sample of size `r length(hw2$waiting)` these particular values seem to suggest that the data is somewhat **less** outlier-prone than we might expect from a Normal distribution. This is also referred to as the distribution having **lighter tails** than the Normal distribution. But, in essence, we already know that the data don't follow a Normal distribution from our graphs.
 
 ## Histogram vs. Expectation under a Normal Distribution
 
 Sometimes, it's easier to see *light-tailed* (fewer outlying values than we'd expect from a Normal distribution) vs. *heavy-tailed* (more outliers than a Normal) distributions by directly comparing the histogram to the Normal distribution with the data's mean and standard deviation
 
 ```{r q06_histogram_with_normal_density}
-## ggplot of density of waiting times 
+## ggplot including histogram of waiting times 
 ## with Normal model superimposed
 
 ggplot(hw2, aes(x = waiting)) +
-  geom_histogram(aes(y = ..density..), binwidth = 1, 
-                 fill = "papayawhip", col = "blue") +
-  stat_function(fun = dnorm, 
-                args = list(mean = mean(hw2$waiting), sd = sd(hw2$waiting)),
-                lwd = 1.5, col = "red") +
-  geom_text(aes(label = paste("Mean", round(mean(hw2$waiting),1),
-                              ", SD", round(sd(hw2$waiting),1))),
-            x = 55, y = 0.04, color="red") +
-  labs(title = "Density of Old Faithful Waiting Times", 
-       x = "Waiting Times to Next Eruption (minutes)")
-```
-
-There are several other ways to build such a plot. 
-
-\newpage
-
-One we like involves getting the histogram plotted in terms of counts, rather than as a probability density, and then fitting a Normal curve to that plot. It does require some additional manipulations, though.
-
-```{r q06_histogram_with_counts_and_Normal}
-## ggplot of counts of waiting times 
-## with Normal model superimposed
-## Source: https://stat.ethz.ch/pipermail/r-help//2009-September/403220.html
-
-ggplot(hw2, aes(x = waiting)) + 
-  geom_histogram(bins = 40, fill = "seagreen", color = "black") + 
-  stat_function(fun = function(x, mean, sd, n) 
-      n * dnorm(x = x, mean = mean, sd = sd), 
-    args = with(faithful, 
-                c(mean = mean(waiting), sd = sd(waiting), n = length(waiting))),
+  geom_histogram(binwidth = 1, fill = "yellow", 
+                 col = "blue") +
+  stat_function(fun = function(x, mean, sd, n)
+    n * dnorm(x = x, mean = mean, sd = sd),
+    args = with(hw2, 
+                c(mean = mean(waiting), 
+                  sd = sd(waiting),
+                  n = length(waiting))),
     col = "red", lwd = 1.5) +
-  labs(title = "Histogram of Old Faithful Waiting Times, with Normal Model", 
+    geom_text(aes(label = paste("Mean", round(mean(hw2$waiting),1),
+                              ", SD", round(sd(hw2$waiting),1))),
+            x = 55, y = 12, color="red") +
+  labs(title = "Histogram Old Faithful Waiting Times", 
+       subtitle = "With Normal Model Superimposed",
        x = "Waiting Times to Next Eruption (minutes)")
 ```
 
@@ -284,7 +273,14 @@ The existence of two subgroups in this type of data is rare, but not unheard of.
 
 > What is the correlation of waiting time with eruption duration? How would you interpret this result?
 
-The Pearson correlation coefficient is `r round(cor(hw2$waiting, hw2$eruptions),3)`. This indicates a strong positive (or direct) and nearly linear relationship between eruption duration and waiting time.
+The Pearson correlation coefficient is `r round(cor(hw2$waiting, hw2$eruptions),3)`. 
+
+```{r}
+hw2 %$%
+  cor(waiting, eruptions)
+```
+
+This indicates a strong positive (or direct) and nearly linear relationship between eruption duration and waiting time.
 
 ## On Correlation
 
@@ -341,8 +337,10 @@ The conclusions we would draw here, are thus similar to those we developed for t
 We noticed two dominant effects in the `faithful` data: there are two different subgroups, and a longer eruption tends to be followed by a longer time interval until the next eruption. Suppose we separate the eruptions by whether the duration is less than three minutes.
 
 ```{r alternative_model, message=FALSE, fig.height=3.5}
-hw2$timegroup <- 
-  ifelse(hw2$eruptions < 3, "Less than 3 hours", "Greater than 3 hours")
+hw2 <- hw2 %>%
+  mutate(timegroup = ifelse(eruptions < 3, 
+                            "Less than 3 minutes",
+                            "3 minutes or more")) 
 
 ggplot(hw2, aes(x = timegroup, y = waiting)) + 
   geom_boxplot() + 
@@ -352,7 +350,7 @@ ggplot(hw2, aes(x = timegroup, y = waiting)) +
 ```
 
 ```{r alternative_model_summary_table}
-by(hw2$waiting, hw2$timegroup, mosaic::favstats)
+mosaic::favstats(waiting ~ timegroup, data = hw2)
 ```
 
 Based on these summaries, a simple prediction rule would be that an eruption of less than 3 minutes will be followed by a waiting time of about 55 minutes, while an eruption of duration 3 minutes or more will be followed by a waiting time of about 80 minutes. Further, the latter (longer) waiting time would be expected to occur about 2/3 of the time.
