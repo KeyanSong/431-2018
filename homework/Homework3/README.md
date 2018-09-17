@@ -42,11 +42,11 @@ Note that:
 
 Then, you need to read in the `LBWunicef.csv` data into R, and place it into an R tibble. You should have downloaded the file at the start of the semester from the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data). Make sure you have the `LBWunicef.csv` file in the same directory as your R Project for Homework 3, so that you see the file in your Files tab in R Studio. Then you need to get the data from that .csv file into R, and place it in a tibble. 
 
-```{r}
-hw3_data <- read.csv("LBWunicef.csv") %>% tbl_df
-```
+    ```{r read_data}
+    hw3_data <- read.csv("LBWunicef.csv") %>% tbl_df
+    ```
 
-Then the data you need to do Questions 1-5 should be in the hw3_data tibble.
+This should place the data you need to do Questions 1-5 should be in the hw3_data tibble.
 
 ### Hint Two: Finish strong in Question 7.
 
