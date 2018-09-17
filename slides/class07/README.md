@@ -67,4 +67,10 @@ The problem many people have with question 7 is building the data set of simulat
 - Then build a "group" variable which has four different labels (perhaps "Sample25", "Sample75", "Sample150" and "Sample225"), each of which is repeated the appropriate number of times. (So, for instance, you have 25 rows with "Sample25" and then 75 with "Sample75" and so forth.) I did this in a variable called `big.grp`. I made use of the `rep` function to build this up.
 - My answer sketch includes the code `q7_data <- data_frame(value = big.sample, grp = big.grp)`.
 
+## One Last Thing
 
+If you're working towards a dissertation, you might be interested in this [excellent post by Lucy McGowan](https://livefreeordichotomize.com/2018/09/14/one-year-to-dissertate/) which has lots of useful dissertation resources and advice that may be useful in many fields. 
+
+- Lucy's blog is called [Live Free or Dichotomize](https://livefreeordichotomize.com/) and is worth a look.
+
+The main website for this course is https://github.com/THOMASELOVE/431-2018.
