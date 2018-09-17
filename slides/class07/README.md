@@ -7,9 +7,9 @@
 
 ## Announcements
 
-1. I posted revised versions of the Homework 2 Answer Sketch [(.pdf and .Rmd are available)](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) on 2018-09-15, after a student alerted me to a typo or two, and I realized I'd used older versions of tidyverse approaches for some of the graphs and summaries in what I'd posted initially.
+1. Last time, we discussed Chapters 5, 9, 10 and 13 from Jeff Leek's *Elements of Data Analytic Style*. Some of that conversation is [captured here](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/LEEK.md).
 
-2. Last time, we discussed Chapters 5, 9, 10 and 13 from Jeff Leek's *Elements of Data Analytic Style*. Some of that conversation is [captured here](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/LEEK.md).
+2. I posted a **revised** [Homework 2 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) on 2018-09-15, after a student alerted me to a typo or two, and I realized I'd used older versions of tidyverse approaches for some of the graphs and summaries in what I'd posted initially.
 
 3. Here's a hint for Question 7 on [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3), which is due Friday 2018-09-21 at 12 noon.
 
