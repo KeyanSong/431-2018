@@ -11,7 +11,7 @@
 
 2. Last time, we discussed Chapters 5, 9, 10 and 13 from Jeff Leek's *Elements of Data Analytic Style*. Some of that conversation is [captured here](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/LEEK.md).
 
-3. Here's a hint for Question 7 on [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3), which is due Friday at 12 noon.
+3. Here's a hint for Question 7 on [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3), which is due Friday 2018-09-21 at 12 noon.
 
 - The problem many people have is building the data set of simulated values that you'll need in order to do some plotting. I decided to do this in a single tibble I called `q7_data`.
 - If you're stuck, first try building a single set of Normally distributed random numbers with mean 100 and standard deviation 10, enough to cover all of the data you will need (and no more), and placing all of those values into one variable. 
