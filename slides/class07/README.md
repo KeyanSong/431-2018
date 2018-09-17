@@ -55,7 +55,7 @@ Then, you need to read in the `LBWunicef.csv` data into R, and place it into an 
     hw3_data <- read.csv("LBWunicef.csv") %>% tbl_df
     ```
 
-Then the data you need to do Questions 1-5 should be in the hw3_data tibble.
+This should place the data you need to do Questions 1-5 should be in the hw3_data tibble.
 
 ### Hint Two: Finish strong in Question 7.
 
