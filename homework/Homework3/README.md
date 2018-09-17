@@ -6,6 +6,14 @@ Homework 3 is due at noon on Friday 2018-09-21. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
+## Hint for Question 7
+
+- The problem many people have is building the data set of simulated values that you'll need in order to do some plotting. I decided to do this in a single tibble I called `q7_data`.
+- If you're stuck, first try building a single set of Normally distributed random numbers with mean 100 and standard deviation 10, enough to cover all of the data you will need (and no more), and placing all of those values into one variable. 
+- Then build a "group" variable which has four different labels (perhaps "Sample25", "Sample75", "Sample150" and "Sample225"), each of which is repeated the appropriate number of times. (So, for instance, you have 25 rows with "Sample25" and then 75 with "Sample75" and so forth.)
+- The goal is for your data set to have the values you want to plot in one variable, and the "groups" which identify which sample each value is associated with, in another variable.
+- My answer sketch includes the code `q7_data <- data_frame(value = big.sample, grp = big.grp)`.
+
 ## Steps to a Successful Homework
 
 Here are the steps I would take to do the homework, after I read [the instructions](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework3/431-2018-hw3.md), and after I'd read the Introduction and Chapter 1 of Nate Silver's *The Signal and the Noise*.
