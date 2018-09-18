@@ -11,7 +11,7 @@
 
 2. I posted a **revised** [Homework 2 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework2) on 2018-09-15, after a student alerted me to a typo or two, and I realized I'd used older versions of tidyverse approaches for some of the graphs and summaries in what I'd posted initially.
 
-3. [Course Project Instructions](https://thomaselove.github.io/431-2018-project/) are now complete through **Task E**. Instructions for the remaining Tasks are coming soon, no later than one week from today. Links at Canvas for submission of Tasks A, C, F, maybe G, and H will appear soon. 
+3. [Course Project Instructions](https://thomaselove.github.io/431-2018-project/) are now complete through **Task F**. Instructions for the remaining Tasks are coming soon, but Tasks A-F cover everything prior to Thanksgiving. Links at Canvas for submission of Tasks A, C, F, maybe G, and H will appear soon. 
     - If you'd like, you can do Project Task B (Presentation Sign-Up) now. The [Task B details are here](https://thomaselove.github.io/431-2018-project/taskB.html), and the link to the Google Form is http://bit.ly/431-2018-project-signup-taskB. Tasks A and B are each due at noon 2018-10-12.
 
 4. There is a [Minute Paper After Class 7](http://bit.ly/431-2018-minute07) at http://bit.ly/431-2018-minute07. Please complete it by Wednesday 2018-09-19 at noon. Thank you.
