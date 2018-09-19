@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class06/431_class-06-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class06/431_class-06-slides_2018.Rmd).
-- Class 6 audio files are now available for download: [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class06audio_2018-09-13_part1.mp3), [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class06audio_2018-09-13_part2.mp3) and [Part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class04/431_class06audio_2018-09-13_part3.mp3).
+- Class 6 audio files are now available for download: [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class06/431_class06audio_2018-09-13_part1.mp3), [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class06/431_class06audio_2018-09-13_part2.mp3) and [Part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class06/431_class06audio_2018-09-13_part3.mp3).
 
 ## Deliverables Coming Soon
 
