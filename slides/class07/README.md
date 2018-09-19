@@ -3,8 +3,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/431_class-07-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class07/431_class-07-slides_2018.Rmd).
-- Class 7 audio files will be available after class.
-
+- Class 7 audio files are now available for download: [Part 1](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/431_class07audio_2018-09-18_part1.mp3), [Part 2](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/431_class07audio_2018-09-18_part2.mp3) and [Part 3](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/431_class07audio_2018-09-18_part3.mp3).
 ## Announcements
 
 1. Last time, we discussed Chapters 5, 9, 10 and 13 from Jeff Leek's *Elements of Data Analytic Style*. Some of that conversation is [captured here](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class07/LEEK.md).
