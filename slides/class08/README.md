@@ -15,4 +15,8 @@
 
 ## One Last Thing
 
+If you're wondering what's coming next, [XKCD has your answer](https://xkcd.com/2048/).
+
+![https://xkcd.com/2048/](curve_fitting.png)
+
 The main website for this course is https://github.com/THOMASELOVE/431-2018.
