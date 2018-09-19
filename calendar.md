@@ -21,11 +21,11 @@ Date | Class | Description or Deliverable
 09-13 | 6 | Visualizing a new sample from NHANES, Leek, R in the News, Kidney Cancer Maps
 09-14 | -- | **[Homework 2](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-17 | -- | Read **Silver** Introduction & Chapter 1 by now, for Homework 3.
-09-18 | 7 | 
-09-20 | 8 | 
+09-18 | 7 | Descriptive Numerical and Graphical Summaries
+09-20 | 8 | Assessing Normality
 09-21 | -- | **[Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4. 
-09-25 | 9  | [Project](https://github.com/THOMASELOVE/431-2018-project) groups for Tasks A, C and D formed.
+09-25 | 9  | [Project](https://github.com/THOMASELOVE/431-2018-project) groups for Tasks A, C and D formed, Assessing Association
 09-26 | 10 | Before Class 10, read **Leek** Chapters 1-4 and 12.
 09-27 | 10 | 
 09-28 | -- | **[Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
