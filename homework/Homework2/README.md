@@ -10,6 +10,11 @@ Any assignment received more than 60 minutes after the deadline is considered la
 
 - [This is the PDF link](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework2/431-2018-hw2sketch.pdf) and [this is the R Markdown file](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/homework/Homework2/431-2018-hw2sketch.Rmd). 
 
+## Grades on Homework 2 are now available
+
+- You'll find them in the Google Sheet at http://bit.ly/431-2018-hw-grades. Look for the Homework 2 Tab, and you'll need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13. 
+- The grades are out of 115 points, but we will treat this as a 100 point Homework at the end of the term, so if you scored higher than 100, that will just be a bonus. (Each of the Homework scores this term will receive the same weight on your final grade. The maximum final grade in Homework will be 100%. If you scored 115% on this Homework, then that will just help balance out a later time when you score below 100%. Students generally score lower on Homeworks with Essay questions.)
+- You will also probably want to look at [the grading rubric](http://bit.ly/431-2018-hw2-rubric) at http://bit.ly/431-2018-hw2-rubric.
 
 ## Steps to a Successful Homework
 
