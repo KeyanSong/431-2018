@@ -14,9 +14,16 @@
     - You'll also need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13.
     - You will also probably want to look at [the grading rubric](http://bit.ly/431-2018-hw2-rubric) at http://bit.ly/431-2018-hw2-rubric.
     - At the end of the term, we add up your scores on the 8 homework assignments, and divide by 800 to determine your homework grade. All Homeworks are treated as if they are worth 100 points, even though on some of them, like HW 2, it was possible to score higher than that. If your total at the end of the term is above 800 (and this has happened), you will receive a Homework grade of 100%.
+    - In some comments, TAs wrote “Review Evans correlation guide.” This refers to this guide to interpreting correlation coefficients: from Evans, J. D. (1996). Straightforward statistics for the behavioral sciences. Pacific Grove, CA: Brooks/Cole Publishing. The correlation (r) is an effect size and so we can verbally describe the strength of the correlation based on the absolute value of r:
+    
+Absolute Value of Correlation Coefficient | 0 - 0.19 | 0.2 - 0.39 | 0.4 - 0.59 | 0.6 - 0.79 | 0.8 - 0.99
+----------------------------------------: | -------- | ---------- | ---------- | ---------- | ----------
+Description suggested by Evans | Very Weak | Weak | Moderate | Strong | Very Strong
+
 3. I hope you've enjoyed what you've read so far in *The Signal and the Noise*. You'll need to have read through Chapter 3 to do [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4), which is due next Friday 2018-09-28 at noon.
-4. [Minute Paper results from Class 7](http://bit.ly/431-2018-minute07-response) are in, at http://bit.ly/431-2018-minute07-response. Thank you to those of you who completed the task.
-5. Next time, we'll be developing Project Groups. Review the [Course Project instructions](https://thomaselove.github.io/431-2018-project/) before class, please. If you're not going to be in class on Tuesday, please let Dr. Love know via email today.
+4. Yesterday, [R Studio announced](https://blog.rstudio.com/2018/09/19/radix-for-r-markdown/) the release [Radix for R Markdown](https://rstudio.github.io/radix/), which is an online publication format designed for scientific and technical communication. It looks really exciting, and I look forward to trying it out.
+5. [Minute Paper results from Class 7](http://bit.ly/431-2018-minute07-response) are in, at http://bit.ly/431-2018-minute07-response. Thank you to those of you who completed the task.
+6. Next time, we'll be developing Project Groups. Review the [Course Project instructions](https://thomaselove.github.io/431-2018-project/) before class, please. If you're not going to be in class on Tuesday, please let Dr. Love know via email today.
 
 ## One Last Thing
 
