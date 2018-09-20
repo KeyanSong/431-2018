@@ -56,4 +56,8 @@ Apply the 15-minute rule.
     - If you can't solve a problem in 15 minutes, ask for help.
     - You are **absolutely supposed** to use Google and the TAs (and Dr. Love) to improve your code.
 
+## On Grades
+
+Each of the 8 Homeworks have at least 100 available points. Some have a few more. At the end of the term, we add up your scores on the 8 homework assignments, and divide by 800 to determine your homework grade. All Homeworks are treated as if they are worth 100 points, even though on some of them it is possible to score higher than that. If your total at the end of the term is above 800 (and this has happened), you will receive a Homework grade of 100%. Homework is 25% of the Course Grade. Most students score better on the Homework (as a percentage) than they do on the Quizzes or Projects.
+
 The main site for the course is https://github.com/THOMASELOVE/431-2018.
