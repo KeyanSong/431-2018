@@ -20,7 +20,7 @@
 
 ## One Last Thing
 
-If you're wondering what's coming next, [XKCD has your answer](https://xkcd.com/2048/).
+Today, we will essentially complete our in-class discussion of the material contained in Chapters 1-10 of the [Course Notes](https://thomaselove.github.io/2018-431-book/). If you're wondering what's coming next, [XKCD has your answer](https://xkcd.com/2048/).
 
 ![https://xkcd.com/2048/](curve_fitting.png)
 
