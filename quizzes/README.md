@@ -10,14 +10,14 @@ The Quizzes are Google Forms (so if you can do a Minute Paper, that's the proces
 
 At the end of each quiz, you will have to indicate that you did not receive any help on the Quiz from any other human being besides Dr. Love and the Teaching Assistants, who will only clarify things, not provide you with answers. Discussing the Quiz with any other human (including other students in the class) is not permitted.
 
-There are enough items on every Quiz that a perfect score is rare. A score of 85% or higher on a Quiz is usually regarded as the minimum for an A, and a score of 70% or higher is usually the minimum for a B, although I reserve the right to change my mind about that if the results of the Quiz do not meet my expectations.
+There are enough items on every Quiz that a perfect score is rare. A score of 85% or higher on a Quiz is usually regarded as the minimum for an A, and a score of 70% or higher is usually the minimum for a B, although I reserve the right to change my mind about that if the results of the Quiz do not meet our expectations.
 
 1. Quiz 1 will be released to you on 2018-10-05, and will be due on 2018-10-08 at noon.
     - Quiz 1 will include material from Part A of the course
         - This (at least potentially) includes material from **Leek** Chapters 1-4, 5, 9, 10, 12 and 13.
         - This (at least potentially) includes material from **Silver** Introduction and Chapters 1-5.
         - This (at least potentially) includes material from **R4DS**, specifically the Explore section and the Communicate section.
-  
+
 2. Quiz 2 will be released to you on 2018-11-02, and will be due on 2018-11-05 at noon.
     - Quiz 2 will include material from Parts A and B of the course, focusing more on Part B.
         - This includes all material described above for Quiz 1, as well as the rest of **Leek** and Chapters 7-11 from **Silver**.
