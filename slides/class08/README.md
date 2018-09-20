@@ -8,7 +8,11 @@
 ## Announcements
 
 1. A reminder that [Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) is due on Friday at noon. Please get it in on time. Don't forget to review the [Hints for Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3).
-2. Grades for Homework 2 should be available at http://bit.ly/431-2018-hw-grades by the time class begins.
+
+2. Grades for Homework 2 are now available at http://bit.ly/431-2018-hw-grades. 
+    - Look for the Homework 2 Tab, and you'll need your 3-digit Homework Code for the semester, which Professor Love emailed to you on 2018-09-13.
+    - You will also probably want to look at [the grading rubric](http://bit.ly/431-2018-hw2-rubric) at http://bit.ly/431-2018-hw2-rubric.
+    - At the end of the term, we add up your scores on the 8 homework assignments, and divide by 800 to determine your homework grade. All Homeworks are treated as if they are worth 100 points, even though on some of them, like HW 2, it was possible to score higher than that. If your total at the end of the term is above 800 (and this has happened), you will receive a Homework grade of 100%.
 3. I hope you've enjoyed what you've read so far in *The Signal and the Noise*. You'll need to have read through Chapter 3 to do [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4), which is due next Friday 2018-09-28 at noon.
 4. [Minute Paper results from Class 7](http://bit.ly/431-2018-minute07-response) are in, at http://bit.ly/431-2018-minute07-response. Thank you to those of you who completed the task.
 5. Next time, we'll be developing Project Groups. Review the [Course Project instructions](https://thomaselove.github.io/431-2018-project/) before class, please. If you're not going to be in class on Tuesday, please let Dr. Love know via email today.
