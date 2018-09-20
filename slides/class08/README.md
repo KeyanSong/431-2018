@@ -17,7 +17,7 @@
     - In some comments, TAs wrote “Review Evans correlation guide.” This refers to this guide to interpreting correlation coefficients: from Evans, J. D. (1996). Straightforward statistics for the behavioral sciences. Pacific Grove, CA: Brooks/Cole Publishing. The correlation (r) is an effect size and so we can verbally describe the strength of the correlation based on the absolute value of r:
     
 Absolute Value of Correlation Coefficient | 0 - 0.19 | 0.2 - 0.39 | 0.4 - 0.59 | 0.6 - 0.79 | 0.8 - 0.99
-----------------------------------------: | -------- | ---------- | ---------- | ---------- | ----------
+----------------------------------------: | :--------: | :----------: | :----------: | :----------: | :----------:
 Description suggested by Evans | Very Weak | Weak | Moderate | Strong | Very Strong
 
 3. I hope you've enjoyed what you've read so far in *The Signal and the Noise*. You'll need to have read through Chapter 3 to do [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4), which is due next Friday 2018-09-28 at noon.
