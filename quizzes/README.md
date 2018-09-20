@@ -1,8 +1,14 @@
 # 431 Quizzes Main Page
 
-This is the main page for our three Quizzes in 431, Section 1 for Fall 2018. Detailed information will be provided here as the semester progresses.
+This is the main page for our three Quizzes in 431, Section 1 for Fall 2018. 
 
-All Quizzes are taken online, at home, requiring a connection to the Internet, and access to R and R Studio, and consist of a mix of multiple-choice and short answer questions.
+All Quizzes are taken online, at home, requiring a connection to the Internet, and access to R and R Studio, and consist of a mix of multiple-choice and short answer questions. 
+
+You will have at least three days to do each quiz, and you can use as much (or as little) of that time as you like. My expectation is that the middle half of you (or more) will take 3-6 hours to do each Quiz, but some people will certainly take longer, and some won't need that long. You will also be able to complete it in multiple sittings by submitting your partial work, and then editing your submission. 
+
+The Quizzes are Google Forms (so if you can do a Minute Paper, that's the process for the Quiz) and each item requires a brief response. You won't be writing essays on Quizzes, and you won't be presenting answers that consist of more than a short amount of code. Some items will require you to analyze some data in R to get to an answer. Some items will require you to look at provided R output to get to an answer. Some items will not involve R at all. 
+
+There are enough items on every Quiz that a perfect score is rare. A score of 85% or higher on a Quiz is usually regarded as the minimum for an A, and a score of 70% or higher is usually the minimum for a B, although I reserve the right to change my mind about that if the results of the Quiz do not meet my expectations.
 
 1. Quiz 1 will be released to you on 2018-10-05, and will be due on 2018-10-08 at noon.
     - Quiz 1 will include material from Part A of the course
