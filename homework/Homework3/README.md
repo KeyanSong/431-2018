@@ -8,7 +8,8 @@ Any assignment received more than 60 minutes after the deadline is considered la
 
 ## Homework 3 Answer Sketch
 
-is now posted above, in PDF and R Markdown formats.
+will be reposted on Saturday. My apologies. / TEL
+
 
 ## Hints for Homework 3
 
