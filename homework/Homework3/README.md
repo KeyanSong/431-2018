@@ -6,6 +6,10 @@ Homework 3 is due at noon on Friday 2018-09-21. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
+## Homework 3 Answer Sketch
+
+is now posted above, in PDF and R Markdown formats.
+
 ## Hints for Homework 3
 
 ### Hint One: Get off to a smart start. 
