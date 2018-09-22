@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class09/431_class-09-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class09/431_class-09-slides_2018.Rmd).
-- Class 8 audio files will be posted above as soon as they are available.
+- Class 9 audio files will be posted above as soon as they are available.
 
 ## Minute Paper
 
