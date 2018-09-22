@@ -25,6 +25,9 @@ The Minute Paper after Class 9 is posted at **INSERT LINK HERE**. Please complet
 
 6. You may be interested in the list of R Resources (free courses, books, tutorials and cheat sheets) [compiled by Paul van der Laken here](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/) in August 2017.
 
+7. One of the plots I really don't care for is what Jeff Leek calls a dynamite plot. If you want to understand why these aren't a good idea, I encourage you to look at a thread from @T_Weissgerber, entitled "[Designing better figures for small studies: Why you shouldn’t use bar graphs for continuous data and what to do instead](https://threadreaderapp.com/thread/1040576802979233793.html)" that one of you was good enough to pass along. 
+    - There's a related "Perspective" piece from 2015 in *PLOS Biology* by Tracey Weissgerber and colleagues that you might be interested in, called [Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128), as well. 
+
 ## A Promotional Announcement
 
 *Sweeney Todd* opens [this Friday evening 2018-09-29 at the Brecksville Theatre](https://github.com/THOMASELOVE/theater), and runs for nine performances over three weekends. I play Judge Turpin. If you're coming, we encourage you to [buy a ticket in advance](https://github.com/THOMASELOVE/theater).
