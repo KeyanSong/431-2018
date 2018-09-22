@@ -13,11 +13,11 @@ The Minute Paper after Class 9 is posted at **INSERT LINK HERE**. Please complet
 
 1. A reminder that [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is due on Friday 2018-09-28 at noon. Please get it in on time. 
 
-2. The [Answer Sketch for Homework 3](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) will be posted shortly. My apologies for the delay. Grades should be available Thursday.
+2. The [Homework 3 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) will be posted shortly. My apologies for the delay. Homework 3 Grades should be posted Thursday.
 
-3. Today, in class, we will make use of a data set called `vonHippel-Lindau.csv` which is posted above, and on our [Data Page](https://github.com/THOMASELOVE/431-2018-data). Remember that if you want to download this .csv file, you should do so as a raw .csv.
+3. Today, we will make use of a data set called `vonHippel-Lindau.csv` which is posted above, and on our [Data Page](https://github.com/THOMASELOVE/431-2018-data). Remember that if you want to download this .csv file, you should do so as a raw .csv.
 
-4. In today's class, you'll be joining a Project Group containing 4-5 students. When we do that, you'll need to have one member of your group fill out the Google Form linked at http://bit.ly/431-2018-project-groups. 
+4. Also, you'll be joining a Project Group containing 4-5 students. When we do that, you'll need to have one member of your group fill out the Google Form linked at http://bit.ly/431-2018-project-groups. 
     - If anyone is missing today, Dr. Love will assign them to one of the groups that winds up with only four people, so we wind up with 10 groups of 5 students each.
 
 5. If you're looking for data to use in your project's Study 2, and you have a medical condition you are interested in studying, you might consider searching [datamed.org](https://datamed.org/), which aspires to be a sort of PubMed for data sets. 
@@ -25,4 +25,11 @@ The Minute Paper after Class 9 is posted at **INSERT LINK HERE**. Please complet
 
 6. You may be interested in the list of R Resources (free courses, books, tutorials and cheat sheets) [compiled by Paul van der Laken here](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/) in August 2017.
 
-7. Promotional announcement: *Sweeney Todd* opens [this Friday evening 2018-09-29 at the Brecksville Theatre](https://github.com/THOMASELOVE/theater), and runs for nine performances over three weekends. If you're coming, we encourage you to [buy a ticket in advance](https://github.com/THOMASELOVE/theater).
+## A Promotional Announcement
+
+*Sweeney Todd* opens [this Friday evening 2018-09-29 at the Brecksville Theatre](https://github.com/THOMASELOVE/theater), and runs for nine performances over three weekends. I play Judge Turpin. If you're coming, we encourage you to [buy a ticket in advance](https://github.com/THOMASELOVE/theater).
+
+## One Last Thing
+
+Need / want to create a table to include in an R Markdown report? Want some help with the code? Check out this [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
+
