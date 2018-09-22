@@ -6,10 +6,9 @@ Homework 3 is due at noon on Friday 2018-09-21. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
-## Homework 3 Answer Sketch
+## Homework 3 Answer Sketch is now fixed, and posted above.
 
-will be reposted on Saturday. My apologies. / TEL
-
+Available in two flavors, PDF and R Markdown. Sorry about the delay.
 
 ## Hints for Homework 3
 
@@ -90,8 +89,7 @@ Here are the steps I would take to do the homework, after I read [the instructio
 
 # Material to Come
 
-- We'll post the Homework 3 answer sketch very shortly after the deadline. This is why we don't accept late work. 
-- We don't post answer sketches for essay questions.
+- The Answer Sketch is now posted. We don't post answer sketches for essay questions.
 - Later, once the homework is graded, we'll post details on how you can get your grade on the assignment, as well as a more detailed grading rubric.
 
 The main site for the course is https://github.com/THOMASELOVE/431-2018
