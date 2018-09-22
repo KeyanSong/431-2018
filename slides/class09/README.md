@@ -25,4 +25,4 @@ The Minute Paper after Class 9 is posted at **INSERT LINK HERE**. Please complet
 
 6. You may be interested in the list of R Resources (free courses, books, tutorials and cheat sheets) [compiled by Paul van der Laken here](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/) in August 2017.
 
-7. Sweeney Todd opens this Friday evening 2018-09-29 at the Brecksville Theatre. Details at https://github.com/THOMASELOVE/theater. If you plan to come, we have been told to encourage you to buy a ticket in advance.
+7. Promotional announcement: *Sweeney Todd* opens [this Friday evening 2018-09-29 at the Brecksville Theatre](https://github.com/THOMASELOVE/theater), and runs for nine performances over three weekends. If you're coming, we encourage you to [buy a ticket in advance](https://github.com/THOMASELOVE/theater).
