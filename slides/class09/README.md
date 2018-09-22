@@ -13,7 +13,7 @@ The Minute Paper after Class 9 is posted at **INSERT LINK HERE**. Please complet
 
 1. A reminder that [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is due on Friday 2018-09-28 at noon. Please get it in on time. 
 
-2. The [Homework 3 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) will be posted shortly. My apologies for the delay. Homework 3 Grades should be posted Thursday.
+2. The [Homework 3 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) is now available. Homework 3 Grades should be posted Thursday.
 
 3. Today, we will make use of a data set called `vonHippel-Lindau.csv` which is posted above, and on our [Data Page](https://github.com/THOMASELOVE/431-2018-data). Remember that if you want to download this .csv file, you should do so as a raw .csv.
 
