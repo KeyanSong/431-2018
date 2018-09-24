@@ -13,7 +13,7 @@ Here are the steps I would take to do the homework, after I read [the instructio
 1. Create a new directory called something like `431HW5`, specifically for this homework assignment.
 2. Open R Studio, and create a new R Project in this existing `431HW5` directory. 
 3. Either create a new R Markdown file from scratch, or use one of the provided templates for an earlier assignment or for general work. Edit in R Studio to get what you want, and then be sure to save it using your actual name in the file name.
-4. Knit the file in R Studio to create an HTML file, which should have your actual name in it, not something like `YOURNAME-hw4.html`
+4. Knit the file in R Studio to create an HTML file, which should have your actual name in it, not something like `YOURNAME-hw5.html`
 5. Review the HTML file closely, and make changes to the R Markdown file and re-knit until you are satisfied.
 6. Write the response to the essay question as part of your R Markdown file. Leave blank lines between paragraphs to help us read your work. 
 7. Submit your final R Markdown file and your final HTML file to us via [Canvas](https://canvas.case.edu), by the deadline, which again is noon Friday 2018-10-19.
