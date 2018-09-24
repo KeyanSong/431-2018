@@ -9,6 +9,15 @@
 
 The Minute Paper after Class 9 is posted at **INSERT LINK HERE**. Please complete it by Wednesday 2018-09-26 at noon.
 
+## A Special Announcement for MS students in PQHS
+
+If you are a student in the MS program in Population and Quantitative Health Sciences, you should have received an email yesterday from Lingpeng (Andrew) Shan, regarding the election of student representatives. 
+
+- The plan is to elect new reps at a meeting on Thursday 2018-09-27 at 4:15 PM. 
+- There are openings for 3-4 new representatives. 
+- If you are interested, fill out the form at https://goo.gl/forms/1HcbJMyo6ho4aPJl2 before Thursday at 3.
+- If you want more information, please contact Andrew at LXS503 at case dot edu, or Dr. Mendel Singer. Thanks!
+
 ## Announcements
 
 1. A reminder that [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is due on Friday 2018-09-28 at noon. Please get it in on time. 
