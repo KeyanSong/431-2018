@@ -7,7 +7,7 @@
 
 ## Minute Paper
 
-The Minute Paper after Class 9 is posted at http://bit.ly/431-2018-minute09. Please complete it by Wednesday 2018-09-26 at noon.
+The [Minute Paper after Class 9](http://bit.ly/431-2018-minute09) is at http://bit.ly/431-2018-minute09. Please complete it by Wednesday 2018-09-26 at noon.
 
 ## A Special Announcement for MS students in PQHS
 
