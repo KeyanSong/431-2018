@@ -21,7 +21,7 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 
 1. A reminder that [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is due on Friday 2018-09-28 at noon. Please get it in on time. 
     - To generate the `iris1` tibble that you'll need for this Homework, you'll be creating a tibble (with `tbl_df`) of the existing `iris` data frame in R. Do not use `iris3`.
-
+    
 2. The [Homework 3 Answer Sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3) is now available. Homework 3 Grades should be posted Thursday.
 
 3. Today, we will make use of a data set called `vonHippel-Lindau.csv` which is posted above, and on our [Data Page](https://github.com/THOMASELOVE/431-2018-data). Remember that if you want to download this .csv file, you should do so as a raw .csv.
@@ -29,10 +29,14 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 4. Also, you'll be joining a Project Group containing 4-5 students. When we do that, you'll need to have one member of your group fill out the Google Form linked at http://bit.ly/431-2018-project-groups. 
     - If anyone is missing today, Dr. Love will assign them to one of the groups that winds up with only four people, so we wind up with 10 groups of 5 students each.
 
-5. If you're looking for data to use in your project's Study 2, and you have a medical condition you are interested in studying, you might consider searching [datamed.org](https://datamed.org/), which aspires to be a sort of PubMed for data sets. 
-    - There are more than 2.3 million data sets there, and while perhaps less than 1% are completely appropriate for our project, that's still a lot of relevant data to consider. It's not a perfect resource, by any means, but you really only need to find one that works for you and for me.
+5. Coming soon:
+    - Before Thursday 2018-09-27, you should read Leek *Elements of Data Analytic Style* Chapters 1-4 and 12.
+    - By Tuesday 2018-10-02, you should read Silver *The Signal and the Noise* Chapters 4 (Weather predictions) and 5 (Earthquake predictions).
+    - [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you next Friday 2018-10-05 and is due back at noon on Monday 2018-10-08 (Columbus Day).
+    - The instructions for Homeworks 5 and 6 (due 2018-10-19 and 10-26, respectively) [are now posted](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
 
-6. The instructions for Homeworks 5 and 6 (due 2018-10-19 and 10-26, respectively) [are now posted](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
+6. If you're looking for data to use in your project's Study 2, and you have identified a medical condition you are interested in studying, you might consider searching [datamed.org](https://datamed.org/), which aspires to be a sort of PubMed for data sets. 
+    - There are more than 2.3 million data sets there, and while perhaps less than 1% are completely appropriate for our project, that's still a lot of relevant data to consider. It's not a perfect resource, by any means, but you really only need to find one that works for you and for me.
 
 7. You may be interested in the list of R Resources (free courses, books, tutorials and cheat sheets) [compiled by Paul van der Laken](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/) in August 2017.
 
