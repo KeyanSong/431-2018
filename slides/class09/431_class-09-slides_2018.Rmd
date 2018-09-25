@@ -61,6 +61,8 @@ When you have a whole lot of data, that's one thing. But what if you have a trul
 - Chapter 10: Poker
 - Chapter 11: The stock market
 
+# Studying the Association of Quantities
+
 ## R setup for Today
 
 ```{r packages_and_data, message = FALSE}
@@ -79,7 +81,7 @@ The `vonHippel-Lindau.csv` data set is (newly) available on our Data Page.
 - `disease` = 0 for patients with von Hippel-Lindau disease
 
 ```{r see_VHL}
-VHL
+head(VHL)
 ```
 
 
@@ -160,6 +162,12 @@ knitr::include_graphics("images/model1b.png")
 - The slope of `tumorvol` is positive, which indicates that as `tumorvol` increases, we expect that `p.ne` will also increase. 
 - Specifically, we expect that for every additional ml of `tumorvol`, the `p.ne` is increased by `r signif(coef(lm(p.ne ~ tumorvol, data = VHL))[2],3)` pg/ml.
 
+## Tidying the Model 1 coefficients, with `broom`
+
+```{r}
+broom::tidy(model1)
+```
+
 ## Key Elements of the Summary (2)
 
 ```{r summ1a-fig, out.width = '90%', fig.align = "center", echo = FALSE}
@@ -170,6 +178,7 @@ knitr::include_graphics("images/model1a.png")
 - The **residuals** are the observed `p.ne` values minus the model's predicted `p.ne`. The sample residuals are the prediction errors.
   - The biggest miss is for a subject whose observed `p.ne` was 1,811 pg/nl higher than the model predicts based on the subject's tumor volume.
   - The mean residual will always be zero in an OLS model.
+
 
 ## Understanding Regression Residuals (A)
 
@@ -208,6 +217,12 @@ knitr::include_graphics("images/model1c.png")
 cor(VHL$p.ne, VHL$tumorvol)
 ```
 
+## Model 1, summarized at a glance, with `broom`
+
+```{r}
+broom::glance(model1)
+```
+
 We'll come back to this in a moment...
 
 # Project Groups
@@ -229,6 +244,8 @@ http://bit.ly/431-2018-project-groups
 ```{r taskB-fig, out.height = '80%', fig.align = "center", echo = FALSE}
 knitr::include_graphics("images/group_form.png")
 ```
+
+# Thinking More About Association/Correlation
 
 ## Correlation Coefficients
 
@@ -690,10 +707,30 @@ predict(model2, newdata = data_frame(tumorvol = 200,
         diagnosis = "von H-L"), interval = "prediction")
 ```
 
+## Tidying the Model 2 coefficients, with `broom`
+
+```{r}
+broom::tidy(model2)
+```
+
+## Model 2, summarized at a glance, with `broom`
+
+```{r}
+broom::glance(model2)
+```
+
+Compare this to model 1...
+
+```{r}
+broom::glance(model1)
+```
+
 ## Reminders
 
-1. Please complete the Minute Paper after Class 9.
+1. Please complete the Minute Paper after Class 9 at http://bit.ly/431-2018-minute09.
 
-2. Please be sure your group has completed the Project Group form.
+2. Please be sure your group has completed the Project Group form at http://bit.ly/431-2018-project-groups.
 
 3. Homework 4 is due Friday at noon.
+
+4. Before Thursday, you should read Jeff Leek: Chapters 1-4 and 12.
