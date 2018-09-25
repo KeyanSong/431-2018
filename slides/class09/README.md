@@ -40,8 +40,9 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 
 7. You may be interested in the list of R Resources (free courses, books, tutorials and cheat sheets) [compiled by Paul van der Laken](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/) in August 2017.
 
-8. One of the plots I really don't care for is what Jeff Leek calls a dynamite plot. If you want to understand why these aren't a good idea, I encourage you to look at a thread from @T_Weissgerber, entitled "[Designing better figures for small studies: Why you shouldn’t use bar graphs for continuous data and what to do instead](https://threadreaderapp.com/thread/1040576802979233793.html)" that one of you was good enough to pass along. 
+8. One of the plot types I really don't care for is a [dynamite plot](http://biostat.mc.vanderbilt.edu/wiki/Main/DynamitePlots). If you want to understand why these aren't a good idea, I encourage you to look at a thread from @T_Weissgerber, entitled "[Designing better figures for small studies: Why you shouldn’t use bar graphs for continuous data and what to do instead](https://threadreaderapp.com/thread/1040576802979233793.html)" that one of you was good enough to pass along. 
     - There's a related "Perspective" piece from 2015 in *PLOS Biology* by Tracey Weissgerber and colleagues that you might be interested in, called [Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128). 
+    - You might also like [Dynamite plots: unmitigated evil?](http://emdbolker.wikidot.com/blog:dynamite), some of which is drawn from [Vanderbilt's Wiki entry on Dynamite Plots](http://biostat.mc.vanderbilt.edu/wiki/Main/DynamitePlots).
 
 ## R-Ladies: It's Tidy Tuesday
 
@@ -53,6 +54,7 @@ And @WeAreRLadies is celebrating #tidyTuesday today by sharing a trick in `dplyr
 4. Trick 4: [Renaming all variables in one go](https://twitter.com/WeAreRLadies/status/1044572235577475073)
 5. Trick 5: [Cleaning up your observations in one go](https://twitter.com/WeAreRLadies/status/1044587331913756672)
 6. Trick 6: [Finding the 5 highest / lowest values](https://twitter.com/WeAreRLadies/status/1044602429856272384)
+7. Trick 7: [Adding observation counts for a categorical variable to your tibble](https://twitter.com/WeAreRLadies/status/1044617527039426560)
 
 ## A Promotional Announcement
 
