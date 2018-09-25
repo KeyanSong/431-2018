@@ -43,6 +43,17 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 8. One of the plots I really don't care for is what Jeff Leek calls a dynamite plot. If you want to understand why these aren't a good idea, I encourage you to look at a thread from @T_Weissgerber, entitled "[Designing better figures for small studies: Why you shouldn’t use bar graphs for continuous data and what to do instead](https://threadreaderapp.com/thread/1040576802979233793.html)" that one of you was good enough to pass along. 
     - There's a related "Perspective" piece from 2015 in *PLOS Biology* by Tracey Weissgerber and colleagues that you might be interested in, called [Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128). 
 
+## R-Ladies: It's Tidy Tuesday
+
+And @WeAreRLadies is celebrating #tidyTuesday today by sharing a trick in `dplyr` every hour. They are great. Here are some links:
+
+1. Trick 1: [Are you often selecting the same columns over and over again?](https://twitter.com/WeAreRLadies/status/1044528935470415877)
+2. Trick 2: [Select columns via regular expressions](https://twitter.com/WeAreRLadies/status/1044543907055489026)
+3. Trick 3: [Reordering your columns in a tibble](https://twitter.com/WeAreRLadies/status/1044557129934426113)
+4. Trick 4: [Renaming all variables in one go](https://twitter.com/WeAreRLadies/status/1044572235577475073)
+5. Trick 5: [Cleaning up your observations in one go](https://twitter.com/WeAreRLadies/status/1044587331913756672)
+6. Trick 6: [Finding the 5 highest / lowest values](https://twitter.com/WeAreRLadies/status/1044602429856272384)
+
 ## A Promotional Announcement
 
 *Sweeney Todd* opens [this Friday evening 2018-09-29 at the Brecksville Theatre](https://github.com/THOMASELOVE/theater), and runs for nine performances over three weekends. I play Judge Turpin. If you're coming, we encourage you to [buy a ticket in advance](https://github.com/THOMASELOVE/theater).
