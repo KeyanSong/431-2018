@@ -2,7 +2,7 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
-Class 10 | 09-27 | Correlations and Models, Project Group Work
+[Class 10](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class10) | 09-27 | Correlations and Models, Project Group Work
 [Class 09](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class09) | 09-25 | Project Groups, Understanding Associations in Quantitative Data: Scatterplots, Correlation, Models
 [Class 08](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class08) | 09-20 | Does a Normal Model fit my data? Transformations
 [Class 07](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class07) | 09-18 | Working with Categorical outcomes, Assessing Normality, Kidney Cancer maps
