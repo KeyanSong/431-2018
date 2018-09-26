@@ -23,11 +23,13 @@ If you are a student in the MS program in Population and Quantitative Health Sci
     - [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you next Friday 2018-10-05 and is due back at noon on Monday 2018-10-08 (Columbus Day).
     - The instructions for Homeworks 5 and 6 (due 2018-10-19 and 10-26, respectively) [are now posted](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
 
-3. Homework 3 Grades will be posted as soon as they are available at the usual place, which is 
+3. Homework 3 Grades will be posted as soon as they are available at http://bit.ly/431-2018-hw-grades.
 
-4. I'll make reference today to Leek JT Peng RD "What is the question?" from *Science* on 2015-03-20. [Here is a link](http://bit.ly/leek-peng-whatisthequestion).
+4. Thanks to those of you who responded to the Minute Paper after Class 9.
 
-5. Today, you'll be discussing some issues as a group. You'll be reporting back using the Google Form I have linked at http://bit.ly/431-2018-brainstorm-10. Note that the person who reports back gets a little extra class participation credit.
+5. I'll make reference today to Leek JT Peng RD "What is the question?" from *Science* on 2015-03-20. [Here is a link](http://bit.ly/leek-peng-whatisthequestion).
+
+6. Today, you'll be discussing some issues as a group. You'll be reporting back using the Google Form I have linked at http://bit.ly/431-2018-brainstorm-10. Note that the person who reports back gets a little extra class participation credit.
 
 ## The 15 Questions That Project Study 1 (The Class Survey) Starts With are...
 
