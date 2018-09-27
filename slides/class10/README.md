@@ -12,7 +12,7 @@
     
 2. Coming soon:
     - By Tuesday 2018-10-02, you should read Silver *The Signal and the Noise* Chapters 4 (Weather predictions) and 5 (Earthquake predictions).
-    - [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you next Friday 2018-10-05 and is due back at noon on Monday 2018-10-08 (Columbus Day).
+    - [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you next Friday 2018-10-05 and is due at noon on Monday 2018-10-08 (Columbus Day).
     - The instructions for Homeworks 5 and 6 (due 2018-10-19 and 10-26, respectively) [are now posted](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
 
 3. Homework 3 Grades are available at http://bit.ly/431-2018-hw-grades.
