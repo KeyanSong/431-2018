@@ -8,7 +8,11 @@ Any assignment received more than 60 minutes after the deadline is considered la
 
 ## Homework 3 Answer Sketch is now fixed, and posted above.
 
-Available in two flavors, PDF and R Markdown. Sorry about the delay.
+The sketch is available in two flavors, PDF and R Markdown.
+
+- Also available above is a PDF of the grading rubric.
+- The grades on Homework 3 are posted at http://bit.ly/431-2018-hw-grades
+- Some excerpts from several of the essays for Question 6 are available at http://bit.ly/431-2018-hw3-essay-excerpts
 
 ## Hints for Homework 3
 
