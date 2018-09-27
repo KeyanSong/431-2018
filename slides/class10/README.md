@@ -16,7 +16,7 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 ## Announcements
 
 1. A reminder that [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is due on Friday 2018-09-28 at noon. Please get it in on time. 
-    - To generate the `iris1` tibble that you'll need for this Homework, you'll be creating a tibble (with `tbl_df`) of the existing `iris` data frame in R. Do not use `iris3`.
+    - To generate the `iris1` tibble that you'll need for this Homework, you'll be creating that tibble (with `tbl_df`) using the existing `iris` data frame in R. That's `iris`, not `iris3`.
     
 2. Coming soon:
     - By Tuesday 2018-10-02, you should read Silver *The Signal and the Noise* Chapters 4 (Weather predictions) and 5 (Earthquake predictions).
@@ -25,11 +25,24 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 
 3. Homework 3 Grades will be posted as soon as they are available at http://bit.ly/431-2018-hw-grades.
 
-4. Thanks to those of you who responded to the Minute Paper after Class 9.
+4. Thanks to those who responded to the Minute Paper after Class 9. Analysis/feedback is at http://bit.ly/431-2018-minute09-response.
 
 5. I'll make reference today to Leek JT Peng RD "What is the question?" from *Science* on 2015-03-20. [Here is a link](http://bit.ly/leek-peng-whatisthequestion).
 
-6. Today, you'll be discussing some issues as a group. You'll be reporting back using the Google Form I have linked at http://bit.ly/431-2018-brainstorm-10. Note that the person who reports back gets a little extra class participation credit.
+## The Ten Project Groups are
+
+- Blue Group (Sandhya, **Lauren**, Joseph, Amber, Savannah)
+- Chaos (Hannah, Elena, Devlin, Sangeetha, **Josh**)
+- The Foxes (**Amy**, Brigette, Michelle, Logan, Alyssa)
+- Frontroll (**Clara**, Jane, Julijana, David, Afra, Bianca)
+- Group Biostat (Zhanwen, Jordan, Harry, **Shengxuan**, Siyi)
+- Pink Ladies (Ife, Lindsay, **Laurie Ann**, Liwen, Julia)
+- Significant PaRty (**Wyatt**, Sam, Jesus, Michael, Lydia)
+- Smart_Group (Yijiang, Haojia, Larry, **Bolin**, Pranjal)
+- Team Awesome (Ara, **Susan**, Morgan, Gregory, Jacqui)
+- TuRkey (**Ali**, Adam, Dustin, Sebastian, Yousef)
+
+**Today**, you'll be discussing some issues as a group. You'll be reporting back using the Google Form I have linked at http://bit.ly/431-2018-brainstorm-10. Note that the person who reports back gets a little extra class participation credit. The people in **bold** were the recorders last time, and they've now received a little extra credit for that. If you can, spread the work around, and pick someone else this time.
 
 ## The 15 Questions That Project Study 1 (The Class Survey) Starts With are...
 
@@ -55,4 +68,4 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 
 ## One Last Thing
 
-
+If you enjoyed the tips from Tuesday's We are R-Ladies tweets (which now have [their own Github repository](https://github.com/suzanbaert/RLadies_RoCur)), then you're really going to like [these dplyr tutorials by Suzan Baert](https://suzan.rbind.io/categories/tutorial).
