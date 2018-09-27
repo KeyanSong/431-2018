@@ -36,7 +36,11 @@
 - Team Awesome (Ara, **Susan**, Morgan, Gregory, Jacqui)
 - TuRkey (**Ali**, Adam, Dustin, Sebastian, Yousef)
 
-**Today**, you'll be discussing some issues as a group. You'll be reporting back using the Google Form I have linked at http://bit.ly/431-2018-brainstorm-10. Note that the person who reports back gets a little extra class participation credit. The people in **bold** were the recorders last time, and they've now received a little extra credit for that. If you can, spread the work around, and pick someone else this time.
+**Today**, you'll be discussing some issues as a group. You'll be reporting back using the Google Form I have linked at http://bit.ly/431-2018-brainstorm-10. 
+
+- Note that the person who reports back gets a little extra class participation credit. 
+- The people listed in **bold** were the recorders last time, and they've now received a little extra credit for that. 
+- If you can, spread the work around, and pick someone else this time.
 
 ## The 15 Questions That Project Study 1 (The Class Survey) Starts With are...
 
