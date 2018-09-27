@@ -5,14 +5,6 @@
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class10431_class-10-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class09/431_class-10-slides_2018.Rmd).
 - Class 10 audio files will be posted above as soon as they are available.
 
-## Reminder for MS students in PQHS
-
-If you are a student in the MS program in Population and Quantitative Health Sciences, you should have received an email from Lingpeng (Andrew) Shan, regarding the election of student representatives. 
-
-- The plan is to elect 3-4 new student representatives at a meeting today at 4:15 PM. 
-- If you are interested, fill out the form at https://goo.gl/forms/1HcbJMyo6ho4aPJl2 before 3 PM today.
-- If you want more information, please contact Andrew at `LXS503 at case dot edu`, or Dr. Mendel Singer. Thanks!
-
 ## Announcements
 
 1. A reminder that [Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is due on Friday 2018-09-28 at noon. Please get it in on time. 
@@ -63,6 +55,14 @@ If you are a student in the MS program in Population and Quantitative Health Sci
 13. What is your pulse rate, in beats per minute? 
 14. Last week, on how many days did you exercise? (0 - 7)
 15. Last night, how many hours of sleep did you get?
+
+## Reminder for MS students in PQHS
+
+If you are a student in the MS program in Population and Quantitative Health Sciences, you should have received an email from Lingpeng (Andrew) Shan, regarding the election of student representatives. 
+
+- The plan is to elect 3-4 new student representatives at a meeting today at 4:15 PM. 
+- If you are interested, fill out the form at https://goo.gl/forms/1HcbJMyo6ho4aPJl2 before 3 PM today.
+- If you want more information, please contact Andrew at `LXS503 at case dot edu`, or Dr. Mendel Singer. Thanks!
 
 ## A Promotional Announcement
 
