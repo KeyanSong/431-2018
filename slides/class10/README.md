@@ -23,7 +23,9 @@ If you are a student in the MS program in Population and Quantitative Health Sci
     - [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you next Friday 2018-10-05 and is due back at noon on Monday 2018-10-08 (Columbus Day).
     - The instructions for Homeworks 5 and 6 (due 2018-10-19 and 10-26, respectively) [are now posted](https://github.com/THOMASELOVE/431-2018/tree/master/homework).
 
-3. Homework 3 Grades will be posted as soon as they are available at http://bit.ly/431-2018-hw-grades.
+3. Homework 3 Grades are available at http://bit.ly/431-2018-hw-grades.
+    - Lightly edited excerpts from four of the essays we enjoyed are at http://bit.ly/431-2018-hw3-essay-excerpts.
+    - The grading rubric is also [posted at our Homework 3 page](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework3/431-2018-hw3rubric.pdf), as is [the Answer Sketch](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework3/431-2018-hw3sketch.pdf).
 
 4. Thanks to those who responded to the Minute Paper after Class 9. Analysis/feedback is at http://bit.ly/431-2018-minute09-response.
 
