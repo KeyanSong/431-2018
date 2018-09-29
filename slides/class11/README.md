@@ -9,9 +9,9 @@
 
 1. [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you by noon Friday 2018-10-05 and is due at noon on Monday 2018-10-08 (Columbus Day).
 
-2. [Homework 5] is due 2018-10-19.
+2. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19.
 
-3. [Answer Sketch for Homework 4] is now posted.
+3. The [Answer Sketch for Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is available.
 
 4. A Few R Markdown Coding Issues I want to make sure you've caught onto:
 
