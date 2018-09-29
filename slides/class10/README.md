@@ -2,7 +2,7 @@
 
 ## Today's Materials
 
-- The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class10431_class-10-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class09/431_class-10-slides_2018.Rmd).
+- The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class10/431_class-10-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class10/431_class-10-slides_2018.Rmd).
 - Class 10 audio files will be posted above as soon as they are available.
 
 ## Announcements
