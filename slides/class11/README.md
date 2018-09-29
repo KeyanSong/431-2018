@@ -22,4 +22,4 @@
 - When building a ggplot, be sure to specify the tibble first, and then the aesthetics.
 - A better choice than `theme(legend.position = "none")` is `guides(color = FALSE)` if you're trying to remove a legend about `color`.
 
-5. [Reactions to the Group Activity From Last Time] are coming.
+5. [Results of the Group Study 1 Brainstorming Activity From Last Time](http://bit.ly/431-2018-class10-brainstorm-feedback) are available now at http://bit.ly/431-2018-class10-brainstorm-feedback.
