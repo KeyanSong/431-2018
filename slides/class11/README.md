@@ -20,16 +20,7 @@ The Quiz covers Part A of the course. You may want to look over the summary in [
 
 2. Coming Soon(ish):
     - Finish reading Leek's *Elements of Data Analytic Style* by 2018-10-11.
-    - [Project Task A and Task B](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-12. We'll discuss them once again on Thursday 2018-10-05.
-        - [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) requires your group to:
-            - [develop and propose 2-3 research questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) (the class survey)
-            - [propose 6-10 "homemade" survey questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#specifying-survey-questions) that relate to your research questions, and
-            - [propose a "scale" for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#specifying-a-scale) that also relates to your research questions
-        - [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) also requires you, as an individual, to:
-            - develop and propose a meaningful summary of your ideas and research question for Study 2 (Your Data).
-            - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
-        - [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB
-            - Thank you to the 12 people who had already done this as of 7:30 this morning, specifically Ife Babtunde, Wyatt Bensken, Jane Carsey, Julijana Conic, Dustin DeMeo, Linday Ferguson, Jesus Gutierrez, Hannah Hill, Susan Linder, Laurie Ann Moennich, Lydia Raines and Julia Yang.
+    - [Project Task A and Task B](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-12. We'll discuss them a little bit today, and in even more detail on Thursday 2018-10-05.
     - You should now have read through Chapter 5 of Silver's *The Signal and the Noise*. By 2018-10-24, we'll expect you to have read through Chapter 11.
     - [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19.
     - [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
@@ -48,10 +39,7 @@ The Quiz covers Part A of the course. You may want to look over the summary in [
 - When building a ggplot, be sure to specify the tibble first, and then the aesthetics. Every time.
 - A better choice than `theme(legend.position = "none")` is `guides(color = FALSE)` if you're trying to remove a legend about `color`.
 
-5. Largely Unedited Results of the [Group Study 1 Brainstorming Activity From Class 10](http://bit.ly/431-2018-class10-brainstorm-feedback) are available now at http://bit.ly/431-2018-class10-brainstorm-feedback. We'll discuss this further on Thursday.
-    - The key takeaway is that no group successfully wrote a research question, so I'll need to provide more guidance on that. At the moment, what I have for you is contained in [section 2.2.1 (Research Questions)](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) of the Course Project Instructions.
-
-6. Links from today's class:
+5. Links from today's class:
 
 - [What Alcohol People Around the World Drink](http://flowingdata.com/projects/2016/alcohol-world/) from flowingdata.com
 - [WHO Global Health Observatory Indicator Metadata Registry](http://apps.who.int/gho/data/node.wrapper.imr?x-id=462) for Alcohol
@@ -60,7 +48,45 @@ The Quiz covers Part A of the course. You may want to look over the summary in [
 - A.S.C. Ehrenberg's paper on data presentation "[The Problem of Numeracy](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/Ehrenberg_1981_pw_The_Problem_of_Numeracy.pdf)" from *The American Statistician* is well worth your time, despite being written in 1981. It is password-protected.
 - If we have time, we may spend a few minutes talking about election forecasting, and communicating the results of a forecast effectively, in the context of the [2018 House forecast at FiveThirtyEight.com](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/?ex_cid=midterms-header). If we don't get to this today, we'll do it first thing in Class 12.
 
-7. **In-Class Table**: During today's session, we'll be working in small groups to improve a table. A [copy of that table is posted above (as the Class 11 supplementary table) in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_2018_class-11-supplementary-table.pdf). You can look at either the first or second page - they are equivalent for our purposes.
+6. **In-Class Table**: During today's session, we'll be working in small groups to improve a table. A [copy of that table is posted above (as the Class 11 supplementary table) in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_2018_class-11-supplementary-table.pdf). You can look at either the first or second page - they are equivalent for our purposes.
+
+## Project Tasks A and B reminders and comments
+
+- [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) requires your group to:
+    - [develop and propose 2-3 research questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) (the class survey)
+        - Remember that we attempted a first pass at this in the brainstorming activity in Class 10. Results below.
+    - [propose 6-10 "homemade" survey questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#specifying-survey-questions) that relate to your research questions, and
+        - Remember that we attempted a first pass at this in the brainstorming activity in Class 10. Results below.
+    - [propose a "scale" for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#specifying-a-scale) that also relates to your research questions
+        - One past group identified a set of locations in Northeast Ohio that people might enjoy, and asked people to check a box whether or not they'd been to each location. This was nice, and we may include it again this year. The summary for the scale was simply a count of the number of locations each person had visited (actually, this led to a categorical outcome, as well.) You can find this scale as item 13 in [the 2016 survey](https://github.com/THOMASELOVE/431-2018-project/blob/master/oldsurveys/2016_431_class_survey.pdf).
+        - Another past group adapted a Ten-Item Personality Inventory (which you'll find as items 70a through 70j in [the 2016 survey](https://github.com/THOMASELOVE/431-2018-project/blob/master/oldsurveys/2016_431_class_survey.pdf). Here's their [source for the original TIPI scale](https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/). This scale led to the calculation of five different outcomes, actually, including measures of extroversion and of agreeableness.
+- [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) also requires you, as an individual, to:
+    - develop and propose a meaningful summary of your ideas and research question for Study 2 (Your Data).
+    - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
+- [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB
+    - Thank you to the 12 people who had already done this as of 7:30 this morning, specifically Ife Babtunde, Wyatt Bensken, Jane Carsey, Julijana Conic, Dustin DeMeo, Linday Ferguson, Jesus Gutierrez, Hannah Hill, Susan Linder, Laurie Ann Moennich, Lydia Raines and Julia Yang.
+
+### The Brainstorming Activity, from Class 10
+
+Largely Unedited Results of the [Group Study 1 Brainstorming Activity From Class 10](http://bit.ly/431-2018-class10-brainstorm-feedback) are available now at http://bit.ly/431-2018-class10-brainstorm-feedback. We'll discuss this further on Thursday.
+
+- The key takeaway is that none of the ten groups successfully wrote a research question, so I'll need to provide more guidance on that. 
+- At the moment, what I have for you is contained in [section 2.2.1 (Research Questions)](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) of the Course Project Instructions. I can also provide several examples of good research questions written last year by student groups, both for Study 1 and Study 2.
+    
+### A Few Examples of Research Questions That Worked Out Well in the Past
+
+1. For Study 1, your research questions will need to compare two or more exposure groups on a quantitative outcome (in one case) and on a categorical outcome (in another case). 
+    - "Do messy people tend to have higher levels of self-described creativity than organized people?"
+    - "Is whether you voted in the last presidential election strongly associatied with your level of interest in the current election?"
+    - "Does being in a committed romantic relationship result in higher self-esteem compared to not being in a committed romantic relationship?"
+    - "Do conscientious people spend more time every week engaged in activities, such as exercise, thought to promote health and well-being compared to others?"
+    - "Do graduate students who routinely pack their lunch have a lower BMI than graduate students who routinely purchase their lunch?"
+    - "Do individuals who spend a lot of time on social media each day have more or less social anxiety than those who do not?" 
+2. For Study 2, your research questions will need to fit within the confines of a regression model, where a quantitative outcome is predicted using a series of at least four predictor variables. In many cases, a key predictor will be of primary interest, with other predictors serving to "adjust" away noise and generate fairer comparisons.
+    - "Is the presence of cardiovascular risk factors, specifically elevated hemoglobin A1c, predictive of cognitive impairment as defined by the Digit Symbol Substitution Test in patients over the age of 60 years, after adjusting for age, education, and depression?"
+    - "What is the effect of thyroid dysfunction on LDL level after adjusting for age, sex, and level of physical activity in the population of patients at XXXXXXXX location who are 40 years-old and above?"
+    - "Do conscientiousness and openness predict more conservative or liberal attitudes about government spending and whether and how much wasteful spending exists, after accounting for age, income and professional status?"
+    - "Does overweight or obesity (defined by body mass index) predict insulin resistance (measured by the homeostasis model assessment of insulin resistance (HOMA-IR)) in young adults with first-time acute coronary syndrome after adjusting for age, sex, race/ethnicity and severity of (several comorbid conditions)?"
 
 # A Promotional Announcement
     
