@@ -2,6 +2,7 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
+[Class 12](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class12) | 10-04 | 538 House Forecatss, A review of dplyr verbs, The Printer Case, Project Task A Group Work, Quiz 1 Setup
 [Class 11](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class11) | 10-02 | Scatterplot and Correlation Matrices, Visualizing Categorical Data Effectively, Building Better Tables
 [Class 10](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class10) | 09-27 | Correlations and Models, Project Group Work
 [Class 09](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class09) | 09-25 | Project Groups, Understanding Associations in Quantitative Data: Scatterplots, Correlation, Models
