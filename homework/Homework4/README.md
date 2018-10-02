@@ -6,6 +6,12 @@ Homework 4 is due at noon on Friday 2018-09-28. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
+# Post-Homework Materials
+
+1. The answer sketch is [available above, in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4sketch.pdf) or [in R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4sketch.Rmd).
+2. The grading rubric is [available above in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4rubric.pdf)
+3. The grades on HW 4 will be posted to the usual Google sheet at http://bit.ly/431-2018-hw-grades as soon as they are available.
+
 ## Steps to a Successful Homework
 
 Here are the steps I would take to do the homework, after I read [the instructions](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4.md), and after I'd read Chapters 2 and 3 of Nate Silver's *The Signal and the Noise*.
