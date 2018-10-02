@@ -16,7 +16,23 @@
 - The last page of the quiz looks like this:
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_lastpage.png)
 
-2. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is not due for a while - it's 2018-10-19.
+The Quiz covers Part A of the course. You may want to look over the summary in [Chapter 14 of the Course Notes](https://thomaselove.github.io/2018-431-book/part-a-a-few-of-the-key-points.html).
+
+2. Coming Soon(ish):
+    - Finish reading Leek's *Elements of Data Analytic Style* by 2018-10-11.
+    - [Project Task A and Task B](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-12. We'll discuss them once again on Thursday 2018-10-05.
+        - [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) requires your group to:
+            - [develop and propose 2-3 research questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) (the class survey)
+            - [propose 6-10 "homemade" survey questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#specifying-survey-questions) that relate to your research questions, and
+            - [propose a "scale" for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#specifying-a-scale) that also relates to your research questions
+        - [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) also requires you, as an individual, to:
+            - develop and propose a meaningful summary of your ideas and research question for Study 2 (Your Data).
+            - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
+        - [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB
+            - Thank you to the 12 people who had already done this as of 7:30 this morning, specifically Ife Babtunde, Wyatt Bensken, Jane Carsey, Julijana Conic, Dustin DeMeo, Linday Ferguson, Jesus Gutierrez, Hannah Hill, Susan Linder, Laurie Ann Moennich, Lydia Raines and Julia Yang.
+    - You should now have read through Chapter 5 of Silver's *The Signal and the Noise*. By 2018-10-24, we'll expect you to have read through Chapter 11.
+    - [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19.
+    - [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 
 3. The [Answer Sketch for Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is available. We expect to get the Homework 4 grades and rubric posted on Thursday 2018-10-04.
 
@@ -33,6 +49,7 @@
 - A better choice than `theme(legend.position = "none")` is `guides(color = FALSE)` if you're trying to remove a legend about `color`.
 
 5. Largely Unedited Results of the [Group Study 1 Brainstorming Activity From Class 10](http://bit.ly/431-2018-class10-brainstorm-feedback) are available now at http://bit.ly/431-2018-class10-brainstorm-feedback. We'll discuss this further on Thursday.
+    - The key takeaway is that no group successfully wrote a research question, so I'll need to provide more guidance on that. At the moment, what I have for you is contained in [section 2.2.1 (Research Questions)](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) of the Course Project Instructions.
 
 6. Links from today's class:
 
@@ -46,7 +63,7 @@
 7. **In-Class Table**: During today's session, we'll be working in small groups to improve a table. A [copy of that table is posted above (as the Class 11 supplementary table) in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_2018_class-11-supplementary-table.pdf). You can look at either the first or second page - they are equivalent for our purposes.
 
 # A Promotional Announcement
-
+    
 A few folks from the class came to see me in **Sweeney Todd** this weekend. Thank you for doing that. If you're interested, the show runs for the next two weekends on Friday and Saturday evenings and Sunday afternoons, and tickets are available at https://www.eventbrite.com/e/sweeney-todd-tickets-37253162211. We expect sellouts for the evening performances, so if you're interested, we strongly recommend you buy your tickets in advance.
 
 # One Last Thing
