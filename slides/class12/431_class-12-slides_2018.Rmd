@@ -1,0 +1,424 @@
+---
+title: "431 Class 12"
+author: "Thomas E. Love"
+date: "2018-10-04"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's Agenda
+
+1. The FiveThirtyEight Election Forecast: U.S. House of Representatives
+2. Some Thoughts on `dplyr` and its verbs
+3. The Printer Case Study
+4. Project Task A (the Group piece)
+5. Setting up the first Quiz
+
+## FiveThirtyEight.com
+
+Nate Silver, Founder and Editor in Chief
+
+https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/
+
+## Status as of 10:30 AM on 2018-10-02
+
+```{r 538housefig, out.width = '99%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/538_house_2018-10-02_1030AM.png")
+```
+
+## Today's R Starting Point
+
+```{r packages, message = FALSE}
+library(tidyverse)
+```
+
+## Western Collaborative Group Study (`wcgs`)
+
+See Notes, Chapter 13. 
+
+- Full data set has 3,154 observations on 22 variables.
+
+```{r}
+wcgs <- read.csv("wcgs.csv") %>% tbl_df()
+```
+
+# Using the key verbs in `dplyr`
+
+## `dplyr` basics: The Key Verbs
+
+Six key functions:
+
+- Pick observations by their values (`filter()`).
+- Reorder the rows (`arrange()`).
+- Pick variables by their names (`select()`).
+- Collapse many values down to a single summary (`summarise()`).
+- Create new variables with functions of existing variables (`mutate()`).
+- Change the scope of another function from operating on the whole data set to operating on it group-by-group (`group_by()`)
+
+> All of this comes from the Explore section of Grolemund and Wickham's *R for Data Science*, in particular the material on Data transformation.
+
+http://r4ds.had.co.nz/transform.html
+
+## `dplyr` basics: How the verbs work
+
+- The first argument is a data frame (or tibble).
+- The second arguments describe what to do with the data frame. You can refer to columns in the data frame directly without using `$`.
+- The result is a new data frame.
+
+## Filter rows with `filter()`
+
+`filter()` allows you to subset observations based on their values.
+
+```{r filter wcgs to get those with}
+wcgs.sub1 <- wcgs %>%
+  filter(dibpat == "Type A" & age > 49)
+wcgs.sub1
+```
+
+## Comparison and Logical Operators
+
+Comparison Operator | Meaning
+-------------------:| ---------------
+`>` | is greater than
+`>=` | is greater than or equal to
+`<` | is less than
+`<=` | is less than or equal to
+`!=` | is not equal to
+`==` | is equal to
+
+Logical (Boolean) Operator | Meaning
+-------------------:| ---------------
+`&` | and
+`|` | or
+`!` | not
+
+Missing Values (`NA` in R) can make things tricky. They are contagious. Almost any operation involving an unknown value will also be unknown.
+
+## The complete set of Boolean Operators
+
+```{r boolean-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/boolean.png")
+```
+
+Source: http://r4ds.had.co.nz/transform.html#logical-operators
+
+## Arrange rows with `arrange()`
+
+`arrange()`, instead of selecting rows (like `filter()`), changes their order. 
+
+- Use `arrange(height)` to arrange in ascending order of height. Provide a second column name to break ties, if you like. 
+- Missing values are always sorted at the end.
+
+```{r arrange wcgs by height and then weight}
+wcgs %>%
+  arrange(desc(height), desc(weight))
+```
+
+## Select columns with `select()`
+
+`select()` lets you zoom in on the columns you actually want to use based on the names of the variables. [R for Data Science](http://r4ds.had.co.nz/transform.html#select-columns-with-select) lays out some helper functions within select() for use in bigger data sets. 
+
+```{r select columns from wcgs of interest}
+wcgs.sub2 <- wcgs %>%
+  select(id, age, height, weight, dibpat, smoke, behpat)
+wcgs.sub2
+```
+
+## Grouped summaries with `summarize()`
+
+`summarise()` or `summarize()` collapses a data frame to a single row.
+
+```{r summarize mean height and correlation of key vars}
+wcgs.sub2 %>%
+  summarize(mean.ht = mean(height, na.rm=TRUE), 
+            sd.ht = sd(height, na.rm=TRUE)) %>%
+  round(digits = 2)
+```
+
+## Using the pipe (`%>%`) to filter and summarize
+
+```{r summarize correlation of height and weight}
+wcgs.sub2 %>%
+ filter(dibpat == "Type A") %>%
+ summarize(pearson.r = cor(height, weight), 
+  spearman.r = cor(height, weight, method = "spearman")) %>%
+ round(digits = 3) %>%
+ knitr::kable()
+```
+
+## Using `group_by()` with summarize to look group-by-group
+
+```{r summarize correlation within behavior patterns}
+wcgs.sub2 %>%
+  group_by(behpat) %>%
+  summarize(
+    pearson.r = round(cor(height, weight),3) ) %>%
+  knitr::kable()
+```
+
+## Using `group_by()` to look at separated groups
+
+You might have tried this approach instead, but it throws an error...
+
+```{r summarize correlation within behavior patterns but apply rounding incorrectly, eval=FALSE}
+wcgs.sub2 %>%
+  group_by(behpat) %>%
+  summarize(
+    pearson.r = cor(height, weight)) %>%
+  round(digits = 3) %>%
+  knitr::kable()
+```
+
+>- Why doesn't this work?
+>- When R sees the round command, it tries to apply it to every element of the table, including the behavior pattern labels, which aren't numbers. So it throws an error.
+
+## Add new variables with `mutate()`
+
+`mutate()` adds new columns that are functions of existing columns to the end of your data set.
+
+Suppose we want to calculate the weight/height ratio for each subject.
+
+```{r add weight to height ratio to the data as a new column}
+wcgs.sub3 <- wcgs.sub2 %>%
+    select(id, weight, height) %>%
+    mutate(wh.ratio = weight / height)
+wcgs.sub3
+```
+
+## On Coding and dplyr
+
+1. Learn `dplyr`, and use it to do most of your data management within R.
+    + `dplyr` is mostly about these key verbs, and piping, for our purposes
+    + some tasks produce results which be confusing, we're here to help
+2. `dplyr` is most useful in combination with other elements of the `tidyverse`, most prominently `ggplot2`.
+
+# The Printer Case Study
+
+## The Printer Case, Setup
+
+Get with your Project group.
+
+```{r printer1-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/printer1.png")
+```
+
+## The Printer Case, Main Table
+
+```{r printer2-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/printer2.png")
+```
+
+## The Printer Case Discussion, Part 1
+
+Fifty days of data. Fifth floor employees were given a card to operate their printer. Third floor employees were not.
+
+1. Is this a randomized trial or an observational study?
+2. What is the outcome we are studying?
+3. What are the two treatments/exposures/interventions being compared?
+4. What controls are in place as part of the study's design?
+5. **Key Question**: Will the card accounting system effectively lower usage if implemented across the firm?
+
+## The Printer Case Discussion
+
+Go.
+
+## Printer Case: Numerical Summary
+
+```{r printer1}
+printer <- read.csv("printer.csv") %>% tbl_df
+summary(printer)
+```
+
+## Printer Case: Scatterplot (r = 0.11)
+
+```{r printer scatterplot, echo=FALSE}
+ggplot(printer, aes(x = Third, y = Fifth)) +
+  geom_point() +
+  theme(text = element_text(size = 18)) + 
+  labs(x = "Third Floor Pages", y = "Fifth Floor Pages")
+```
+
+## Printer Case: Gather the Columns
+
+First, we'll gather up the data so that we can plot it more easily.
+
+```{r printer2}
+printer2 <- tidyr::gather(printer, Floor, Pages, -Day)
+printer2
+```
+
+## Printer Case: Comparison Boxplot
+
+```{r printer 2 boxplots, echo=FALSE}
+ggplot(printer2, aes(x = Floor, y = Pages, fill = Floor)) +
+  geom_boxplot(notch = TRUE) +
+  coord_flip() +
+  guides(fill = FALSE) +
+  theme(text = element_text(size = 18))
+```
+
+## Numerical Summary comparing the Two Floors
+
+```{r}
+mosaic::favstats(Pages ~ Floor, data = printer2)
+```
+
+## Statistical Inference comparing the Means?
+
+```{r, eval = FALSE}
+t.test(Pages ~ Floor, data = printer2)
+```
+
+```
+Welch Two Sample t-test (Edited Output)
+
+data:  Pages by Floor
+sample estimates:
+mean in group Fifth mean in group Third 
+              426.2               428.2 
+
+alternative hypothesis: 
+true difference in means is not equal to 0
+
+t = -0.053344, df = 97.979, p-value = 0.9576
+95 percent confidence interval: -76.40  72.40
+```
+
+## Statistical Inference comparing the Means?
+
+```{r, eval = FALSE}
+t.test(Pages ~ Floor, data = printer2, 
+       conf.level = 0.90, var.equal = TRUE)
+```
+
+```
+Two Sample t-test (Edited output)
+
+data:  Pages by Floor
+sample estimates:
+mean in group Fifth mean in group Third 
+              426.2               428.2 
+
+alternative hypothesis: 
+true difference in means is not equal to 0
+
+t = -0.053344, df = 98, p-value = 0.9576
+90 percent confidence interval: -64.258  60.258
+```
+
+
+## Printer Case: Third Floor
+
+```{r printer plot for Third Floor, echo=FALSE}
+ggplot(printer, aes(x = Day, y = Third)) +
+  geom_point() +
+  geom_line() +
+  theme(text = element_text(size = 18)) + 
+  labs(title = "Third Floor Pages")
+```
+
+## Printer Case: Fifth Floor
+
+```{r printer plot for Fifth Floor, echo=FALSE}
+ggplot(printer, aes(x = Day, y = Fifth)) +
+  geom_point() +
+  geom_line() +
+  theme(text = element_text(size = 18)) + 
+  labs(title = "Fifth Floor Pages")
+```
+
+## Comparing the Patterns over Time
+
+```{r printer2 scatterplot, echo=FALSE}
+ggplot(printer2, aes(x = Day, y = Pages, col = Floor)) +
+  geom_point() +
+  geom_line() +
+  theme(text = element_text(size = 16)) + 
+  guides(color = FALSE) +
+  facet_wrap(~ Floor) +
+  labs(title = "Monitoring on Fifth Floor Reduced Pages")
+```
+
+# Project Task A Discussion Time
+
+## Task A requires three things of your group
+
+1. Develop and propose 2-3 research questions for Study 1
+2. Propose 6-10 "homemade" survey questions for Study 1
+3. Propose a "scale" for Study 1 that relates to (at least one of) your research questions.
+
+Complete details at https://thomaselove.github.io/431-2018-project/
+
+- Sample research questions at the Class 11 README and Class 12 README page.
+- Old surveys available at https://github.com/THOMASELOVE/431-2018-project/tree/master/oldsurveys
+- Examples of "scales" at the Class 11 README and Class 12 README page, as well.
+
+Don't forget that the rest of Task A (related to Study 2) is for you to do, by yourself.
+
+# Setting Up Quiz 1
+
+## Setting Up Quiz 1
+
+There are a total of 40 questions, each worth 2, 2.5 or 3 points, plus an affirmation that your work is yours alone.
+
+- Please select or type in your best response for each question. The questions are not arranged in any particular order, and you should answer all of them. 
+- You must complete this quiz by 7 PM Monday. You will have the opportunity to edit your responses after completing the quiz, but this must be completed by the deadline. 
+- If you wish to complete part of the quiz and then return to it later, please scroll down to the end of the quiz and complete the **affirmation** (final question). The affirmation is required, and you will have to complete it in order to exit the quiz and save your progress. You will then be presented with (and emailed) a link to "Edit your progress" which you will want to bookmark, so you can return to it easily.
+
+## Quiz 1: Main item types.
+
+Fake Quiz is at https://goo.gl/forms/hw37w3BrpibPDGQ03
+
+1. Short Answer Questions
+2. Multiple Choice
+3. Checkboxes
+4. Matching
+
+- You are welcome to consult the materials provided on the course website, but you are not allowed to discuss the questions on this quiz with anyone other than Professor Love or the Teaching Assistants, who may be reached at `431-help at case dot edu`.
+
+## Fake Quiz: Question A
+
+```{r fake1-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/fake1.png")
+```
+
+## Fake Quiz: Question B
+
+```{r fake2-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/fake2.png")
+```
+
+## Fake Quiz: Question C
+
+```{r fake3-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/fake3.png")
+```
+
+## Fake Quiz: Affirmation
+
+```{r fake4-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/fake4.png")
+```
+
+## Fake Quiz: Completion
+
+```{r fake5-fig, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/fake5.png")
+```
+
+## Link to the Quiz
+
+will be provided by noon Friday 2018-10-05. The link will appear:
+
+1. On the Class 12 README page, and
+2. On the Quizzes page.
