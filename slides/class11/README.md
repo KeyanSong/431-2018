@@ -11,7 +11,7 @@
 
 2. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is not due for a while - it's 2018-10-19.
 
-3. The [Answer Sketch for Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is available. We expect to get the grades and rubric posted on Thursday 2018-10-04.
+3. The [Answer Sketch for Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is available. We expect to get the Homework 4 grades and rubric posted on Thursday 2018-10-04.
 
 4. A Few R Markdown Coding and Style Issues I want to make sure you've caught onto:
 
@@ -33,6 +33,10 @@
 - [WHO Global Health Observatory Indicator Metadata Registry](http://apps.who.int/gho/data/node.wrapper.imr?x-id=462) for Alcohol
 - [How to share data with a statistician](https://github.com/jtleek/datasharing) from Jeff Leek's group at Johns Hopkins.
 - Hadley Wickham from 2010 on [Tidy data & tidy tools](https://vimeo.com/33727555) at the NYC Open Statistical Computing Meetup
+- A.S.C. Ehrenberg's paper on data presentation "[The Problem of Numeracy](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/Ehrenberg_1981_pw_The_Problem_of_Numeracy.pdf)" from *The American Statistician* is well worth your time, despite being written in 1981. It is password-protected.
+- If we have time, we may spend a few minutes talking about election forecasting, and communicating the results of a forecast effectively, in the context of the [2018 House forecast at FiveThirtyEight.com](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/?ex_cid=midterms-header). If we don't get to this today, we'll do it first thing in Class 12.
+
+7. **In-Class Table**: During today's session, we'll be working in small groups to improve a table. A [copy of that table is posted above (as the Class 11 supplementary table) in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_2018_class-11-supplementary-table.pdf). You can look at either the first or second page - they are equivalent for our purposes.
 
 # A Promotional Announcement
 
