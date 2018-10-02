@@ -25,7 +25,7 @@
 
 2. Thanks to those of you who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). Response is forthcoming.
 
-3. There were some typos in Section 13.10, 13.11 and 13.13 of the [Course Notes](https://thomaselove.github.io/2018-431-book/WCGS-Study.html#including-arcus-status-in-the-model). They are now fixed.
+3. There were some typos in Section 13.10, 13.11 and 13.13 of the [Course Notes](https://thomaselove.github.io/2018-431-book/WCGS-Study.html#including-arcus-status-in-the-model). They are now fixed. I've also added a new Chapter 50, about Missing Data.
 
 4. Visualization of the Day
 
