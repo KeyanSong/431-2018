@@ -25,10 +25,15 @@
 
 2. Thanks to those of you who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). Response is forthcoming.
 
-3. Links from today's class:
+3. There were some typos in Section 13.10, 13.11 and 13.13 of the [Course Notes](https://thomaselove.github.io/2018-431-book/WCGS-Study.html#including-arcus-status-in-the-model). They are now fixed.
+
+4. Visualization of the Day
 
 - We'll start today's main work with a close look at the FiveThirtyEight [House Forecasting Model](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/) for the upcoming U.S. Election.
     - If you are interested in this stuff, you will probably like the [FiveThirtyEight Politics podcast](https://fivethirtyeight.com/tag/politics-podcast/), especially its "Model Talk" episodes, like [Our Forecast Is 7,000 Lines Of Code](https://fivethirtyeight.com/features/politics-podcast-our-forecast-is-7000-lines-of-code/) from 2018-09-20.
+
+5. Other Links from today's class:
+
 - For more on `dplyr` and its key verbs, you should be reading Wickham and Grolemund's [R for Data Science](http://r4ds.had.co.nz/)
 - The `printer.csv` data set used in today's example called "The Printer Case" is [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/printer.csv), and on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
 - The PDF version of "The Printer Case" is also [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/431_2018_class-12-ThePrinterCase.pdf).
