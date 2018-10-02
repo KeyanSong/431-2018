@@ -1,0 +1,438 @@
+---
+title: "431 Class 11"
+author: "Thomas E. Love"
+date: "2018-10-02"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's Agenda
+
+1. The Western Collaborative Group Study
+  - Loose End 1: Adding Notches to Boxplots
+  - Loose End 2: Standard Error of the Mean
+  - Loose End 3: Identification of Missingness
+  - Studying Associations: Correlation Matrix
+  - Studying Associations: Scatterplot Matrix
+2. Some Thoughts on Building Tables Well
+3. A little more on Leek Chapters 3, 4, 12
+
+## Today's R Starting Point
+
+```{r packages, message = FALSE}
+library(GGally); library(tidyverse)
+```
+
+## Western Collaborative Group Study (`wcgs`)
+
+See Notes, Chapter 13. 
+
+- Full data set has 3,154 observations on 22 variables.
+
+```{r}
+wcgs.full <- read.csv("wcgs.csv") %>% tbl_df()
+
+set.seed(4312018)
+
+wcgs1 <- wcgs.full %>%
+  mutate(bmi2 = round(bmi, 2), subj = as.character(id)) %>%
+  select(subj, age, chol, bmi2, smoke, ncigs, 
+         behpat, chd69) %>%
+  sample_n(size = 500)
+```
+
+```{r}
+dim(wcgs1)
+```
+
+## What's in `wcgs1`?
+
+- `subj` = subject identification code
+- `age` (in years)
+- `chol` is total cholesterol in mg/dl
+- `bmi2` is body-mass index, rounded to two decimal places
+- `smoke` is 1 if cigarette smoker, 0 if not
+- `ncigs` is # of cigarettes smoked/day
+- `behpat` is behavioral pattern (A1, A2, B3 or B4)
+- `chd69` is whether subject had a CHD event (Yes/No)
+
+```{r}
+slice(wcgs1, 105:107)
+```
+
+## A Loose End: Comparison Boxplots
+
+```{r, fig.height = 4}
+ggplot(wcgs1, aes(x = behpat, y = bmi2, fill = behpat)) +
+  geom_boxplot() + 
+  coord_flip() + guides(fill = FALSE) + theme_bw()
+```
+
+## A Loose End: Adding Notches to Comparison Boxplots
+
+```{r, fig.height = 4}
+ggplot(wcgs1, aes(x = behpat, y = bmi2, fill = behpat)) +
+  geom_boxplot(notch = TRUE) + 
+  scale_fill_viridis_d() +
+  coord_flip() + guides(fill = FALSE) + theme_bw()
+```
+
+## A Loose End: Standard Error of the Sample Mean
+
+```{r}
+mosaic::favstats(chol ~ chd69, data = wcgs1)
+```
+
+The standard error for the `No` group is
+
+$$
+SE(\bar{x}) = \frac{SD}{\sqrt{n}} = \frac{44.32924}{\sqrt{448}} = \frac{44.32924}{21.16601} = 2.09
+$$
+
+## Comparing the Standard Errors using the tidyverse
+
+```{r}
+wcgs1 %>%
+  filter(complete.cases(chd69, chol)) %>%
+  group_by(chd69) %>%
+  summarize(n = n(), mean(chol), sd(chol), 
+            "se(chol)" = sd(chol)/(sqrt(n()))) %>%
+  knitr::kable()
+```
+
+## Missing Data?
+
+```{r}
+wcgs1 %>%
+  summarize_all(funs(sum(is.na(.))))
+```
+
+Or, use `summary`, or `mosaic::favstats` or other approaches.
+
+### Could use the `map` approach from the `purrr` package:
+
+```{r}
+map(wcgs1, ~sum(is.na(.)))
+```
+
+
+## Which rows have missing data?
+
+```{r}
+wcgs1 %>%
+  filter(!complete.cases(.))
+```
+
+# New Tools: The Correlation Matrix and the Scatterplot Matrix
+
+## A Correlation Matrix for the Quantitative Variables
+
+```{r}
+wcgs1 %>%
+  select(chol, age, bmi2, ncigs) %>%
+  cor() %>%
+  round(., 3) %>%
+  knitr::kable()
+```
+
+## A Correlation Matrix for the Quantitative Variables
+
+Accounting for missingness by dropping incomplete cases...
+
+```{r}
+wcgs1 %>%
+  select(chol, age, bmi2, ncigs) %>%
+  filter(complete.cases(.)) %>%
+  cor() %>%
+  round(., 3) %>%
+  knitr::kable()
+```
+
+All these correlations are based on 498 observations, rather than 500.
+
+## A Correlation Matrix for the Quantitative Variables
+
+What if we want the `chol`-based correlations to use 498, but the rest to use all of the data (500 observations)?
+
+```{r}
+wcgs1 %>%
+  select(chol, age, bmi2, ncigs) %>%
+  cor(., use = "pairwise.complete.obs") %>%
+  round(., 3) %>%
+  knitr::kable()
+```
+
+## Using `ggcorr` from `GGally` for a Correlation Matrix
+
+```{r, fig.height = 3.5}
+ggcorr(wcgs1, name = "Pearson r", label = TRUE)
+```
+
+## A Scatterplot Matrix for the Numeric Variables
+
+```{r, fig.height = 6}
+pairs(~ chol + age + bmi2 + ncigs, data = wcgs1,
+      main = "Simple Scatterplot Matrix for wcgs1")
+```
+
+## Scatterplot Matrix via `ggpairs` in `GGally` (Code)
+
+```{r, eval = FALSE}
+ggpairs(wcgs1 %>% select(-subj), 
+        title = "Scatterplot Matrix for wcgs1 via ggpairs")
+```
+
+- In practice, I run this with `warning = FALSE` and `message = FALSE` in the chunk header. It's also much slower than `pairs`.
+- On the plus side, it warns you about missing data (if you don't turn that off) and it deals more effectively with factors...
+
+## `ggpairs` Scatterplot Matrix
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.height = 6}
+ggpairs(wcgs1 %>% select(-subj), 
+        title = "Scatterplot Matrix for wcgs1 via ggpairs")
+```
+
+## What Makes a Good Graph? (Tufte, lightly edited)
+
+>- During the discovery stage of your work use any style or type of graph you wish. Design becomes important as soon as you want to convey information. At that point you have to create graphs that communicate ideas to others.
+
+>- Graphs communicate most easily when they have a specific message -- for instance, "coffee production up!" They lose impact and are less successful when their point is vague -- for example, "The number of students in public high schools, 1993-2003."
+
+>- Graphs are powerful when you use the title to reinforce your specific message -- "The number of students in public high schools has fallen by a third in ten years." Such transparent messages will be understood and remembered by readers. If you don't tell readers what the graph is saying, some will never know.
+
+>- After years of hard thinking, I concluded that **graphs are like jokes**: if you have to explain them they have failed.
+
+## This doesn't apply to axis labels
+
+```{r convincing, out.width = '95%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/convincing.png")
+```
+
+# Visualizing Categorical Data Well
+
+## Building Tables Well
+
+> Getting information from a table is like extracting sunlight from a cucumber.
+
+> Farquhar AB and Farquhar H
+
+## Building Tables Well
+
+There are three key tips related to the development of tables, in practice, as described by Ehrenberg, and also by Howard Wainer\footnote{Visual Revelations (1997), Chapter 10.} who concisely states them as:
+
+1. Order the rows and columns in a way that makes sense.
+2. Round - a lot!
+3. ALL is different and important.
+
+## Now HERE's a Contingency Table
+
+```{r tableA, out.width = '95%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/tableA.PNG")
+```
+
+## Four Questions
+
+1. What is the general level (per 100,000 population) of accidental death in the countries chosen?
+2. How do the countries differ with respect to their rates of accidental death?
+3. What are the principal causes of accidental death? Which are the most frequent? The least frequent?
+4. Are there any unusual interactions between country and cause of accidental death?
+
+See the Supplementary Table on the Class 11 README page.
+
+## Wainer H (1997) *Visual Revelations*, Chapter 10
+
+```{r tableA2, out.width = '95%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/tableA-ver2.PNG")
+```
+
+## Wainer's Three Rules for Table Construction
+
+1. Order the rows and columns in a way that makes sense.
+2. Round, a lot!
+3. ALL is different and important
+
+- Wainer H (1997) *Visual Revelations* Chapter 10.
+
+## Alabama First!
+
+Which is more useful to you?
+
+2013 Percent of Students in grades 9-12 who are obese
+
+State | % Obese | 95% CI | Sample Size
+----- | ------- | ------ | -----------
+Alabama | 17.1 | (14.6 - 19.9) | 1,499
+Alaska |	12.4	| (10.5-14.6)	| 1,167
+Arizona |	10.7 |	(8.3-13.6)	| 1,520
+Arkansas |	17.8	| (15.7-20.1)	| 1,470
+Connecticut |	12.3 |	(10.2-14.7)	| 2,270
+Delaware |	14.2 |	(12.9-15.6) |	2,475
+Florida |	11.6	| (10.5-12.8)	| 5,491
+... | | | 
+Wisconsin |	11.6 | 	(9.7-13.9)	| 2,771
+Wyoming	| 10.7 |	(9.4-12.2)	| 2,910
+
+or ...
+
+## Alabama First!
+
+State | % Obese | 95% CI | Sample Size
+----- | ------- | ------ | -----------
+Kentucky | 18.0 | (15.7 - 20.6) | 1,537
+Arkansas | 17.8 | (15.7 - 20.1) | 1,470
+Alabama | 17.1 | (14.6 - 19.9) | 1,499
+Tennessee | 16.9 | (15.1 - 18.8) | 1,831
+Texas | 15.7 | (13.9 - 17.6) | 3,039
+... | | |
+Massachusetts | 10.2 | (8.5 - 12.1) | 2,547
+Idaho | 9.6 | (8.2 - 11.1) | 1,841
+Montana | 9.4 | (8.4 - 10.5) | 4,679
+New Jersey | 8.7 | (6.8 - 11.2) | 1,644
+Utah | 6.4 | (4.8 - 8.5) | 2,136
+
+It is a rare event when Alabama first is the best choice.
+
+## Archiving Data: Sortable Online Tables
+
+```{r onlinetable, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/onlinetable.PNG")
+```
+
+## Notes on the Data in the previous slides
+
+*Source*: Estimates from the National Youth Risk Behavior Surveillance System (YRBSS). Available at [http://www.cdc.gov/nccdphp/DNPAO/index.html](http://www.cdc.gov/nccdphp/DNPAO/index.html).
+
+To go directly to this table [visit this link](http://nccd.cdc.gov/NPAO_DTM/IndicatorSummary.aspx?category=28&indicator=63)
+
+- Obese is defined as body mass index (BMI)-for-age and sex $\geq$ 95th percentile based on the 2000 CDC growth chart; BMI was calculated from self-reported weight and height (weight [kg]/ height [m^2^]).
+
+## Order rows and columns sensibly
+
+- Alabama First!
+- Size places - put the largest first. We often look most carefully at the top.
+- Order time from the past to the future to help the viewer.
+- If there is a clear predictor-outcome relationship, put the predictors in the rows and the outcomes in the columns.
+
+## Order the rows and columns sensibly.
+
+```{r tableA3, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/tableA-ver3.PNG")
+```
+
+## Round - a lot!
+
+- Humans cannot understand more than two digits very easily.
+
+- We almost never care about accuracy of more than two digits.
+
+- We can almost never justify more than two digits of accuracy statistically.
+
+## Suppose we want to report a correlation coefficient of 0.25
+
+- How many observations do you think you would need to justify such a choice?
+
+- To report 0.25 meaningfully, we should know the second digit isn't 4 or 6, right?
+
+## Reporting a correlation coefficient of 0.25
+
+To report 0.25 meaningfully, we desire to be sure that the second digit isn't 4 or 6.
+
+- That requires a standard error less than 0.005
+
+- The *standard error* of any statistic is proportional to 1 over the square root of the sample size, *n*.
+
+So $\frac{1}{\sqrt{n}}$ ~ 0.005, but that means $\sqrt{n} = \frac{1}{0.005} = 200$.
+
+And if $\sqrt{n} = 200$, then *n* = (200)^2^ = 40,000.
+
+**Do we usually have 40,000 observations?**
+
+## Round, a lot!
+
+```{r tableA4, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/tableA-ver4.PNG")
+```
+
+## ALL is different and important
+
+```{r tableA5, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/tableA-ver5.PNG")
+```
+
+## Cluster when you can, and highlight outliers.
+
+```{r tableA6, out.width = '90%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/tableA-ver6.PNG")
+```
+
+## Visualizing Categories
+
+http://flowingdata.com/projects/2016/alcohol-world/
+
+
+Recorded APC is defined as the recorded amount of alcohol consumed per capita (15+ years) over a calendar year in a country, in litres of pure alcohol. The indicator only takes into account the consumption which is recorded from production, import, export, and sales data often via taxation. 
+
+- Numerator: The amount of recorded alcohol consumed per capita (15+ years) during a calendar year, in litres of pure alcohol. 
+- Denominator: Midyear resident population (15+ years) for the same calendar year, UN World Population Prospects, medium variant.
+
+http://apps.who.int/gho/indicatorregistry/App_Main/view_indicator.aspx?iid=462
+
+# Elements of Data Analytic Style
+
+## Leek, Chapter 3 (Tidying the Data)
+
+Components of a Processed Data Set
+
+1. The raw data.
+2. A tidy data set.
+3. A code book describing each variable and its values in the tidy data set.
+4. An explicit and exact recipe you used to go from 1 to 2 to 3.
+
+See https://github.com/jtleek/datasharing for a guide for your project.
+
+Tidy Data Video from Hadley Wickham https://vimeo.com/33727555
+
+## Leek, Chapter 4 (Checking the Data)
+
+- Coding variables appropriately
+    + Continuous, Ordinal, Categorical, Missing, Censored
+- Code categorical / ordinal variables so that R will read them as factors.
+- Encode everything using text, not with colors on the spreadsheet.
+- Identify the missing value indicator, and use `NA` whenever you can.
+- Check for coding errors, particularly label switching.
+
+## Leek, Chapter 12 (Reproducibility)
+
+Reproducibility of workflow is what we're aiming for.
+
+- Everything in a script. (R Markdown)
+- Everything stored in a plain text file (future-proof: .csv, .Rmd)
+- Organize your data analysis in subfolders of the project directory
+- Use version control (something I should do more of)
+- Add `sessionInfo()` command to final version of work when you need to preserve the details on software and parameters - see next slide.
+
+## My session info, at home, 2018-10-01
+
+Include this information in your project submissions, but not probably in your other assignments, unless we ask you for it.
+
+```{r session-info-new, out.width = '95%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/sessioninfo-2018-10-01.png")
+```
+
+## My session info, at home, One Year Ago
+
+Here is the 2017-10-03 version of this information. At the time R 3.4.2 was brand new!
+
+```{r session-info-old, out.width = '95%', fig.align = "center", echo = FALSE}
+knitr::include_graphics("images/sessioninfo-2017-10-03.png")
+```
