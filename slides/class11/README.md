@@ -10,6 +10,13 @@
 
 1. [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you by noon Friday 2018-10-05 and is due at 7 PM on Monday 2018-10-08 (Columbus Day). Note the change to **7 PM** instead of noon for the deadline. This means 7 PM on the nose, and not 8 PM, or even 7:01 PM.
 
+The front page of the quiz looks like this:
+
+
+The last page of the quiz looks like this:
+
+
+
 2. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is not due for a while - it's 2018-10-19.
 
 3. The [Answer Sketch for Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4) is available. We expect to get the Homework 4 grades and rubric posted on Thursday 2018-10-04.
