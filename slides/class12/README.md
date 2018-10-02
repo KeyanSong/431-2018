@@ -30,8 +30,8 @@
 - We'll start today's main work with a close look at the FiveThirtyEight [House Forecasting Model](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/) for the upcoming U.S. Election.
     - If you are interested in this stuff, you will probably like the [FiveThirtyEight Politics podcast](https://fivethirtyeight.com/tag/politics-podcast/), especially its "Model Talk" episodes, like [Our Forecast Is 7,000 Lines Of Code](https://fivethirtyeight.com/features/politics-podcast-our-forecast-is-7000-lines-of-code/) from 2018-09-20.
 - For more on `dplyr` and its key verbs, you should be reading Wickham and Grolemund's [R for Data Science](http://r4ds.had.co.nz/)
-- The `printer.csv` data set used in today's example called "The Printer Case" is available above, and on the Data and Code page.
-- The PDF version of "The Printer Case" is also available above.
+- The `printer.csv` data set used in today's example called "The Printer Case" is [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/printer.csv), and on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
+- The PDF version of "The Printer Case" is also [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/431_2018_class-12-ThePrinterCase.pdf).
 
 # One Last Thing
 
