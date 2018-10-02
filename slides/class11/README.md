@@ -4,10 +4,11 @@
 
 - The slides will be available above [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_class-11-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class11/431_class-11-slides_2018.Rmd).
 - Class 11 audio files will be posted above as soon as they are available.
+- This is the last session of Part A of the Course. We will begin Part B on Thursday, 2018-10-04.
 
 ## Announcements
 
-1. [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you by noon Friday 2018-10-05 and is due at 7 PM on Monday 2018-10-08 (Columbus Day). Note the change to 7 PM instead of noon for the deadline. This means 7 PM on the nose, and not 8 PM, or even 7:01 PM.
+1. [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you by noon Friday 2018-10-05 and is due at 7 PM on Monday 2018-10-08 (Columbus Day). Note the change to **7 PM** instead of noon for the deadline. This means 7 PM on the nose, and not 8 PM, or even 7:01 PM.
 
 2. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is not due for a while - it's 2018-10-19.
 
