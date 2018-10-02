@@ -88,6 +88,7 @@ Largely Unedited Results of the [Group Study 1 Brainstorming Activity From Class
 
 4. Links from today's class:
 
+- The Western Collaborative Group Study data (wcgs.csv) is [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/wcgs.csv), and is also on our [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
 - [What Alcohol People Around the World Drink](http://flowingdata.com/projects/2016/alcohol-world/) from flowingdata.com
 - [WHO Global Health Observatory Indicator Metadata Registry](http://apps.who.int/gho/data/node.wrapper.imr?x-id=462) for Alcohol
 - [How to share data with a statistician](https://github.com/jtleek/datasharing) from Jeff Leek's group at Johns Hopkins.
