@@ -2,7 +2,7 @@
 
 ## Today's Materials
 
-- The slides will be available above [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_class-11-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class11/431_class-11-slides_2018.Rmd).
+- The slides are now available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/431_class-11-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class11/431_class-11-slides_2018.Rmd).
 - Class 11 audio files will be posted above as soon as they are available.
 - This is the last session of Part A of the Course. We will begin Part B on Thursday, 2018-10-04.
 
