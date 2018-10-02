@@ -29,17 +29,19 @@
 
 - We'll start today's main work with a close look at the FiveThirtyEight [House Forecasting Model](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/) for the upcoming U.S. Election.
     - If you are interested in this stuff, you will probably like the [FiveThirtyEight Politics podcast](https://fivethirtyeight.com/tag/politics-podcast/), especially its "Model Talk" episodes, like [Our Forecast Is 7,000 Lines Of Code](https://fivethirtyeight.com/features/politics-podcast-our-forecast-is-7000-lines-of-code/) from 2018-09-20.
+- For more on `dplyr` and its key verbs, you should be reading Wickham and Grolemund's [R for Data Science](http://r4ds.had.co.nz/)
 - The `printer.csv` data set used in today's example called "The Printer Case" is available above, and on the Data and Code page.
 - The PDF version of "The Printer Case" is also available above.
 
 # One Last Thing
 
+# The remaining material is Repeated from Class 11's README
 
-# A Promotional Announcement (repeating from Class 11 README)
+## A Promotional Announcement 
     
 A few folks from the class came to see me in **Sweeney Todd** this weekend. Thank you for doing that. If you're interested, the show runs for the next two weekends on Friday and Saturday evenings and Sunday afternoons, and tickets are available at https://www.eventbrite.com/e/sweeney-todd-tickets-37253162211. We expect sellouts for the evening performances, so if you're interested, we strongly recommend you buy your tickets in advance.
 
-# Project Tasks A and B reminders and comments (repeated from Class 11 README)
+## Project Tasks A and B reminders and comments (repeated from Class 11 README)
 
 - [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) requires your group to:
     - [develop and propose 2-3 research questions for Study 1](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) (the class survey)
@@ -55,14 +57,14 @@ A few folks from the class came to see me in **Sweeney Todd** this weekend. Than
     - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
 - [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB
     
-## The Brainstorming Activity, from Class 10
+### The Brainstorming Activity, from Class 10
 
 Largely Unedited Results of the [Group Study 1 Brainstorming Activity From Class 10](http://bit.ly/431-2018-class10-brainstorm-feedback) are available now at http://bit.ly/431-2018-class10-brainstorm-feedback.
 
 - The key takeaway is that none of the ten groups successfully wrote a research question, so I'll need to provide more guidance on that. 
 - At the moment, what I have for you is contained in [section 2.2.1 (Research Questions)](https://thomaselove.github.io/431-2018-project/taskA.html#research-questions) of the Course Project Instructions. I can also provide several examples of good research questions written last year by student groups, both for Study 1 and Study 2.
     
-## A Few Examples of Research Questions That Worked Out Well in the Past
+### A Few Examples of Research Questions That Worked Out Well in the Past
 
 1. For Study 1, your research questions will need to compare two or more exposure groups on a quantitative outcome (in one case) and on a categorical outcome (in another case). 
     - "Do messy people tend to have higher levels of self-described creativity than organized people?"
