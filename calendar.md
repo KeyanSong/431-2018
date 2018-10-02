@@ -33,7 +33,7 @@ Date | Class | Description or Deliverable
 10-02 | 11 | **Part B** begins (Making Comparisons)
 10-04 | 12 | 
 10-05 | -- | **[Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** 
-10-08 | -- | **Quiz 1 due at noon**
+10-08 | -- | **Quiz 1 due at 7 PM**
 10-09 | 13 | 
 10-10 | -- | Before Class 14, finish reading **Leek**
 10-11 | 14 |
