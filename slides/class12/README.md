@@ -29,7 +29,7 @@
 
 4. Visualization of the Day
 
-- We'll start today's main work with a close look at the FiveThirtyEight [House Forecasting Model](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/) for the upcoming U.S. Election.
+- We'll start with a look at the FiveThirtyEight [House Forecasting Model](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/) for the upcoming U.S. Election.
     - If you are interested in this stuff, you will probably like the [FiveThirtyEight Politics podcast](https://fivethirtyeight.com/tag/politics-podcast/), especially its "Model Talk" episodes, like [Our Forecast Is 7,000 Lines Of Code](https://fivethirtyeight.com/features/politics-podcast-our-forecast-is-7000-lines-of-code/) from 2018-09-20.
 
 5. Other Links from today's class:
