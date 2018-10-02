@@ -17,6 +17,11 @@ There are enough items on every Quiz that a perfect score is rare. A score of 85
         - This (at least potentially) includes material from **Leek** Chapters 1-4, 5, 9, 10, 12 and 13.
         - This (at least potentially) includes material from **Silver** Introduction and Chapters 1-5.
         - This (at least potentially) includes material from **R4DS**, specifically the Explore section and the Communicate section.
+    - Note the change to **7 PM** instead of noon for the deadline. This means 7 PM on the nose, and not 8 PM, or even 7:01 PM.
+    - The front page of Quiz 1 looks like this:
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_frontpage.png)
+    - The last page of Quiz 1 looks like this:
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_lastpage.png)
 
 2. Quiz 2 will be released to you on 2018-11-02, and will be due on 2018-11-05 at noon.
     - Quiz 2 will include material from Parts A and B of the course, focusing more on Part B.
