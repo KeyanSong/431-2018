@@ -13,7 +13,6 @@ At the end of each quiz, you will have to indicate that you did not receive any 
 There are enough items on every Quiz that a perfect score is rare. A score of 85% or higher on a Quiz is usually regarded as the minimum for an A, and a score of 70% or higher is usually the minimum for a B, although I reserve the right to change my mind about that if the results of the Quiz do not meet our expectations.
 
 1. Quiz 1 will be released to you before noon on 2018-10-05, and will be due on 2018-10-08 at **7 PM**.
-    - When Quiz 1 is ready, the link to it will be posted to the Class 12 README, and also **right here**.
     - Quiz 1 will include material from Part A of the course
         - This (at least potentially) includes material from **Leek** Chapters 1-4, 5, 9, 10, 12 and 13.
         - This (at least potentially) includes material from **Silver** Introduction and Chapters 1-5.
@@ -23,6 +22,8 @@ There are enough items on every Quiz that a perfect score is rare. A score of 85
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_frontpage.png)
     - The last page of Quiz 1 looks like this:
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_lastpage.png)
+
+## When Quiz 1 is available, we'll place a link right here.
 
 2. Quiz 2 will be released to you on 2018-11-02, and will be due on 2018-11-05 at noon.
     - Quiz 2 will include material from Parts A and B of the course, focusing more on Part B.
