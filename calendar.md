@@ -30,8 +30,8 @@ Date | Class | Description or Deliverable
 09-27 | 10 | 
 09-28 | -- | **[Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
-10-02 | 11 | **Part B** begins (Making Comparisons)
-10-04 | 12 | 
+10-02 | 11 | The Scatterplot Matrix, The Correlation Matrix, Visualizing Categorical Data, Building Better Tables
+10-04 | 12 | **Part B** begins (Making Comparisons)
 10-05 | -- | **[Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** 
 10-08 | -- | **Quiz 1 due at 7 PM**
 10-09 | 13 | 
@@ -43,9 +43,9 @@ Date | Class | Description or Deliverable
 10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks C and D (Survey Edit/Comparison Plan)**  due at noon.
 10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
-10-25 | 16 | **Part C** begins (Regression Models). Course Project Survey goes live.
+10-25 | 16 | Course Project Survey goes live.
 10-26 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
-10-30 | 17 | 
+10-30 | 17 | **Part C** begins (Regression Models).
 10-31 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task E (Taking the Survey)**  due at noon
 11-01 | 18 | 
 11-02 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
