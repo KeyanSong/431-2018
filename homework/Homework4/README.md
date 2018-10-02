@@ -9,7 +9,7 @@ Any assignment received more than 60 minutes after the deadline is considered la
 # Post-Homework Materials
 
 1. The answer sketch is [available above, in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4sketch.pdf) or [in R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4sketch.Rmd).
-2. The grading rubric is [available above in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4rubric.pdf)
+2. The grading rubric is [available above in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4rubric.pdf).
 3. The grades on HW 4 will be posted to the usual Google sheet at http://bit.ly/431-2018-hw-grades as soon as they are available.
 
 ## Steps to a Successful Homework
