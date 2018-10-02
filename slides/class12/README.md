@@ -9,7 +9,7 @@
 
 [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you by noon Friday 2018-10-05 and is due at 7 PM on Monday 2018-10-08 (Columbus Day). Note the change to **7 PM** instead of noon for the deadline. This means 7 PM on the nose, and not 8 PM, or even 7:01 PM. 
 
-- We will post the link for Quiz 1 at the Quizzes page, and also right here, in this space.
+- We will post the link for Quiz 1 [at the Quizzes page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes), and also right here, in this space.
 
 ## Coming Soon (or soonish)
 
