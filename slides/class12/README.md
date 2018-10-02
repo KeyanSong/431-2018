@@ -21,7 +21,7 @@
 
 ## General Announcements
 
-1. Homework 4 Grades and Rubric will be posted soon.
+1. Homework 4 Grades will appear at http://bit.ly/431-2018-hw-grades, and the Homework 4 Grading Rubric [is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4).
 
 2. Thanks to those of you who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). Response is forthcoming.
 
@@ -34,6 +34,8 @@
 - The PDF version of "The Printer Case" is also [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/431_2018_class-12-ThePrinterCase.pdf).
 
 # One Last Thing
+
+- [This is a useful tip](https://twitter.com/storywithdata/status/1044261860432904198) "Take intentional steps in your data visualizations to draw your audience's attention to where you want them to look" from Cole Knaflic (@storywithdata) who also blogs at [Storytelling with Data](http://www.storytellingwithdata.com/).
 
 # The remaining material is Repeated from Class 11's README
 
