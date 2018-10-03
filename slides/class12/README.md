@@ -37,6 +37,7 @@
 - For more on `dplyr` and its key verbs, you should be reading Wickham and Grolemund's [R for Data Science](http://r4ds.had.co.nz/)
 - The `printer.csv` data set used in today's example called "The Printer Case" is [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/printer.csv), and on the [Data and Code page](https://github.com/THOMASELOVE/431-2018-data).
 - The PDF version of "The Printer Case" is also [available above](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/431_2018_class-12-ThePrinterCase.pdf).
+- If you're interested in p-hacking and replicability of scientific work, take a look at the NY Times article from 2018-09-29 entitled "[More Evidence That Nutrition Studies Don’t Always Add Up](https://www.nytimes.com/2018/09/29/sunday-review/cornell-food-scientist-wansink-misconduct.html)" as a starting point. If you're not interested, wait a little while and we'll get there in class.
 
 # One Last Thing
 
