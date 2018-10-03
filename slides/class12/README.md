@@ -23,7 +23,7 @@
 
 1. Homework 4 Grades will appear at http://bit.ly/431-2018-hw-grades, and the Homework 4 Grading Rubric [is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4).
 
-2. Thanks to those of you who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). Response is forthcoming.
+2. Thanks to the 47 who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). My main response is at http://bit.ly/431-2018-minute11-response.
 
 3. There were some typos in Section 13.10, 13.11 and 13.13 of the [Course Notes](https://thomaselove.github.io/2018-431-book/WCGS-Study.html#including-arcus-status-in-the-model). They are now fixed. I've also added a new Chapter 50, about Missing Data.
 
@@ -63,7 +63,8 @@ A few folks from the class came to see me in **Sweeney Todd** this weekend. Than
 - [Task A](https://thomaselove.github.io/431-2018-project/taskA.html) also requires you, as an individual, to:
     - develop and propose a meaningful summary of your ideas and research question for Study 2 (Your Data).
     - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
-- [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB
+- [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB. 
+    - As of 2018-10-03 at 4:47 PM, 23 of you have done this. Thanks!
     
 ### The Brainstorming Activity, from Class 10
 
