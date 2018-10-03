@@ -61,7 +61,7 @@ dim(wcgs1)
 - `age` (in years)
 - `chol` is total cholesterol in mg/dl
 - `bmi2` is body-mass index, rounded to two decimal places
-- `smoke` is 1 if cigarette smoker, 0 if not
+- `smoke` is Yes if cigarette smoker, No if not
 - `ncigs` is # of cigarettes smoked/day
 - `behpat` is behavioral pattern (A1, A2, B3 or B4)
 - `chd69` is whether subject had a CHD event (Yes/No)
