@@ -9,8 +9,10 @@ Any assignment received more than 60 minutes after the deadline is considered la
 # Post-Homework Materials
 
 1. The answer sketch is [available above, in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4sketch.pdf) or [in R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4sketch.Rmd).
-2. The grading rubric is [available above in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4rubric.pdf).
-3. The grades on HW 4 will be posted to the usual Google sheet at http://bit.ly/431-2018-hw-grades as soon as they are available.
+2. The (revised) grading rubric is [available above in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework4/431-2018-hw4rubric.pdf).
+3. The grades on HW 4 are posted to the usual Google sheet at http://bit.ly/431-2018-hw-grades as soon as they are available.
+4. We [gathered (unedited) four of the stronger essays into a Google Doc here](http://bit.ly/431-2018-hw4-essay-excerpts).
+    - If you haven't seen it already, you might enjoy this "[Fox and the Hedgehog](https://www.smbc-comics.com/comic/the-fox-and-the-hedgehog)" comic from Zach Weinersmith at SMBC.
 
 ## Steps to a Successful Homework
 
