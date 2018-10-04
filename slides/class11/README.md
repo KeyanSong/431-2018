@@ -42,7 +42,7 @@ Quiz 1 covers Part A of the course. You may want to look over the summary in [Ch
     - develop and propose a meaningful summary of your ideas and research question for Study 2 (Your Data).
     - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
 - [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB
-    - Thank you to the 12 people who had already done this as of 7:30 this morning, specifically Ife Babtunde, Wyatt Bensken, Jane Carsey, Julijana Conic, Dustin DeMeo, Linday Ferguson, Jesus Gutierrez, Hannah Hill, Susan Linder, Laurie Ann Moennich, Lydia Raines and Julia Yang.
+    - Thank you to the 12 people who had already done this as of 7:30 this morning, specifically Ife Babtunde, Wyatt Bensken, Jane Carsey, Julijana Conic, Dustin DeMeo, Lindsay Ferguson, Jesus Gutierrez, Hannah Hill, Susan Linder, Laurie Ann Moennich, Lydia Raines and Julia Yang.
 
 ### The Brainstorming Activity, from Class 10
 
