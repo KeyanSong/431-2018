@@ -5,7 +5,7 @@
 - The slides are now available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/431_class-12-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class12/431_class-12-slides_2018.Rmd).
 - Class 12 audio files will be posted above as soon as they are available.
 
-## When Quiz 1 is available, we'll place a link right here.
+## Quiz 1 is available. The link is http://bit.ly/431-2018-quiz1-form.
 
 [Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) will be released to you by noon Friday 2018-10-05 and is due at 7 PM on Monday 2018-10-08 (Columbus Day). Note the change to **7 PM** instead of noon for the deadline. This means 7 PM on the nose, and not 8 PM, or even 7:01 PM. 
 
