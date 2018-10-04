@@ -17,13 +17,12 @@
 2. [Project Task A and Task B](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-12.
     - Project Task A requires both group work and individual work. 
     - You should all expect to need more time with your group to finish Task A than you will have in class today.
-    - At a guess 30-45 minutes as a team beyond today would be sufficient, and you could certainly do the work via email or a shared Google document or something like that. 
-    - There **won't** be meaningful time set aside next week to meet as a group during class (probably just 5 minutes on Tuesday and 5 more on Thursday).
-    - So one thing you should do today is make a plan for how you'll get the group part of Task A accomplished in time for next Friday at noon.
+        - At a guess, 30-45 minutes as a team beyond today would be sufficient, and you could certainly do the work via email or a shared Google document or something like that, without another in-person meeting. There **won't** be meaningful time set aside next week to meet as a group during class (probably just 5 minutes on Tuesday and 5 more on Thursday). So one thing you should do today is make a plan for how you'll get the group part of Task A accomplished in time for next Friday at noon.
     - As of 2018-10-04 at 8 AM, 25 of you have completed [Project Task B](http://bit.ly/431-2018-project-signup-taskB). Thanks!
 3. You should now have read through Chapter 5 of Silver's *The Signal and the Noise*. By 2018-10-24, we'll expect you to have read through Chapter 11.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19. 
     - Be sure to use `message = FALSE` on this assignment (and all subsequent ones) in the chunk when you load your packages.
+    - Make sure your final submitted HTML document is attractive, and doesn't include the questions I provided, but just headings like # Question 1, followed by your response.
 5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 
 ## General Announcements
