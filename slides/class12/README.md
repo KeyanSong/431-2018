@@ -28,7 +28,8 @@
 
 ## General Announcements
 
-1. Homework 4 Grades will appear at http://bit.ly/431-2018-hw-grades, and the revised Homework 4 Grading Rubric [is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4).
+1. Homework 4 Grades are at http://bit.ly/431-2018-hw-grades, and the revised Homework 4 Grading Rubric [is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4).
+    - We [gathered (unedited) four of the stronger essays here](http://bit.ly/431-2018-hw4-essay-excerpts).
     - If you haven't seen it already, you might enjoy this "[Fox and the Hedgehog](https://www.smbc-comics.com/comic/the-fox-and-the-hedgehog)" comic from Zach Weinersmith at SMBC.
 
 2. Thanks to the 47 who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). See http://bit.ly/431-2018-minute11-response.
