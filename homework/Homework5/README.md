@@ -26,8 +26,9 @@ Here are the steps I would take to do the homework, after I read [the instructio
 4. Place empty lines before and after each code chunk.
 5. Name every chunk, with no characters other than letters, numbers and underscores. No repetition!
 6. Use headings to indicate the question being solved. Then leave a blank line before continuing with text.
-7. Avoid repeating Dr. Love's questions verbatim.
+7. Avoid repeating Dr. Love's questions verbatim. Make sure your final HTML submission doesn't include the questions I provided, but just headings like # Question 1, followed by your response.
 8. When available, use a template, and don't fight it.
+9. Be sure to use `message = FALSE` on this assignment (and all subsequent ones) in the chunk when you load your packages.
 
 # Material to Come
 
