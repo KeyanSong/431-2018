@@ -14,7 +14,9 @@
 ## Coming Soon (or soonish)
 
 1. Finish reading Leek's *Elements of Data Analytic Style* by 2018-10-11.
-2. [Project Task A and Task B](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-12. 
+2. [Project Task A and Task B](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-12.
+    - Project Task A requires both group work and individual work. You should all expect to need more time with your group to finish Task A than you will have in class today. There won't be meaningful time set aside next week to meet as a group during class, so one thing you should do today is make a plan for how you'll get the thing accomplished in time for next Friday at noon.
+    - As of 2018-10-04 at 8 AM, 25 of you have completed [Project Task B](http://bit.ly/431-2018-project-signup-taskB). Thanks!
 3. You should now have read through Chapter 5 of Silver's *The Signal and the Noise*. By 2018-10-24, we'll expect you to have read through Chapter 11.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19.
 5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
@@ -24,7 +26,7 @@
 1. Homework 4 Grades will appear at http://bit.ly/431-2018-hw-grades, and the revised Homework 4 Grading Rubric [is now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4).
     - If you haven't seen it already, you might enjoy this "[Fox and the Hedgehog](https://www.smbc-comics.com/comic/the-fox-and-the-hedgehog)" comic from Zach Weinersmith at SMBC.
 
-2. Thanks to the 47 who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). My main response is at http://bit.ly/431-2018-minute11-response.
+2. Thanks to the 47 who completed the [Minute Paper after Class 11](http://bit.ly/431-2018-minute11). See http://bit.ly/431-2018-minute11-response.
 
 3. There were some typos in Section 13.10, 13.11 and 13.13 of the [Course Notes](https://thomaselove.github.io/2018-431-book/WCGS-Study.html#including-arcus-status-in-the-model). They are now fixed. I've also added a new Chapter 50, about Missing Data.
 
@@ -65,7 +67,6 @@ A few folks from the class came to see me in **Sweeney Todd** this weekend. Than
     - develop and propose a meaningful summary of your ideas and research question for Study 2 (Your Data).
     - identify and present a detailed description of a data set that is likely to lead to an answer to the research question you proposed for Study 2, and that is appropriate for use in the project.
 - [Task B](https://thomaselove.github.io/431-2018-project/taskB.html) simply requires you to complete the Google Form for project presentation sign up that is linked at http://bit.ly/431-2018-project-signup-taskB. 
-    - As of 2018-10-03 at 4:47 PM, 23 of you have done this. Thanks!
     
 ### The Brainstorming Activity, from Class 10
 
