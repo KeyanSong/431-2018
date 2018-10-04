@@ -16,7 +16,7 @@ There are enough items on every Quiz that a perfect score is rare. A score of 85
 
 1. Quiz 1 will be released to you before noon on 2018-10-05, and will be due on 2018-10-08 at **7 PM**.
 
-## When Quiz 1 is available, we'll place a link right here.
+## Quiz 1 is available. The link is http://bit.ly/431-2018-quiz1-form.
 
 - Quiz 1 will include material from Part A of the course
     - This (at least potentially) includes material from **Leek** Chapters 1-4, 5, 9, 10, 12 and 13.
