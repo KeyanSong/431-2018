@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides are now available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class12/431_class-12-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class12/431_class-12-slides_2018.Rmd).
-- Class 12 audio files will be posted above as soon as they are available.
+- Class 12 audio files are now posted above.
 
 ## Quiz 1 is available. The link is http://bit.ly/431-2018-quiz1-form.
 
