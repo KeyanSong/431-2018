@@ -13,7 +13,7 @@
 2. Finish reading Leek's *Elements of Data Analytic Style* by Thursday 2018-10-11.
 3. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon this Friday 2018-10-12.
 4. [Project Task A](https://thomaselove.github.io/431-2018-project/) is now due at noon on **Monday** 2018-10-15.
-5. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19.
+5. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
 6. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 7. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
 
