@@ -1,0 +1,495 @@
+---
+title: "431 Class 13"
+author: "Thomas E. Love"
+date: "2018-10-09"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's R Setup
+
+```{r setup, message = FALSE}
+library(broom); library(tidyverse)
+```
+
+## Today's Agenda
+
+1. Discussing Quiz 1
+2. Statistical Inference and the `dm192` data
+3. Group Work on Project Task A
+
+## Quiz 1
+
+INSERT HERE!
+
+n | Mean | SD | Q1 | Median | Q3 | Max
+--: | ----: | ----: | ----: | ----: | ----: | ----: 
+x | x | x | x | x | x | x
+
+Range | "Grade" | n
+:-------: | :------: | ----:
+89.5 - 100 | A | x
+84 - 89 | A-/B+ | x
+73 - 83 | B | x
+below 73 | -- | x
+
+### If you have questions, pose them via email to Dr. Love soon.
+
+## Point Estimation and Confidence Intervals
+
+The basic theory of estimation can be used to indicate the probable accuracy and potential for bias in estimating based on limited samples.  
+A **point estimate** provides a single best guess as to the value of a population or process parameter.
+
+A **confidence interval** can convey how much error one must allow for in a given estimate.
+
+The key tradeoffs are 
+
+- cost vs. precision, and 
+- precision vs. confidence in the correctness of the statement.  
+
+Often, if we are dissatisfied with the width of the confidence interval and want to make it smaller, we have to reconsider the sample -- larger samples produce shorter intervals.  
+
+## Something Happened! Is this Signal or Noise?
+
+Very often, sample data indicate that something has happened...
+
+- the proportion of people who respond to this treatment has changed
+- the mean value of this measure appears to have changed
+
+Before we get too excited, it's worth checking whether the apparent result might possibly be the result of random sampling error. 
+
+Statistics provides a number of tools for reaching an informed choice (informed by sample information, of course) including confidence intervals and hypothesis tests (p values), in particular.
+
+## Key Example
+
+Here, I will look at systolic blood pressure values from a sample of 192 adult patients living in Northeast Ohio between the ages of 24 and 74, who have a diagnosis of diabetes, as gathered in the `dm192.csv` data file. 
+
+- These data are simulated to mirror some details from real data gathered by the *Better Health Partnership*.
+- The `dm192` data has a lot to it, but today, we're just looking at 192 systolic blood pressure values, gathered in the `sbp` variable.
+
+### In the Course Notes
+
+I don't use the `dm192` data in the Part B notes. Instead, I begin with a detailed look at a sample of serum zinc levels in 462 teenage males, as contained in the `serzinc` data frame.
+
+## Description of the `dm192` data
+
+I stored the `dm192.csv` data in a subdirectory of my class 13 project directory called `data`.
+
+```{r load_dm192}
+dm192 <- read.csv("data/dm192.csv") %>% tbl_df
+head(dm192,5) # show just the first 5 rows
+```
+
+## A Confidence Interval for the Population Mean
+
+Today, we're focused on our sample of 192 systolic blood pressure values captured in the current time period. The sample summary statistics are:
+
+```{r sbp_summary}
+mosaic::favstats(~ sbp, data = dm192)
+```
+
+Our first inferential goal will be to produce a **confidence interval for the true (population) mean** of all adults with diabetes living in NE Ohio based on this sample. We'll assume that 
+
+- these 192 adults are a random sample from the population of interest (all adults with diabetes living in NE Ohio), and
+- that each `sbp` value is drawn independently from an identical distribution describing that population.
+
+## Procedures for Building a Confidence Interval
+
+To do this, we will have several different procedures available, including:
+
+1. A confidence interval for the population mean based on a **t distribution**, if we assume that the data are drawn from an approximately Normal distribution, using the sample standard deviation. (A wise choice when the data are well described by the Normal.)
+2. A resampling approach to generate a **bootstrap** confidence interval for the population mean, which does not require that we assume either that the population standard deviation is known, nor that the data are drawn from an approximately Normal distribution, but which has some other weaknesses. (A better choice especially when the data aren't well fit by a Normal model.)
+3. The **Wilcoxon signed rank** test can also be used to yield a confidence interval statement about the population pseudo-median, a measure of the population distribution's center (but not the population's mean).
+
+## Exploratory Data Analysis for the SBP values
+
+I'll begin by briefly summarizing the `dm192` systolic blood pressure data, using some functions we saw in part A of the course. These results include some of the more useful plots and numerical summaries when assessing shape, center and spread. You could potentially add `coord_flip() +` to the histogram, and this would have the advantage of getting all three plots oriented in the same direction, but then we (or at least I) lose the ability to tell the direction of skew at a glance from the direction of the histogram.
+
+The `sbp` data in the `dm192` data frame appear to be very well described by a Normal model, as it turns out, with one fairly substantial outlier on the high end of the scale, in particular.
+
+## Graphical Summary of the `dm192` systolic BP data
+
+```{r eda_plots_sbp_1, echo = FALSE, message = FALSE, fig.height = 5, fig.width = 8}
+p1 <- ggplot(dm192, aes(x = sbp)) +
+  geom_histogram(aes(y = ..density..), bins = 20,
+                 fill = "dodgerblue", col = "white") +
+  stat_function(fun = dnorm,
+                args = list(mean = mean(dm192$sbp), 
+                            sd = sd(dm192$sbp)),
+                lwd = 1.5, col = "navy") +
+  labs(title = "Histogram",
+       x = "Systolic BP", y = "Density")
+
+p2 <- ggplot(dm192, aes(x = 1, y = sbp)) +
+  geom_boxplot(fill = "dodgerblue", notch = TRUE) +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +
+  labs(title = "Boxplot",
+       y = "Systolic BP (mm Hg)", x = "")
+
+p3 <- ggplot(dm192, aes(sample = sbp)) +
+  geom_qq(col = "dodgerblue", size = 2) +
+  geom_qq_line(col = "navy") +
+  labs(title = "Normal Q-Q",
+       y = "Systolic BP (mm Hg)", x = "")
+
+gridExtra::grid.arrange(p1, p2, p3, nrow=1, 
+   top = "Systolic BP (mm Hg) for 192 NE Ohio Adults with Diabetes")
+```
+
+## More Numerical Summaries of the SBP data
+
+```{r sbp-describe}
+psych::describe(dm192$sbp)
+```
+
+The standard deviation of the SBP data turns out to be `r round(sd(dm192$sbp),2)`, with $n$ = 192 observations, so the standard error of the mean is
+
+\[
+se(SBP) = \frac{17.78}{\sqrt{192}} = 1.28
+\]
+
+This standard error is about to become quite important to us in building statistical inferences about the mean of the entire population of NE Ohio adults with diabetes based on this sample.
+
+## Key Questions for Making Inferences from One Sample
+
+1. What is the population about whom we aim to make an inference?
+
+2. What is the sample available to us to make that inference?
+
+  - Who are the individuals fueling our inference?
+  - What data are available to make an inference?
+
+3. Why might this sample not represent the population?
+
+## Defining a Confidence Interval
+
+A confidence interval for a population or process mean uses data from a sample (and perhaps some additional information) to identify a range of potential values for the population mean, which, if certain assumptions hold, can be assumed to provide a reasonable estimate for the true population mean. A confidence interval consists of:
+
+1. An interval estimate describing the population parameter of interest (here the population mean), and
+2. A probability statement, expressed in terms of a confidence level.
+
+## An Example
+
+Suppose that we are willing to assume that the systolic blood pressures across the entire population of NE Ohio adults with diabetes, $\mu$, follows a Normal distribution (and so, summarizing it with a mean is a rational thing to do.)
+
+Suppose that we are also willing to assume that the 192 adults contained in the `dm192` tibble are a random sample from that complete population. While we know the mean of the sample of 192 adults, we don't know $\mu$, the mean across all NE Ohio adults with diabetes. So we need to estimate it.
+
+## A 90% Confidence Interval for $\mu$
+
+Later, we will find that, with these assumptions in place, we can find a 90% confidence interval for the mean systolic blood pressure across the entire population of NE Ohio adults with diabetes. 
+
+>- This 90% confidence interval for $\mu$ turns out to be (132.1, 136.3) mm Hg. How would you interpret this result?
+
+>- Some people think this means that there is a 90% chance that the true mean of the population, $\mu$, falls between 132.1 and 136.3 mm Hg. 
+
+>- That's not correct. Why not?
+
+## So what do we have confidence in?
+
+- The population mean is a constant **parameter** of the population of interest. That constant is not a random variable, and does not change. So the actual probability of the population mean falling inside that range is either 0 or 1.
+
+Our confidence is in our process. 
+
+- It's in the sampling method (random sampling) used to generate the data, and in the assumption that the population follows a Normal distribution.
+- It's captured in our accounting for one particular type of error (called *sampling error*) in developing our interval estimate, while assuming all other potential sources of error are negligible.
+
+So what is a more appropriate interpretation? 
+ 
+## 90% CI for $\mu$ is (132.1, 136.3) mm Hg.
+
+What's closer to the truth is:
+
+- If we used this same method to sample data from the true population of adults with diabetes in NE Ohio and built 100 such 90% confidence intervals, then 90 of them would contain the true population mean.
+
+- We call 100(1-$\alpha$)%, here, 90%, or 0.90, the *confidence* level, and 
+- $\alpha$ = 10%, or 0.10 is called the *significance* level.
+
+If we had instead built a series of 100 different 95% confidence intervals, then about 95 of them would contain the true value of $\mu$.
+
+## Estimating a Population Mean
+
+Let's look more closely at the issue of estimating a population mean based on a sample of observations. 
+
+We will need three critical pieces - the sample, the confidence level, and the margin of error, which is based on the standard error of a sample mean, when we are estimating a population mean.
+
+In developing a confidence interval for a population mean, we may be willing to assume that the data in our sample are drawn from a Normally distributed population. If so, the most common and useful means of building a confidence interval makes use of the t distribution (sometimes called Student's t) and the notion of a *standard error*.
+
+## The Standard Error of a Sample Mean
+
+The standard error, generally, is the name we give to the standard deviation associated with any particular parameter estimate. 
+
+- If we are using a sample mean based on a sample of size $n$ to estimate a population mean, the **standard error of that sample mean** is $\sigma / \sqrt{n}$, where $\sigma$ is the standard deviation of the measurements in the population. 
+
+- We often estimate this particular standard error with its sample analogue, $s / \sqrt{n}$, where $s$ is the sample standard deviation. 
+
+- Other statistics have different standard errors. 
+      + $\sqrt{p (1-p) / n}$ is the standard error of the sample proportion $p$ estimated using a sample of size $n$.
+      + $\sqrt{\frac{1-r^2}{n-2}}$ is the standard error of the sample Pearson correlation $r$ estimated using $n$ pairs of observations.
+
+## Confidence Intervals for $\mu$, via the t distribution
+
+In practical settings, we will use the t distribution to estimate a confidence interval from a population mean whenever we:
+
+- are willing to assume that the sample is drawn at random from a population or process with a Normal distribution, 
+- are using our sample to estimate both the mean and standard deviation, and 
+- have a small sample size. 
+
+## The Formula
+
+We can build a 100(1-$\alpha$)% confidence interval using the $t$ distribution, using the sample mean $\bar{x}$, the sample size $n$, and the sample standard deviation $s$. The two-sided 100(1-$\alpha$)% confidence interval (based on a $t$ test) is:
+
+$$\bar{x} \pm t_{\alpha/2, n-1}(s / \sqrt{n})$$
+
+where $t_{\alpha/2, n-1}$ is the value that cuts off the top $\alpha/2$ percent of the $t$ distribution, with $n - 1$ degrees of freedom. 
+
+We obtain the relevant cutoff value in R by substituting in values for `alphaover2` and `n-1` into the following line of R code:
+
+`qt(alphaover2, df = n-1, lower.tail=FALSE)`
+
+## Student's t distribution
+
+Student's t distribution looks a lot like a Normal distribution, when the sample size is large. Unlike the normal distribution, which is specified by two parameters, the mean and the standard deviation, the t distribution is specified by one parameter, the degrees of freedom.
+
+- t distributions with large numbers of degrees of freedom are more or less indistinguishable from the standard Normal distribution.
+- t distributions with smaller degrees of freedom (say, with df < 30, in particular) are still symmetric, but are more outlier-prone than a Normal distribution
+
+## Six t Distributions and a Standard Normal
+
+```{r plot_6_t_and_z, echo = FALSE}
+p1 <- ggplot(data.frame(x = c(-3, 3)), aes(x)) + 
+  stat_function(fun = dt, args = list(df = 1)) + 
+  stat_function(fun = dnorm, col = "red") +
+  labs(title = "t with 1 df", y = "Density", x = "")
+
+p2 <- ggplot(data.frame(x = c(-3, 3)), aes(x)) + 
+  stat_function(fun = dt, args = list(df = 3)) + 
+  stat_function(fun = dnorm, col = "red") +
+  labs(title = "t with 3 df", y = "Density", x = "")
+
+p3 <- ggplot(data.frame(x = c(-3, 3)), aes(x)) + 
+  stat_function(fun = dt, args = list(df = 5)) + 
+  stat_function(fun = dnorm, col = "red") +
+  labs(title = "t with 5 df", y = "Density", x = "")
+
+p4 <- ggplot(data.frame(x = c(-3, 3)), aes(x)) + 
+  stat_function(fun = dt, args = list(df = 10)) + 
+  stat_function(fun = dnorm, col = "red") +
+  labs(title = "t with 10 df", y = "Density", x = "")
+
+p5 <- ggplot(data.frame(x = c(-3, 3)), aes(x)) + 
+  stat_function(fun = dt, args = list(df = 20)) + 
+  stat_function(fun = dnorm, col = "red") +
+  labs(title = "t with 20 df", y = "Density", x = "")
+
+p6 <- ggplot(data.frame(x = c(-3, 3)), aes(x)) + 
+  stat_function(fun = dt, args = list(df = 30)) + 
+  stat_function(fun = dnorm, col = "red") +
+  labs(title = "t with 30 df", y = "Density", x = "")
+
+gridExtra::grid.arrange(p1, p2, p3, p4, p5, p6, nrow=2, 
+             top = "Various t distributions and the Standard Normal",
+             bottom = "Standard Normal shown in red")
+```
+
+## Building the CI by hand for the Systolic BP data
+
+In the SBP data, we observe the following results:
+
+```{r sbp_ci_by_hand}
+dm192 %>%
+  summarize(n = length(sbp), sample_mean = mean(sbp), 
+            sample_sd = sd(sbp), 
+            std.error = sd(sbp)/sqrt(n)) %>%
+  round(digits = 2) %>%
+  knitr::kable()
+```
+
+## Building the CI by Hand, 2
+
+Let's build a 90% confidence interval for the true mean SBP across the entire population of NE Ohio adults with diabetes.
+
+- The confidence level will be 90%, or 0.90
+- The $\alpha$ value, which is 1 - confidence = 0.10.
+- From the summaries above, we know that 
+    + *n* = 192, 
+    + $\bar{x}$ = 134.21 and 
+    + *s* = 17.78, 
+    + and that our standard error of the sample mean is 1.28.
+
+## Calculating the CI
+
+The two-sided 100(1-$\alpha$)% confidence interval (based on a $t$ test) is: $\bar{x} \pm t_{\alpha/2, n-1}(s / \sqrt{n})$, or
+
+- The 90% CI for $\mu$ is 134.21 $\pm$ $t_{0.10/2, 192-1}$ (1.28)
+    + To calculate the t cutoff value for $\alpha$ = 0.10 and $n$ = 192, we use
+
+`qt(0.10/2, df = 192-1, lower.tail=FALSE)` = `r qt(0.10/2, df = 192-1, lower.tail=FALSE)`
+
+- So the 90% CI for $\mu$ is 134.21 $\pm$ 1.653 x 1.28, or
+- 134.21 $\pm$ 2.12, or (`r round(134.21 - 2.12, 2)`, `r round(134.21 + 2.12,2)`) 
+
+So, our 90% confidence interval for the true population mean SBP level across NE Ohio adults with diabetes, based on our sample of 192 such adults, is (`r round(134.21 - 2.12, 1)`, `r round(134.21 + 2.12,1)`) mm Hg.
+
+## Getting R to build a CI for $\mu$
+
+Happily, R does all of this work, and with less inappropriate rounding.
+
+```{r two_sided_t_CI_sbp}
+t.test(dm192$sbp, conf.level = 0.90, 
+       alternative = "two.sided")
+```
+
+## Summarizing the Confidence Interval
+
+```{r two_sided_t_CI_sbp_tidied, eval = FALSE}
+tt <- t.test(dm192$sbp, conf.level = 0.90, 
+       alternative = "two.sided")
+broom::tidy(tt) # from broom package
+```
+
+```
+estimate  statistic    p.value  parameter  conf.low conf.high
+134.2083   104.5979  1.43e-170        191  132.0876  136.3291
+
+method                alternative
+One Sample t-test     two.sided
+```
+
+Our 90% confidence interval for the true population mean SBP in NE Ohio adults with diabetes, based on our sample of 192 patients, is (132.1, 136.3) mm Hg\footnote{Since the actual SBP values are integers, we should include no more than one additional significant figure in our confidence interval.}.
+
+## What if we want a two-sided 95% CI instead?
+
+The `t.test` function in R has an argument to specify the desired confidence level.
+
+```{r change_conf_level_t_for_sbp}
+t.test(dm192$sbp, conf.level = 0.95, alt = "two.sided")
+```
+
+## Using Different Levels of Confidence
+
+Below, we see two-sided confidence intervals for various levels of $\alpha$. 
+
+Confidence Level | $\alpha$ | Two-Sided Interval Estimate for SBP Population Mean, $\mu$ | Point Estimate for SBP Population Mean, $\mu$
+:---------------: | :-----: | :-------------------------: | :---------------------------:
+80% or 0.80 | 0.20 | (`r round(t.test(dm192$sbp, conf.level = 0.80)$conf[c(1,2)],1)`) | `r round(mean(dm192$sbp),1)`
+90% or 0.90 | 0.10 | (`r round(t.test(dm192$sbp, conf.level = 0.90)$conf[c(1,2)],1)`) | `r round(mean(dm192$sbp),1)`
+95% or 0.95 | 0.05 | (`r round(t.test(dm192$sbp, conf.level = 0.95)$conf[c(1,2)],1)`) | `r round(mean(dm192$sbp),1)`
+99% or 0.99 | 0.01| (`r round(t.test(dm192$sbp, conf.level = 0.99)$conf[c(1,2)],1)`) | `r round(mean(dm192$sbp),1)`
+
+What is the relationship between the confidence level and the width of the confidence interval in the table?
+
+## One-sided vs. Two-sided Confidence Intervals
+
+In some situations, we are concerned with either an upper limit for the population mean $\mu$ or a lower limit for $\mu$, but not both.
+
+If we, as before, have a sample of size *n*, with sample mean $\bar{x}$ and sample standard deviation *s*, then:
+
+- The upper bound for a one-sided 100(1-$\alpha$)% confidence interval for the population mean is $\mu \leq \bar{x} + t_{\alpha, n-1}(\frac{s}{\sqrt{n}})$, with lower "bound" $-\infty$.
+
+- The corresponding lower bound for a one-sided 100(1 - $\alpha$) CI for $\mu$ would be $\mu \geq \bar{x} - t_{\alpha, n-1}(\frac{s}{\sqrt{n}})$, with upper "bound" $\infty$.
+
+## One-Sided CI for $\mu$
+
+```{r one_sided_t_ci_greater_sbp}
+t.test(dm192$sbp, conf.level = 0.90, alt = "greater")
+```
+
+## Another One-Sided CI for $\mu$
+
+```{r one_sided_t_ci_less_sbp}
+t.test(dm192$sbp, conf.level = 0.90, alt = "less")
+```
+
+## Relationship between One-Sided and Two-Sided CIs
+
+Note the relationship between the *two-sided* 80% confidence interval, and the *one-sided* 90% confidence interval.
+
+Confidence Level | $\alpha$ | Type of Interval | Interval Estimate for Population Mean SBP, $\mu$ 
+:---------------: | :-----: | :-------------------------: | :---------------------------:
+80% or 0.80 | 0.20 | Two-Sided | (`r round(t.test(dm192$sbp, conf.level = 0.80)$conf[c(1,2)],2)`) 
+90% or 0.90 | 0.10 | One Sided (>) | $\mu >$ `r round(t.test(dm192$sbp, conf.level = 0.90, alternative = "greater")$conf[1],2)` 
+
+Why does this happen?
+
+## Why, indeed?
+
+- The 90% two-sided interval is placed so as to cut off the top 5% of the distribution with its upper bound, and the bottom 5% of the distribution with its lower bound. 
+
+- The 95% "less than" one-sided interval is placed so as to have its lower bound cut off the top 5% of the distribution.
+
+```{r, echo = FALSE}
+t_90 <- tidy(t.test(dm192$sbp, conf.level = 0.90))
+t_95g <- tidy(t.test(dm192$sbp, conf.level = 0.95, alternative = "greater"))
+t_95l <- tidy(t.test(dm192$sbp, conf.level = 0.95, alternative = "less"))
+
+```
+
+Confidence Level | $\alpha$ | Type of Interval | Interval Estimate for Population Mean SBP, $\mu$ 
+:---------------: | :-----: | :-------------------------: | :---------------------------:
+90% or 0.90 | 0.10 | Two-Sided | (`r round(t_90$conf.low,2)`, `r round(t_90$conf.high,2)`) 
+95% or 0.95 | 0.05 | One Sided (>) | $\mu >$ `r round(t_95g$conf.low,2)`
+
+## Interpreting the Result
+
+(132.1, 136.3) mm Hg is a 90% two-sided confidence interval for the population mean SBP among NE Ohio adults with diabetes. 
+
+- Our point estimate for the true population mean SBP among NE Ohio adults with diabetes is 134.2 mm Hg. The values in the interval (132.1, 136.3) represent a reasonable range of estimates for the true population mean SBP among NE Ohio adults with diabetes, and we are 90% confident that this method of creating a confidence interval will produce a result containing the true population mean SBP among NE Ohio adults with diabetes.
+- Were we to draw 100 samples of size 192 from the population described by this sample, and use each such sample to produce a confidence interval in this manner, approximately 90 of those confidence intervals would cover the true population mean SBP among NE Ohio adults with diabetes.
+
+## Changing $\alpha$ and One-Sided vs. Two-Sided CIs for $\mu$
+
+Table of t-based estimates follows...
+
+Confidence Level | $\alpha$ | 2-Sided Interval Estimate for $\mu$, Population Mean SBP | 1-Sided Lower Bound for $\mu$
+:---------------: | :-----: | :-------------------------: | :---------------------------:
+80% | 0.20 | (`r round(t.test(dm192$sbp, conf.level = 0.80)$conf[c(1,2)],1)`) | $\mu >$ `r round(t.test(dm192$sbp, conf.level = 0.80, alt = "greater")$conf[1],1)`
+90% | 0.10 | (`r round(t.test(dm192$sbp, conf.level = 0.90)$conf[c(1,2)],1)`) | $\mu >$ `r round(t.test(dm192$sbp, conf.level = 0.90, alt = "greater")$conf[1],1)`
+95% | 0.05 | (`r round(t.test(dm192$sbp, conf.level = 0.95)$conf[c(1,2)],1)`) | $\mu >$ `r round(t.test(dm192$sbp, conf.level = 0.95, alt = "greater")$conf[1],1)`
+99% | 0.01 | (`r round(t.test(dm192$sbp, conf.level = 0.99)$conf[c(1,2)],1)`) | $\mu >$ `r round(t.test(dm192$sbp, conf.level = 0.99, alt = "greater")$conf[1],1)`
+
+>- Point Estimate is `r round(mean(dm192$sbp),1)` for each of these interval estimates.
+>- Leek: Confirm that estimates have reasonable signs and magnitudes. Do they?
+
+## Large Sample Approaches (in Brief)
+
+When you have a large sample size, say, more than 60 observations, the difference between a confidence interval for a population mean based on the t distribution and a confidence interval based on the Normal distribution are usually trivial.
+
+If we were in the position of knowing the standard deviation of the population of interest precisely, we could use that information to build a 100(1-$\alpha$)% confidence interval using the Normal distribution, based on the sample mean $\bar{x}$, the sample size $n$, and the (known) population standard deviation $\sigma$. 
+
+## Next Time
+
+We'll show you how to find an appropriate confidence interval describing the center of a population without having to assume that population has a Normal distribution. 
+
+- Using the bootstrap to create a confidence interval for the population mean without assuming a Normal distribution for the population
+- Wilcoxon rank sum approach to create a confidence interval for the population pseudo-median without assuming a Normal distribution for the population
+  - But this does require understanding what the pseudo-median is...
+
+Actually, I've put the R code in the next two slides...
+
+## Bootstrap 90% confidence interval
+
+```{r}
+set.seed(20181009)
+Hmisc::smean.cl.boot(dm192$sbp, conf.int = .90, B = 1000)
+```
+
+## Wilcoxon rank sum based 90% confidence interval
+
+```{r}
+wilcox.test(dm192$sbp, conf.int = TRUE, conf.level = 0.90)
+```
+
+
+## Group Project Work
+
+I'll give you whatever time is left today to work, as a group on Project Task A.
