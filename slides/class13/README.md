@@ -1,0 +1,26 @@
+# 431 Fall 2018 Class 13: 2018-10-09
+
+## Today's Materials
+
+- The slides will be available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class13/431_class-13-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class13/431_class-13-slides_2018.Rmd).
+- Class 13 audio files will be posted above as soon as they are available.
+
+## Quiz 1 discussion
+
+## Coming Up
+
+1. There is no Minute Paper after Class 13.
+2. Finish reading Leek's *Elements of Data Analytic Style* by Thursday 2018-10-11.
+3. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon this Friday 2018-10-12.
+4. [Project Task A](https://thomaselove.github.io/431-2018-project/) is now due at noon on **Monday** 2018-10-15.
+5. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due 2018-10-19.
+6. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
+7. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
+
+## Visualization of the Day
+
+
+## One Last Thing
+
+
+
