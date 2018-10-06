@@ -2,6 +2,8 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
+Class 14 | 10-11 | Using the bootstrap and rank sum procedures, Hypothesis Testing and P values, Comparing Two Means
+[Class 13](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class13) | 10-09 | Quiz 1 discussion, Building a Confidence Interval for the Population Mean
 [Class 12](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class12) | 10-04 | 538 House Forecast, Review: dplyr verbs, The Printer Case, Project Task A work, Quiz 1 Setup
 [Class 11](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class11) | 10-02 | Scatterplot and Correlation Matrices, Visualizing Categorical Data Effectively, Building Better Tables
 [Class 10](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class10) | 09-27 | Correlations and Models, Project Group Work
