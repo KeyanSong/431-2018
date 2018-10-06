@@ -20,7 +20,7 @@ Give me the weekend to get the second change completely propagated through GitHu
 ## Coming Soon (or soonish)
 
 1. Finish reading Leek's *Elements of Data Analytic Style* by 2018-10-11.
-2. [Project Task B](https://thomaselove.github.io/431-2018-project/) is due at noon on 2018-10-12. [Project Task A] is **now** due at noon on Monday 2018-10-15.
+2. [Project Task B](https://thomaselove.github.io/431-2018-project/) is due at noon on 2018-10-12. [Project Task A](https://thomaselove.github.io/431-2018-project/) is **now** due at noon on Monday 2018-10-15.
     - Project Task A requires both group work and individual work. 
     - You should all expect to need more time with your group to finish Task A than you will have in class today.
         - At a guess, 30-45 minutes as a team beyond today would be sufficient, and you could certainly do the work via email or a shared Google document or something like that, without another in-person meeting. There **won't** be meaningful time set aside next week to meet as a group during class (probably just 5 minutes on Tuesday and 5 more on Thursday). So one thing you should do today is make a plan for how you'll get the group part of Task A accomplished in time for the new deadline.
