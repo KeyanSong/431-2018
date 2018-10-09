@@ -17,6 +17,10 @@
 6. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 7. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
 
+## Data Sets for Project Task A
+
+Some of you have discovered the `nhanesA` package in R. If you want to use `nhanesA`, you will need to combine data from at least two (and ideally more than two) different forms within that package, and you'd need to generate a meaningful and interesting research question using that combination of forms that is unlike every other student who is trying to use that package. 
+
 ## Visualization of the Day
 
 
