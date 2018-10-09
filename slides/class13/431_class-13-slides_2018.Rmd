@@ -24,26 +24,8 @@ library(broom); library(tidyverse)
 
 ## Today's Agenda
 
-1. Discussing Quiz 1
-2. Statistical Inference and the `dm192` data
-3. Group Work on Project Task A
-
-## Quiz 1
-
-INSERT HERE!
-
-n | Mean | SD | Q1 | Median | Q3 | Max
---: | ----: | ----: | ----: | ----: | ----: | ----: 
-x | x | x | x | x | x | x
-
-Range | "Grade" | n
-:-------: | :------: | ----:
-89.5 - 100 | A | x
-84 - 89 | A-/B+ | x
-73 - 83 | B | x
-below 73 | -- | x
-
-### If you have questions, pose them via email to Dr. Love soon.
+1. Statistical Inference and the `dm192` data
+2. Group Work on Project Task A (as time permits)
 
 ## Point Estimation and Confidence Intervals
 
@@ -465,6 +447,18 @@ Confidence Level | $\alpha$ | 2-Sided Interval Estimate for $\mu$, Population Me
 When you have a large sample size, say, more than 60 observations, the difference between a confidence interval for a population mean based on the t distribution and a confidence interval based on the Normal distribution are usually trivial.
 
 If we were in the position of knowing the standard deviation of the population of interest precisely, we could use that information to build a 100(1-$\alpha$)% confidence interval using the Normal distribution, based on the sample mean $\bar{x}$, the sample size $n$, and the (known) population standard deviation $\sigma$. 
+
+## Assumptions of a t-based Confidence Interval
+
+> "Begin challenging your assumptions. Your assumptions are your windows on the world. Scrub them off every once in awhile or the light won't come in." (Alan Alda)
+
+1. Sample is drawn at random from the population or process.
+2. Samples are drawn independently from each other from a population or process whose distribution is unchanged during the sampling process.
+3. Population or process follows a Normal distribution.
+
+### Can we drop any of these assumptions?
+
+Only if we're willing to consider alternative inference methods.
 
 ## Next Time
 
