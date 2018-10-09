@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides will be available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class13/431_class-13-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class13/431_class-13-slides_2018.Rmd).
-- Class 13 audio files will be posted above as soon as they are available.
+- Class 13 audio files are now posted above.
 
 ## Quiz 1 discussion
 
