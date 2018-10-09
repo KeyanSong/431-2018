@@ -10,7 +10,7 @@
 - You should have received at least one email from me (and perhaps two) about the Quiz. I sent them between 9:30 and 11 this morning.
 - The answer sketch [is posted here](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/431-2018-quiz01.pdf).
 - For most people, grades are posted as part of the Homework grades sheet at http://bit.ly/431-2018-hw-grades. The exceptions include people at both the top and the bottom of the class in terms of Quiz performance, who received their grades via email from me.
-- We'll discuss a few key points in class briefly today, working through some parts of the [Answer Sketch]((https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/431-2018-quiz01.pdf).
+- We'll discuss a few key points in class briefly today, working through some parts of the [Answer Sketch](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/431-2018-quiz01.pdf).
 - If you have questions about the quiz's content, ask them at 431-help.
 - If you have questions about the quiz's grading, contact Dr. Love directly.
 
