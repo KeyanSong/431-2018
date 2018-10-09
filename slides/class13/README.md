@@ -30,7 +30,8 @@ Some of you have discovered the `nhanesA` package in R. If you want to use `nhan
 
 ## Demonstration Projects
 
-- I've begun to post the Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G.
+- I've begun to post the Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G. 
+    - We will make both HTML and R Markdown versions of the Study 1 demonstration available to you as soon as possible. We took down the old versions because they weren't executing properly.
 - When that's done, I'll post the Project Demonstration for Study 2 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2, which will also describe what we want to see in the portfolio (Task G).
 
 ## Low-Stakes Visualization of the Day
@@ -48,7 +49,6 @@ You can easily get lost in [the Opportunity Atlas](https://www.opportunityatlas.
         - "All else being equal — income, race, educational outcomes — children who grow up in neighborhoods with fewer two-parent families fare notably worse."
 - There's also a more traditional NY Times story by Emily Badger and Quoctrung Bui on 2018-10-01 entitled "[Detailed New National Maps Show How Neighborhoods Shape Children for Life](https://www.nytimes.com/2018/10/01/upshot/maps-neighborhoods-shape-child-poverty.html?module=inline)" which allows you to interact with excerpts from the Atlas, and which connects you directly to your current location.
     - A money quote from that piece: "Nationwide, the variation is striking. Children raised in poor families in some neighborhoods of Memphis went on to make just $16,000 a year in their adult households; children from families of similar means living in parts of the Minneapolis suburbs ended up making four times as much."
-
 
 ## One Last Thing
 
