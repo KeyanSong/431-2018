@@ -21,6 +21,11 @@
 
 Some of you have discovered the `nhanesA` package in R. If you want to use `nhanesA`, you will need to combine data from at least two (and ideally more than two) different forms within that package, and you'd need to generate a meaningful and interesting research question using that combination of forms that is unlike every other student who is trying to use that package. 
 
+## Demonstration Projects
+
+- I've begun to post the Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G.
+- When that's done, I'll post the Project Demonstration for Study 2 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2, which will also describe what we want to see in the portfolio (Task G).
+
 ## Visualization of the Day
 
 
