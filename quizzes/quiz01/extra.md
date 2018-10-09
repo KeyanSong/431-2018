@@ -2,7 +2,13 @@
 
 This example reviews some of the key work we did in Part A of the course. It uses the `msleep` data set, which is part of the `ggplot2` package. Use the help file for that data set or visit http://ggplot2.tidyverse.org/reference/msleep.html to assist in understanding the data.
 
-**For those of you who have been assigned this task**, you need to complete it by **2018-10-26 at Noon**. In order to receive bonus credit on Quiz 1, you must answer at least 9 of the 10 questions correctly. Submit the work via Canvas in the Quiz 1 Bonus assignment, which is available only to those of you. If you submit the work before 2018-10-24 at Noon, the TAs will grade and return it to you for revision if you score less than 9/10. You can also discuss the bonus assignment with Dr. Love and the TAs in person . Good luck!
+**For those of you who have been assigned this task**, you need to complete it successfully by **2018-10-26 at Noon**. 
+
+- In order to receive bonus credit on Quiz 1, you must answer at least 9 of the 10 questions correctly. 
+- Submit the work via Canvas in the Quiz 1 Bonus assignment, which is available only to those of you who have been sent to this page by Dr. Love. 
+- If you submit the work before **2018-10-24 at Noon**, the TAs will grade it and return it to you for revision if you score less than 9/10. 
+- You can discuss this bonus assignment with Dr. Love and the TAs in person or via `431-help` but do not discuss it with your colleagues.
+- Good luck!
 
 1. Identify the number of rows and number of variables in the `msleep` data set.
 2. Specify the variable with the largest number of missing values. How many values are missing?
@@ -15,4 +21,4 @@ This example reviews some of the key work we did in Part A of the course. It use
 9. Fit a linear model to the scatterplot you drew in part 8 for which a linear model seems more appropriate, and specify and describe (in a sentence of two) both the fitted least squares equation *and* the Pearson correlation coefficient.
 10. Identify the mammal in your model (in part 9) with the largest (in absolute value) regression residual. 
 
-Note to others who may have stumbled onto this page: Some people in the class have been assigned the task of completing this example as a result of their performance on Quiz 1. When they have completed that process, we will produce an answer sketch for this material, and publicize it to everyone.
+**Note to others who may have stumbled onto this page**: Some people in the class were assigned the task of completing this example as a result of their performance on Quiz 1. When they have completed that process, we will produce an answer sketch for this material, and publicize it to everyone.
