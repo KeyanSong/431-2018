@@ -10,7 +10,7 @@
 1. You should have finished reading Leek's *Elements of Data Analytic Style* by now. I hope that was useful to you.
 2. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon tomorrow (Friday 2018-10-12).
     - As of 6 AM on 2018-10-10, **35** of you have completed this form. Those not done by then were sent an email: Aguilar, Attaway, Chari, Chen, Disher, Du, Garcia-medina, Jiang, Li, Liu, Mills, Mustafa, Nelson, Song, Syed, Vaidya.
-    - Assuming everyone finishes the form successfully, we will announce the project schedule on Tuesday 2018-10-16 in class.
+    - Assuming all complete the task on time, you'll get the project schedule on Tuesday 2018-10-16 in class.
 3. [Project Task A](https://thomaselove.github.io/431-2018-project/) is now due at noon on **Monday** 2018-10-15.
     - Submissions are trickling in to Canvas, and I will try to be caught up by class time.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
