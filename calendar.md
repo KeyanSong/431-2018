@@ -27,20 +27,20 @@ Date | Class | Description or Deliverable
 09-24 | -- | Read **Silver** Chapters 2-3 by now, for Homework 4. 
 09-25 | 9  | [Project](https://github.com/THOMASELOVE/431-2018-project) groups for Tasks A, C and D formed, Assessing Association
 09-26 | 10 | Before Class 10, read **Leek** Chapters 1-4 and 12.
-09-27 | 10 | 
+09-27 | 10 | Correlations and Models, Project Group Work
 09-28 | -- | **[Homework 4](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-01 | -- | Before Class 11, read **Silver** Chapters 4-5
 10-02 | 11 | The Scatterplot Matrix, The Correlation Matrix, Visualizing Categorical Data, Building Better Tables
-10-04 | 12 | **Part B** begins (Making Comparisons)
+10-04 | 12 | dplyr verbs, The Printer Case, Project Task A work, Quiz 1 Setup
 10-05 | -- | **[Quiz 1](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** 
 10-08 | -- | **Quiz 1 due at 7 PM**
-10-09 | 13 | 
+10-09 | 13 | **Part B** begins (Making Comparisons), Quiz 1 discussion, Confidence Intervals
 10-10 | -- | Before Class 14, finish reading **Leek**
-10-11 | 14 |
+10-11 | 14 | Confidence Intervals for a Population Mean (t, Z, bootstrap, Wilcoxon)
 10-12 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task B (Presentation Sign-up)**  due at noon
 10-15 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task A (Proposal)**  due at noon
-10-16 | 15 | Course Project Presentation Schedule to be announced.
-10-18 | -- | Group Work Session on Course Project Tasks C and D. Professor Love will be out of town.
+10-16 | 15 | Course Project Presentation Schedule announced, Comparing Two Means, Paired vs Independent Samples
+10-18 | -- | Group Work Session on Course Project Tasks C and D. *Professor Love will be out of town.*
 10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks C and D (Survey Edit/Comparison Plan)**  due at noon.
 10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
