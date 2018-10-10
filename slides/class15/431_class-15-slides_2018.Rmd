@@ -1,0 +1,521 @@
+---
+title: "431 Class 14"
+author: "Thomas E. Love"
+date: "2018-10-11"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's R Setup
+
+```{r setup, message = FALSE}
+library(boot); library(Hmisc); library(broom)
+library(tidyverse) # always load tidyverse last
+
+source("Love-boost.R") # script from our Data page
+```
+
+```{r load_dm192}
+dm192 <- read.csv("data/dm192.csv") %>% tbl_df
+mosaic::favstats(~ sbp, data = dm192)
+```
+
+# Comparing Population Means, using Paired Samples
+
+## Comparing Population Means via Paired Samples
+
+The `dm192` data has current systolic blood pressure (`sbp`), and systolic blood pressure from last year (`sbp_old`). Suppose we want to describe the mean SBP change in not just our sample, but instead the entire **population** (adults who live in NE Ohio with diabetes) over the past year.
+
+```{r get key elements of dm192}
+dm_first <- select(dm192, pt.id, sbp, sbp_old)
+summary(dm_first)
+```
+
+## Each subject provides both a `sbp_old` and `sbp`
+
+```{r scatterplot of dmsample, echo = FALSE}
+ggplot(dm_first, aes(x = sbp_old, y = sbp)) + 
+    geom_point() +
+    theme_bw() +
+    labs(title = "SBP for this year and last year in each of 192 subjects",
+         x = "sbp_old = Last Year's Systolic BP (mm Hg)",
+         y = "sbp = This Year's Systolic BP (mm Hg)")
+```
+
+## The Impact of Pairing
+
+```{r scatterplot of dmsample with annotations, echo = FALSE}
+ggplot(dm_first, aes(x = sbp_old, y = sbp)) + 
+    geom_point() +
+    annotate("point", x = 197, y = 200, col = "blue", size = 2) +
+    annotate("point", x = 120, y = 107, col = "red", size = 2) +
+    annotate("text", x = 190, y = 195, label = "Patient 53", col = "blue", size = 5) +
+    annotate("text", x = 130, y = 107, label = "Patient 148", col = "red", size = 5) +
+    annotate("text", x = 120, y = 180, col = "purple", size = 5,
+             label = paste("Pearson r = ", round(cor(dm_first$sbp, dm_first$sbp_old),2))) +
+    theme_bw() + 
+    labs(title = "SBP for this year and last year in each of 192 subjects",
+         x = "sbp_old = Last Year's Systolic BP (mm Hg)",
+         y = "sbp = This Year's Systolic BP (mm Hg)")
+```
+
+## A Matched Samples Plot ("After - Before" Plot)
+
+Each subject provides both a value for `sbp` and one for `sbp_old`:
+
+```{r before-after plot, echo = FALSE, fig.height = 5}
+## first re-express the data in a frame with pt.id
+## time and systolicbp
+dm_firstlong <- gather(dm_first, key = time, value = SBP, sbp_old, sbp)
+
+ggplot(dm_firstlong, aes(x = time, y = SBP, group = pt.id)) + 
+    geom_point(aes(col = pt.id)) +
+    geom_line(aes(col = pt.id)) + 
+    labs(title = "Matched Samples Plot for SBP in dm192",
+         y = "Systolic BP (mm Hg)", x = "")
+```
+
+Patient 53 is the patient on top, with `sbp` = 200, and `sbp_old` = 197.
+
+## Paired Samples? Calculate Paired Differences
+
+```{r calculate paired diffs for dmsample}
+dm_first$diffs <- dm_first$sbp - dm_first$sbp_old; 
+dm_first[1:3,]
+mosaic::favstats(dm_first$diffs)
+```
+
+## EDA for the Paired Differences
+
+```{r histogram boxplot and normal Q-Q plot of sbp diffs, echo = FALSE, message = FALSE}
+p1 <- ggplot(dm_first, aes(x = diffs)) +
+    geom_histogram(aes(y = ..density..), bins = 20,
+                 fill = "#0A304E", col = "white") +
+    coord_flip() +
+    stat_function(fun = dnorm,
+                args = list(mean = mean(dm_first$diffs), 
+                            sd = sd(dm_first$diffs)),
+                lwd = 1.5, col = "navy") +
+    labs(title = "Histogram",
+       x = "Change in Systolic BP", y = "Density")
+
+p2 <- ggplot(dm_first, aes(x = 1, y = diffs)) +
+  geom_boxplot(fill = "#0A304E", notch = TRUE, col = "navy", outlier.color = "#0A304E") +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +
+  labs(title = "Boxplot",
+       y = "", x = "")
+
+p3 <- ggplot(dm_first, aes(sample = diffs)) +
+  geom_qq(col = "#0A304E", size = 2) +
+  geom_qq_line(col = "navy") +
+  labs(title = "Normal Q-Q",
+       y = "", x = "")
+
+gridExtra::grid.arrange(p1, p2, p3, nrow=1, 
+   top = "Change in Systolic BP in mm Hg (This Year minus Last Year)")
+```
+
+## t test for the Paired Differences
+
+```{r t test for paired diffs}
+t.test(dm_first$sbp, dm_first$sbp_old, paired = TRUE)
+```
+
+## Five Steps to Complete a Hypothesis Test
+
+1.	Specify the null hypothesis, $H_0$ (which usually indicates that there is no difference between various groups of subjects)
+2.	Specify the research or alternative hypothesis, $H_1$, sometimes called $H_A$ (which usually indicates that there is some difference or some association between the results in those same groups of subjects).
+3.	Specify the test procedure or test statistic to be used to make inferences to the population based on sample data. 
+    - Here we specify $\alpha$, the probability of incorrectly rejecting $H_0$ that we are willing to accept. Often, we use $\alpha = 0.05$
+4.	Obtain the data, and summarize it to obtain a relevant test statistic, and a resulting $p$ value.
+5.	Use the $p$ value to either
+    - **reject** $H_0$ in favor of the alternative $H_A$ (concluding that there is a statistically significant difference/association at the $\alpha$ significance level) 
+    - or **retain** $H_0$ (and conclude that there is no statistically significant difference/association at the $\alpha$ significance level)
+
+## Step 1. The Null Hypothesis
+
+- A null hypothesis is a statement about a population parameter, and it describes the current state of knowledge -- the status quo -- or our model for the world before the research is undertaken and data are collected. 
+- It often specifies an idea like "no difference" or "no association" in testable statistical terms.
+
+## The Null Hypothesis in the SBP in Diabetes Study
+
+- Here, our null hypothesis will refer to the population mean of the paired differences in systolic blood pressure (in mm Hg) comparing the same subjects last year vs. this year.
+
+- $H_0$: Population Mean SBP This Year = Population Mean SBP Last Year
+    - If there is in fact no difference between the years, then the this year -- last year difference will be zero.
+- Symbolically, $H_0$: $\mu_d$ = 0, where $\mu_d$ is the population mean (this year -- last year) difference in systolic BP. 
+    + Of course, we've built confidence intervals for means like this already.
+
+## Step 2. The Alternative Hypothesis
+
+- The alternative or research hypothesis, $H_A$, is in some sense the opposite of the null hypothesis. 
+- It specifies the values of the population parameter that are not part of $H_0$. 
+- If $H_0$ implies "no difference", then $H_A$ implies that "there is a difference". 
+
+## The Alternative Hypothesis in the SBP in Diabetes Study
+
+Since our null hypothesis is
+
+$H_0$: Population Mean SBP This Year -- Population Mean SBP Last Year = 0, or $H_0: \mu_d = 0$,
+
+our alternative hypothesis will therefore cover all other possibilities:
+
+$H_A$: Population Mean SBP This Year -- Population Mean SBP Last Year $\neq$ 0, or $H_A: \mu_d \neq 0$.
+
+Occasionally, we'll use a one-sided alternative, like $H_A: \mu_d < 0$, in which case, $H_0: \mu_d \geq 0$. 
+
+## Step 3: The Test Procedure and Assumptions
+
+We want to compare the population mean of the paired differences, $\mu_d$, to a fixed value, 0. 
+
+We must be willing to believe that the paired differences data are a random (or failing that, representative) sample from the population of interest, and that the samples were drawn independently, from an identical population distribution. 
+
+Given those assumptions, we have four possible strategies to complete our paired samples comparison:
+
+## The Four Strategies for Testing Paired Differences
+
+a. Assume the paired differences come from a Normally distributed population, and perform a **one-sample t test** on the paired differences, and use the resulting *p* value to draw a conclusion about the relative merits of $H_0$ and $H_A$.
+b. Or perform a **Wilcoxon signed-rank test** on the paired differences, which would be more appropriate than the t test if the population of paired differences was not Normally distributed, but was reasonably symmetric, and use the resulting *p* value.
+c. Or develop a **bootstrap confidence interval** for the population mean of the paired differences, as we've done in the past. This wouldn't require an assumption about Normality. We'd then use that confidence interval to assess the relative merits of $H_0$ and $H_A$.
+
+I'm skipping the **sign test**. See the Part B notes.
+
+## Step 4: Collect and summarize the data, usually with a *p* value
+
+Of course, in this case, we've already gathered the data. The task now is to obtain and interpret the tests using each of the four procedures listed previously. The main task we will leave to the computer is the calculation of a **p value**.
+
+### Defining a *p* Value
+
+The *p* value assumes that the null hypothesis is true, and estimates the probability, under those conditions (i.e. $H_0$ is true), that we would obtain a result as much in favor or more in favor of the alternative hypothesis $H_A$ as we did. 
+
+- The *p* value is a conditional probability of seeing evidence as strong or stronger in favor of $H_A$ calculated assuming that $H_0$ is true.
+
+## Using the *p* Value
+
+The way we use the *p* value is to compare it to $\alpha$, our pre-specified tolerance level for a certain type of error (Type I error, specifically -- rejecting $H_0$ when it is in fact true.) 
+
+- If the *p* value is less than $\alpha$, we will reject $H_0$ in favor of $H_A$
+- If the *p* value is greater than or equal to $\alpha$, we will retain $H_0$.
+
+## t Test for the SBP in Diabetes Study
+
+```{r t test again for sbp}
+t.test(dm_first$sbp-dm_first$sbp_old)
+```
+
+The alternative hypothesis is `true difference in means is not equal to 0.` Should we retain or reject $H_0$ at $\alpha = 0.05$?
+
+## Wilcoxon Signed Rank for the SBP in Diabetes data
+
+```{r wilcoxon signed rank test for twins data}
+wilcox.test(dm_first$sbp - dm_first$sbp_old, conf.int=TRUE)
+```
+
+Should we reject or retain $H_0: \mu_d = 0$ based on this test?
+
+## What The *p* Value isn't
+
+The *p* value is not a lot of things. It's **NOT**
+
+- The probability that the alternative hypothesis is true
+- The probability that the null hypothesis is false
+- Or anything like that.
+
+The *p* value **IS** a statement about the amount of statistical evidence contained in the data that favors the alternative hypothesis $H_A$. It's a measure of the evidence's credibility.
+
+## Bootstrap CI for the Twins data
+
+Using a significance level of $\alpha$ = 0.05 is equivalent to using a confidence level of 100(1-$\alpha$)% = 95%:
+
+```{r bootstrap with set seed for twins}
+set.seed(4311); Hmisc::smean.cl.boot(dm_first$diffs) 
+```
+
+So, according to this confidence interval, a reasonable range (with 95% confidence) for $\mu$, the population mean of the unadjusted -- adjusted differences is (-1.67, -0.052). Should we reject or retain $H_0: \mu = 0$?
+
+What does this confidence interval suggest about the *p* value?
+
+## Step 5. Draw a conclusion, based on the *p* value or confidence interval
+
+We have the following results at the 5% significance level (equivalently, at the 95% confidence level, or with $\alpha$ = 0.05):
+
+Approach | *p* value | 95% CI for $\mu_d$ | Conclusion re: $H_0$: $\mu_d$ = 0
+:-------:|:---------------:|:----------------:|:------------------------------------:
+t Test    | 0.048 | (-1.67, -0.007) | *p* < 0.05, so reject $H_0$
+Wilcoxon  | 0.041 | (-2.0, -0.0004) | *p* < 0.05, so reject $H_0$
+Bootstrap | < 0.05 | (-1.67, -0.052) | CI for $\mu$ excludes 0 so reject $H_0$
+
+## Our Conclusions for the SBP in Diabetes Study
+
+So, in this case, using any of these methods, we draw the same conclusion -- to reject $H_0$ at the 5% significance level and conclude as a result that:
+
+a. there is a statistically significant difference between the population mean SBP of patients this year as compared to last year.
+b. the population mean this year -- last year difference in SBP, which we have called $\mu_d$, is statistically significantly different from zero. 
+c. In fact, the confidence intervals universally tell us that this population mean is negative -- SBP was (slightly) smaller this year than last year at the 95% confidence level.
+
+## Paired Samples Study Designs
+
+- Using a paired samples design means we carefully sample matched sets of subjects in pairs, so that the sampled subjects in each pair are as similar as possible, except for the exposure of interest. 
+- Each observation in one exposure group is matched to a single observation in the other exposure group, so that taking paired differences is a rational thing to do. 
+- Since every subject must be matched to exactly one subject in the other group, the sizes of the groups must be equal.
+
+# Comparing Population Means, using Independent Samples
+
+## Independent Samples Study Designs
+
+- Independent samples designs do not impose such a matching, but instead sample two unrelated sets of subjects, where each group receives one of the two exposures. 
+- The two groups of subjects are drawn independently from their separate populations of interest. 
+- One obvious way to tell if we have an independent samples design is that this design does not require the sizes of the two exposure groups to be equal.
+
+The best way to establish whether a study uses paired or independent samples is to look for the **link** between the two measurements that creates paired differences. 
+
+- Deciding whether or not the samples are paired (matched) is something we do before we analyze the data.
+
+## What if the Samples Aren't Paired?
+
+In the `dm192` frame, we might also consider looking at a different kind of comparison, perhaps whether the average systolic blood pressure is larger in male or in female adults in NE Ohio living with diabetes.
+
+```{r get the subset for male female comparison}
+dm_second <- select(dm192, pt.id, sex, sbp)
+summary(dm_second)
+```
+
+## Our comparison now is between females and males
+
+```{r plot 1 to compare females and males, echo = FALSE}
+ggplot(dm_second, aes(x = sex, y = sbp, fill = sex)) +
+    geom_jitter(aes(color = sex), alpha = 0.75, width = 0.25) +
+    geom_boxplot(notch = TRUE, alpha = 0.5) +
+    coord_flip() +
+    guides(fill = FALSE, color = FALSE) +
+    theme_bw() + 
+    labs(x = "", y = "Systolic Blood Pressure this year",
+         title = "Independent Samples Comparison: SBP by Sex")
+```
+
+## Another Way to Picture Two Independent Samples
+
+```{r histograms faceted for comparing sbp by sex, echo = FALSE}
+ggplot(dm_second, aes(x = sbp, fill = sex)) +
+  geom_histogram(bins = 12, col = "white") +
+  facet_wrap(~ sex) +
+  guides(fill = FALSE) + 
+  labs(title = "Systolic Blood Pressure by Sex in 192 Patients with Diabetes")
+```
+
+## Numerical Summary for Two Independent Samples
+
+```{r favstats comparing indep samples of sbp by sex, warning=FALSE}
+by(dm_second$sbp, dm_second$sex, mosaic::favstats)
+```
+
+## Hypotheses Under Consideration
+
+The hypotheses we are testing are:
+
+- $H_0$: mean in population 1 = mean in population 2 + hypothesized difference $\Delta_0$ vs.
+- $H_A$: mean in population 1 $\neq$ mean in population 2 + hypothesized difference $\Delta_0$, 
+
+where $\Delta_0$ is almost always zero. An equivalent way to write this is:
+
+- $H_0: \mu_1 = \mu_2 + \Delta_0$ vs. 
+- $H_A: \mu_1 \neq \mu_2 + \Delta_0$ 
+
+Yet another equally valid way to write this is: 
+
+- $H_0: \mu_1 - \mu_2 = \Delta_0$ vs. 
+- $H_A: \mu_1 - \mu_2 \neq \Delta_0$,
+
+where, again $\Delta_0$ is almost always zero. 
+
+## Testing Options for Independent Samples
+
+1. Pooled t test or Indicator Variable Regression Model (t test assuming equal population variances)
+2. Welch t test (t test without assuming equal population variances)
+3. Wilcoxon-Mann-Whitney Rank Sum Test (non-parametric test not assuming populations are Normal)
+4. Bootstrap confidence interval for the difference in population means
+
+## Assumptions of the Pooled T test
+
+The standard method for comparing population means based on two independent samples is based on the t distribution, and requires the following assumptions:
+
+1.	[Independence] The samples for the two groups are drawn independently.
+2.	[Random Samples] The samples for each of the groups are drawn at random from the populations of interest.
+3.	[Normal Population] The two populations are each Normally distributed
+4.	[Equal Variances] The population variances in the two groups being compared are the same, so we can obtain a pooled estimate of their joint variance.
+
+## The Pooled Variances t test in R
+
+Also referred to as the t test assuming equal population variances:
+
+```{r t test 1 for sbp by sex}
+t.test(dm_second$sbp ~ dm_second$sex, var.equal=TRUE)
+```
+
+## Assumptions of the Welch t test
+
+The Welch test still requires:
+
+1.	[Independence] The samples for the two groups are drawn independently.
+2.	[Random Samples] The samples for each of the groups are drawn at random from the populations of interest.
+3.	[Normal Population] The two populations are each Normally distributed
+
+But it doesn't require:
+
+4.	[Equal Variances] The population variances in the two groups being compared are the same.
+
+Welch's t test is the default choice in R.
+
+## Welch t test without assuming equal population variances
+
+```{r t test 2 for sbp by sex}
+t.test(dm_second$sbp ~ dm_second$sex)
+```
+
+## Assumptions of the Wilcoxon-Mann-Whitney Rank Sum Test
+
+The Wilcoxon-Mann-Whitney Rank Sum test still requires:
+
+1.	[Independence] The samples for the two groups are drawn independently.
+2.	[Random Samples] The samples for each of the groups are drawn at random from the populations of interest.
+
+But it doesn't require:
+
+3.	[Normal Population] The two populations are each Normally distributed
+4.	[Equal Variances] The population variances in the two groups being compared are the same.
+
+It also doesn't really compare population means.
+
+## Wilcoxon-Mann-Whitney Rank Sum Test
+
+```{r rank sum test for sbp by sex}
+wilcox.test(dm_second$sbp ~ dm_second$sex, conf.int = TRUE)
+```
+
+## The Bootstrap
+
+This bootstrap approach to comparing population means using two independent samples still requires:
+
+1.	[Independence] The samples for the two groups are drawn independently.
+2.	[Random Samples] The samples for each of the groups are drawn at random from the populations of interest.
+
+but does not require either of the other two assumptions:
+
+3.	[Normal Population] The two populations are each Normally distributed
+4.	[Equal Variances] The population variances in the two groups being compared are the same.
+
+The bootstrap procedure I use in R was adapted from Frank Harrell and colleagues. http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/BootstrapMeansSoftware
+
+## The `bootdif` function
+
+The procedure requires the definition of a function, which I have adapted a bit, called `bootdif`, which is part of the `Love-boost.R` script on the web site, and is also part of this Markdown file.
+
+As in our previous bootstrap procedures, we are sampling (with replacement) a series of many data sets (default: 2000).
+
+- Here, we are building bootstrap samples based on the SBP levels in the two independent samples (M vs. F). 
+- For each bootstrap sample, we are calculating a mean difference between the two groups (M vs. F).
+- We then determine the 2.5th and 97.5th percentile of the resulting distribution of mean differences (for a 95% confidence interval).  
+
+## Using the `bootdif` function to compare means based on independent samples
+
+So, to compare systolic BP (our outcome) across the two levels of sex (our grouping factor) for the adult patients with diabetes in NE Ohio, run the following...
+
+```{r run bootdif on SBP by sex, message=FALSE}
+set.seed(4314); bootdif(dm_second$sbp, dm_second$sex)
+```
+
+Note that the two columns must be separated here with a comma rather than a tilde (`~`). 
+
+This CI describes the male - female difference (i.e. the negative of the F-M difference used earlier) -- we can tell this by the listed sample mean difference. 
+
+## Results for the SBP and Sex Study
+
+Procedure     | 2-sided *p* value for $H_0: \mu_F = \mu_M$ | 95% CI for $\mu_F - \mu_M$
+:-----------: | --------------------: | :------------------------:
+Pooled t test | 0.463 | (-3.2, 7.0)
+Welch t test  | 0.465 | (-3.2, 7.0)
+Rank Sum test | 0.265 | (-2.0, 8.0)
+Bootstrap CI  | *p* > 0.05 | (-2.9, 7.0)
+
+What conclusions should we draw, at $\alpha$ = 0.05?
+
+## A Few Comments on Significance
+
+- **A significant effect is not necessarily the same thing as an interesting effect.**  For example, results calculated from large samples are nearly always "significant" even when the effects are quite small in magnitude.  Before doing a test, always ask if the effect is large enough to be of any practical interest.  If not, why do the test?
+
+- **A non-significant effect is not necessarily the same thing as no difference.**  A large effect of real practical interest may still produce a non-significant result simply because the sample is too small.
+
+- **There are assumptions behind all statistical inferences.** Checking assumptions is crucial to validating the inference made by any test or confidence interval.
+
+
+## On Reporting *p* Values
+
+When reporting a *p* value and no rounding rules are in place from the lead author/journal/source for publication, follow these conventions...
+
+1. Use an italicized, lower-case *p* to specify the *p* value. Don't use *p* for anything else.
+2. For *p* values above 0.10, round to two decimal places, at most. 
+3. For *p* values near $\alpha$, include only enough decimal places to clarify the reject/retain decision. 
+4. For very small *p* values, always report either *p* < 0.0001 or even just *p* < 0.001, rather than specifying the result in scientific notation, or, worse, as $p = 0$ which is glaringly inappropriate.
+5. Report *p* values above 0.99 as *p* > 0.99, rather than *p* = 1.
+
+## From George Cobb - on why *p* values deserve to be re-evaluated
+
+The **idea** of a p-value as one possible summary of evidence
+
+morphed into a
+
+- **rule** for authors:  reject the null hypothesis if p < .05.
+
+## From George Cobb - on why *p* values deserve to be re-evaluated
+
+The **idea** of a p-value as one possible summary of evidence
+
+morphed into a
+
+- **rule** for authors:  reject the null hypothesis if p < .05,
+
+which morphed into a
+
+- **rule** for editors:  reject the submitted article if p > .05.
+
+## From George Cobb - on why *p* values deserve to be re-evaluated
+
+The **idea** of a p-value as one possible summary of evidence
+
+morphed into a
+
+- **rule** for authors:  reject the null hypothesis if p < .05,
+
+which morphed into a
+
+- **rule** for editors:  reject the submitted article if p > .05,
+
+which morphed into a
+
+- **rule** for journals:  reject all articles that report p-values\footnote{http://www.nature.com/news/psychology-journal-bans-p-values-1.17001 describes the recent banning of null hypothesis significance testing by {\it Basic and Applied Psychology}.} 
+
+## From George Cobb - on why *p* values deserve to be re-evaluated
+
+The **idea** of a p-value as one possible summary of evidence
+
+morphed into a
+
+- **rule** for authors:  reject the null hypothesis if p < .05, which morphed into a
+
+- **rule** for editors:  reject the submitted article if p > .05, which morphed into a
+
+- **rule** for journals:  reject all articles that report p-values. 
+
+Bottom line:  **Reject rules.  Ideas matter.**
+
+*Posted to an American Statistical Association message board Oct 14 2015*
