@@ -1,6 +1,6 @@
 # 431 Homework 5 Main Page
 
-Homework 5 is due at noon on Friday 2018-10-19. It contains eleven questions. Please be sure to answer them all.
+Homework 5 is due at noon on Friday 2018-10-19. It now contains **eight** questions. Please be sure to answer them all.
 
 - Homework 5 [instructions are here](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/431-2018-hw5.md).
 
