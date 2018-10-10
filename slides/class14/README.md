@@ -30,9 +30,9 @@ are on Friday and Saturday at 7:30 and on Sunday at 2:00. If you'd like to come,
 
 ## Visualization of the Day
 
-Building on our low-stakes visualization from last time, consider [this interesting R material on perceptions of probability and numbers](https://github.com/zonination/perceptions). I particularly liked this visualization...
+Building on our low-stakes visualization from last time, consider [this interesting R material on perceptions of probability and numbers](https://github.com/zonination/perceptions). The data shown come from a poll of Reddit users asking: What [probability/number] would you assign to the phrase "[phrase]"? for several phrases people use to express statements about uncertain events. I particularly liked this visualization, from https://github.com/zonination/perceptions.
 
-
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class14/readme14_plot1.png)
 
 ## One Last Thing
 
