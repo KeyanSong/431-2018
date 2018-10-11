@@ -23,11 +23,10 @@
 
 ## Demonstration Projects
 
-- I've begun to post the Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G. 
-    - The Study 1 demo materials are now located in a Google Drive folder at http://bit.ly/431-2018-demo-study1.
-        - We took down the old versions because they weren't executing properly.
+- I've now posted a complete Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G. 
+    - As the page above indicates, the Study 1 demo materials are located in a Google Drive folder at http://bit.ly/431-2018-demo-study1.
     - To use the R Markdown approach taken in the Study 1 Demo, you'll need to install the `rmdformats` package. I've added this to our [list of recommended R packages to install](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md).
-- I'll eventually post the Project Demonstration for Study 2 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2, which will also describe what we want to see in the portfolio (Task G).
+- I'll eventually post information on the Project Demonstration for Study 2 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2, which will also describe what we want to see in the portfolio (Task G).
 
 ## Sweeney Todd's Final Three Performances 
 
