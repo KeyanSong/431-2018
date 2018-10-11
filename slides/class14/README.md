@@ -22,8 +22,8 @@
 
 1. Individual submissions are trickling in to Canvas, and I am caught up, I believe. Submit your individual (Study 2) work at any time between now and noon Monday.
 2. Please make sure your group has told me who will submit the group work on Task A. 
-    - As of 2:50 PM 2018-10-11, I know who will submit from Chaos, The Foxes, Frontroll, Group Biostat, Pink Ladies, Significant PaRty, Smart_Group, and TuRkey. 
-    - Still waiting on Blue Group and Team Awesome.
+    - As of 3:05 PM 2018-10-11, I know who will submit from Chaos, The Foxes, Frontroll, Group Biostat, Pink Ladies, Significant PaRty, Smart_Group, Team Awesome and TuRkey. 
+    - Still waiting on Blue Group.
 3. Remember that your group must submit at least 2 research questions and 6 survey questions, but you can submit more of either. Each research question from your group should have a minimum of two connected survey question suggestions. In addition, you must propose a scale, and that also needs to be connected to at least one of your research questions. Please review the instructions for Task A for full details.
 4. As you develop survey questions and scales, you may have questions. Here are a few I have heard in the past few days:
     - "Can we use (in our set of 6+ additional survey questions) items that Dr. Love is already planning to put in the survey?" **No. You're trying to add new questions, not repeat old ones. Your research question may refer to one or more of the 15 questions I'm putting into the survey, but you can use those questions either for grouping or as an outcome, but not both, so at least one part (group or outcome) will have to be original to your group's survey questions.**
