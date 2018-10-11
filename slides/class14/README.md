@@ -19,10 +19,19 @@
         - As of 9:25 AM 2018-10-11, I know who will submit from Frontroll, Group Biostat, Pink Ladies, and Significant PaRty. 
         - Still waiting on Blue Group, Chaos, Smart_Group, Team Awesome, The Foxes, and TuRkey.
     - Remember that your group must submit at least 2 research questions and 6 survey questions, but you can submit more of either. Each research question from your group should have a minimum of two connected survey question suggestions. In addition, you must propose a scale, and that also needs to be connected to at least one of your research questions. Please review the instructions for Task A for full details.
+    - As you develop survey questions and scales, you may have questions. Here are a few I have heard in the past few days:
+        - "Can we use (in our set of 6+ additional survey questions) items that Dr. Love is already planning to put in the survey?" No.
+        - "Can we ask about performance in this class or any other academic endeavor?" No.
+        - "Can we ask questions that have been asked in past surveys?" Yes.
+        - "Can we use a scale that has been asked in past surveys?" Yes.
+        - "Does each survey question we suggest have to be linked to one of the research questions we propose, in an obvious way?" Yes.
+        - "Will I, as an individual, need to use the research questions or survey questions that my group winds up proposing in my analyses?" No.
+        - "Will I, as an individual, have an opportunity to suggest additional questions for the survey after this initial work in Task A?" Yes, in Task C.
+        - "Will all of the questions we suggest in Task A for the survey make it into the survey?" No. I will edit the survey quite a bit before publishing the draft that you will review for Tasks C and D. Also, I expect multiple groups to suggest similar questions in some cases, and I will combine those, to the degree that I can.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - **NEW**: I modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
     - You can do questions 1-6 now, but to do questions 7 and 8, you might want to review the material on Comparing Two Means in our Course Notes (especially [Chapters 24 and 25](https://thomaselove.github.io/2018-431-book/comparing-two-means-using-paired-samples.html)), and also in the [Slides for Class 15](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class15) that I've already posted, and that we'll discuss on Tuesday.
-5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
+5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are currently still planned to be due at noon on 2018-10-23, but I may wind up changing the deadline for one or both Tasks (pushing it later) depending on how things go today, and how things go with the group work in Task A, which I won't know until Monday after noon. Pushing it later has other unfortunate consequences, but we'll see.
 6. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
 
 ## Demonstration Projects (Study 1 is "complete", Study 2 is not)
