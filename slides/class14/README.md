@@ -18,6 +18,7 @@
     - As of 8:30 PM 2018-10-10, I know who will submit from Frontroll, Group Biostat, Pink Ladies, and Significant PaRty.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - **NEW**: I modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
+    - You can do questions 1-6 now, but to do questions 7 and 8, you might want to review the material on Comparing Two Means in our Course Notes, and also in the Slides for Class 15 that I've already posted.
 5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 6. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
 
