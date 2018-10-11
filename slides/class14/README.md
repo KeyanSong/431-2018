@@ -21,12 +21,12 @@
 5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 6. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
 
-## Demonstration Projects
+## Demonstration Projects (Study 1 is "complete", Study 2 is not)
 
-- I've now posted a complete Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G. 
-    - As the page above indicates, the Study 1 demo materials are located in a Google Drive folder at http://bit.ly/431-2018-demo-study1.
-    - To use the R Markdown approach taken in the Study 1 Demo, you'll need to install the `rmdformats` package. I've added this to our [list of recommended R packages to install](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md).
-- I'll eventually post information on the Project Demonstration for Study 2 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2, which will also describe what we want to see in the portfolio (Task G).
+- I've now posted an essentially **complete** Project Demonstration for Study 1 at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1. This is a demonstration of what we'll be looking for in your end-of-semester portfolio in Task G. 
+    - The actual Study 1 demo materials are located in a Google Drive folder linked on that page.
+- Incomplete information on the Project Demonstration for Study 2 is now available, too, at https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2, and there, again, is a link to a (different) Google Drive folder there.
+    - To use the R Markdown approach taken in these Demos, you'll need to install the `rmdformats` package. I've added this to our [list of recommended R packages to install](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md).
 
 ## Sweeney Todd's Final Three Performances 
 
@@ -39,5 +39,7 @@ Building on our low-stakes visualization from last time, consider [this interest
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class14/readme14_plot1.png)
 
 ## One Last Thing
+
+- You might enjoy this presentation by Garrick Aden-Buie from 2018-01-23, entitled "[A Gentle Guide to the Grammar of Graphics with `ggplot2`](https://pkg.garrickadenbuie.com/trug-ggplot2/#1)". I did, at any rate. Lots of Star Wars examples, and special guest appearances by Muppets...
 
 
