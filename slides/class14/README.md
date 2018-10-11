@@ -9,14 +9,14 @@
 
 1. You should have finished reading Leek's *Elements of Data Analytic Style* by now. I hope that was useful to you.
 2. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon tomorrow (Friday 2018-10-12).
-    - As of 8 PM on 2018-10-10, **38** of you have completed this form. 
+    - As of 10:30 PM on 2018-10-10, **38** of you have completed this form. 
     - Still waiting on: Aguilar, Attaway, Chari, Chen, Disher, Garcia-medina, Jiang, Li, Liu, Nelson, Song, Syed, Vaidya.
     - **One Key Thing** In specifying time slots, you must pick time slots on each of at least two different days. So you can pick eight (or more) slots on one day, and just one slot on one of the other days, but you must submit a minimum of one time slot on at least two of the three available days, as part of your total of 8 (or more) slots. People who've already submitted the form without including at least one slot on two different days have received an email from me about this.
     - Assuming all complete the task on time, you'll get the project schedule on Tuesday 2018-10-16 in class.
 3. [Project Task A](https://thomaselove.github.io/431-2018-project/) is now due at noon on **Monday** 2018-10-15.
     - Individual submissions are trickling in to Canvas, and I will catch up by class time.
     - Please make sure your group has told me who will submit the group work on Task A. 
-    - As of 8:30 PM 2018-10-10, I know who will submit from Frontroll, Group Biostat, Pink Ladies, and Significant PaRty.
+    - As of 10:30 PM 2018-10-10, I know who will submit from Frontroll, Group Biostat, Pink Ladies, and Significant PaRty.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - **NEW**: I modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
     - You can do questions 1-6 now, but to do questions 7 and 8, you might want to review the material on Comparing Two Means in our Course Notes (especially [Chapters 24 and 25](https://thomaselove.github.io/2018-431-book/comparing-two-means-using-paired-samples.html)), and also in the [Slides for Class 15](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class15) that I've already posted, and that we'll discuss on Tuesday.
