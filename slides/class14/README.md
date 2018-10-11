@@ -45,7 +45,9 @@
 
 ## Sweeney Todd's Final Three Performances 
 
-are on Friday and Saturday at 7:30 and on Sunday at 2:00. If you'd like to come, buy tickets in advance at https://www.eventbrite.com/e/sweeney-todd-tickets-37253162211, although I expect they'll also be available at the door (The Brecksville Theatre, 49 Public Square in Brecksville), especially on Sunday. Thanks for putting up with these notes, not that I gave you much of a choice in the matter.
+are on Friday and Saturday at 7:30 and on Sunday at 2:00. If you'd like to come, buy tickets in advance at https://www.eventbrite.com/e/sweeney-todd-tickets-37253162211, although I expect they'll also be available at the door (The Brecksville Theatre, 49 Public Square in Brecksville), especially on Sunday. Thanks for putting up with these notes, not that I gave you much of a choice in the matter. If you come, you could see this, in person...
+
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class14/sweeney_and_the_judge_2018-10.jpg)
 
 ## Visualization of the Day
 
