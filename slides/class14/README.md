@@ -9,8 +9,9 @@
 
 1. You should have finished reading Leek's *Elements of Data Analytic Style* by now. I hope that was useful to you.
 2. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon tomorrow (Friday 2018-10-12).
-    - As of 8 PM on 2018-10-10, **37** of you have completed this form. 
-    - Still waiting on: Aguilar, Attaway, Chari, Chen, Disher, Garcia-medina, Jiang, Li, Liu, Mills, Nelson, Song, Syed, Vaidya.
+    - As of 8 PM on 2018-10-10, **38** of you have completed this form. 
+    - Still waiting on: Aguilar, Attaway, Chari, Chen, Disher, Garcia-medina, Jiang, Li, Liu, Nelson, Song, Syed, Vaidya.
+    - **One Key Thing** In specifying time slots, you must pick time slots on each of at least two different days. So you can pick eight (or more) slots on one day, and just one slot on one of the other days, but you must submit a minimum of one time slot on at least two of the three available days, as part of your total of 8 (or more) slots. People who've already submitted the form without including at least one slot on two different days have received an email from me about this.
     - Assuming all complete the task on time, you'll get the project schedule on Tuesday 2018-10-16 in class.
 3. [Project Task A](https://thomaselove.github.io/431-2018-project/) is now due at noon on **Monday** 2018-10-15.
     - Individual submissions are trickling in to Canvas, and I will catch up by class time.
