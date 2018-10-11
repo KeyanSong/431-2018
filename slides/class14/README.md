@@ -9,9 +9,8 @@
 
 1. You should have finished reading Leek's *Elements of Data Analytic Style* by now. I hope that was useful to you.
 2. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon tomorrow (Friday 2018-10-12).
-    - As of 10 AM on 2018-10-11, **41**/51 students have completed this form, at http://bit.ly/431-2018-project-signup-taskB. 
+    - As of 2:50 PM on 2018-10-11, **43**/51 students have completed this form, at http://bit.ly/431-2018-project-signup-taskB. 
     - **One Key Thing** In specifying time slots, you must pick time slots on each of at least **two different days**. So you can pick seven (or more) slots on one day, and just one slot on one of the other days, but that is the minimum. 
-        - Two people still needed to fix their form to address this as of this morning, and I've emailed them. 
     - Assuming everyone completes the task on time, you'll get the project schedule on Tuesday 2018-10-16 in class.
 3. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - **NEW**: I modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
@@ -23,8 +22,8 @@
 
 1. Individual submissions are trickling in to Canvas, and I am caught up, I believe. Submit your individual (Study 2) work at any time between now and noon Monday.
 2. Please make sure your group has told me who will submit the group work on Task A. 
-    - As of 10 AM 2018-10-11, I know who will submit from Frontroll, Group Biostat, Pink Ladies, and Significant PaRty. 
-    - Still waiting on Blue Group, Chaos, Smart_Group, Team Awesome, The Foxes, and TuRkey.
+    - As of 2:50 PM 2018-10-11, I know who will submit from Chaos, The Foxes, Frontroll, Group Biostat, Pink Ladies, Significant PaRty, Smart_Group, and TuRkey. 
+    - Still waiting on Blue Group and Team Awesome.
 3. Remember that your group must submit at least 2 research questions and 6 survey questions, but you can submit more of either. Each research question from your group should have a minimum of two connected survey question suggestions. In addition, you must propose a scale, and that also needs to be connected to at least one of your research questions. Please review the instructions for Task A for full details.
 4. As you develop survey questions and scales, you may have questions. Here are a few I have heard in the past few days:
     - "Can we use (in our set of 6+ additional survey questions) items that Dr. Love is already planning to put in the survey?" **No. You're trying to add new questions, not repeat old ones. Your research question may refer to one or more of the 15 questions I'm putting into the survey, but you can use those questions either for grouping or as an outcome, but not both, so at least one part (group or outcome) will have to be original to your group's survey questions.**
