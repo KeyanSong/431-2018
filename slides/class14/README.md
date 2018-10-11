@@ -27,14 +27,15 @@
     - Still waiting on Blue Group, Chaos, Smart_Group, Team Awesome, The Foxes, and TuRkey.
 3. Remember that your group must submit at least 2 research questions and 6 survey questions, but you can submit more of either. Each research question from your group should have a minimum of two connected survey question suggestions. In addition, you must propose a scale, and that also needs to be connected to at least one of your research questions. Please review the instructions for Task A for full details.
 4. As you develop survey questions and scales, you may have questions. Here are a few I have heard in the past few days:
-    - "Can we use (in our set of 6+ additional survey questions) items that Dr. Love is already planning to put in the survey?" No.
-    - "Can we ask about performance in this class or any other academic endeavor?" No.
-    - "Can we ask questions that have been asked in past surveys?" Yes.
-    - "Can we use a scale that has been asked in past surveys?" Yes.
-    - "Does each survey question we suggest have to be linked to one of the research questions we propose, in an obvious way?" Yes.
-    - "Will I, as an individual, need to use the research questions or survey questions that my group winds up proposing in my analyses?" No.
-    - "Will I, as an individual, have an opportunity to suggest additional questions for the survey after this initial work in Task A?" Yes, in Task C.
-    - "Will all of the questions we suggest in Task A for the survey make it into the survey?" No. I will edit the survey quite a bit before publishing the draft that you will review for Tasks C and D. Also, I expect multiple groups to suggest similar questions in some cases, and I will combine those, to the degree that I can.
+    - "Can we use (in our set of 6+ additional survey questions) items that Dr. Love is already planning to put in the survey?" **No. You're trying to add new questions, not repeat old ones. Your research question may refer to one or more of the 15 questions I'm putting into the survey, but you can use those questions either for grouping or as an outcome, but not both, so at least one part (group or outcome) will have to be original to your group's survey questions.**
+    - "Can we ask about performance in this class or any other academic endeavor?" **On the survey? No. That will be rejected out of hand.**
+    - "Can we ask questions that have been asked in past surveys?" **Yes.**
+    - "Can we use a scale that has been asked in past surveys?" **Yes.**
+    - "Does each survey question we suggest have to be linked to one of the research questions we propose, in an obvious way?" **Yes. Your scale, too. That's why you can have more than 2 research questions.**
+    - "Will I, as an individual, need to use the research questions or survey questions that my group winds up proposing in my analyses later this semester?" **No.**
+    - "Will I, as an individual, have an opportunity to suggest additional questions for the survey after this initial work in Task A?" **Yes, in Task C.**
+    - "Will all of the questions we suggest in Task A for the survey make it into the survey?" **No. I will edit the survey quite a bit before publishing the draft that you will review for Tasks C and D. Also, I expect multiple groups to suggest similar questions in some cases, and I will combine those, to the degree that I can in the available time.**
+    - "When will we see the official draft of the survey that we will use to do Tasks C and D?" **Wednesday 2018-10-17.**
 
 ## Demonstration Projects (Study 1 is "complete", Study 2 is not)
 
