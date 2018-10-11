@@ -9,9 +9,11 @@
 
 1. You should have finished reading Leek's *Elements of Data Analytic Style* by now. I hope that was useful to you.
 2. [Project Task B](https://thomaselove.github.io/431-2018-project/) remains due at noon tomorrow (Friday 2018-10-12).
-    - As of 9:25 AM on 2018-10-11, **40**/51 students have completed this form. 
-    - Still waiting on: Ali Aguilar, Amy Attaway, Yijiang Chen, Sebastian Garcia-medina, Elena Jiang, Haojia Li, Larry Liu, Bolin Song, Afra Syed and Pranjal Vaidya.
-    - **One Key Thing** In specifying time slots, you must pick time slots on each of at least **two different days**. So you can pick seven (or more) slots on one day, and just one slot on one of the other days, but that is the minimum. As of 9:30 AM, there were still two people who needed to fix their form to address this, and I've emailed them. 
+    - As of 10 AM on 2018-10-11, **41**/51 students have completed this form. I'm still waiting on:
+        - Ali Aguilar, Amy Attaway, Yijiang Chen, Sebastian Garcia-medina, Elena Jiang, 
+        - Haojia Li, Larry Liu, Bolin Song, Afra Syed and Pranjal Vaidya.
+    - **One Key Thing** In specifying time slots, you must pick time slots on each of at least **two different days**. So you can pick seven (or more) slots on one day, and just one slot on one of the other days, but that is the minimum. 
+        - Two people still needed to fix their form to address this as of this morning, and I've emailed them. 
     - Assuming everyone completes the task on time, you'll get the project schedule on Tuesday 2018-10-16 in class.
 3. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - **NEW**: I modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
