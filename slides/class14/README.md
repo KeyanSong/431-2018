@@ -15,7 +15,7 @@
 3. [Project Task A](https://thomaselove.github.io/431-2018-project/) is now due at noon on **Monday** 2018-10-15.
     - Individual submissions are trickling in to Canvas, and I will catch up by class time.
     - Please make sure your group has told me who will submit the group work on Task A. 
-    - As of 8 PM 2018-10-10, I have this information (who will submit) from Frontroll, Pink Ladies, and Significant PaRty.
+    - As of 8:30 PM 2018-10-10, I know who will submit from Frontroll, Group Biostat, Pink Ladies, and Significant PaRty.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - **NEW**: I modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
 5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
