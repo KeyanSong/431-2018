@@ -14,11 +14,14 @@
 3. What You'll Be doing on Thursday, when Dr. Love is out of town.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - Remember, we modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
-5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
+5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23. A reminder that we don't have class next Tuesday 2018-10-23. Enjoy your Fall Break.
 6. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
 
 ## Visualization of the Day
 
-Shannon Ellis wrote a great blog post "[Will You Be a Halloween Hero, or the Neighborhood Dud?](http://www.shanellis.com/blog/data-driven-decision-making-halloween-candy-edition/)" which uses R to visualize information which can help you decide what candy to buy for trick-or-treaters, using [candy hierarchy survey data for 2014-2017 gathered by David Ng](http://www.scq.ubc.ca/so-much-candy-data-seriously/). Here's the money image:
+Shannon Ellis wrote a great blog post "[Will You Be a Halloween Hero, or the Neighborhood Dud?](http://www.shanellis.com/blog/data-driven-decision-making-halloween-candy-edition/)" which uses R to visualize information which can help you decide what candy to buy for trick-or-treaters, using [candy hierarchy survey data for 2014-2017 gathered by David Ng](http://www.scq.ubc.ca/so-much-candy-data-seriously/). Here's the money image, which is the result of the [R code Shannon published as part of the blog](http://www.shanellis.com/blog/data-driven-decision-making-halloween-candy-edition/):
 
-![]()
+![](http://www.shanellis.com/blog/2018-10-06-data-driven-decision-making-halloween-candy-edition_files/figure-html/data-viz-all-1.png)
+
+## One Last Thing
+
