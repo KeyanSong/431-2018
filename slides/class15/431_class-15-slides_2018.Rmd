@@ -1,7 +1,7 @@
 ---
-title: "431 Class 14"
+title: "431 Class 15"
 author: "Thomas E. Love"
-date: "2018-10-11"
+date: "2018-10-16"
 output:
   beamer_presentation:
     theme: "Madrid"
@@ -16,6 +16,15 @@ knitr::opts_chunk$set(comment=NA)
 options(width = 55)
 ```
 
+## Today's Agenda
+
+- Discussion of Project Task A
+- The Five Steps of a Hypothesis Test
+- Comparing Two Population Means
+  - Using Paired (Matched) Samples
+  - Using Independent Samples
+- What Happens Next
+
 ## Today's R Setup
 
 ```{r setup, message = FALSE}
@@ -27,7 +36,6 @@ source("Love-boost.R") # script from our Data page
 
 ```{r load_dm192}
 dm192 <- read.csv("data/dm192.csv") %>% tbl_df
-mosaic::favstats(~ sbp, data = dm192)
 ```
 
 # Comparing Population Means, using Paired Samples
@@ -54,7 +62,7 @@ ggplot(dm_first, aes(x = sbp_old, y = sbp)) +
 
 ## The Impact of Pairing
 
-```{r scatterplot of dmsample with annotations, echo = FALSE}
+```{r dm_first_scatterplot_with_annotations, echo = FALSE}
 ggplot(dm_first, aes(x = sbp_old, y = sbp)) + 
     geom_point() +
     annotate("point", x = 197, y = 200, col = "blue", size = 2) +
@@ -73,7 +81,7 @@ ggplot(dm_first, aes(x = sbp_old, y = sbp)) +
 
 Each subject provides both a value for `sbp` and one for `sbp_old`:
 
-```{r before-after plot, echo = FALSE, fig.height = 5}
+```{r before-after_plot, echo = FALSE, fig.height = 5}
 ## first re-express the data in a frame with pt.id
 ## time and systolicbp
 dm_firstlong <- gather(dm_first, key = time, value = SBP, sbp_old, sbp)
@@ -87,17 +95,32 @@ ggplot(dm_firstlong, aes(x = time, y = SBP, group = pt.id)) +
 
 Patient 53 is the patient on top, with `sbp` = 200, and `sbp_old` = 197.
 
+## How I Built That Matched Plot
+
+```{r before-after_plot_code, eval = FALSE}
+## first re-express the data in a frame with pt.id
+## time and systolicbp
+dm_firstlong <- gather(dm_first, key = time, value = SBP, sbp_old, sbp)
+
+ggplot(dm_firstlong, aes(x = time, y = SBP, group = pt.id)) + 
+    geom_point(aes(col = pt.id)) +
+    geom_line(aes(col = pt.id)) + 
+    labs(title = "Matched Samples Plot for SBP in dm192",
+         y = "Systolic BP (mm Hg)", x = "")
+```
+
 ## Paired Samples? Calculate Paired Differences
 
-```{r calculate paired diffs for dmsample}
-dm_first$diffs <- dm_first$sbp - dm_first$sbp_old; 
+```{r calculate_paired_diffs}
+dm_first <- dm_first %>% 
+  mutate(diffs = sbp - sbp_old)
 dm_first[1:3,]
-mosaic::favstats(dm_first$diffs)
+mosaic::favstats(dm_first$diffs) %>% round(., 2)
 ```
 
 ## EDA for the Paired Differences
 
-```{r histogram boxplot and normal Q-Q plot of sbp diffs, echo = FALSE, message = FALSE}
+```{r eda_paired_diffs, echo = FALSE, message = FALSE}
 p1 <- ggplot(dm_first, aes(x = diffs)) +
     geom_histogram(aes(y = ..density..), bins = 20,
                  fill = "#0A304E", col = "white") +
@@ -106,20 +129,22 @@ p1 <- ggplot(dm_first, aes(x = diffs)) +
                 args = list(mean = mean(dm_first$diffs), 
                             sd = sd(dm_first$diffs)),
                 lwd = 1.5, col = "navy") +
+    theme_bw() +
     labs(title = "Histogram",
        x = "Change in Systolic BP", y = "Density")
 
-p2 <- ggplot(dm_first, aes(x = 1, y = diffs)) +
+p2 <- ggplot(dm_first, aes(x = "", y = diffs)) +
   geom_boxplot(fill = "#0A304E", notch = TRUE, col = "navy", outlier.color = "#0A304E") +
-  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +
+  theme_bw() +
   labs(title = "Boxplot",
-       y = "", x = "")
+       y = "Change in Systolic BP", x = "")
 
 p3 <- ggplot(dm_first, aes(sample = diffs)) +
   geom_qq(col = "#0A304E", size = 2) +
   geom_qq_line(col = "navy") +
+  theme_bw() +
   labs(title = "Normal Q-Q",
-       y = "", x = "")
+       y = "Change in Systolic BP", x = "")
 
 gridExtra::grid.arrange(p1, p2, p3, nrow=1, 
    top = "Change in Systolic BP in mm Hg (This Year minus Last Year)")
@@ -457,65 +482,9 @@ What conclusions should we draw, at $\alpha$ = 0.05?
 
 - **There are assumptions behind all statistical inferences.** Checking assumptions is crucial to validating the inference made by any test or confidence interval.
 
+More on this when next we meet...
 
-## On Reporting *p* Values
+## Setting Up Thursday
 
-When reporting a *p* value and no rounding rules are in place from the lead author/journal/source for publication, follow these conventions...
-
-1. Use an italicized, lower-case *p* to specify the *p* value. Don't use *p* for anything else.
-2. For *p* values above 0.10, round to two decimal places, at most. 
-3. For *p* values near $\alpha$, include only enough decimal places to clarify the reject/retain decision. 
-4. For very small *p* values, always report either *p* < 0.0001 or even just *p* < 0.001, rather than specifying the result in scientific notation, or, worse, as $p = 0$ which is glaringly inappropriate.
-5. Report *p* values above 0.99 as *p* > 0.99, rather than *p* = 1.
-
-## From George Cobb - on why *p* values deserve to be re-evaluated
-
-The **idea** of a p-value as one possible summary of evidence
-
-morphed into a
-
-- **rule** for authors:  reject the null hypothesis if p < .05.
-
-## From George Cobb - on why *p* values deserve to be re-evaluated
-
-The **idea** of a p-value as one possible summary of evidence
-
-morphed into a
-
-- **rule** for authors:  reject the null hypothesis if p < .05,
-
-which morphed into a
-
-- **rule** for editors:  reject the submitted article if p > .05.
-
-## From George Cobb - on why *p* values deserve to be re-evaluated
-
-The **idea** of a p-value as one possible summary of evidence
-
-morphed into a
-
-- **rule** for authors:  reject the null hypothesis if p < .05,
-
-which morphed into a
-
-- **rule** for editors:  reject the submitted article if p > .05,
-
-which morphed into a
-
-- **rule** for journals:  reject all articles that report p-values\footnote{http://www.nature.com/news/psychology-journal-bans-p-values-1.17001 describes the recent banning of null hypothesis significance testing by {\it Basic and Applied Psychology}.} 
-
-## From George Cobb - on why *p* values deserve to be re-evaluated
-
-The **idea** of a p-value as one possible summary of evidence
-
-morphed into a
-
-- **rule** for authors:  reject the null hypothesis if p < .05, which morphed into a
-
-- **rule** for editors:  reject the submitted article if p > .05, which morphed into a
-
-- **rule** for journals:  reject all articles that report p-values. 
-
-Bottom line:  **Reject rules.  Ideas matter.**
-
-*Posted to an American Statistical Association message board Oct 14 2015*
+- I am away on Thursday of this week.
+- Remember also that we don't have class on the following Tuesday because of Fall Break.
