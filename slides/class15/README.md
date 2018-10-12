@@ -9,6 +9,8 @@
 
 1. We'll get you the Project Presentation Schedule today.
 2. Update on Project Task A submissions.
+    - Once you have submitted your project group work to Canvas and I have reviewed it, my detailed reactions to your group's work on Project Task A will be found in the Google Doc at http://bit.ly/431-2018-projecttaskA-groupwork.
+    - Once your individual project work has been approved, you'll [find it listed here](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md).
 3. What You'll Be doing on Thursday, when Dr. Love is out of town.
 4. [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) is due next Friday 2018-10-19.
     - Remember, we modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
