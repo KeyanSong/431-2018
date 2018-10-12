@@ -7,9 +7,11 @@
 
 ## Coming Up
 
-1. We'll get you the Project Presentation Schedule today.
+1. The Project Presentation Schedule is posted as a Google Sheet at http://bit.ly/431-2018-project-schedule.
    - Everyone got one of the 8 (or more) time slots where they said they were available.
-   - 3 people didn't specify a first or second choice. Of the remaining 48, 27 (56%) got their first choice, 12 (25%) got their second choice, and 9 (19%) were left with one of their other available time slots. 
+      - 3 people didn't specify a first or second choice. 
+      - Of the remaining 48, 27 (56%) got their first choice, and 12 (25%) got their second choice, so 9 (19%) were left with one of their other available time slots. 
+   - If something comes up, or you have any questions, email Dr. Love.
 2. Update on Project Task A submissions.
     - Once you have submitted your project group work to Canvas and I have reviewed it, my detailed reactions to your group's work on Project Task A will be found in the Google Doc at http://bit.ly/431-2018-projecttaskA-groupwork.
     - Once your individual project work has been approved, you'll [find it listed here](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md).
