@@ -16,3 +16,9 @@
     - Remember, we modified Homework 5 on 2018-10-10 to now consist of **eight** questions, instead of the original *eleven*. Make sure you [use this new version](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework5/README.md).
 5. [Project Task C and Task D](https://thomaselove.github.io/431-2018-project/) are due at noon on 2018-10-23.
 6. By 2018-10-24, we'll expect you to have read *The Signal and the Noise* through Chapter 11.
+
+## Visualization of the Day
+
+Shannon Ellis wrote a great blog post "[Will You Be a Halloween Hero, or the Neighborhood Dud?](http://www.shanellis.com/blog/data-driven-decision-making-halloween-candy-edition/)" which uses R to visualize information which can help you decide what candy to buy for trick-or-treaters, using [candy hierarchy survey data for 2014-2017 gathered by David Ng](http://www.scq.ubc.ca/so-much-candy-data-seriously/). Here's the money image:
+
+![]()
