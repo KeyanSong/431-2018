@@ -2,7 +2,8 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
-Class 15 | 10-16 | Comparing Two Population Means with Paired and Independent Samples, Hypothesis Testing
+Class 16 | 10-25 | Comparing Two (or more) Population Means with Independent Samples
+[Class 15](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class15) | 10-16 | Comparing Two Population Means with Paired  Samples, Hypothesis Testing
 [Class 14](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class14) | 10-11 | Confidence Intervals for a Population Mean (t, Z, bootstrap, Wilcoxon)
 [Class 13](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class13) | 10-09 | Quiz 1 discussion, Building a Confidence Interval for the Population Mean using a t test
 [Class 12](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class12) | 10-04 | 538 House Forecast, Review: dplyr verbs, The Printer Case, Project Task A work, Quiz 1 Setup
