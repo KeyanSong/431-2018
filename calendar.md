@@ -41,18 +41,21 @@ Date | Class | Description or Deliverable
 10-15 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task A (Proposal)**  due at noon
 10-16 | 15 | Course Project Presentation Schedule announced, Comparing Two Means, Paired vs Independent Samples
 10-18 | -- | Group Work Session on Course Project Tasks C and D. *Professor Love will be out of town.*
-10-19 | -- | **[Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
-10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks C and D (Survey Edit/Comparison Plan)**  due at noon.
+10-19 | -- | 
+10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Task C (Survey Edit)**  due at noon.
 10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
-10-25 | 16 | Course Project Survey goes live.
-10-26 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
-10-30 | 17 | **Part C** begins (Regression Models).
-10-31 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task E (Taking the Survey)**  due at noon
-11-01 | 18 | 
-11-02 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
-11-05 | -- | **Quiz 2 due at noon**
+10-25 | 16 |
+10-26 | -- | [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) **and** [Project](https://github.com/THOMASELOVE/431-2018-project) Task D (Survey Comparisons)**  due at noon.
+
+TBA | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
+TBA | -- |  Course Project Survey goes live.
+10-30 | 17 | 
+TBA | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task E (Taking the Survey)**  due at noon
+11-01 | 18 | **Part C** begins (Regression Models).
 11-06 | 19 |
 11-08 | 20 |
+11-09 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
+11-12 | -- | **Quiz 2 due at noon**
 11-13 | 21 |
 11-14 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task F (Sharing Study 2 Data)**  due at noon
 11-15 | 22 |
