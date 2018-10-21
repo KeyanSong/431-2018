@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class15/431_class-15-slides_2018.pdf) and [in R Markdown](https://raw.githubusercontent.com/THOMASELOVE/431-2018/master/slides/class15/431_class-15-slides_2018.Rmd), above.
-- Class 15 audio files will appear as soon as they are available.
+- Class 15 audio files are now available.
 
 ## Coming Up
 
