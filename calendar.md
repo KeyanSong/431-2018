@@ -41,9 +41,7 @@ Date | Class | Description or Deliverable
 10-15 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task A (Proposal)**  due at noon
 10-16 | 15 | Course Project Presentation Schedule announced, Comparing Two Means with Paired Samples
 10-18 | -- | Group Work Session on Course Project Tasks C and D. *Professor Love will be out of town.*
-10-19 | -- | 
 10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Task C (Survey Edit)**  due at noon.
-10-24 | -- | Before Class 16, read **Silver** Chapters 7-11.
 10-25 | 16 | Comparing Population Means
 10-26 | -- | [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon.
 10-29 | -- |  Course Project Survey goes live.
@@ -57,8 +55,7 @@ Date | Class | Description or Deliverable
 11-15 | 22 | Regression, Part 2
 11-16 | -- | **[Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 11-20 | -- | No class, Professor Love will be out of town.
-11-22 | -- | No class, CWRU Thanksgiving Break.
-11-26 | -- | By Class 23, finish reading **Silver** 
+11-22 | -- | No class, CWRU Thanksgiving Break. Finish reading **Silver** 
 11-27 | 23 | Regression, Part 3
 11-28 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Task F (Sharing Study 2 Data)**  due at noon
 11-29 | 24 | Regression, Part 4
