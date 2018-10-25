@@ -62,15 +62,14 @@ Date | Class | Description or Deliverable
 11-30 | -- | **[Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 12-04 | 25 | Regression, Part 5
 12-06 | 26 | Final class of the semester
-12-07 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you**
-12-10 | -- | **Quiz 2 due at noon**
-12-10 | -- | First Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
-12-11 | -- | Second Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
-12-13 | -- | Third Set of [Course Project](https://github.com/THOMASELOVE/431-2018-project) presentations
+12-07 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** by noon.
+12-10 | -- | First Set of [Project](https://github.com/THOMASELOVE/431-2018-project) presentations
+12-11 | -- | **Quiz 2 due** at noon. Second Set of [Project](https://github.com/THOMASELOVE/431-2018-project) presentations
+12-13 | -- | Third Set of [Project](https://github.com/THOMASELOVE/431-2018-project) presentations
 12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task G (The Portfolio)**  due at noon
 12-13 | -- | All [Homework Regrading Requests](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon
 
-**[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Presentation)** work will be scheduled for either **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. Presentation scheduling will occur using a form you will complete (Project Task B) by 2018-10-12, and you should know your schedule on 2018-10-16.
+**[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Presentation)** work has been be scheduled for either **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. The schedule is posted at 
 
 ## Teaching Assistant Office Hours 
 
