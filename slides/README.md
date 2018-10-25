@@ -2,7 +2,7 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
-Class 16 | 10-25 | Comparing Two (or more) Population Means with Independent Samples
+[Class 16](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class16) | 10-25 | Comparing Two Population Means with Independent Samples
 -- | 10-18 | Special Session working on Project Tasks C and D, and Homework 5 with TAs
 [Class 15](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class15) | 10-16 | Comparing Two Population Means with Paired  Samples, Hypothesis Testing
 [Class 14](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class14) | 10-11 | Confidence Intervals for a Population Mean (t, Z, bootstrap, Wilcoxon)
