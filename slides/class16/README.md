@@ -35,7 +35,8 @@ In short, here's what's happened:
 
 4. **Minute Papers**
 
-Minute Papers return next week. I anticipate at least four more Minute Papers over the course of the semester, to be due at noon on Wednesday 10-31, 11-07, 11-14, 11-28 (maybe) and 12-05. Each, as always, will be provided to you the day before they are due.
+- Minute Papers return next week. 
+- I anticipate that we'll have 4-5 more Minute Papers over the course of the semester, to be due at noon on Wednesday **10-31**, **11-07**, **11-14**, *11-28 (maybe)* and **12-05**. Each, as always, will be provided to you the day before they are due.
 
 5. **Project**.
     - The Course Project Survey will go live on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey when available.
@@ -47,7 +48,6 @@ Minute Papers return next week. I anticipate at least four more Minute Papers ov
     - The Project Portfolio (Task G) and Project Presentation (Task H) are not changed in any way.
         - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. Your presentation is on December 10, 11 or 13, as originally scheduled.
         - The Project Portfolio is still due for all students at noon on 2018-12-13.
-
 
 ## A Hint for Homework 5 / On the value of Pairing Samples
 
