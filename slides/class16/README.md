@@ -95,6 +95,14 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
 
 1. As of 2018-10-19, [Github now displays R Markdown files verbatim](https://yihui.name/en/2018/10/rmd-github/), without rendering them (imperfectly) into Markdown. This is actually good news. It should be easier to see the details of things like how chunk labels work, and you won't have to go to the raw version of the files to see what they should look like.
 
+## Visualization of the Day
+
+[How The Red Sox And Dodgers Made It To The World Series, In One Chart](https://fivethirtyeight.com/features/how-the-red-sox-and-dodgers-made-it-to-the-world-series-in-one-chart/) from Gus Wezerek and Sara Ziegler at FiveThirtyEight. 
+
+![](https://fivethirtyeight.com/wp-content/uploads/2018/10/ziegler-wezerek_WSPATH_1023.png?w=1024)
+
+Updated predictions for the World Series are [at this link](https://projects.fivethirtyeight.com/2018-mlb-predictions/?ex_cid=endlink).
+
 ## The Hardest-to-Look-At-Without-Screaming Picture of the Week
 
 was clearly won by the [Harvard Business Review](https://hbr.org/2018/10/which-data-skills-do-you-actually-need-this-2x2-matrix-will-tell-you) in its example of how to plot data skills on a 2x2 learning matrix. To be fair, there's reason to think this is more of a communication problem than a real assessment of the issues involved.
