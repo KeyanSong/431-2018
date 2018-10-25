@@ -9,11 +9,11 @@
 
 ## Deliverables and Scheduling: The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is now correct.
 
-Many changes have happened and the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word again. *Not all changes are currently captured in the rest of the web site, specifically the syllabus and the project instructions, but I'm working on that. If you see something confusing, please let me know.*
+Many changes have happened and the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word again. *Not all changes are currently captured in the syllabus yet, but I'm working on that. I have, I believe, successfully updated the Project Instructions*. **If you see something confusing or that seems to contradict the Calendar somewhere, please let Dr. Love know.**
 
-- The main goal of the changes is to make it so that the work is spread out more effectively through the rest of the term, and so that you have a more regular schedule of activities. You have something due this Friday, and something else due on each of the next three Fridays. That gets us up to Thanksgiving break. 
+- The main goal of the changes is to spread the work more effectively through the rest of the term, and to set up a more regular schedule of activities. You have something due this Friday, and something else due on each of the next three Fridays. That gets us up to Thanksgiving break. 
 
-In short, here's what's happened:
+Here's what's happened:
 
 1. **Quizzes**. There will now be only two Quizzes this semester, instead of the originally planned three.
     - You've already taken Quiz 1. 
@@ -52,6 +52,8 @@ In short, here's what's happened:
     - The Project Portfolio (Task G) and Project Presentation (Task H) are not changed in any way.
         - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. 
         - The Project Portfolio is still due for all students at noon on Thursday 2018-12-13.
+    - A complete Project Study 1 Demonstration [is available now](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1). 
+    - I am aiming to have a complete Project 2 Demonstration posted by 2018-11-15. An [incomplete version is available now](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2).
 
 ## Hint 1 for Homework 5 (and also for Project Study 1) / On the value of Pairing Samples
 
