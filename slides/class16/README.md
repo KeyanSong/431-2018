@@ -53,7 +53,7 @@ In short, here's what's happened:
         - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. 
         - The Project Portfolio is still due for all students at noon on Thursday 2018-12-13.
 
-## A Hint for Homework 5 / On the value of Pairing Samples
+## Hint 1 for Homework 5 (and also for Project Study 1) / On the value of Pairing Samples
 
 Questions 7 and 8 involve two studies. One of those studies uses paired (or matched) samples (as we discussed in Class 15), the other independent samples (which we'll discuss today) to compare two population means. 
 
@@ -63,6 +63,13 @@ Questions 7 and 8 involve two studies. One of those studies uses paired (or matc
     - If the correlation *r* is small and positive, perhaps less than 0.2 or so, so that the *r-squared* value when predicting one sample given the other would also be quite small, then that would indicate that pairing will be of only minimal help in reducing nuisance variation. This would suggest that an analysis using paired samples (i.e. the appropriate analysis) would only be a little different from an analysis using independent samples (even though an independent samples analysis would not be correct.)
     - If the correlation is positive and large, the pairing will be more helpful, and the difference between the assessment of the difference in means obtained using the (correct) paired samples analysis and the (incorrect) independent samples analysis will likely be larger, as a result.
     - Regardless of the observed correlation coefficient, the decision about whether to pair the samples or not is made before any data are collected, based on the study's design (specifically whether the observations are in fact matched/paired by the way the data are collected.) As a result, even if the correlation turns out to be negative, if the samples are paired, that is how we'll analyze them.
+
+## Hint 2 for Homework 5 (and also for your Project Study 1 or 2) / Wide vs. Long Data Formatting
+
+You may find that your data in Homework 5 Question 7 or Question 8 isn't set up in exactly the format you wish it was. That is to say, you may have data that is in wide format when you wish it was in long format, or, conversely, that it is long when you wish it was wide. R has a solution for this within the tidyverse, and we will demonstrate the use today (in class) of the `gather` function to turn long data into wide and the `spread` function to turn wide data into long. 
+
+- In addition to today's discussion in class, you probably want to look at the Tidy Data chapter of [R for Data Science](https://r4ds.had.co.nz/), in particular the section on [Spreading and Gathering](https://r4ds.had.co.nz/tidy-data.html#spreading-and-gathering).
+- If you're having trouble remembering which function (gather or spread) does which operation, [you might consider this "spread butter and gather leaves" analogy](https://twitter.com/WeAreRLadies/status/1054742083607642112) from the good folks at @WeAreRLadies.
 
 ## Course Project Progress
 
