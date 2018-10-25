@@ -9,7 +9,7 @@
 
 ## Deliverables and Scheduling: The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is now correct.
 
-Many changes have happened and the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word again. *Not all changes are currently captured in the syllabus yet, but I'm working on that. I have, I believe, successfully updated the Project Instructions*. **If you see something confusing or that seems to contradict the Calendar somewhere, please let Dr. Love know.**
+Many changes have happened and the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word again. *I have, I believe, successfully updated the Project Instructions, the Syllabus, and the rest of the website (other than old Class-specific READMEs)*. **If you see something confusing or that seems to contradict the Calendar somewhere, please let Dr. Love know via email.**
 
 - The main goal of the changes is to spread the work more effectively through the rest of the term, and to set up a more regular schedule of activities. You have something due this Friday, and something else due on each of the next three Fridays. That gets us up to Thanksgiving break. 
 
