@@ -42,13 +42,13 @@ Date | Class | Description or Deliverable
 10-16 | 15 | Course Project Presentation Schedule announced, Comparing Two Means with Paired Samples
 10-18 | -- | Group Work Session on Course Project Tasks C and D. *Professor Love will be out of town.*
 10-23 | -- | No class, CWRU Fall Break. **[Project](https://github.com/THOMASELOVE/431-2018-project) Task C (Survey Edit)**  due at noon.
-10-25 | 16 | Comparing Population Means
+10-25 | 16 | Comparing Population Means with Independent Samples
 10-26 | -- | [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon.
-10-29 | -- |  Course Project Survey goes live.
+10-29 | -- | By noon, the Final [Course Project Survey](http://bit.ly/431-2018-survey) goes live at http://bit.ly/431-2018-survey.
 10-30 | 17 | Power and Sample Size Considerations
-11-01 | 18 | Categorical Data and 2x2 Tables
+11-01 | 18 | Categorical Data and 2x2 Tables, Comparing Rates/Proportions
 11-02 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks D and E** due at noon
-11-06 | 19 | Categorical Data for Larger Tables
+11-06 | 19 | Categorical Data for Larger Contingency Tables
 11-08 | 20 | ANOVA and Dummy Variable Regression
 11-09 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
 11-13 | 21 | **Part C** begins (Regression Models).
