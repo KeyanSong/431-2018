@@ -92,7 +92,7 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
         - I need to provide a "magic phrase" which will re-assure me about the sharability of, for example, data collected in a lab that is not available to the public.
         - I would like to tell you more about resources at CWRU and online to improve your writing.
         - I would like to make a checklist or rubric for the Study 2 proposal so you can self-evaluate.
-- **Task B** is done. The [Schedule of Presentations is available here](http://bit.ly/431-2018-project-schedule)). 
+- **Task B** is done. The [Schedule of Presentations is available here](http://bit.ly/431-2018-project-schedule). 
 - **Task C** (Survey Editing) is done.
     - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. 
 - Next up: **Task D** (Survey Comparison Plan) and **Task E** (Actually Doing the Survey) are each due next Friday 2018-11-02.
