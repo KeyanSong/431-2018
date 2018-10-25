@@ -31,8 +31,8 @@ In short, here's what's happened:
 
 
 3. **Reading**. 
-    - You will need to finish reading *The Signal and the Noise* by November 27 (our first class after Thanksgiving), but we won't discuss the book specifically in any substantial way until then. 
-    - By now, you should have already finished reading Leek's *Elements of Data Analytic Style*.
+    - You will need to finish reading Nate Silver's *The Signal and the Noise* by November 27 (our first class after Thanksgiving), but we won't discuss the book in class in any substantial way before then, although several essays in homework assignments between now and then require you to have read various chapters in the book. 
+    - By now, you should have already finished reading Jeff Leek's *Elements of Data Analytic Style*.
 
 4. **Project**.
     - The Course Project Survey will go live on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey when available.
