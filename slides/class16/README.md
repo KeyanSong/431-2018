@@ -53,7 +53,7 @@ Here's what's happened:
         - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. 
         - The Project Portfolio is still due for all students at noon on Thursday 2018-12-13.
     - A complete Project Study 1 Demonstration [is available now](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1). 
-    - I am aiming to have a complete Project 2 Demonstration posted by 2018-11-15. An [incomplete version is available now](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2).
+    - I am aiming to have a complete Project 2 Demonstration posted by 2018-11-15. The [incomplete version is here](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2).
 
 ## Hint 1 for Homework 5 (and also for Project Study 1) / On the value of Pairing Samples
 
