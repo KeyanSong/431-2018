@@ -36,9 +36,8 @@ In short, here's what's happened:
     - By now, you should have already finished reading Jeff Leek's *Elements of Data Analytic Style*.
 
 4. **Minute Papers**
-
-- Minute Papers return next week. 
-- I anticipate that we'll have 4-5 more Minute Papers over the course of the semester, to be due at noon on Wednesday **10-31**, **11-07**, **11-14**, *11-28 (maybe)* and **12-05**. Each, as always, will be provided to you the day before they are due.
+    - Minute Papers return next week. 
+    - I anticipate that we'll have 4-5 more Minute Papers over the course of the semester, to be due at noon on Wednesday **10-31**, **11-07**, **11-14**, *11-28 (maybe)* and **12-05**. Each, as always, will be provided to you the day before they are due.
 
 5. **Project**.
     - The Course Project Survey will go live by noon on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey.
@@ -73,13 +72,55 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
 
 ## Course Project Progress
 
-- **Task A** (The Proposal). Almost everyone is done. Summaries of the project proposals [are available here](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md). Please take a look at what your colleagues are doing, and make sure that my description of your proposal is accurate.
+- **Task A** (The Proposal). Almost everyone is done. 
+    - Summaries of the project proposals [are available here](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md). Please take a look at what your colleagues are doing, and make sure that my description of your proposal is accurate.
+    - A few quick comments that I haven't (yet) had time to add to the instructions for next year.
+        - I want to warn people away from hierarchical, multi-level data. That's not what we need.
+        - I want to warn people away from Kaggle, and from the Pima Indians database and several other well-worn options.
+        - I want to make NHANES use a more detailed thing, since a lot of people wind up there, and make some suggestions regarding good alternatives to NHANES.
+        - I want to warn people away from assuming I know anything about wet lab biology work or genomics.
+        - I want to better emphasize the key things that people need to provide me with, perhaps with a template for what the data description should look like. 
+        - There's still confusion for too many people about what a quantitative outcome is.
+        - I need to provide a "magic phrase" which will re-assure me about the sharability of, for example, data collected in a lab that is not available to the public.
+        - I would like to tell you more about resources at CWRU and online to improve your writing.
+        - I would like to make a checklist or rubric for the Study 2 proposal so you can self-evaluate.
 - **Task B** is done. The [Schedule of Presentations is available here](http://bit.ly/431-2018-project-schedule)). 
 - **Task C** (Survey Editing) is done.
     - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made to this, along with some specific issues we need to make a decision on.
 - Next up: **Task D** (Survey Comparison Plan) and **Task E** (Actually Doing the Survey) are each due next Friday 2018-11-02.
+- **Study 2**: If your data set has more than 6,000 observations (after applying inclusion/exclusion filters and filtering to complete cases on the variables that you are considering for your model) I strongly encourage you to take a sample (probably at random) of 6,000 and then use 4,000 of those as the training sample for your modeling and the remaining 2,000 as a test sample.
+
 
 ## General Announcements
 
 1. As of 2018-10-19, [Github now displays R Markdown files verbatim](https://yihui.name/en/2018/10/rmd-github/), without rendering them (imperfectly) into Markdown. This is actually good news. It should be easier to see the details of things like how chunk labels work, and you won't have to go to the raw version of the files to see what they should look like.
 
+## The Hardest-to-Look-At-Without-Screaming Picture of the Week
+
+was clearly won by the [Harvard Business Review](https://hbr.org/2018/10/which-data-skills-do-you-actually-need-this-2x2-matrix-will-tell-you) in its example of how to plot data skills on a 2x2 learning matrix. To be fair, there's reason to think this is more of a communication problem than a real assessment of the issues involved.
+
+![](https://hbr.org/resources/images/article_assets/2018/10/W181004_LITTLEWOOD_ANEXAMPLE-1.png). 
+
+[Some of the comments](https://hbr.org/2018/10/which-data-skills-do-you-actually-need-this-2x2-matrix-will-tell-you#comment-section) are delightful, like this one from John Snyder. 
+
+"Here's the gist of their 2x2 matrix:
+Hard to learn but useful: BUZZWORDS!
+Easy to learn and useful: OLD BUZZWORDS!
+Hard to learn and not useful: Actual data analysis
+Easy to learn and not useful: Boring but important"
+
+A few of the many, many reactions that are littering my social media feeds:
+
+- [Vicki Boykis](https://twitter.com/vboykis/status/1054408259149299712) "Everyone, it appears we have finally found it, the truly magical company where no data cleaning, statistics, or data warehousing need to ever occur. Someone please take me to this Paradise."
+- [Stuart Buck](https://twitter.com/StuartBuck1/status/1054469995776884737) "This Harvard Business Review chart seems to have been made by someone who didn't know what most of the terms meant."
+- [Daniela Witten](https://twitter.com/daniela_witten/status/1054537089503637509) "Whenever someone makes a plot like this, a kitten dies."
+- [Ladbroke](https://twitter.com/ladbroke/status/1054562099412852736) "I'm surprised blockchain isn't on there, frankly."
+- [Kim Weeden](https://twitter.com/WeedenKim/status/1054520735711027200) "Spreadsheeting: the business alternative to excelling."
+- [David Mimno](http://mimno.org/Matrix/) allows you to generate your own example of plotting random points on a 2x2 learning matrix.
+
+
+## One Last Thing
+
+- Nate Silver (2018-10-19) on "Election Update: Democrats’ Unprecedented Fundraising Edge Is Scary For Republicans ... And Our Model" is a great read [over at FiveThirtyEight](https://fivethirtyeight.com/features/election-update-the-democrats-unprecedented-fundraising-edge-is-scary-for-republicans-and-for-our-model/).
+    - Here's the money quote: "... (In the House races, the) Democrat has raised an average of 65 percent of the money in districts rated as competitive (meaning, rated as "toss-up", "leaning" or "likely") by the Cook Political Report. In all previous years in our database, **no party had averaged more than 56 percent** of the money in these competitive districts."
+    - That link includes an excellent two-minute video looking at the Senate forecast, and Nevada in particular.
