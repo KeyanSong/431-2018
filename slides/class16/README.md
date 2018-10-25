@@ -28,6 +28,7 @@ In short, here's what's happened:
     - [Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will be revised (shortened) a bit soon, and that new version will be due on Friday 2018-11-09 at noon.
     - [Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will appear online soon, and will be due on Friday 2018-11-16 at noon.
     - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will appear online soon, and will be due on Friday 2018-11-30 at noon.
+    - [Homework Regrading Requests](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) are unchanged, and still due at noon on Thursday 2018-12-13.
 
 3. **Reading**. 
     - You will need to finish reading Nate Silver's *The Signal and the Noise* by November 27 (our first class after Thanksgiving), but we won't discuss the book in class in any substantial way before then, although several essays in homework assignments between now and then require you to have read various chapters in the book. 
@@ -39,15 +40,17 @@ In short, here's what's happened:
 - I anticipate that we'll have 4-5 more Minute Papers over the course of the semester, to be due at noon on Wednesday **10-31**, **11-07**, **11-14**, *11-28 (maybe)* and **12-05**. Each, as always, will be provided to you the day before they are due.
 
 5. **Project**.
-    - The Course Project Survey will go live on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey when available.
-    - [Project Task D](https://thomaselove.github.io/431-2018-project/taskD.html) (the Survey Comparison Plan form) **and** [Project Task E](https://thomaselove.github.io/431-2018-project/taskE.html) (actually Completing the Survey) will now be due at the same time, which is noon on Friday 2018-11-02.
+    - The Course Project Survey will go live by noon on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey.
+    - [Project Task D](https://thomaselove.github.io/431-2018-project/taskD.html) (the Survey Comparison Plan form) **and** [Project Task E](https://thomaselove.github.io/431-2018-project/taskE.html) (actually Completing the Survey) will each be due at noon on Friday 2018-11-02.
         - The Task D form is at http://bit.ly/431-2018-survey-comparison-plan-taskD. 
-            - You'll need to identify items for the survey based on their final numbers, which will be available when the actual survey is posted at http://bit.ly/431-2018-survey. To the extent that it is possible, we will keep the numbers the same as those used in the [Draft Survey](http://bit.ly/431-2018-draft-project-survey).
-        - Task E will require you to fill out the actual Course Survey, which, again, will appear on Monday 2018-10-29 at http://bit.ly/431-2018-survey. This will take a while, since there are about 150 items on the Survey, and you will need to complete them all.
-    - [Project Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing your Study 2 Data) will be due at noon on Wednesday after Thanksgiving, specifically 2018-11-28.
+            - You'll need to identify items for the survey based on their final numbers, as posted in the actual survey at http://bit.ly/431-2018-survey. To the extent possible, we will use the same numbers as in the [Draft Survey](http://bit.ly/431-2018-draft-project-survey).
+        - Task E requires you to fill out the actual Course Survey, which will appear before noon on Monday 2018-10-29 at http://bit.ly/431-2018-survey. 
+            - This will take a while, since there are about 150 items on the Survey, and you need to answer them all.
+            - Like a quiz, it will be possible to save your work partway through and return to the Survey. It is not important to take the entire survey in one sitting.
+    - [Project Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing your Study 2 Data) will be due at noon on 2018-11-28 (Wednesday after Thanksgiving).
     - The Project Portfolio (Task G) and Project Presentation (Task H) are not changed in any way.
-        - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. Your presentation is on December 10, 11 or 13, as originally scheduled.
-        - The Project Portfolio is still due for all students at noon on 2018-12-13.
+        - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. 
+        - The Project Portfolio is still due for all students at noon on Thursday 2018-12-13.
 
 ## A Hint for Homework 5 / On the value of Pairing Samples
 
@@ -60,11 +63,13 @@ Questions 7 and 8 involve two studies. One of those studies uses paired (or matc
     - If the correlation is positive and large, the pairing will be more helpful, and the difference between the assessment of the difference in means obtained using the (correct) paired samples analysis and the (incorrect) independent samples analysis will likely be larger, as a result.
     - Regardless of the observed correlation coefficient, the decision about whether to pair the samples or not is made before any data are collected, based on the study's design (specifically whether the observations are in fact matched/paired by the way the data are collected.) As a result, even if the correlation turns out to be negative, if the samples are paired, that is how we'll analyze them.
 
-## Progress on the Course Project
+## Course Project Progress
 
-Everyone has completed Project Task B. Almost everyone has completed Project Tasks A and C. Thank you.
-
-- The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made to this, along with some specific issues we need to make a decision on, today.
+- **Task A** (The Proposal). Almost everyone is done. Summaries of the project proposals [are available here](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md). Please take a look at what your colleagues are doing, and make sure that my description of your proposal is accurate.
+- **Task B** is done. The [Schedule of Presentations is available here](http://bit.ly/431-2018-project-schedule)). 
+- **Task C** (Survey Editing) is done.
+    - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made to this, along with some specific issues we need to make a decision on.
+- Next up: **Task D** (Survey Comparison Plan) and **Task E** (Actually Doing the Survey) are each due next Friday 2018-11-02.
 
 ## General Announcements
 
