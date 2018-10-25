@@ -86,7 +86,15 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
         - I would like to make a checklist or rubric for the Study 2 proposal so you can self-evaluate.
 - **Task B** is done. The [Schedule of Presentations is available here](http://bit.ly/431-2018-project-schedule)). 
 - **Task C** (Survey Editing) is done.
-    - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made to this, along with some specific issues we need to make a decision on.
+    - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made, if we have time, but since I doubt we'll have time, the main thing is to poll you on seven specific issues.
+        1. Does anyone have a good synonym for "politically engaged" we might use?
+        2. In defining "red meat", does pork count? According to the FDA, yes, because it contains more myoglobin than chicken or fish.
+        3. What does "using electronic media" entail? I think it means everything that you consume electronically - the internet, television, books, magazines, games, social media, whatever, including time spent on a computer and time spent on a tablet or phone.
+        4. Is there anyone who cannot define their employment status as either (a) Not employed, (b) Employed part-time, (c) Employed full-time? 
+        5. In determining whether you are employed FT/PT or not, would you count time spent in TA or GA activities for which you are not paid directly, but which are conditions of your continuing student status as employment activities?
+        6. Would you count thesis activities you are required to do as part of your program but are not paid for as employment?
+        7. Does anyone have a powerful objection to any of the new items on the [last page of the draft](http://bit.ly/431-2018-draft-project-survey) being added to the survey?
+        
 - Next up: **Task D** (Survey Comparison Plan) and **Task E** (Actually Doing the Survey) are each due next Friday 2018-11-02.
 - **Study 2**: If your data set has more than 6,000 observations (after applying inclusion/exclusion filters and filtering to complete cases on the variables that you are considering for your model) I strongly encourage you to take a sample (probably at random) of 6,000 and then use 4,000 of those as the training sample for your modeling and the remaining 2,000 as a test sample.
 
