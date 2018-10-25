@@ -67,7 +67,7 @@ Date | Class | Description or Deliverable
 12-11 | -- | **Quiz 2 due** at noon. Second Set of [Project](https://github.com/THOMASELOVE/431-2018-project) presentations
 12-13 | -- | Third Set of [Project](https://github.com/THOMASELOVE/431-2018-project) presentations
 12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task G (The Portfolio)**  due at noon
-12-13 | -- | All [Homework Regrading Requests](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon
+12-13 | -- | [Homework Regrading Requests](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) are also due at noon
 
 **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Presentation)** work has been be scheduled for either **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. The schedule is posted at 
 
