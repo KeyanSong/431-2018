@@ -16,8 +16,8 @@ Many changes have happened and the [Course Calendar](https://github.com/THOMASEL
 In short, here's what's happened:
 
 1. **Quizzes**. There will now be only two Quizzes this semester, instead of the originally planned three.
-    - Remember that you took Quiz 1 a few weeks ago. 
-        - Those of you who were [assigned some extra work](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/extra.md) need to get that in by tomorrow (2018-10-26) at noon.
+    - You've already taken Quiz 1. 
+        - Those who were [assigned some extra work](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/extra.md) remember to get that in by tomorrow (2018-10-26) at noon.
     - Quiz 2 will cover the entire course, and will be in your hands by noon on Friday 2018-12-07, and will be due at noon on Tuesday 2018-12-11, giving you an extra 24 hours over the original plan. Remember, Project Presentations begin on Monday 2018-12-10.
     - Quiz 2 will be about the same length as Quiz 1, in terms of the length of time we expect it to take you to complete, and it will use the same technology (Google Form) for you to submit your work.
     - Your overall Quiz grade in the course will be calculated in two ways. Whichever yields the higher score will be the grade I incorporate into the process for determining your final Course grade.
