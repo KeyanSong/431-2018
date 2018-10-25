@@ -43,7 +43,8 @@ In short, here's what's happened:
     - The Course Project Survey will go live by noon on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey.
     - [Project Task D](https://thomaselove.github.io/431-2018-project/taskD.html) (the Survey Comparison Plan form) **and** [Project Task E](https://thomaselove.github.io/431-2018-project/taskE.html) (actually Completing the Survey) will each be due at noon on Friday 2018-11-02.
         - The Task D form is at http://bit.ly/431-2018-survey-comparison-plan-taskD. 
-            - You'll need to identify items for the survey based on their final numbers, as posted in the actual survey at http://bit.ly/431-2018-survey. To the extent possible, we will use the same numbers as in the [Draft Survey](http://bit.ly/431-2018-draft-project-survey).
+            - You'll need to identify items for the survey based on their final numbers, as posted in the actual survey at http://bit.ly/431-2018-survey. 
+            - By the time that survey is posted (Monday 2018-10-29 before noon), I will **also** provide a list of final variable names and specifications (including scale results and how they are to be calculated) for the eventual data sets I will provide to you, so that you will be able to complete Project Task D by referring to that new **data description document**.
         - Task E requires you to fill out the actual Course Survey, which will appear before noon on Monday 2018-10-29 at http://bit.ly/431-2018-survey. 
             - This will take a while, since there are about 150 items on the Survey, and you need to answer them all.
             - Like a quiz, it will be possible to save your work partway through and return to the Survey. It is not important to take the entire survey in one sitting.
@@ -91,15 +92,7 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
         - I would like to make a checklist or rubric for the Study 2 proposal so you can self-evaluate.
 - **Task B** is done. The [Schedule of Presentations is available here](http://bit.ly/431-2018-project-schedule)). 
 - **Task C** (Survey Editing) is done.
-    - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made, if we have time, but since I doubt we'll have time, the main thing is to make comments on these specific issues.
-        1. Does anyone want to suggest a synonym or explanation for what it means to be "politically engaged" that we might use?
-        2. In defining "red meat", does pork count? According to the FDA, yes, because it contains more myoglobin than chicken or fish.
-        3. What does "using electronic media" entail? I think it means everything that you consume electronically - the internet, television, books, magazines, games, social media, whatever, including time spent on a computer and time spent on a tablet or phone.
-        4. Is there anyone who feels that they cannot define their employment status as either (a) Not employed, (b) Employed part-time, (c) Employed full-time? 
-            4a. In determining whether you are employed FT/PT or not, would you count time spent in TA or GA activities for which you are not paid directly, but which are conditions of your continuing student status as employment activities?
-            4b. Would you count thesis activities you are required to do as part of your program but are not paid for as employment?
-        5. Does anyone have an objection to any of the new items on the [last page of the draft](http://bit.ly/431-2018-draft-project-survey) being added to the survey?
-        
+    - The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. 
 - Next up: **Task D** (Survey Comparison Plan) and **Task E** (Actually Doing the Survey) are each due next Friday 2018-11-02.
 - **Study 2**: If your data set has more than 6,000 observations (after applying inclusion/exclusion filters and filtering to complete cases on the variables that you are considering for your model) I strongly encourage you to take a sample (probably at random) of 6,000 and then use 4,000 of those as the training sample for your modeling and the remaining 2,000 as a test sample.
 
