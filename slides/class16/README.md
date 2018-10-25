@@ -29,12 +29,15 @@ In short, here's what's happened:
     - [Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will appear online soon, and will be due on Friday 2018-11-16 at noon.
     - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will appear online soon, and will be due on Friday 2018-11-30 at noon.
 
-
 3. **Reading**. 
     - You will need to finish reading Nate Silver's *The Signal and the Noise* by November 27 (our first class after Thanksgiving), but we won't discuss the book in class in any substantial way before then, although several essays in homework assignments between now and then require you to have read various chapters in the book. 
     - By now, you should have already finished reading Jeff Leek's *Elements of Data Analytic Style*.
 
-4. **Project**.
+4. **Minute Papers**
+
+Minute Papers return next week. I anticipate at least four more Minute Papers over the course of the semester, to be due at noon on Wednesday 10-31, 11-07, 11-14, 11-28 (maybe) and 12-05. Each, as always, will be provided to you the day before they are due.
+
+5. **Project**.
     - The Course Project Survey will go live on Monday 2018-10-29. It will be posted to http://bit.ly/431-2018-survey when available.
     - [Project Task D](https://thomaselove.github.io/431-2018-project/taskD.html) (the Survey Comparison Plan form) **and** [Project Task E](https://thomaselove.github.io/431-2018-project/taskE.html) (actually Completing the Survey) will now be due at the same time, which is noon on Friday 2018-11-02.
         - The Task D form is at http://bit.ly/431-2018-survey-comparison-plan-taskD. 
@@ -45,21 +48,25 @@ In short, here's what's happened:
         - The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule. Your presentation is on December 10, 11 or 13, as originally scheduled.
         - The Project Portfolio is still due for all students at noon on 2018-12-13.
 
-## A Hint for Homework 5
+
+## A Hint for Homework 5 / On the value of Pairing Samples
 
 Questions 7 and 8 involve two studies. One of those studies uses paired (or matched) samples (as we discussed in Class 15), the other independent samples (which we'll discuss today) to compare two population means. 
-    - The study that uses paired samples has a clear link between the samples so that each observation in one group is uniquely linked to a single observation in the other group, so that taking paired differences makes sense. This is determined even before you collect the actual data - it is a characteristic of the study design, not the observed data.
-    - When assessing the study that uses paired samples, you'll need to address question g, which asks about whether pairing helped to reduce nuisance variation. To help quantify your answer here, you're going to want to understand the correlation (the Pearson correlation) between the samples. 
-        - We measure the amount of variation accounted for by the pairing as a proportion using R-squared, you'll recall. A large value of R-squared will indicate a situation where the pairing helps a lot, and a small one will indicate that pairing only helps a little.
-        - If the correlation *r* is small and positive, perhaps less than 0.2 or so, so that the *r-squared* value when predicting one sample given the other would also be quite small, then that would indicate that pairing will be of only minimal help in reducing nuisance variation. This would suggest that an analysis using paired samples (i.e. the appropriate analysis) would only be a little different from an analysis using independent samples (even though an independent samples analysis would not be correct.)
-        - If the correlation is positive and large, the pairing will be more helpful, and the difference between the assessment of the difference in means obtained using the (correct) paired samples analysis and the (incorrect) independent samples analysis will likely be larger, as a result.
-        - Regardless of the observed correlation coefficient, the decision about whether to pair the samples or not is made before any data are collected, based on the study's design (specifically whether the observations are in fact matched/paired by the way the data are collected.) As a result, even if the correlation turns out to be negative, if the samples are paired, that is how we'll analyze them.
+
+- The study that uses paired samples has a clear link between the samples so that each observation in one group is uniquely linked to a single observation in the other group, so that taking paired differences makes sense. This is determined even before you collect the actual data - it is a characteristic of the study design, not the observed data.
+- When assessing the study that uses paired samples, you'll need to address question g, which asks about whether pairing helped to reduce nuisance variation. To help quantify your answer here, you're going to want to understand the correlation (the Pearson correlation) between the samples. 
+    - We measure the amount of variation accounted for by the pairing as a proportion using R-squared, you'll recall. A large value of R-squared will indicate a situation where the pairing helps a lot, and a small one will indicate that pairing only helps a little.
+    - If the correlation *r* is small and positive, perhaps less than 0.2 or so, so that the *r-squared* value when predicting one sample given the other would also be quite small, then that would indicate that pairing will be of only minimal help in reducing nuisance variation. This would suggest that an analysis using paired samples (i.e. the appropriate analysis) would only be a little different from an analysis using independent samples (even though an independent samples analysis would not be correct.)
+    - If the correlation is positive and large, the pairing will be more helpful, and the difference between the assessment of the difference in means obtained using the (correct) paired samples analysis and the (incorrect) independent samples analysis will likely be larger, as a result.
+    - Regardless of the observed correlation coefficient, the decision about whether to pair the samples or not is made before any data are collected, based on the study's design (specifically whether the observations are in fact matched/paired by the way the data are collected.) As a result, even if the correlation turns out to be negative, if the samples are paired, that is how we'll analyze them.
 
 ## Progress on the Course Project
 
 Everyone has completed Project Task B. Almost everyone has completed Project Tasks A and C. Thank you.
-- The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss this today.
+
+- The Draft Survey is posted at http://bit.ly/431-2018-draft-project-survey. We'll discuss the changes I've made to this, along with some specific issues we need to make a decision on, today.
 
 ## General Announcements
 
 1. As of 2018-10-19, [Github now displays R Markdown files verbatim](https://yihui.name/en/2018/10/rmd-github/), without rendering them (imperfectly) into Markdown. This is actually good news. It should be easier to see the details of things like how chunk labels work, and you won't have to go to the raw version of the files to see what they should look like.
+
