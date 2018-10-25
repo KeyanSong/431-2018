@@ -36,7 +36,7 @@ In short, here's what's happened:
     - By now, you should have already finished reading Jeff Leek's *Elements of Data Analytic Style*.
 
 4. **Minute Papers**
-    - Minute Papers return next week. 
+    - Minute Papers return next week. Please complete them all.
     - I anticipate that we'll have 4-5 more Minute Papers over the course of the semester, to be due at noon on Wednesday **10-31**, **11-07**, **11-14**, *11-28 (maybe)* and **12-05**. Each, as always, will be provided to you the day before they are due.
 
 5. **Project**.
@@ -70,6 +70,11 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
 - In addition to today's discussion in class, you probably want to look at the Tidy Data chapter of [R for Data Science](https://r4ds.had.co.nz/), in particular the section on [Spreading and Gathering](https://r4ds.had.co.nz/tidy-data.html#spreading-and-gathering).
 - If you're having trouble remembering which function (gather or spread) does which operation, [you might consider this "spread butter and gather leaves" analogy](https://twitter.com/WeAreRLadies/status/1054742083607642112) from the good folks at @WeAreRLadies.
 
+## General Announcement
+
+1. As of 2018-10-19, [Github now displays R Markdown files verbatim](https://yihui.name/en/2018/10/rmd-github/), without rendering them (imperfectly) into Markdown. This is actually good news. It should be easier to see the details of things like how chunk labels work, and you won't have to go to the raw version of the files to see what they should look like.
+2. Professor Love will be away from email starting at 5 PM Friday until 9 AM Monday. 431-help will be open.
+
 ## Course Project Progress
 
 - **Task A** (The Proposal). Almost everyone is done. 
@@ -97,11 +102,6 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
         
 - Next up: **Task D** (Survey Comparison Plan) and **Task E** (Actually Doing the Survey) are each due next Friday 2018-11-02.
 - **Study 2**: If your data set has more than 6,000 observations (after applying inclusion/exclusion filters and filtering to complete cases on the variables that you are considering for your model) I strongly encourage you to take a sample (probably at random) of 6,000 and then use 4,000 of those as the training sample for your modeling and the remaining 2,000 as a test sample.
-
-
-## General Announcements
-
-1. As of 2018-10-19, [Github now displays R Markdown files verbatim](https://yihui.name/en/2018/10/rmd-github/), without rendering them (imperfectly) into Markdown. This is actually good news. It should be easier to see the details of things like how chunk labels work, and you won't have to go to the raw version of the files to see what they should look like.
 
 ## Visualization of the Day
 
