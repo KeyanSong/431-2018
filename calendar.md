@@ -70,7 +70,7 @@ Date | Class | Description or Deliverable
 12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task G (The Portfolio)**  due at noon
 12-13 | -- | [Homework Regrading Requests](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) are also due at noon
 
-**[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Presentation)** work has been be scheduled for either **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days. The The Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule.
+**[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task H (The Presentation)** work is scheduled for either **2018-12-10, 2018-12-11 and 2018-12-13**. All students will need to give a presentation in person on one of these three days, and the Schedule of Project Presentations is at http://bit.ly/431-2018-project-schedule.
 
 ## Teaching Assistant Office Hours 
 
@@ -82,6 +82,8 @@ Tuesdays | 11:30 AM to 12:45 PM
 Wednesdays | 12:00 PM to 1:30 PM
 Thursdays | 11:30 AM to 12:45 PM, 2:30 - 4 PM and 5:30 - 7 PM
 Fridays | 10:30 AM to Noon
+
+There are no TA office hours during Thanksgiving Week (2018-11-20 through 2018-11-24), although 431-help is open for that time. TA Office Hours will conclude on Friday 2018-12-07. 431-help closes for the year on 2018-12-13 at 5 PM.
 
 For more on the teaching assistants, visit [the Syllabus](https://thomaselove.github.io/2018-431-syllabus/teaching-assistants.html#office-hours-for-tas).
 
