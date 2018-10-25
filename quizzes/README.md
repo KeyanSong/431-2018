@@ -1,6 +1,6 @@
 # 431 Quizzes Main Page
 
-This is the main page for our three Quizzes in 431, Section 1 for Fall 2018. 
+This is the main page for our two Quizzes in 431, Section 1 for Fall 2018. 
 
 All Quizzes are taken online, at home, requiring a connection to the Internet, and access to R and R Studio, and consist of a mix of multiple-choice and short answer questions. The tests are open book and open notes.
 
@@ -30,14 +30,15 @@ There are enough items on every Quiz that a perfect score is rare. A score of 85
 - The last page of Quiz 1 looks like this:
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_lastpage.png)
 
-2. Quiz 2 will be released to you on 2018-11-02, and will be due on 2018-11-05 at noon.
-    - Quiz 2 will include material from Parts A and B of the course, focusing more on Part B.
-        - This includes all material described above for Quiz 1, as well as the rest of **Leek** and Chapters 7-11 from **Silver**.
-
-3. Quiz 3 will be released to you on 2018-12-07, and will be due on 2018-12-10 at noon.
-    - Quiz 2 will include material from Parts the entire course, focusing on Part C.
-        - This includes all material described above for Quizzes 1 and 2, and the rest of **Silver**.
-
+2. Quiz 2 will be released to you on 2018-12-07, and will be due on 2018-12-11 at noon.
+    - Quiz 2 will include material from the entire course, focusing on Parts B and C.
+        - This includes all material described above for Quiz 1 and all assigned readings in **Silver**, **Leek** and **R4DS**.
+        - Quiz 2 will cover the entire course, and will be in your hands by noon on Friday 2018-12-07, and will be due at noon on Tuesday 2018-12-11, giving you an extra 24 hours over the original plan. Remember, Project Presentations begin on Monday 2018-12-10.
+    - Quiz 2 will be about the same length as Quiz 1, in terms of the length of time we expect it to take you to complete, and it will use the same technology (Google Form) for you to submit your work.
+    - Your overall Quiz grade in the course will be calculated in two ways. Whichever yields the higher score will be the grade I incorporate into the process for determining your final Course grade.
+        - weighing Quiz 1 as 40% of your Quiz grade, and Quiz 2 as 60% of your Quiz grade, or
+        - weighing Quiz 1 as 33% of your Quiz grade, and Quiz 2 as 67% of your Quiz grade.
+    
 Books we are reading: 
 
 - **Silver** - this is *The Signal and the Noise* by Nate Silver, which you need to [purchase for this course](https://thomaselove.github.io/2018-431-syllabus/index.html#what-do-i-need-to-buy). Some chapters are going to feel more relevant to you than others, and that's fine.
