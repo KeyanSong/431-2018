@@ -64,7 +64,8 @@ Date | Class | Description or Deliverable
 12-06 | 26 | Final class of the semester
 12-07 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** by noon.
 12-10 | -- | First Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
-12-11 | -- | **Quiz 2 due** at noon. Second Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
+12-11 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) due at noon**. 
+12-11 | -- | Second Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
 12-13 | -- | Third Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
 12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task G (The Portfolio)**  due at noon
 12-13 | -- | [Homework Regrading Requests](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) are also due at noon
