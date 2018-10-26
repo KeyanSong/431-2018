@@ -2,7 +2,7 @@
 
 Homework 6 is now due at noon on Friday 2018-11-09. It contains seven questions. Please be sure to answer them all.
 
-- Homework 6 [instructions are here](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md). I revised this assignment on 2018-10-25.
+- Homework 6 [instructions are here](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md). Dr. Love revised this assignment on 2018-10-25.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
