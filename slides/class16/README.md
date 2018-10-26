@@ -26,7 +26,7 @@ Here's what's happened:
 
 2. **Homework**. There will still be a total of 8 homework assignments this semester.
     - [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) is still due tomorrow (Friday 2018-10-26) at noon. It is now the only thing due tomorrow. See below for some useful hints regarding this Homework.
-    - [Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) has now been revised, and the new version is posted, and will be due on Friday 2018-11-09 at noon.
+    - [Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) has now been revised and reposted, and is due on Friday 2018-11-09 at noon.
     - [Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will appear online soon, and will be due on Friday 2018-11-16 at noon.
     - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) will appear online soon, and will be due on Friday 2018-11-30 at noon.
     - [Homework Regrading Requests](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) are unchanged, and still due at noon on Thursday 2018-12-13.
