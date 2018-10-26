@@ -50,7 +50,7 @@ Date | Class | Description or Deliverable
 11-02 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks D and E** due at noon
 11-06 | 19 | Categorical Data for Larger Contingency Tables
 11-08 | 20 | ANOVA and Dummy Variable Regression
-11-09 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. 
+11-09 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. This Homework was updated 2018-10-25.
 11-13 | 21 | **Part C** begins (Regression Models).
 11-15 | 22 | Regression, Part 2
 11-16 | -- | **[Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
