@@ -80,7 +80,7 @@ You may find that your data in Homework 5 Question 7 or Question 8 isn't set up 
 
 ## Course Project Progress
 
-- **Task A** (The Proposal). Almost everyone (47/49) is done. 
+- **Task A** (The Proposal). Almost everyone (48/49) is done. 
     - Summaries of the project proposals [are available here](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md). Please take a look at what your colleagues are doing, and make sure that my description of your proposal is accurate.
     - A few quick comments that I haven't (yet) had time to add to the instructions for next year.
         - I want to warn people away from hierarchical, multi-level data. That's not what we need.
