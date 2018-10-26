@@ -1,6 +1,6 @@
 # 431 Homework 6 Main Page
 
-Homework 6 is now due at noon on Friday 2018-11-09. It contains nine questions. Please be sure to answer them all.
+Homework 6 is now due at noon on Friday 2018-11-09. It contains seven questions. Please be sure to answer them all.
 
 - Homework 6 [instructions are here](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md). I revised this assignment on 2018-10-25.
 
