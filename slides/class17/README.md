@@ -15,7 +15,7 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
-## The `janitor` Package
+## R Package of the day: `janitor`
 
 - [The `janitor` package](https://github.com/sfirke/janitor) in R, developed by Samuel Firke, is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools as soon as possible.
     - `clean_names()` handles problematic variable names and is something I expect you'll all get value from in your Project work.
