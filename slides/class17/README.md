@@ -7,7 +7,7 @@
 
 ## Deliverables Coming Soon
 
-- The **Minute Paper after Class 17** is due at noon Wednesday 2018-10-31. Link is coming soon.
+- The [Minute Paper after Class 17](http://bit.ly/431-2018-minute17) is due at noon Wednesday 2018-10-31. Please attend to this.
 - [Project Task D](https://thomaselove.github.io/431-2018-project/taskD.html) and [Project Task E](https://thomaselove.github.io/431-2018-project/taskE.html) are each due at noon this Friday 2018-11-02. 
     - For Task D (the Survey Comparison Plan), you'll fill out the Google Form at http://bit.ly/431-2018-survey-comparison-plan-taskD using the codebook at http://bit.ly/431-2018-survey-data-codebook.
     - For Task E (completing the actual Survey), you'll fill out the Survey itself at http://bit.ly/431-2018-survey
