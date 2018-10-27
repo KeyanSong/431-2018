@@ -15,7 +15,11 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
-## R Package of the day: `janitor`
+## Today we're going to learn another way to bootstrap, with `slipper`
+
+Visit https://github.com/jtleek/slipper for details.
+
+## Another Very Useful R Package I'm adding to [our list]: `janitor`
 
 - [The `janitor` package](https://github.com/sfirke/janitor) in R, developed by Samuel Firke, is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools as soon as possible.
     - `clean_names()` handles problematic variable names and is something I expect you'll all get value from in your Project work.
@@ -56,3 +60,7 @@ The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
 5. Canvas and the various Google Forms should now be up to date in terms of deadlines for remaining Project Tasks and Homeworks. Remember that the Course Calendar page at https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md is the final word on everything.
 
 6. The audio files for Class 16 are now posted to the [Class 16 README](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class16) page.
+
+## One Last Thing
+
+In today's slides, we make reference to [this cartoon from XKCD](https://xkcd.com/882/) entitled "Significant".
