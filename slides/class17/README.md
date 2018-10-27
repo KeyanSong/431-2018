@@ -19,9 +19,9 @@ The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
 
 Visit https://github.com/jtleek/slipper for details.
 
-## Another Very Useful R Package I'm adding to [our list]: `janitor`
+## Another R Package I'm adding to [our list](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md): `janitor`
 
-- [The `janitor` package](https://github.com/sfirke/janitor) in R, developed by Samuel Firke, is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools as soon as possible.
+- [The `janitor` package](https://github.com/sfirke/janitor) in R, developed by Samuel Firke, is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools on Thursday.
     - `clean_names()` handles problematic variable names and is something I expect you'll all get value from in your Project work.
     - fix dates stored as serial numbers with `excel_numeric_to_date()`
     - `tabyl()` is a tidyverse-oriented replacement for `table()`. It counts combinations of one, two, or three variables, and then can be formatted with a suite of `adorn_*` functions to look just how you want, and results in a tibble that can be piped right into knitr::kable() in an R Markdown report.
