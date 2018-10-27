@@ -17,12 +17,12 @@ The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
 
 ## The `janitor` Package
 
-- [The `janitor` package](https://github.com/sfirke/janitor) in R is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools very soon.
-    - `clean_names` handles problematic variable names
-    - `tabyl()` is a tidyverse-oriented replacement for `table()`. It counts combinations of one, two, or three variables, and then can be formatted with a suite of `adorn_*` functions to look just how you want.
-    - directionally-consistent rounding behavior with `round_half_up()`
+- [The `janitor` package](https://github.com/sfirke/janitor) in R, developed by Samuel Firke, is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools as soon as possible.
+    - `clean_names()` handles problematic variable names and is something I expect you'll all get value from in your Project work.
     - fix dates stored as serial numbers with `excel_numeric_to_date()`
+    - `tabyl()` is a tidyverse-oriented replacement for `table()`. It counts combinations of one, two, or three variables, and then can be formatted with a suite of `adorn_*` functions to look just how you want, and results in a tibble that can be piped right into knitr::kable() in an R Markdown report.
     - exploring Likert-scale factor levels with `top_levels()`
+    - directionally-consistent rounding behavior with `round_half_up()`
 
 ## Visualization of the Day: As the US Election heats up ...
 
