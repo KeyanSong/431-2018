@@ -5,7 +5,7 @@
 ## Today's Materials
 
 - The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class16/431_class-16-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class16/431_class-16-slides_2018.Rmd), above.
-- Class 16 audio files will be posted above after class.
+- Class 16 audio files are now available.
 
 ## Deliverables and Scheduling: The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is now correct.
 
