@@ -15,11 +15,12 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
-## Today we're going to learn another way to bootstrap, with `slipper`
+## Things in Today's Slides
 
-Visit https://github.com/jtleek/slipper for details.
+- Today we're going to learn another way to bootstrap, with `slipper`. Visit https://github.com/jtleek/slipper for details.
+- In today's slides, we make reference to [this cartoon from XKCD](https://xkcd.com/882/) entitled "Significant".
 
-## Another R Package I'm adding to [our list](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md): `janitor`
+## A New R Package I'm adding to [our list](https://github.com/THOMASELOVE/431-2018/blob/master/software/packages.md): `janitor`
 
 - [The `janitor` package](https://github.com/sfirke/janitor) in R, developed by Samuel Firke, is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools on Thursday.
     - `clean_names()` handles problematic variable names and is something I expect you'll all get value from in your Project work.
@@ -35,7 +36,6 @@ Visit https://github.com/jtleek/slipper for details.
     - the 35 elections for the [U.S. Senate](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/), 
     - and the 36 elections for [Governor](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) being held this Fall.
 - You may also be interested in FiveThirtyEight's [Summary of the Latest Polls](https://projects.fivethirtyeight.com/polls/), if you want to see more of the "raw" data.
-- We'll spend a few minutes today with Geoffrey Skelley and Rachael Dottle's work on the 2018 Election at FiveThirtyEight entitled "[What If Only Men Voted? Only Women? Only Nonwhite Voters?](https://fivethirtyeight.com/features/what-if-only-men-voted-only-women-only-nonwhite-voters/)" posted on 2018-10-26. 
 
 
 ## REPEATING: Announcements sent via email last Friday 2018-10-26...
@@ -63,4 +63,5 @@ Visit https://github.com/jtleek/slipper for details.
 
 ## One Last Thing
 
-In today's slides, we make reference to [this cartoon from XKCD](https://xkcd.com/882/) entitled "Significant".
+- Take a look at Geoffrey Skelley and Rachael Dottle's work on the 2018 Election at FiveThirtyEight entitled "[What If Only Men Voted? Only Women? Only Nonwhite Voters?](https://fivethirtyeight.com/features/what-if-only-men-voted-only-women-only-nonwhite-voters/)" posted on 2018-10-26. 
+
