@@ -15,7 +15,26 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
-## Repeating the Announcements sent via email last Friday 2018-10-26...
+## The `janitor` Package
+
+- [The `janitor` package](https://github.com/sfirke/janitor) in R is amazing. [Here is an overview](http://sfirke.github.io/janitor/articles/janitor.html) and we'll start using these tools very soon.
+    - `clean_names` handles problematic variable names
+    - `tabyl()` is a tidyverse-oriented replacement for `table()`. It counts combinations of one, two, or three variables, and then can be formatted with a suite of `adorn_*` functions to look just how you want.
+    - directionally-consistent rounding behavior with `round_half_up()`
+    - fix dates stored as serial numbers with `excel_numeric_to_date()`
+    - exploring Likert-scale factor levels with `top_levels()`
+
+## Visualization of the Day: As the US Election heats up ...
+
+- FiveThirtyEight's forecasts for ...
+    - the 435 elections for the [U.S. House of Representatives](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/), 
+    - the 35 elections for the [U.S. Senate](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/), 
+    - and the 36 elections for [Governor](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) being held this Fall.
+- You may also be interested in FiveThirtyEight's [Summary of the Latest Polls](https://projects.fivethirtyeight.com/polls/)
+- We'll spend a few minutes today with Geoffrey Skelley and Rachael Dottle's work on the 2018 Election at FiveThirtyEight entitled "[What If Only Men Voted? Only Women? Only Nonwhite Voters?](https://fivethirtyeight.com/features/what-if-only-men-voted-only-women-only-nonwhite-voters/)" posted on 2018-10-26. 
+
+
+## REPEATING: Announcements sent via email last Friday 2018-10-26...
 
 1. I have completed building the codebook / data description document for the project survey. It is a Google Sheet that I have posted at http://bit.ly/431-2018-survey-data-codebook. Log into Google via CWRU to see it. 
     - The Sheet lists every item and every scale I will provide to you for analyses, and specifies the item numbers (and names) you will need to complete Project Task D.
