@@ -2,6 +2,10 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
+Class 20 | 11-08 | Analysis of Variance and Indicator Variable Regression
+Class 19 | 11-06 | Categorical Data: Larger Contingency Tables
+Class 18 | 11-01 | Categorical Data and 2x2 Tables: Comparing Rates/Proportions
+Class 17 | 10-30 | Power and Sample Size Considerations
 [Class 16](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class16) | 10-25 | Comparing Two Population Means with Independent Samples
 -- | 10-18 | Special Session working on Project Tasks C and D, and Homework 5 with TAs
 [Class 15](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class15) | 10-16 | Comparing Two Population Means with Paired  Samples, Hypothesis Testing
