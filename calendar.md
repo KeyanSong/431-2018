@@ -46,10 +46,10 @@ Date | Class | Description or Deliverable
 10-26 | -- | [Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due at noon.
 10-29 | -- | By noon, the Final [Course Project Survey](http://bit.ly/431-2018-survey) goes live at http://bit.ly/431-2018-survey.
 10-30 | 17 | Power and Sample Size Considerations
-11-01 | 18 | Categorical Data and 2x2 Tables, Comparing Rates/Proportions
+11-01 | 18 | Categorical Data and 2x2 Tables: Comparing Rates/Proportions
 11-02 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks D and E** due at noon
-11-06 | 19 | Categorical Data for Larger Contingency Tables
-11-08 | 20 | ANOVA and Dummy Variable Regression
+11-06 | 19 | Categorical Data: Larger Contingency Tables
+11-08 | 20 | Analysis of Variance and Indicator Variable Regression
 11-09 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. This Homework was updated 2018-10-25.
 11-13 | 21 | **Part C** begins (Regression Models).
 11-15 | 22 | Regression, Part 2
