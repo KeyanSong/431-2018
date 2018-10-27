@@ -30,7 +30,7 @@ The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
     - the 435 elections for the [U.S. House of Representatives](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/), 
     - the 35 elections for the [U.S. Senate](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate/), 
     - and the 36 elections for [Governor](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) being held this Fall.
-- You may also be interested in FiveThirtyEight's [Summary of the Latest Polls](https://projects.fivethirtyeight.com/polls/)
+- You may also be interested in FiveThirtyEight's [Summary of the Latest Polls](https://projects.fivethirtyeight.com/polls/), if you want to see more of the "raw" data.
 - We'll spend a few minutes today with Geoffrey Skelley and Rachael Dottle's work on the 2018 Election at FiveThirtyEight entitled "[What If Only Men Voted? Only Women? Only Nonwhite Voters?](https://fivethirtyeight.com/features/what-if-only-men-voted-only-women-only-nonwhite-voters/)" posted on 2018-10-26. 
 
 
