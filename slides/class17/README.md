@@ -28,6 +28,7 @@ The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
     - `tabyl()` is a tidyverse-oriented replacement for `table()`. It counts combinations of one, two, or three variables, and then can be formatted with a suite of `adorn_*` functions to look just how you want, and results in a tibble that can be piped right into knitr::kable() in an R Markdown report.
     - exploring Likert-scale factor levels with `top_levels()`
     - directionally-consistent rounding behavior with `round_half_up()`
+- Install the `janitor` package by clicking on the Packages tab and hit Install, then type in janitor as the package you want to install. Now should be a good time to update your Packages in R, too (there's a new version of ggplot2, for instance.) To do so, click on the Packages tab and hit Update.
 
 ## Visualization of the Day: As the US Election heats up ...
 
