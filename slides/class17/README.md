@@ -30,7 +30,7 @@ You will complete two Google Forms by noon on Friday 2018-11-02. These are Task 
     - Some items were planned to have 0-100 responses, but the survey asks you to respond on a 0-10 scale. Dr. Love will fuzz up your results by adding noise so that the resulting scale is 0-100. How?
         - Multiply your response (0-10) by 10, obtaining a value between 0 and 100, and call that **a**.
         - Randomly draw an integer from a uniform distribution (probably on [-8, 8], but we may change that) and call that **b**. 
-        - **a + b** is intended as your reported response, but that could be anything from -8 to 108, so we will truncate. Any values below 0 will be listed as 0 and any values above 100 listed as 100 in the data you will receive, and analyze.
+        - **a + b** is the new response, but could fall anywhere in [-8, 108], so any values below 0 will be listed as 0 and any values above 100 will be listed as 100 in the data you will receive and analyze.
 
 ## The Sleep and Mammals Example
 
