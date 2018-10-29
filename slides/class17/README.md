@@ -52,6 +52,11 @@ You will complete two Google Forms by noon on Friday 2018-11-02. These are Task 
     - directionally-consistent rounding behavior with `round_half_up()`
 - Install the `janitor` package by clicking on the Packages tab and hit Install, then type in janitor as the package you want to install. Now should be a good time to update your Packages in R, too (there's a new version of ggplot2, for instance.) To do so, click on the Packages tab and hit Update.
 
+## Registering for Courses This Spring
+
+- If you are planning to take 432, no problem. I will permit you in as soon as the registrar asks me to do so. I hope you all will join us - it's definitely the better of the two courses (431 and 432), if past students are to be believed, but that's a biased sample.
+- If you are interested in taking 500 (Observational Studies) this Spring at the same time as 432, then we should talk. Generally, it's not recommended, and if you can sensibly wait a year to let the 432 ideas wash over you first, you'll be much happier. But if it's "now or never" for 500 in your case, I want to be sure you enter the course with your eyes open, and I'll want to know a bit more about your background than I do now, so that requires a 10-15 minute meeting in person. Email me with your availability on Tuesdays/Thursdays and we'll get that scheduled. Last year's [500 syllabus is available](https://thomaselove.github.io/500-syllabus/) but some things about the course are changing, substantially.
+
 ## Visualization of the Day: As the US Election heats up ...
 
 - FiveThirtyEight's forecasts for ...
