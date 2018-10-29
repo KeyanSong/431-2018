@@ -24,13 +24,13 @@ You will complete two Google Forms by noon on Friday 2018-11-02. These are Task 
     - We'll discuss merging briefly (but sufficiently for your project study 1 tasks) in Class 19, next Tuesday.
 - The [Survey Codebook](http://bit.ly/431-2018-survey-data-codebook) specifies the item responses and calculated scales that will be provided.
     - Dr. Love will add missing values to selected items, to ramp up the management requirements.
-        - You will be expected to obtain results after **imputation** in Project Study 1 (in Study 2, you won't impute) and we will discuss the imputation you will do before Thanksgiving.
-        - I expect many of you will also need to deal with other data management issues in actually doing your project study 1 analyses.
+        - For Project Study 1 (the survey) you will need to deal with missing values via simple imputation. We will discuss this before Thanksgiving.
+        - For Project Study 2 (your data) you will deal with missing values by filtering out cases with missing values, unless Dr. Love has required you to do otherwise.
+        - Many (if not most) of you will also need to deal with other data management issues (like, for instance, turning a quantitative response into a categorical one, or calculating a summary like BMI from height and weight) in your project study 1 analyses.
     - Some items were planned to have 0-100 responses, but the survey asks you to respond on a 0-10 scale. Dr. Love will fuzz up your results by adding noise so that the resulting scale is 0-100. How?
         - Multiply your response (0-10) by 10, obtaining a value between 0 and 100, and call that **a**.
         - Randomly draw an integer from a uniform distribution (probably on [-8, 8], but we may change that) and call that **b**. 
-        - **a + b** is intended as your reported response, but that could be anything from -8 to 108, so we will truncate. Any values below 0 will be listed as 0 and any values above 100 listed as 100.
-        - You will receive (and thus, analyze) the resulting responses on a 0-100 scale that Dr. Love provides.
+        - **a + b** is intended as your reported response, but that could be anything from -8 to 108, so we will truncate. Any values below 0 will be listed as 0 and any values above 100 listed as 100 in the data you will receive, and analyze.
 
 ## The Sleep and Mammals Example
 
