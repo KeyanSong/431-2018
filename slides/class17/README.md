@@ -16,6 +16,22 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
+## On the Course Project Survey, due Friday at NOON
+
+You will complete two Google Forms by noon on Friday 2018-11-02. These are Task D ([the Survey Comparison Plan](http://bit.ly/431-2018-survey-comparison-plan-taskD)) and Task E ([actually taking the Survey](http://bit.ly/431-2018-survey)).
+
+- You will receive access to the Survey data before class next Tuesday 2018-11-06. It will include at least three and perhaps more files, which you will then need to **merge** in order to obtain an appropriate data set.
+    - We'll discuss merging briefly (but sufficiently for your project study 1 tasks) in Class 19, next Tuesday.
+- The [Survey Codebook](http://bit.ly/431-2018-survey-data-codebook) specifies the item responses and calculated scales that will be provided.
+    - Dr. Love will add missing values to selected items, to ramp up the management requirements.
+        - You will be expected to obtain results after **imputation** in Project Study 1 (in Study 2, you won't impute) and we will discuss the imputation you will do before Thanksgiving.
+        - I expect many of you will also need to deal with other data management issues in actually doing your project study 1 analyses.
+    - Some items were planned to have 0-100 responses, but the survey asks you to respond on a 0-10 scale. Dr. Love will fuzz up your results by adding noise so that the resulting scale is 0-100. How?
+        - Multiply your response (0-10) by 10, obtaining a value between 0 and 100, and call that **a**.
+        - Randomly draw an integer from a uniform distribution (probably on [-8, 8], but we may change that) and call that **b**. 
+        - **a + b** is intended as your reported response, but that could be anything from -8 to 108, so we will truncate. Any values below 0 will be listed as 0 and any values above 100 listed as 100.
+        - You will receive (and thus, analyze) the resulting responses on a 0-100 scale that Dr. Love provides.
+
 ## The Sleep and Mammals Example
 
 - An [Extra Example](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/extra.md) about Sleep and Mammals is available for you now. This example reviews some of the key work we did in Part A of the course. It uses the msleep data set, which is part of the ggplot2 package. It was originally used as a bonus assignment for some students to improve their grade on Quiz 1.
