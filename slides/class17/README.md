@@ -16,7 +16,7 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
-## Course Project Survey: Tasks D and E, Codebook, and Data You'll Receive Next Week
+## Course Project Update: Tasks D and E, Codebook, and Study 1 Data
 
 You will complete two Google Forms by noon on Friday 2018-11-02. These are Task D ([the Survey Comparison Plan](http://bit.ly/431-2018-survey-comparison-plan-taskD)) and Task E ([actually taking the Survey](http://bit.ly/431-2018-survey)).
 
