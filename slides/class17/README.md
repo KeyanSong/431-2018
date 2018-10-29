@@ -16,6 +16,11 @@
 
 The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md) is the final word on all deadlines.
 
+## The Sleep and Mammals Example
+
+- An [Extra Example](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/extra.md) about Sleep and Mammals is available for you now. This example reviews some of the key work we did in Part A of the course. It uses the msleep data set, which is part of the ggplot2 package. It was originally used as a bonus assignment for some students to improve their grade on Quiz 1.
+- I've now posted an [Answer Sketch for the Extra Example](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz01/extra_A.pdf). I encourage you to look this over before Quiz 2. Hint, hint.
+
 ## Things in Today's Slides
 
 - Today we're going to learn another way to bootstrap, with `slipper`. Visit https://github.com/jtleek/slipper for details.
