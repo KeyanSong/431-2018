@@ -34,7 +34,8 @@ You will complete two Google Forms by noon on Friday 2018-11-02. These are Task 
         - Multiply your response (0-10) by 10, obtaining a value between 0 and 100, and call that **a**.
         - Randomly draw an integer from a uniform distribution (probably on [-8, 8], but we may change that) and call that **b**. 
         - **a + b** is the new response, but could fall anywhere in [-8, 108], so any values below 0 will be listed as 0 and any values above 100 will be listed as 100 in the data you will receive and analyze.
-    The [Project Instructions](https://thomaselove.github.io/431-2018-project/), especially for Tasks F and G, have been (slightly) revised recently to clarify these and other points.
+
+**Note** The [Project Instructions](https://thomaselove.github.io/431-2018-project/), especially for Tasks F and G, were revised on 2018-10-29 to clarify these and other points.
 
 ## The Sleep and Mammals Example
 
