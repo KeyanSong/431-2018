@@ -18,7 +18,7 @@ The [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calend
 
 ## Course Project Update: Tasks D and E, Codebook, and Study 1 Data
 
-You will complete two Google Forms by noon on Friday 2018-11-02. These are Task D ([the Survey Comparison Plan](http://bit.ly/431-2018-survey-comparison-plan-taskD)) and Task E ([actually taking the Survey](http://bit.ly/431-2018-survey)).
+You will complete two Google Forms by noon on Friday 2018-11-02. These are Task D ([the Survey Comparison Plan](http://bit.ly/431-2018-survey-comparison-plan-taskD)) and Task E ([actually taking the Survey](http://bit.ly/431-2018-survey)). As of 8:30 AM, we have 23/49 responses to Task D, and 22/49 responses to Task E, not all of which are complete responses yet.
 
 - You will receive access to the Survey data before class next Tuesday 2018-11-06. It will include at least three and perhaps more files, which you will then need to **merge** in order to obtain an appropriate data set.
     - We'll discuss merging briefly (but sufficiently for your project study 1 tasks) in Class 19, next Tuesday.
@@ -35,6 +35,12 @@ You will complete two Google Forms by noon on Friday 2018-11-02. These are Task 
         - Randomly draw an integer from a uniform distribution (probably on [-8, 8], but we may change that) and call that **b**. 
         - **a + b** is the new response, but could fall anywhere in [-8, 108], so any values below 0 will be listed as 0 and any values above 100 will be listed as 100 in the data you will receive and analyze.
 
+### Frequently Asked Questions About Task D (The Comparison Plan)
+
+- In specifying the comparison plan, how do you want us to specify which items we're using? With the Item Number as provided in the Survey Codebook](http://bit.ly/431-2018-survey-data-codebook). So if you were planning to use the item "For how long, in months, have you lived in Northeast Ohio?" which will have variable name `neohio_011`, you would type the item number, which is 11.
+- In specifying your comparison plan, can you use a categorical item with more than 6 categories in the tasks which require fewer categories? Yes. You'll just have to collapse some of the levels of the factor in question so that you have an appropriate number of categories. When collapsing, I typically just use `fct_recode()` from the `tidyverse`. The goal is for each of the categories in your collapsed variable to have a minimum of 5 observations, but that may be a challenge. If the categorical variable is ordinal, then don't collapse levels that aren't next to each other. (For instance, if the categories are Excellent, Very Good, Good, Fair and Poor, you might collapse Fair and Poor together, but don't collapse Excellent and Fair together.)
+- In specifying your comparison plan, can you use a quantitative (continuous) item as a categorical item? Yes. You'll just need to split the quantitative variable into a factor with two or more levels. For instance, you could split the responses into three subgroups by age, with the youngest third in one level, the middle third in another, and finally the oldest third in another. If you do this, make sure that your factor levels are ordered and labeled sensibly. The `cut2` function from the `Hmisc` package can be helpful here if you want the computer to determine the levels for you. If you want to pick them yourself, I suggest you look at the `fct_collapse` and `fct_recode` functions in the `tidyverse`.
+    
 **Note** The [Project Instructions](https://thomaselove.github.io/431-2018-project/), especially for Tasks F and G, were revised on 2018-10-29 to clarify these and other points.
 
 ## The Sleep and Mammals Example
