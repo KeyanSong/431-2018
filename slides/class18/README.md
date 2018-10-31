@@ -2,7 +2,7 @@
 
 ## Today's Materials
 
-- The slides are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/431_class-18-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class18/431_class-18-slides_2018.Rmd), above.
+- The slides for Class 18 are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/431_class-18-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class18/431_class-18-slides_2018.Rmd), above.
 - Class 18 audio files will be posted after class.
 
 ## Upcoming Deliverables from the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md)
