@@ -12,7 +12,7 @@
     - For Task E (completing the actual Survey), you'll fill out the Survey itself at http://bit.ly/431-2018-survey
 - [Homework 6](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md) is due (submit to [Canvas](https://canvas.case.edu/)) by noon on Friday 2018-11-09.
 
-## Bears Talking About Biostatistics
+## Cartoon Characters Talking About Biostatistics
 
 - "[Biostatistics vs. Lab Research](https://www.youtube.com/watch?v=PbODigCZqL8)"
 - "[Power of the test, p-values, publication bias and statistical evidence](https://www.youtube.com/watch?v=kMYxd6QeAss)"
