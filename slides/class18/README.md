@@ -41,6 +41,12 @@ One student asked "Can others in the class provide a hint of what resource they 
 
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/eye.PNG)
 
+---
+
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/blue.PNG)
+
+
+
 ## Election Updates of the Day
 
 - We'll spend a few minutes at the [FiveThirtyEight forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate) again, delving deeper into the Congressional model (House and Senate).
