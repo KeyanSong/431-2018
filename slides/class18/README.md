@@ -21,6 +21,10 @@
 
 Everyone completed it. Thanks! The responses are at http://bit.ly/431-2018-minute17-response.
 
+### Note on the Project
+
+Whether your results are significant or not has nothing to do with your grade on the project. That's true for Study 1 and for Study 2.
+
 ### Helping Out
 
 One student asked "Can others in the class provide a hint of what resource they have found most helpful to them for this class (ex: R cheat sheets, the class notes, etc)?"
