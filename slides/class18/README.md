@@ -43,8 +43,10 @@ One student asked "Can others in the class provide a hint of what resource they 
 
 ---
 
-![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/blue.PNG)
 
+And here's an interesting reply ...
+
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/blue.png)
 
 
 ## Election Updates of the Day
