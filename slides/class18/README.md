@@ -14,7 +14,7 @@
 
 ## Grades for Homework 5
 
-- will be posted to http://bit.ly/431-2018-hw-grades as soon as they are available.
+- are now posted to http://bit.ly/431-2018-hw-grades.
 - The [rubric and answer sketch for Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) are now available. The rubric was freshly posted this morning, and addresses the question of why we didn't grade Question 7.
 
 ## Minute Paper after Class 17
