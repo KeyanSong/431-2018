@@ -12,6 +12,11 @@
     - For Task E (completing the actual Survey), you'll fill out the Survey itself at http://bit.ly/431-2018-survey
 - [Homework 6](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md) is due (submit to [Canvas](https://canvas.case.edu/)) by noon on Friday 2018-11-09.
 
+## Grades for Homework 5
+
+- will be posted to http://bit.ly/431-2018-hw-grades as soon as they are available.
+- The [rubric and answer sketch for Homework 5](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5) are now available. The rubric was freshly posted this morning, and addresses the question of why we didn't grade Question 7.
+
 ## Minute Paper after Class 17
 
 Everyone completed it. Thanks! The responses are at http://bit.ly/431-2018-minute17-response.
