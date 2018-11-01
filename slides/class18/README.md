@@ -12,6 +12,12 @@
     - For Task E (completing the actual Survey), you'll fill out the Survey itself at http://bit.ly/431-2018-survey
 - [Homework 6](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md) is due (submit to [Canvas](https://canvas.case.edu/)) by noon on Friday 2018-11-09.
 
+## Additional Courses at DataCamp
+
+- G Elliott Morris on "[Analyzing Election and Polling Data in R](https://www.datacamp.com/courses/analyzing-election-and-polling-data-in-r)" which seems aimed at people with journalism backgrounds but may be of interest.
+- Kyle Walker on "[Analyzing US Census Data in R](https://www.datacamp.com/courses/analyzing-us-census-data-in-r)" which seems like something I need to take, in preparation for some work we'll be doing in 432.
+- Dmitriy Gorenshteyn on "[Machine Learning in the Tidyverse](https://www.datacamp.com/courses/machine-learning-in-the-tidyverse)" which also seems like a piece that will be of more help in 432.
+
 ## One (Well, Four) Last Thing(s)
 
 - "[Biostatistics vs. Lab Research](https://www.youtube.com/watch?v=PbODigCZqL8)"
