@@ -37,7 +37,11 @@ One student asked "Can others in the class provide a hint of what resource they 
 
 - I'll try to remember to ask about this in the Class 19 minute paper, but if you have any thoughts that you would like to share, please send them to **431-help**, and we'll compile them.
 
-## Visualizations of the Day
+## Visualization of the Day, from [@TerribleMaps](https://twitter.com/TerribleMaps/status/1057709604250021890)
+
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class18/eye.PNG)
+
+## Election Updates of the Day
 
 - We'll spend a few minutes at the [FiveThirtyEight forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate) again, delving deeper into the Congressional model (House and Senate).
 - The Upshot (NY Times) is polling **live**, in real time at https://www.nytimes.com/interactive/2018/upshot/elections-polls.html
