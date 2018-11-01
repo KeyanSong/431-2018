@@ -63,7 +63,10 @@ And here's an interesting reply ...
 
 ## One (Well, Four) Last Thing(s)
 
-- "[Biostatistics vs. Lab Research](https://www.youtube.com/watch?v=PbODigCZqL8)"
-- "[Power of the test, p-values, publication bias and statistical evidence](https://www.youtube.com/watch?v=kMYxd6QeAss)"
-- "[Publish or Perish (the p value)](https://www.youtube.com/watch?v=ax0tDcFkPic)"
-- "[What's the p value?](https://www.youtube.com/watch?v=ax0tDcFkPic)"
+- "[Biostatistics vs. Lab Research](https://www.youtube.com/watch?v=PbODigCZqL8)" - or, How not to collaborate with a biostatistician. The money quotes: "We always use 3 patients. That is what we have published before. 3 patients per group or in total? Yes." "My grant is due tomorrow..."
+
+- "[Power of the test, p-values, publication bias and statistical evidence](https://www.youtube.com/watch?v=kMYxd6QeAss)", which is based on Altman and Bland's note "[Absence of evidence is not evidence of absence](https://www.bmj.com/content/311/7003/485)" from *BMJ* 1995; 311: 485.
+
+- "[What's the p value?](https://www.youtube.com/watch?v=ax0tDcFkPic)", which is based on Blume, J. and J. F. Peipert (2003). "[What your statistician never told you about P-values](https://www.sciencedirect.com/science/article/pii/S1074380405601430)" *J Am Assoc Gynecol Laparosc* 10(4): 439-444.
+
+- "[Publish or Perish (the p value)](https://www.youtube.com/watch?v=ax0tDcFkPic)" shows a conversation between an editor and a hard-working researcher. Not very kind to the editor, really.
