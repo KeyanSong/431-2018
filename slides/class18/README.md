@@ -21,9 +21,15 @@
 
 Everyone completed it. Thanks! The responses are at http://bit.ly/431-2018-minute17-response.
 
-### Note on the Project
+### Notes on the Project
 
-Whether your results are significant or not has nothing to do with your grade on the project. That's true for Study 1 and for Study 2.
+1. Whether your results are significant or not has nothing to do with your grade on the project. That's true for Study 1 and for Study 2. 
+2. In each Study, showing that you can make smart decisions about which way to go (and update your plans accordingly) in light of the data once you have it is a key part of your grade on the project.
+3. My best advice on timing:
+    - Right now, get a clean version of your Project Study 2 pulled together and make the codebook for all of your predictors and outcome.
+    - After that, when you get the data for Project Study 1 (from the Survey) from me next week, move on to working on Project Study 1 exclusively, through about November 15 or so. You should be able to get pretty far along on most (if not all) of the six required Study 1 analyses by then.
+    - When November 15 comes, and the Project Study 2 demo is posted, get rolling again on Project Study 2.
+    - Your goal should be to have Study 1 completed (or to the point where you can ask specific questions of the TAs and I) no later than the end of Thanksgiving Break (remember, 431 is not meeting that week, at all), so you can focus more-or-less exclusively on Project Study 2 after Thanksgiving break.
 
 ### Helping Out
 
