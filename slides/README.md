@@ -3,8 +3,8 @@
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
 Class 20 | 11-08 | Analysis of Variance and Indicator Variable Regression
-Class 19 | 11-06 | Categorical Data: Larger Contingency Tables
-[Class 18](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class18) | 11-01 | Categorical Data and 2x2 Tables: Comparing Rates/Proportions
+Class 19 | 11-06 | Comparing Rates/Proportions, Contingency Tables
+[Class 18](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class18) | 11-01 | Power for Comparing Means, Categorical Data
 [Class 17](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class17) | 10-30 | Decision Support comparing Two Means, Power and Sample Size Considerations
 [Class 16](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class16) | 10-25 | Comparing Two Population Means with Independent Samples
 -- | 10-18 | Special Session working on Project Tasks C and D, and Homework 5 with TAs
