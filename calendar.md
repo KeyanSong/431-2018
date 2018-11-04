@@ -57,7 +57,7 @@ Date | Class | Description or Deliverable
 11-20 | -- | No class, Professor Love will be out of town.
 11-22 | -- | No class, CWRU Thanksgiving Break. Finish reading **Silver** 
 11-27 | 23 | Regression, Part 3
-11-28 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Task F (Sharing Study 2 Data)**  due at noon
+11-28 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Task F (Sharing Study 2 Data and Project 1 Update)**  due at noon
 11-29 | 24 | Regression, Part 4
 11-30 | -- | **[Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 12-04 | 25 | Regression, Part 5
