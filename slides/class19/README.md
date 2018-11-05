@@ -27,6 +27,7 @@ For those of you in need of a pick-me-up, Nathan Yau offers ["Years You Have Lef
 
 - We'll check in again on the Ohio [Governor's Race forecast](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight, and [anything new they've added recently](https://fivethirtyeight.com/). 
 - We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) as compiled by FiveThirtyEight.
+- Another thing to consider is the [CBS News / YouGov House Model](https://today.yougov.com/topics/politics/articles-reports/2018/11/04/cbs-newsyougov-house-model-democrats-225-republica) which uses multilevel regression and post-stratification (Mr. P for short), which is a technique that a lot of statisticians are excited about. 
 
 ## One Last Thing
 
