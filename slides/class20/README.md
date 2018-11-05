@@ -15,7 +15,7 @@
 
 ## Project Updates (REMINDER)
 
-As we mentioned on Tuesday, https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results is the place to go for ...
+As we mentioned on Tuesday, [this is the place to go](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results) for...
 
 1. Dr. Love's comments on your Survey Comparison Plan materials (from Task D). 
 2. The data files you will need to actually do Project Study 1.
