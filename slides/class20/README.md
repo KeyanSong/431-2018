@@ -19,7 +19,7 @@ As we mentioned on Tuesday, [this is the place to go](https://github.com/THOMASE
 
 1. Dr. Love's comments on your Survey Comparison Plan materials (from Task D). 
 2. The data files you will need to actually do Project Study 1.
-3. Materials to help you merge and combine data sets for the Project (particularly in Study 1), and to help you perform simple imputation using the `simputation` package in R, for any missing data that appears in your Project Study 1 or Study 2.
+3. Materials to help you merge and combine data sets for the Project (particularly in Study 1), and to help you perform simple imputation using the `simputation` package in R, for any missing data that appears in your Project.
 
 ## Minute Paper Feedback
 
