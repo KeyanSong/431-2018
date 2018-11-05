@@ -21,6 +21,10 @@ As we mentioned on Tuesday, [this is the place to go](https://github.com/THOMASE
 2. The data files you will need to actually do Project Study 1.
 3. Materials to help you merge and combine data sets for the Project (particularly in Study 1), and to help you perform simple imputation using the `simputation` package in R, for any missing data that appears in your Project.
 
+# natuRe
+
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class20/r_nature.PNG)
+
 ## Minute Paper Feedback
 
 will be posted here, when it is available.
