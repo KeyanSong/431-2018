@@ -25,11 +25,9 @@ As we mentioned on Tuesday, [this is the place to go](https://github.com/THOMASE
 
 will be posted here, when it is available.
 
-## Visualization of the Day/Week/Month/Year/Milennium?
+## Visualization of the Day (non-Election edition)
 
-[A Timeline of Earth's Average Temperature, since the Last Ice Age Glaciation](https://xkcd.com/1732/) from [XKCD](https://xkcd.com/)
-
-![](https://imgs.xkcd.com/comics/earth_temperature_timeline.png)
+For those of you in need of a pick-me-up, Nathan Yau offers ["Years You Have Left to Live, Probably"](https://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/) which presents simulation results based on data from the U.S. Social Security Administration.
 
 ## One Last Thing
 
