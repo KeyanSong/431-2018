@@ -10,7 +10,7 @@
 - Please complete this [Minute Paper after Class 19](http://bit.ly/431-2018-minute19) by noon on Wednesday 2018-11-06. Thank you.
 - [Homework 6](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md) is due (submit to [Canvas](https://canvas.case.edu/)) by noon on Friday 2018-11-09.
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due (submit to [Canvas](https://canvas.case.edu/)) by noon on Friday 2018-11-16.
-- Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data) is due at noon on Wednesday 2018-11-28, which is the Wednesday after the Thanksgiving break.
+- The next project-specific deliverable is [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), which is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
 ## Project Updates
 
