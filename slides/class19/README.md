@@ -25,15 +25,17 @@ This was a [busy weekend](https://github.com/THOMASELOVE/431-2018-project/tree/m
 
 See the details on all four of these things at [this link](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results).
 
-## Visualization of the Day (non-Election edition)
-
-For those of you in need of a pick-me-up, Nathan Yau offers ["Years You Have Left to Live, Probably"](https://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/) which presents simulation results based on data from the U.S. Social Security Administration.
-
 ## Election Day
 
 - We'll check in again on the Ohio [Governor's Race forecast](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight, and [anything new they've added recently](https://fivethirtyeight.com/). 
 - We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) as compiled by FiveThirtyEight.
 - Another thing to consider is the [CBS News / YouGov House Model](https://today.yougov.com/topics/politics/articles-reports/2018/11/04/cbs-newsyougov-house-model-democrats-225-republica) which uses multilevel regression and post-stratification (Mr. P for short), which is a technique that a lot of statisticians are excited about. 
+
+## Visualization of the Day/Week/Month/Year/Milennium?
+
+[A Timeline of Earth's Average Temperature, since the Last Ice Age Glaciation](https://xkcd.com/1732/) from [XKCD](https://xkcd.com/)
+
+![](https://imgs.xkcd.com/comics/earth_temperature_timeline.png)
 
 ## One Last Thing
 
