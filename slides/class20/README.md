@@ -11,6 +11,10 @@
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16.
 - The next project-specific deliverable is [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), which is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
+## Minute Paper Feedback
+
+will be posted here, when it is available.
+
 ## Visualization of the Day/Week/Month/Year/Milennium?
 
 [A Timeline of Earth's Average Temperature, since the Last Ice Age Glaciation](https://xkcd.com/1732/) from [XKCD](https://xkcd.com/)
