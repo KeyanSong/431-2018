@@ -14,10 +14,14 @@
 
 ## Project Updates
 
-1. Dr. Love has now reviewed and commented on your Survey Comparison Plan materials (from Task D). 
-2. Dr. Love has also prepared the data files you will need to actually do Project Study 1. 
+This was a busy weekend.
 
-See the details at [this link](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results).
+1. Dr. Love has now reviewed and commented on your Survey Comparison Plan materials (from Task D). 
+2. Dr. Love has also prepared the data files you will need to actually do Project Study 1.
+3. He has also prepared materials to help you merge and combine data sets for the Project.
+4. He has also prepared materials to help you do simple imputation for any missing data in the Project.
+
+See the details on all four of these things at [this link](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results).
 
 ## Visualization of the Day (non-Election edition)
 
