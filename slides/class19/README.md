@@ -11,6 +11,7 @@
 - [Homework 6](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-09.
   - After today's Class 19, we anticipate you will be able to do Questions 2-4 more easily. You should already be comfortable with Questions 1 and 5-7.
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework7/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16.
+  - Homework 7 has nine questions. You should be able to do questions 6-9 now. Questions 1-5 will need to wait until we have discussed the Analysis of Variance and some related issues.
 - The next project-specific deliverable is [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), which is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
 ## Project Updates
