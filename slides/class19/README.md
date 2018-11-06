@@ -125,6 +125,17 @@ Under these assumptions, what do the 538 forecasts suggest about the chances of 
 - If you like Fox News, they have [midterm power rankings](https://www.foxnews.com/midterms-2018) which rate elections in a more traditional way. I'm not sure whether a model is driving this, or not.
 - The [MIT Election Data and Science Lab has an R package for accessing data on U.S. elections](https://github.com/MEDSL/elections), focused on data from the 2016 election.
 
+## My Personal Thoughts
+
+To quote [Harry Enten](https://twitter.com/ForecasterEnten/status/1059848288759898112):
+
+> People want soothsayers. That's not what I or anyone vaguely in my profession are. We are there to tell you the most likely outcome and the chance of that occurring.
+
+1. Statisticians want to understand the world's path in clear terms, too, just like everyone else. In fact, we REALLY REALLY want to do that. For many of us, that's part of the reason why we got interested in statistics in the first place, back when it wasn't so cool.
+2. But our training and our experiences in working with surveys/polls/data push us inexorably in the direction of humility when faced with difficult questions like how humans will behave.
+
+Personally, I identify with the people who want more people / lots of people / all the people to participate in the process - both of electing people and of writing and thinking about how to forecast elections, and what election results mean for all of us. One of the reasons my job is worth doing is that I spend meaningful time most days trying to help people get a better grasp of uncertainty, and learn how to think about it effectively, rather than being paralyzed. I hope that you find the time to vote today (unless, of course, like me, you voted already) and to be kind and assume the best of your fellow voters, regardless of the results. I aim to do that myself.
+
 ## One Last Thing
 
 Rafael Irizarry wrote a provocative blog post on 2018-11-01 called ["The role of academia in data science education"](https://simplystatistics.org/2018/11/01/the-role-of-academia-in-data-science-education/) which I found interesting. I would very much enjoy finding the time to ponder this sort of thing more deeply.
