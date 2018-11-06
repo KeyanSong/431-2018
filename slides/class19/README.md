@@ -7,7 +7,7 @@
 
 ## Upcoming Deliverables from the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md)
 
-- Please complete this [Minute Paper after Class 19](http://bit.ly/431-2018-minute19) by noon on Wednesday 2018-11-06. Thank you.
+- Please complete this [Minute Paper after Class 19](http://bit.ly/431-2018-minute19) by noon on Wednesday 2018-11-07. Thank you.
 - [Homework 6](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-09.
   - After today's Class 19, we anticipate you will be able to do Questions 2-4 more easily. You should already be comfortable with Questions 1 and 5-7.
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework7/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16.
