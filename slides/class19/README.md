@@ -37,8 +37,6 @@ See the details on all four of these things at [this link](https://github.com/TH
 
 ## Election Day
 
-![](https://imgs.xkcd.com/comics/challengers.png), from [XKCD](https://xkcd.com/2067/)
-
 There's a lot of exciting stuff to read...
 
 ### At FiveThirtyEight, I particularly enjoyed...
@@ -54,9 +52,16 @@ There's a lot of exciting stuff to read...
 
 ### Some Other Sites...
 
+- This evening, you may want to visit [The Needle](https://www.nytimes.com/2018/11/05/upshot/needle-election-night-2018-midterms.html) and related live election forecasts at [The Upshot](https://www.nytimes.com/section/upshot), from *The New York Times*.
+
+![](https://static01.nyt.com/images/2018/11/05/upshot/needle-3-by/needle-3-by-jumbo.png?quality=90&auto=webp)
+
+- [XKCD has an interesting map "2018 Midterm Challengers"](https://xkcd.com/2067/), and also "[Election Night](https://xkcd.com/2068/)" below...
+
+![](https://imgs.xkcd.com/comics/election_night.png)
+
 - The [CBS News / YouGov House Model](https://today.yougov.com/topics/politics/articles-reports/2018/11/04/cbs-newsyougov-house-model-democrats-225-republica) which uses multilevel regression and post-stratification (Mr. P for short), which is a technique that a lot of statisticians are excited about. 
 - [CNN provides its own Forecast](https://www.cnn.com/election/2018/forecast), too, built by a team of data scientists led by Harry Enten (formerly of FiveThirtyEight). There are [some descriptions of their methodology](https://www.cnn.com/2018/10/12/politics/the-forecast-methodology/index.html), and some interesting graphics.
-- This evening, you may want to visit [The Needle](https://www.nytimes.com/2018/11/05/upshot/needle-election-night-2018-midterms.html) and related live election forecasts at [The Upshot](https://www.nytimes.com/section/upshot), from *The New York Times*.
 - The Washington Post is providing timely [Midterm Election Updates](https://www.washingtonpost.com/politics/2018/live-updates/midterms/midterm-election-updates), too. 
   - You might be interested in Jordan Heller's ["Ohio ballot initiative on drug penalties is motivating voters in Cleveland"](https://www.washingtonpost.com/politics/2018/live-updates/midterms/midterm-election-updates/ohio-ballot-initiative-on-drug-penalties-is-motivating-voters-in-cleveland/?utm_term=.9c3a2631e8d7) piece from last night, for example.
 - If you like Fox News, they have [midterm power rankings](https://www.foxnews.com/midterms-2018) which rate elections in a more traditional way. I'm not sure whether a model is driving this, or not.
