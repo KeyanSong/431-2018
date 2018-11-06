@@ -37,10 +37,13 @@ See the details on all four of these things at [this link](https://github.com/TH
 
 ## Election Day
 
+![](https://imgs.xkcd.com/comics/challengers.png), from [XKCD](https://xkcd.com/2067/)
+
 There's a lot of exciting stuff to read...
 
 ### At FiveThirtyEight, I particularly enjoyed...
 
+- The [Election Day and Night Live Blog](https://fivethirtyeight.com/live-blog/2018-election-results-coverage/) is up and running now.
 - Nate Silver's ["Democrats Aren't Certain to Take the House, but They're Pretty Clear Favorites"](https://fivethirtyeight.com/features/final-election-update-democrats-arent-certain-to-take-the-house-but-theyre-pretty-clear-favorites/)
 - Nathaniel Rakich's ["How To Watch the Midterms: An Hour-By-Hour Guide"](https://fivethirtyeight.com/features/2018-election-polls-close/) 
 - FiveThirtyEight Politics Podcast had several interesting episodes. I recommend:
@@ -57,12 +60,7 @@ There's a lot of exciting stuff to read...
 - The Washington Post is providing timely [Midterm Election Updates](https://www.washingtonpost.com/politics/2018/live-updates/midterms/midterm-election-updates), too. 
   - You might be interested in Jordan Heller's ["Ohio ballot initiative on drug penalties is motivating voters in Cleveland"](https://www.washingtonpost.com/politics/2018/live-updates/midterms/midterm-election-updates/ohio-ballot-initiative-on-drug-penalties-is-motivating-voters-in-cleveland/?utm_term=.9c3a2631e8d7) piece from last night, for example.
 - If you like Fox News, they have [midterm power rankings](https://www.foxnews.com/midterms-2018) which rate elections in a more traditional way. I'm not sure whether a model is driving this, or not.
-
-## Visualization of the Day/Week/Month/Year/Milennium?
-
-[A Timeline of Earth's Average Temperature, since the Last Ice Age Glaciation](https://xkcd.com/1732/) from [XKCD](https://xkcd.com/)
-
-![](https://imgs.xkcd.com/comics/earth_temperature_timeline.png)
+- The [MIT Election Data and Science Lab has an R package for accessing data on U.S. elections](https://github.com/MEDSL/elections), focused on data from the 2016 election.
 
 ## One Last Thing
 
