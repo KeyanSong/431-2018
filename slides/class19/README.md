@@ -50,6 +50,68 @@ There's a lot of exciting stuff to read...
 - We'll check in again on the Ohio [Governor's Race and other Midterm Election forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight.
 - We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) at FiveThirtyEight, too.
 
+### Comparing Proportions?
+
+**What is the chance (according to FiveThirtyEight) that the most common forecast scenario will happen (House winner: Democrats, Senate winner: Republicans)**
+
+- As of 11:06 AM on 2018-11-06, the FiveThirtyEight Classic forecast for the House gives Democrats an 87.9% chance of winning the House.
+
+Proportions | House winner: Dem  | House winner: Rep | Total
+----------: | ---------: | -------: | -------:
+Senate winner: Dem | ? | ? | -
+Senate winner: Rep | ? | ? | -
+Total              | .879 | .121 | 1.0
+
+Or, if the election were held 1,000 times, we could write this as:
+
+Counts | House winner: Dem  | House winner: Rep | Total
+----------: | ---------: | -------: | -------:
+Senate winner: Dem | ? | ? | -
+Senate winner: Rep | ? | ? | -
+Total              | 879 | 121 | 1000
+
+
+
+- As of 11:06 AM on 2018-11-06, the FiveThirtyEight Classic forecast for the House gives Republicans an 80.9% chance of winning (keeping) the Senate.
+
+Counts | House winner: Dem  | House winner: Rep | Total
+----------: | ---------: | -------: | --------:
+Senate winner: Dem | ? | ? | 191
+Senate winner: Rep | ? | ? | 809
+Total | - | - | 1000
+
+**Are these results independent of each other, or are they (associated/correlated)?** 
+
+- If the results were independent, that would imply that the Democrats would have an 87.9% chance of winning the House, regardless of what happens in the Senate.
+
+So, we'd have a table like this, under the assumption of independence:
+
+Counts | House winner: Dem  | House winner: Rep | Total
+----------: | ---------: | -------: | -------:
+Senate winner: Dem | (191 x 879)/1000 = 168 | (.191 x .121)/1000 = 23 | 191
+Senate winner: Rep | (.809 x .879)/1000 = 711 | (.809 x .121)/1000 = 98 | 809
+Total              | 879 | 121 | 1000
+
+So, what do the forecasts suggest about the probability of a Democratic House *and* a Republican Senate in 2019?
+
+- But the FiveThirtyEight simulations actually show that the chances of the Democrats winning the Senate but losing the House are very, very small. Suppose they were 1/1000. Then we have:
+
+Counts | House winner: Dem  | House winner: Rep | Total
+----------: | ---------: | -------: | -------:
+Senate winner: Dem | ? | 1 | 191
+Senate winner: Rep | ? | ? | 809
+Total              | 879 | 121 | 1000
+
+We could then derive the other results, by subtraction...
+
+Counts | House winner: Dem  | House winner: Rep | Total
+----------: | ---------: | -------: | -------:
+Senate winner: Dem | 190 | 001 | 191
+Senate winner: Rep | 689 | 120  | 809
+Total              | 879 | 121 | 1000
+
+Now, what do the forecasts suggest about the chances of a Democratic House *and* a Republican Senate in 2019?
+
 ### Some Other Sites...
 
 - This evening, you may want to visit [The Needle](https://www.nytimes.com/2018/11/05/upshot/needle-election-night-2018-midterms.html) and related live election forecasts at [The Upshot](https://www.nytimes.com/section/upshot), from *The New York Times*.
