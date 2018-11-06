@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides for Class 19 are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class19/431_class-19-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class19/431_class-19-slides_2018.Rmd), above.
-- Class 19 audio files will be posted above as soon as they are available.
+- Class 19 audio files are posted above.
 
 ## Upcoming Deliverables from the [Course Calendar](https://github.com/THOMASELOVE/431-2018/blob/master/calendar.md)
 
@@ -107,6 +107,8 @@ Senate winner: Rep | **689** | 120  | 809
 Total              | 879 | 121 | 1000
 
 Under these assumptions, what do the 538 forecasts suggest about the chances of a Democratic House *and* a Republican Senate in 2019?
+
+**Post-class note**: In posting [538's final set of forecasts](https://fivethirtyeight.com/features/our-final-forecast-in-the-senate-house-and-gubernatorial-races/) (using the deluxe model, and some different assumptions) Nathaniel Rakich did this work, as well, and so their actual estimate is 67.9%, rather than 68.9% of House Dem, Senate Rep in 2019. That post is "[Our Final Forecast In The Senate, House And Gubernatorial Races](https://fivethirtyeight.com/features/our-final-forecast-in-the-senate-house-and-gubernatorial-races/)".
 
 ### Some Other Sites...
 
