@@ -14,16 +14,6 @@
   - Homework 7 has nine questions. You should be able to do questions 6-9 now. Questions 1-5 will need to wait until we have discussed the Analysis of Variance and some related issues.
 - The next project-specific deliverable is [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), which is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
-## RYouWithMe, A New Resource from R-Ladies Sydney
-
-[RYouWithMe](https://rladiessydney.org/ryouwithme) is a new series of online learning resources for using R, oriented towards R beginners and providing a solid foundation of R skills. Their [first "unit" - called Basic Basics](https://rladiessydney.org/post/2018/11/05/basicbasics/) is now available! It contains three lessons:
-
-1. [An opinionated tour of RStudio](https://rladiessydney.org/post/2018/11/05/basicbasics-1/)
-2. [Installing and loading packages](https://rladiessydney.org/post/2018/11/05/basicbasics-2/)
-3. [Getting data into RStudio](https://rladiessydney.org/post/2018/11/05/basicbasics-3/)
-
-There are plans to roll out four additional units, on data wrangling, visualization, the R language, and R Markdown, by the end of the year. If you find these helpful, let us know!
-
 ## Project Updates
 
 This was a [busy weekend](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results).
@@ -47,12 +37,18 @@ There's a lot of exciting stuff to read...
 - FiveThirtyEight Politics Podcast had several interesting episodes. I recommend:
   - ["The Midterms Are Here"](https://fivethirtyeight.com/features/politics-podcast-the-midterms-are-here) from 2018-11-05.
   - ["Model Talk: How To Judge Our Forecasts](https://fivethirtyeight.com/features/politics-podcast-how-to-judge-our-forecasts/) from 2018-11-02.
-- We'll check in again on the Ohio [Governor's Race and other Midterm Election forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight.
-- We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) at FiveThirtyEight, too.
+- We'll check in again on the Ohio [Governor's Race and other Midterm Election forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight. As of 11:06 AM on 2018-11-06...
 
+FiveThirtyEight Model | Lite (polls only) | Classic (add fundamentals) | Deluxe (add experts' ratings)
+-------------------------: | :--------------------: | :--------------------: | :--------------------:
+Chance Cordray (D) elected | 2 times in 3 (66.5%) | 3 times in 5 (59.5%) | 5 times in 8 (61.9%)
+
+- We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) at FiveThirtyEight, too.
+  - Looking at the [Generic Congressional Ballot polls](https://projects.fivethirtyeight.com/congress-generic-ballot-polls/) is particularly interesting to me.
+  
 ## Some Statistical Content: Comparing Proportions in a 2x2 Table, and the role of the Independence Model
 
-**What is the chance (according to FiveThirtyEight) that the most common forecast scenario will happen (House winner: Democrats, Senate winner: Republicans)**
+**What is the chance (according to FiveThirtyEight) that the most common forecast scenario (House winner: Democrats, Senate winner: Republicans) will happen?**
 
 - As of 11:06 AM on 2018-11-06, the FiveThirtyEight Classic forecast for the House gives Democrats an 87.9% chance of winning the House.
 
