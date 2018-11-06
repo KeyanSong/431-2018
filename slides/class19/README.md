@@ -37,9 +37,24 @@ There are plans to roll out four additional units, on data wrangling, visualizat
 
 ## Election Day
 
-- We'll check in again on the Ohio [Governor's Race forecast](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight, and [anything new they've added recently](https://fivethirtyeight.com/). 
-- We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) as compiled by FiveThirtyEight.
-- Another thing to consider is the [CBS News / YouGov House Model](https://today.yougov.com/topics/politics/articles-reports/2018/11/04/cbs-newsyougov-house-model-democrats-225-republica) which uses multilevel regression and post-stratification (Mr. P for short), which is a technique that a lot of statisticians are excited about. 
+There's a lot of exciting stuff to read...
+
+### At FiveThirtyEight, I particularly enjoyed...
+
+- Nate Silver's ["Democrats Aren't Certain to Take the House, but They're Pretty Clear Favorites"](https://fivethirtyeight.com/features/final-election-update-democrats-arent-certain-to-take-the-house-but-theyre-pretty-clear-favorites/)
+- Nathaniel Rakich's ["How To Watch the Midterms: An Hour-By-Hour Guide"](https://fivethirtyeight.com/features/2018-election-polls-close/) 
+- FiveThirtyEight Politics Podcast ["The Midterms Are Here"](https://fivethirtyeight.com/features/politics-podcast-the-midterms-are-here).
+- We'll check in again on the Ohio [Governor's Race and other Midterm Election forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight.
+- We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) at FiveThirtyEight, too.
+
+### Some Other Sites:
+
+- The [CBS News / YouGov House Model](https://today.yougov.com/topics/politics/articles-reports/2018/11/04/cbs-newsyougov-house-model-democrats-225-republica) which uses multilevel regression and post-stratification (Mr. P for short), which is a technique that a lot of statisticians are excited about. 
+- [CNN provides its own Forecast](https://www.cnn.com/election/2018/forecast), too, built by Harry Enten (formerly of FiveThirtyEight). There are detailed descriptions of their methodology.
+- This evening, you may want to visit [The Needle](https://www.nytimes.com/2018/11/05/upshot/needle-election-night-2018-midterms.html) and related live election forecasts at [The Upshot](https://www.nytimes.com/section/upshot), from *The New York Times*.
+- The Washington Post is providing timely [Midterm Election Updates](https://www.washingtonpost.com/politics/2018/live-updates/midterms/midterm-election-updates), too. 
+  - You might be interested in Jordan Heller's ["Ohio ballot initiative on drug penalties is motivating voters in Cleveland"](https://www.washingtonpost.com/politics/2018/live-updates/midterms/midterm-election-updates/ohio-ballot-initiative-on-drug-penalties-is-motivating-voters-in-cleveland/?utm_term=.9c3a2631e8d7) piece from last night, for example.
+- If you like Fox News, they have [midterm power rankings](https://www.foxnews.com/midterms-2018) which rate elections in a more traditional way. I'm not sure whether a model is driving this, or just the consensus of editors, honestly.
 
 ## Visualization of the Day/Week/Month/Year/Milennium?
 
