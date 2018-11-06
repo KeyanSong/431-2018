@@ -421,7 +421,7 @@ p1 = 0.18, p2 = 0.25
 sig.level = 0.05, power = 0.9, alternative = two.sided
 NOTE: n is number in *each* group
 ```
-So, we'd need at least 721 non-sharing subjects, and 721 more who share needles to accomplish the aims of the study, or a total of 1442 subjects.
+So, we'd need at least 722 non-sharing subjects, and 722 more who share needles to accomplish the aims of the study, or a total of 1444 subjects.
 
 ## Another Scenario
 
