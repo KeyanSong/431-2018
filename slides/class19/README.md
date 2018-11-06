@@ -14,6 +14,16 @@
   - Homework 7 has nine questions. You should be able to do questions 6-9 now. Questions 1-5 will need to wait until we have discussed the Analysis of Variance and some related issues.
 - The next project-specific deliverable is [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), which is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
+## RYouWithMe, A New Resource from R-Ladies Sydney
+
+[RYouWithMe](https://rladiessydney.org/ryouwithme) is a new series of online learning resources for using R, oriented towards R beginners and providing a solid foundation of R skills. Their [first "unit" - called Basic Basics](https://rladiessydney.org/post/2018/11/05/basicbasics/) is now available! It contains three lessons:
+
+1. [An opinionated tour of RStudio](https://rladiessydney.org/post/2018/11/05/basicbasics-1/)
+2. [Installing and loading packages](https://rladiessydney.org/post/2018/11/05/basicbasics-2/)
+3. [Getting data into RStudio](https://rladiessydney.org/post/2018/11/05/basicbasics-3/)
+
+There are plans to roll out four additional units, on data wrangling, visualization, the R language, and R Markdown, by the end of the year. If you find these helpful, let us know!
+
 ## Project Updates
 
 This was a [busy weekend](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results).
@@ -24,16 +34,6 @@ This was a [busy weekend](https://github.com/THOMASELOVE/431-2018-project/tree/m
 4. He has also prepared materials to help you do simple imputation for any missing data in the Project.
 
 See the details on all four of these things at [this link](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results).
-
-## RYouWithMe, A New Resource from R-Ladies Sydney
-
-[RYouWithMe](https://rladiessydney.org/ryouwithme) is a new series of online learning resources for using R, oriented towards R beginners and providing a solid foundation of R skills. Their [first "unit" - called Basic Basics](https://rladiessydney.org/post/2018/11/05/basicbasics/) is now available! It contains three lessons:
-
-1. [An opinionated tour of RStudio](https://rladiessydney.org/post/2018/11/05/basicbasics-1/)
-2. [Installing and loading packages](https://rladiessydney.org/post/2018/11/05/basicbasics-2/)
-3. [Getting data into RStudio](https://rladiessydney.org/post/2018/11/05/basicbasics-3/)
-
-There are plans to roll out four additional units, on data wrangling, visualization, the R language, and R Markdown, by the end of the year. If you find these helpful, let us know!
 
 ## Election Day
 
