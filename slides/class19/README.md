@@ -43,7 +43,9 @@ There's a lot of exciting stuff to read...
 
 - Nate Silver's ["Democrats Aren't Certain to Take the House, but They're Pretty Clear Favorites"](https://fivethirtyeight.com/features/final-election-update-democrats-arent-certain-to-take-the-house-but-theyre-pretty-clear-favorites/)
 - Nathaniel Rakich's ["How To Watch the Midterms: An Hour-By-Hour Guide"](https://fivethirtyeight.com/features/2018-election-polls-close/) 
-- FiveThirtyEight Politics Podcast ["The Midterms Are Here"](https://fivethirtyeight.com/features/politics-podcast-the-midterms-are-here).
+- FiveThirtyEight Politics Podcast had several interesting episodes. I recommend:
+  - ["The Midterms Are Here"](https://fivethirtyeight.com/features/politics-podcast-the-midterms-are-here) from 2018-11-05.
+  - ["Model Talk: How To Judge Our Forecasts](https://fivethirtyeight.com/features/politics-podcast-how-to-judge-our-forecasts/) from 2018-11-02.
 - We'll check in again on the Ohio [Governor's Race and other Midterm Election forecasts](https://projects.fivethirtyeight.com/2018-midterm-election-forecast/governor/) at FiveThirtyEight.
 - We might also glance at the [Latest Polls](https://projects.fivethirtyeight.com/polls/) at FiveThirtyEight, too.
 
