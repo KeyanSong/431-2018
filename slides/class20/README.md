@@ -27,7 +27,7 @@ As we mentioned on Tuesday, [this is the place to go](https://github.com/THOMASE
 
 ## Minute Paper Feedback
 
-will be posted here, when it is available.
+is now available at http://bit.ly/431-2018-minute19-response.
 
 ## Visualization of the Day (non-Election edition)
 
