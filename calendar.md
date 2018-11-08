@@ -49,18 +49,18 @@ Date | Class | Description or Deliverable
 11-01 | 18 | Categorical Data and Rates/Proportions
 11-02 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Tasks D and E** due at noon
 11-06 | 19 | Comparing Rates/Proportions with 2x2 Tables, Power Calculations for Comparing Proportions
-11-08 | 20 | Larger Contingency Tables, Analysis of Variance
+11-08 | 20 | Chi-Square Tests, Larger Contingency Tables
 11-09 | -- | **[Homework 6](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon. This Homework was updated 2018-10-25.
-11-13 | 21 | **Part C** begins (Regression Models).
-11-15 | 22 | Regression, Part 2
+11-13 | 21 | Analysis of Variance, Indicator Variable Regression
+11-15 | 22 | Regression Models: The Fundamentals, Discussion of Study Part 2 Demo
 11-16 | -- | **[Homework 7](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 11-20 | -- | No class, Professor Love will be out of town.
 11-22 | -- | No class, CWRU Thanksgiving Break. Finish reading **Silver** 
-11-27 | 23 | Regression, Part 3
+11-27 | 23 | Regression Models: Making Predictions Well, Assessing Predictive Quality
 11-28 | -- | **[Project](https://github.com/THOMASELOVE/431-2018-project) Task F (Sharing Study 2 Data and Project 1 Update)**  due at noon
-11-29 | 24 | Regression, Part 4
+11-29 | 24 | Regression Models: Assessing Assumptions, Drawing Appropriate Conclusions
 11-30 | -- | **[Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
-12-04 | 25 | Regression, Part 5
+12-04 | 25 | Regression Models: TBA
 12-06 | 26 | Final class of the semester
 12-07 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** by noon.
 12-10 | -- | First Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
