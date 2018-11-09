@@ -1,0 +1,497 @@
+---
+title: "431 Class 22"
+author: "Thomas E. Love"
+date: "2018-11-15"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+linkcolor: "yellow"
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's Agenda
+
+- Regression Comparison of Means, with Covariate Adjustment
+- Project Study 2 Demonstration
+
+## Today's R Setup
+
+```{r setup, message = FALSE}
+library(Hmisc); library(magrittr); library(broom)
+library(readxl) # to read in .xlsx file
+library(tidyverse) # always load tidyverse last
+```
+
+## County Health Rankings Data for Ohio, 2018
+
+Data Source: http://www.countyhealthrankings.org/app/ohio/2018/downloads 
+
+```{r}
+ohio18 <- read_xlsx("data/ohio_2018_rankings.xlsx") %>%
+  mutate(behavior = cut2(rk_behavior, g = 4),
+         clin_care = cut2(rk_clin_care, g = 3)) %>%
+  mutate(behavior = fct_recode(behavior,
+            "Best" = "[ 1,23)", "High" = "[23,45)",
+            "Low" = "[45,67)", "Worst" = "[67,88]")) %>%
+  mutate(clin_care = fct_recode(clin_care,
+            "Strong" = "[ 1,31)", "Middle" = "[31,60)",
+            "Weak" = "[60,88]")) %>%
+  mutate(density = factor(density)) %>%
+  select(FIPS, state, county, outcomes,
+         behavior, clin_care, density, income)
+```
+
+## Health Outcomes (Normally Distributed?)
+
+```{r, echo = FALSE}
+p1 <- ggplot(ohio18, aes(sample = outcomes)) +
+  geom_qq() + geom_qq_line(col = "red") + 
+  labs(title = "Normal Q-Q plot: Health Outcomes") +
+  theme_bw()
+
+p2 <- ggplot(ohio18, aes(x = outcomes)) +
+  geom_histogram(bins = 8, fill = "royalblue", col = "white") +
+  labs(title = "Histogram: Health Outcomes") +
+  theme_bw()
+
+gridExtra::grid.arrange(p1, p2, nrow = 1)
+```
+
+## Health Outcomes by Clinical Care Groups
+
+```{r, echo = FALSE}
+ggplot(ohio18, aes(x = clin_care, y = outcomes, 
+                   fill = clin_care)) +
+  geom_violin(alpha = 0.5) +
+  geom_boxplot(width = 0.25, notch = TRUE, 
+               col = c("white", "black", "black")) +
+  guides(fill = FALSE) + 
+  scale_fill_viridis_d(option = "C") +
+  theme_bw() +
+  labs(x = "Clinical Care Ranking (groups)", 
+       y = "Health Outcomes (higher = better health)",
+       title = "Health Outcomes across County Clinical Care Ranking",
+       subtitle = "Ohio's 88 counties, 2018 County Health Rankings",
+       caption = "Source: http://www.countyhealthrankings.org/app/ohio/2018/downloads")
+```
+
+## Unadjusted - ANOVA and 90% Tukey HSD intervals
+
+```{r}
+model_unadj <- lm(outcomes ~ clin_care, data = ohio18)
+
+tidy(anova(model_unadj))
+
+tukey_unadj <- tidy(TukeyHSD(aov(model_unadj), 
+                           ordered = TRUE, 
+                           conf.level = 0.90))
+```
+
+## Tukey HSD results, unadjusted ANOVA
+
+```{r, echo = FALSE}
+ggplot(tukey_unadj, aes(x = reorder(comparison, -estimate), 
+                      y = estimate)) +
+  geom_crossbar(aes(ymin = conf.low, ymax = conf.high), 
+                fatten = 1) + 
+  geom_hline(yintercept = 0, col = "red", 
+             linetype = "dashed") +
+  geom_text(aes(label = round(estimate,2)), nudge_y = 0.1) +
+  theme_bw() +
+  labs(x = "Comparison between Clinical Care Groups", 
+       y = "Estimated Effect, with 90% Tukey HSD interval",
+       title = "Estimated Effects, with Tukey HSD 90% Confidence Intervals",
+       subtitle = "Comparing Outcomes by Clinical Care Group, Ohio18 data")
+```
+
+## Our New Question
+
+1. Do groups of counties defined by clinical care still show meaningful differences in average health outcomes, **after** adjustment for differences in their median income levels?
+
+
+## Income by Clinical Care Groups
+
+```{r, echo = FALSE}
+ggplot(ohio18, aes(x = clin_care, y = (income/1000), 
+                   fill = clin_care)) +
+  geom_violin(alpha = 0.5) +
+  geom_boxplot(width = 0.25) +
+  guides(fill = FALSE) + 
+  scale_fill_viridis_d(option = "A") +
+  theme_bw() +
+  labs(x = "Clinical Care Ranking (groups)", 
+       y = "Median Income (in $1000s)",
+       title = "County Median Income vs. Clinical Care Ranking",
+       subtitle = "Ohio's 88 counties, 2018 County Health Rankings",
+       caption = "Source: http://www.countyhealthrankings.org/app/ohio/2018/downloads")
+```
+
+## Income vs. Outcome
+
+```{r, echo = FALSE}
+ggplot(ohio18, aes(x = (income/1000), y = outcomes)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "red") +
+  geom_smooth(method = "loess", col = "blue", se = FALSE) +
+  scale_x_continuous(breaks = c(40, 50, 60, 70, 80, 90, 100)) +
+  geom_rug() +
+  theme_bw() +
+  labs(x = "Median Income (in $1000s)", 
+       y = "Health Outcomes (higher = better health)",
+       title = "Health Outcomes Scores rise with Median Income",
+       subtitle = "Ohio's 88 counties, 2018 County Health Rankings",
+       caption = "Source: http://www.countyhealthrankings.org/app/ohio/2018/downloads")
+```
+
+## Income (on the Log scale) vs. Outcome
+
+```{r, echo = FALSE}
+ggplot(ohio18, aes(x = (income/1000), y = outcomes)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "red") +
+  geom_smooth(method = "loess", col = "blue", se = FALSE) +
+  geom_rug() +
+  scale_x_log10(breaks = c(40, 50, 60, 70, 80, 90, 100)) +
+  theme_bw() +
+  labs(x = "Median Income (in $1000s), plotted on a logarithmic scale", 
+       y = "Health Outcomes (higher = better health)",
+       title = "Health Outcomes Scores rise with Median Income",
+       subtitle = "Ohio's 88 counties, 2018 County Health Rankings",
+       caption = "Source: http://www.countyhealthrankings.org/app/ohio/2018/downloads")
+```
+
+## Our New Model
+
+```{r}
+ohio18 <- ohio18 %>%
+  mutate(incK = income/1000)
+```
+
+```{r}
+model_adj1 <- lm(outcomes ~ incK + clin_care, data = ohio18)
+
+anova(model_adj1) 
+```
+
+## Interpreting the ANOVA table with a covariate
+
+```{r}
+anova(lm(outcomes ~ incK + clin_care, data = ohio18)) %>%
+  tidy() %>% knitr::kable(digits = 3)
+```
+
+- This ANOVA table tests the predictors, in order.
+- The `incK` p value tests $H_0$: `incK` adds no predictive value to the model, as compared to a model with an intercept alone.
+  - Compares the [intercept only] model to the `incK` model.
+- The `clin_care` F and p value tests $H_0$: `clin_care` adds no incremental predictive value to the model that already includes `incK`.
+  - Compares the `incK` to the `incK` and `clin_care` model.
+
+What if we reverse the order in which we create the model?
+
+## This ANOVA table is sequential
+
+```{r}
+anova(lm(outcomes ~ clin_care + incK, data = ohio18)) %>%
+  tidy() %>% knitr::kable(digits = 3)
+```
+
+- Notice the change in *p* value for `clin_care`. That *p* value now compares [intercept only] to `clin_care`, ignoring the covariate.
+  - We saw that result last time, in our ANOVA modeling.
+- The `incK` test now assesses the incremental value of one predictor (`incK`) after you already have the other (`lin_care`) in the model.
+- Either way, though, it looks like both `incK` and `clin_care` are useful. How much of the variation do they explain, together?
+
+## (Edited) Summary of the Adjusted Model
+
+```{r, eval = FALSE}
+summary(model_adj1)
+```
+
+```
+lm(formula = outcomes ~ incK + clin_care, data = ohio18)
+
+Coefficients:    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     -3.566447   0.374786  -9.516 5.43e-15 ***
+incK             0.066894   0.006262  10.682  < 2e-16 ***
+clin_careMiddle  0.275345   0.139278   1.977   0.0513 .  
+clin_careWeak   -0.105040   0.155254  -0.677   0.5005    
+
+Residual standard error: 0.5237 on 84 degrees of freedom
+Multiple R-squared:  0.6688,	Adjusted R-squared:  0.657 
+F-statistic: 56.54 on 3 and 84 DF,  p-value: < 2.2e-16
+```
+
+What % of the variation in `outcomes` do `incK` and `clin_care` explain?
+
+## Unadjusted vs. Adjusted Model
+
+```{r}
+glance(lm(outcomes ~ clin_care, data = ohio18)) %>% 
+  knitr::kable(digits = 3)
+```
+
+```{r}
+glance(lm(outcomes ~ clin_care + incK, data = ohio18)) %>%
+  knitr::kable(digits = 3)
+```
+
+Does `incK` add a substantial amount of predictive value?
+
+## Predict the outcome at the average level of the covariate for each group
+
+At the mean level of `incK`, 52.474, predict the values of `outcomes` for counties in each `clin_care` category.
+
+```{r}
+new_dat <- data_frame(
+  clin_care = c("Strong", "Middle", "Weak"),
+  incK = rep(mean(ohio18$incK), 3))
+new_dat
+```
+
+## Predict the outcome at the average level of the covariate for each group, using a 90% prediction interval
+
+```{r}
+preds_adj <- predict(model_adj1, newdata = new_dat, 
+        interval = "prediction", level = 0.90) 
+
+bind_cols(new_dat, data.frame(preds_adj)) %>% 
+  knitr::kable(digits = 3)
+```
+
+## Tukey HSD after covariate adjustment?
+
+```{r}
+tukey_adj <- TukeyHSD(
+  aov(outcomes ~ incK + clin_care, data = ohio18), 
+  which = "clin_care", ordered = TRUE, conf.level = 0.9) %>%
+  tidy() 
+
+tukey_adj %>% knitr::kable(digits = 3)
+```
+
+
+## Tukey HSD results, after adjustment for `income`
+
+```{r, echo = FALSE}
+ggplot(tukey_adj, aes(x = reorder(comparison, -estimate), 
+                      y = estimate)) +
+  geom_pointrange(aes(ymin = conf.low, ymax = conf.high)) + 
+  geom_hline(yintercept = 0, col = "red", 
+             linetype = "dashed") +
+  geom_text(aes(label = round(estimate,2)), nudge_x = 0.1) +
+  theme_bw() +
+  labs(x = "Comparison between Clinical Care Groups", 
+       y = "Effect, with 90% Tukey HSD interval",
+       title = "Adjusted Effect, with Tukey HSD 90% Confidence Intervals",
+       subtitle = "Comparing Outcomes by Clinical Care adjusting for Income, Ohio18 data")
+```
+
+## Checking Regression Assumptions
+
+On the next slide, we'll build two quick plots...
+
+- If the residuals vs. fitted values plot looks like a fuzzy football, with no particular pattern or trend, then we're in good shape for the moment with the assumption of **linearity**.
+- If the Normal Q-Q plot of standardized residuals looks like a straight line (so we'd assume a Normal model held for the residuals), then we're in good shape with the assumption of **Normality**.
+
+How do these plots look?
+
+## Residual Plots
+
+```{r}
+par(mfrow = c(1,2))
+plot(model_adj1, which = 1:2)
+```
+
+## Would transforming the `income` data change things?
+
+```{r}
+model_adj2 <- lm(outcomes ~ log(income) + clin_care, 
+                 data = ohio18)
+anova(model_adj2)
+```
+
+## Impact of Transforming `income` data
+
+```{r}
+par(mfrow = c(1,2))
+plot(model_adj2, which = 1:2)
+```
+
+## A New Model
+
+Can we predict these health `outcomes` with a combination of `income` data and the county's `density` (defined as either Urban or Rural)? 
+
+```{r}
+model3 <- lm(outcomes ~ incK + density, data = ohio18)
+
+tidy(model3) %>% knitr::kable(digits = 3)
+```
+
+## Our `model3` summary, edited a little
+
+```{r, eval = FALSE}
+summary(model3)
+```
+
+```
+Call: lm(formula = outcomes ~ incK + density, data = ohio18)
+
+Residuals:  Min     1Q  Median     3Q    Max 
+         -1.164 -0.364   0.074  0.358  1.008 
+
+Coefficients:   Estimate Std. Error  t value Pr(>|t|)    
+  (Intercept)     -3.796      0.300    -12.6   <2e-16 ***
+  incK             0.073      0.006     12.8   <2e-16 ***
+  densityUrban    -0.382      0.159     -2.4   0.0187 *  
+
+Residual standard error: 0.5269 on 85 degrees of freedom
+Multiple R-squared:  0.6606,	Adjusted R-squared: 0.6527 
+F-statistic: 82.74 on 2 and 85 DF,  p-value: < 2.2e-16
+```
+## ANOVA of our `model3`
+
+```{r}
+anova(model3) %>% tidy() %>% knitr::kable(digits = 3)
+```
+
+- The total Sum of Squares is 44.349 + 1.597 + 23.601 = 69.547.
+  - Together, `incK` and `density` account for 44.349 + 1.597 = 45.946.
+  - That is 66.06%, the same as the Multiple R^2^ for the model.
+- The residual mean square here (0.278) is the square of the residual standard error (0.5269) from the previous slide, and the degrees of freedom attributed to residuals there was also 85.
+- The ANOVA F test on the previous screen (F = 82.74 on 2 and 85 df) combines the impact of both predictors.
+
+## Checking Regression Assumptions
+
+The assumptions behind a linear regression model are, in order of importance:
+
+1. Linearity
+2. Homoscedasticity (constant variance)
+3. Independence
+4. Normality
+
+We build residual plots to check assumptions 1, 2, and 4. If the data are ordered in time or space, we will also think a bit about the independence assumption.
+
+There are many ways to build residual plots using `ggplot2` but for now, we'll stick to base R and show you a very simple way to generate five plots of potential interest.
+
+## Residuals vs. Fitted, Normal Q-Q Plot
+
+```{r}
+par(mfrow = c(1,2)); plot(model3, which = 1:2)
+```
+
+## What county is County 21?
+
+```{r}
+ohio18 %>% slice(21) %>% select(-FIPS, -state, -income) %>% 
+  knitr::kable()
+```
+
+```{r}
+ohio18 %>% select(outcomes, income, density) %>% summary
+```
+
+Where is Delaware County?
+
+## A map of Ohio, with Delaware County highlighted
+
+Build it.
+
+## Augmenting the data with our model's results
+
+```{r}
+mod3_aug <- augment(model3) %>% 
+  bind_cols(ohio18 %>% select(county)) %>%
+  select(county, everything())
+
+slice(mod3_aug, c(18, 21)) %>% print.data.frame(digits=3)
+```
+
+## Residuals vs. Fitted and Scale-Location Plot
+
+```{r}
+par(mfrow = c(1,2)); plot(model3, which = c(1,3))
+```
+
+## Cook's Distance and Influence Plot
+
+```{r}
+par(mfrow = c(1,2)); plot(model3, which = 4:5)
+```
+
+## Running the Model without Delaware County
+
+```{r}
+model4 <- ohio18 %>% filter(county != "Delaware") %$%
+    lm(outcomes ~ incK + density)
+
+tidy(model4) %>% knitr::kable(digits = 3)
+```
+
+## Model 4 summary (no Delaware County)
+
+```{r, eval = F}
+summary(model4)
+```
+
+```
+Call: lm(formula = outcomes ~ incK + density)
+
+Residuals:   Min    1Q  Median     3Q    Max 
+          -1.121 -0.305  0.094  0.358  0.932 
+
+Coefficients: Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     -4.228      0.334 -12.678   <2e-16 ***
+incK             0.082      0.006  12.804   <2e-16 ***
+densityUrban    -0.330      0.155  -2.123   0.0367 *  
+
+Residual standard error: 0.5094 on 84 degrees of freedom
+Multiple R-squared:  0.6612,	Adjusted R-squared:  0.6531 
+F-statistic: 81.97 on 2 and 84 DF,  p-value: < 2.2e-16
+```
+
+## Model 4 ANOVA (no Delaware County)
+
+```{r}
+anova(model4) %>% tidy() %>% knitr::kable(digits = 3)
+```
+
+## Residuals vs. Fitted, Normal Q-Q Plot
+
+```{r}
+par(mfrow = c(1,2)); plot(model4, which = 1:2)
+```
+
+## Residuals vs. Fitted and Scale-Location Plot
+
+```{r}
+par(mfrow = c(1,2)); plot(model4, which = c(1,3))
+```
+
+## Cook's Distance and Influence Plot
+
+```{r}
+par(mfrow = c(1,2)); plot(model4, which = 4:5)
+```
+
+## Study 2 Demonstration Project
+
+- See github site for this.
+
+## Our Next Steps
+
+- Building and Using a Scatterplot Matrix (review)
+- Comparing Models, by splitting our data into training (model development) and test samples
+  - Assessing training sample performance with adjusted R^2^, AIC and BIC
+  - Assessing test sample prediction errors with MAPE and MSPE
+- Making good decisions when building regression models
+
+### Have a nice break.
+
+Get your project moving along. Thanks.
