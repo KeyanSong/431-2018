@@ -18,11 +18,11 @@
 
 As we mentioned last week, [this is the place to go](https://github.com/THOMASELOVE/431-2018-project/tree/master/survey-results) for...
 
-1. Dr. Love's comments on your Survey Comparison Plan materials (from Task D). 
+1. Dr. Love's comments on your Survey Comparison Plan materials (from Task D). Remember that you **do not** submit revisions.
 2. The data files you will need to actually do Project Study 1.
 3. Materials to help you merge and combine data sets for the Project (particularly in Study 1), and to help you perform simple imputation using the `simputation` package in R, for any missing data that appears in your Project.
 
-Don't forget about the Project Study 1 Demonstration page.
+Don't forget about the Project Study 1 Demonstration page. You should be familiar with Analyses 1, 4, 5 and 6 before today's class, and we'll cover Analysis 2 in today's class, and Analysis 3 in Thursday's Class 22.
 
 ### Study 2
 
