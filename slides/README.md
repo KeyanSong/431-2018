@@ -2,10 +2,6 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
-Class 26 | 12-06 | TBA
-Class 25 | 12-04 | Regression Models: TBA
-Class 24 | 11-29 | Regression Models: Assessing Assumptions, Drawing Appropriate Conclusions
-Class 23 | 11-27 | Regression Models: Making Predictions Well, Assessing Predictive Quality
 Class 22 | 11-15 | Regression Models: The Fundamentals, Discussion of Project Study 2 Demo
 [Class 21](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class21) | 11-13 | Analysis of Variance, Indicator Variable Regression
 [Class 20](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class20) | 11-08 | Chi-Square Tests, Cross-Tabulations
