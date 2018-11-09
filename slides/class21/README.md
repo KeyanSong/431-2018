@@ -12,6 +12,11 @@
     - Before today's Class 21, you should have been able to do Questions 6-9.
     - After today's Class 21, you should be able to do all nine questions.
 
+## Coming ASAP
+
+- Project Study 2 Demonstration
+- Homework 8
+
 ## Project Updates
 
 ### Study 1
