@@ -1,5 +1,5 @@
 ---
-title: "431 Class 20"
+title: "431 Class 21"
 author: "Thomas E. Love"
 date: "2018-11-13"
 output:
