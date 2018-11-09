@@ -6,6 +6,11 @@ Homework 6 is now due at noon on Friday 2018-11-09. It contains seven questions.
 
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
+## The answer sketch is now posted.
+
+- The answer sketch for HW 6 is now posted, [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.pdf) and [R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.Rmd).
+- The rubric and grades should be available by 2018-11-15.
+
 ## Steps to a Successful Homework
 
 Here are the steps I would take to do the homework, after I read [the instructions](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6.md), and after I'd read Chapter 12 of Nate Silver's *The Signal and the Noise*.
