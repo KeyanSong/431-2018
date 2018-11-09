@@ -8,7 +8,9 @@
 ## Remaining Pre-Thanksgiving Deliverables
 
 - Minute Paper after Class 21 will be posted soon. Please complete it by noon on Wednesday 2018-11-14.
-- [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16.
+- [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions.
+    - Before today's Class 21, you should have been able to do Questions 6-9.
+    - After today's Class 21, you should be able to do all nine questions.
 
 ## Project Updates
 
