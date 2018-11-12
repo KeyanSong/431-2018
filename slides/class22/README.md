@@ -33,10 +33,10 @@ Remaining steps I would take (were I you) for Project Study 1 are:
     - This includes (but is not limited to) the required merging and combination of all five data sets, [as discussed and demonstrated here](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/surv2018_combining-datasets.md). Everyone needs to combine all five data sets to complete the project, although you will prune down the variables to your specific analytic data set at the end of section 2 (from the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1)), and then work only with those variables in sections 3-12.
     - This also includes the use of simple imputation, to deal with missingness (if it exists) in the variables you have selected for your analyses. [Imputation instructions and a demonstration are available here](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/impute_example.md).
 
-4. Review the [Task G](https://thomaselove.github.io/431-2018-project/taskG.html) and [Task H](https://thomaselove.github.io/431-2018-project/taskH.html) instructions to be sure that you have completed all necessary analyses for Project Study 1, and that you have a clear understanding of the things you'll need to do in your presentation.
+4. Review the **updated** [Task G](https://thomaselove.github.io/431-2018-project/taskG.html) and [Task H](https://thomaselove.github.io/431-2018-project/taskH.html) instructions to be sure that you have completed all necessary analyses for Project Study 1, and that you have a clear understanding of the things you'll need to do in your presentation regarding Study 1.
 
-- We covered all materials you would need to do Analyses 1, 2, 4, 5 and 6 before today's class.
-- During class 22, we will cover Analysis 3.
+    - We covered all materials you would need to do Analyses 1, 2, 4, 5 and 6 prior to today's class.
+    - During class 22, we will cover Analysis 3.
 
 #### Some Tips
 
