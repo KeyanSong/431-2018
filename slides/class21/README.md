@@ -41,8 +41,8 @@ Remaining steps I would take (were I you) for Project Study 1 are:
 
 4. Review the Task G and Task H instructions to be sure that you have completed all necessary analyses for Project Study 1, and that you have a clear understanding of the things you'll need to do in your presentation.
 
-- As of the start of today's class 22, we have covered all materials you would need to do Analyses 1, 2, 4, 5 and 6.
-- During class 22, we will cover the added materials you will need in order to do Analysis 3.
+- We covered all materials you would need to do Analyses 1, 4, 5 and 6 before this week.
+- During class 21, we will cover Analysis 2, and during class 22, we will cover Analysis 3.
 
 #### Some Tips
 
