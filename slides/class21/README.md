@@ -24,7 +24,7 @@
 
 ## Project Updates
 
-### Doing Study 1
+### Study 1
 
 Remaining steps I would take (were I you) for Project Study 1 are:
 
