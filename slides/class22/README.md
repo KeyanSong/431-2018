@@ -69,6 +69,7 @@ skimr::skim_with(numeric = list(hist = NULL),
 ```
 
 4. The other thing I will absolutely be looking for is whether or not you remember to change the name of your project and the author to you. If yours says "431 Project Study 1 Demonstration" or says that the author is "Thomas E. Love" change that **NOW** so that you don't forget. "431 Project Study 1" is a boring but reasonable name for your work. But "431 Project Study 1 Demonstration" flags you as someone who didn't pay attention to details. Don't be in that situation.
+5. Finally, for heaven’s sake, **DO NOT** use my words included in the demonstration project in your project for either Study 1 or Study 2. Rewrite **everything** other than perhaps the headings to make it your own, and make it relevant to your situation. Do not repeat my instructions back at me.
 
 ### Study 2
 
