@@ -33,7 +33,32 @@ Remaining steps I would take (were I you) for Project Study 1 are:
 - As of the start of today's class 22, we have covered all materials you would need to do Analyses 1, 2, 4, 5 and 6.
 - During class 22, we will cover the added materials you will need in order to do Analysis 3.
 - **Naming Things** is hard. But don't make it harder on yourself by picking a very generic name (like `survey` for the data you will use. Even `sur431` is better than that, since `survey` is an important package name in R.
-- The biggest problem people struggle with is that packages fight each other for function names (like `select`). To avoid this, load every package you plan to use before you load the tidyverse.
+- **Getting Started in the RIGHT WAY** The biggest problem people struggle with is that packages fight each other for function names (like `select`). To avoid this, load every package you plan to use before you load the tidyverse. 
+- This also means calling `source("Love-boost.R")` **prior** to the loading of packages, as opposed to after it, as I did it in the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1). Be sure to make that change - **I will be looking to see that you have done this properly**. I expect most to begin section 2 of their Project with an initial setup that looks like this...
+
+```
+## Load Love-boost then the packages
+source("Love-boost.R")
+
+library(knitr); library(rmdformats); library(magrittr)
+library(skimr); library(Hmisc); library(Epi); library(vcd)
+library(tidyverse) 
+
+## Global options
+
+options(max.print="75")
+opts_chunk$set(comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+
+## Skim options (leave out histograms)
+
+skimr::skim_with(numeric = list(hist = NULL),
+                 integer = list(hist = NULL))
+```
+
+- The other thing I will absolutely be looking for is whether or not you remember to change the name of your project and the author to you. If yours says "431 Project Study 1 Demonstration" or says that the author is "Thomas E. Love" change that **NOW** so that you don't forget. "431 Project Study 1" is a boring but reasonable name for your work. But "431 Project Study 1 Demonstration" flags you as someone who didn't pay attention to details. Don't be in that situation.
 
 ### Study 2
 
