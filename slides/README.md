@@ -2,7 +2,7 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
-Class 22 | 11-15 | Regression Models: Augmenting ANOVA, Discussion of Project Study 2 Demo
+[Class 22](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class22) | 11-15 | Regression Models: Augmenting ANOVA, Discussion of Project Study 2 Demo
 [Class 21](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class21) | 11-13 | Analysis of Variance, Indicator Variable Regression
 [Class 20](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class20) | 11-08 | Chi-Square Tests, Cross-Tabulations
 [Class 19](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class19) | 11-06 | Comparing Rates/Proportions, 2x2 Contingency Tables
