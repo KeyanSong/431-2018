@@ -32,7 +32,8 @@ Remaining steps I would take (were I you) for Project Study 1 are:
 
 2. Begin your actual work with the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1). Open the R Markdown file, and begin editing it. Your goal should be to have achieved the elements in Sections 1-5 of the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1) as soon as possible, and have a final, clean codebook. Once you've done that, the actual analyses in Sections 6-12 are pretty straightforward.
 
-    - Use the template I used in the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1), or something similar that also provides a dynamic table of contents which is visible at all times.
+    - Use a template like the one used in developing the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1). The specific template I use is called `readthedown` format. Other acceptable options are the `material` format, and the `html_clean` format, also available in the `rmdformats` package, and [described at this Github site](https://github.com/juba/rmdformats).
+    - The key element of these approaches is the use of an attractively formatted (and dynamic) table of contents to help organize what we want to see, and to facilitate jumping around as I ask questions during your presentation, and during my evaluation of your work.
 
 3. You need to replace the data work throughout the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1) with the details from our 2018 data and your planned analyses.
 
