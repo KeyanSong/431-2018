@@ -13,9 +13,9 @@ Due Date | Time | Assignment
 2018-09-21 | Noon | Homework 3 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework3)
 2018-09-28 | Noon | Homework 4 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework4)
 2018-10-26 | Noon | Homework 5 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework5)
-2018-11-09 | Noon | Homework 6 [Revisions Coming Soon](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework6)
-2018-11-16 | Noon | **Homework 7** is coming soon.
-2018-11-30 | Noon | **Homework 8** is coming soon.
+2018-11-09 | Noon | Homework 6 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework6)
+2018-11-16 | Noon | Homework 7 [Instructions now available](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework7)
+2018-11-30 | Noon | Homework 8 is [coming soon](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8).
 
 ## Logistics
 
