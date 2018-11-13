@@ -8,11 +8,11 @@
 ## Remaining Pre-Thanksgiving Deliverables
 
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions, and you should be able to do them all.
+- Remember that we will not have class again until Tuesday 2018-11-27. A great opportunity to work on your project!
 
 ## Coming ASAP
 
 - Minute Paper after Class 21 results.
-- Project Study 2 Demonstration
 - Homework 8
 - Thanksgiving Break
 
@@ -73,8 +73,9 @@ skimr::skim_with(numeric = list(hist = NULL),
 
 ### Study 2
 
-The Project Study 2 Demonstration page will be available in time for our discussion in Class 22 (Thursday 2018-11-15).
+**The Demo Project is now available.** As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md) is now complete.  
 
+- We will discuss the material on that page today (Thursday 2018-11-15). Get the R Markdown and HTML files that I created for the Study 2 project at http://bit.ly/431-2018-demo-study2.
 - Don't forget that [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
 ## Visualization of the Day
