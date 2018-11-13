@@ -15,7 +15,7 @@ This homework includes **six** questions. Be sure to respond to each question.
 
 Tell us about the most useful thing (an insight, example or key idea) that you learned from reading Nate Silver's *The Signal and the Noise*. Be sure to specify **in detail** how this insight/example/idea connects to your own life, or work. Specify at least one quote from the book that discuss this issue, and explain the context. Be sure that when we finish your essay we have a clear understanding of how reading this book has changed the way you think about the thing you describe or things related to it.
 
-An appropriate response to this question will be at least 200 words long. Try to keep it below 500 words.
+An appropriate response to this question will be 200-400 words long.
 
 # General Description of the Data for Questions 2-6
 
@@ -38,7 +38,7 @@ Variable           | Description
 
 The `hw8_plasma` data set is available on our web site. It contains 300 observations. You will use a subset of 240 of those observations (selected at random) to fit your models, and the remaining 60 observations (those for which `holdout` = 1) to validate your model selection. 
 
-In questions 2-6, you will build and present a multiple regression model for plasma retinol levels. I would do so like this:
+In questions 2-6, you will build and evaluate a pair of multiple regression models for plasma beta carotene levels. To get started, I suggest this approach to loading the data.
 
 ```{r, message = FALSE}
 library(tidyverse)
@@ -48,7 +48,7 @@ hw8_plasma <- read_csv("hw8_plasma.csv") %>%
     mutate(subj_ID = as.character(subj_ID))
 ```
 
-Then use the following code to select a training sample from the data set (to be used in questions 2-6) and a test sample (to be used in question 7). Feel free to use `431` as your seed - that is what we'll do in the Answer Sketch.
+Then use the following code to select a training sample from the data set (to be used in questions 2-5) and a test sample (to be used in question 6). Use `431008` as your seed as we have done here - that is what we'll do in the Answer Sketch.
 
 ```{r}
 set.seed(431008)
@@ -73,17 +73,17 @@ For your `model_04`, what is the estimated effect of being female, rather than m
 
 # Question 5 (15 points)
 
-Now use the `hw8_training` data frame to build a new model for your outcome (as decided in Question 2) using the following 10 predictors: `age`, `sex`, `smoking`, `bmi`, `vitamin`, `calories`, `fat`, `fiber`, `alcohol`, `cholesterol`. Call that model `model_10`.
+Now use the `hw8_training` data frame to build a new model for your outcome (as decided in Question 2) using the following 10 predictors: `age`, `sex`, `smoking`, `bmi`, `vitamin`, `calories`, `fat`, `fiber`, `alcohol`, and `cholesterol`. Call that model `model_10`.
 
-Compare `model_10` to `model_04` in terms of adjusted R^2^, and residual standard error. Which model performs better on these summaries, in this training sample?
+Compare `model_10` to `model_04` in terms of **adjusted** R^2^, and residual standard error. Which model performs better on these summaries, in the training sample?
 
 # Question 6 (20 points)
 
 Use the code provided in the [Project Study 2 Demonstration](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2) (section 14) to calculate and then compare the prediction errors made by the two models (`model_10` and `model_04`) you have generated. You should:
 
-a. Calculate the prediction errors in each case, then combine the results from the two models, following the code in section 14.1.
-b. Visualize the prediction errors in each model, using the code in section 14.2.
-c. Form the table comparing the model predictions, using the code in section 14.3. Compare the models in terms of MAPE, MSPE and maximum prediction error.
+- Calculate the prediction errors in each case, then combine the results from the two models, following section 14.1 of the [Project Study 2 Demonstration](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study2).
+- Visualize the prediction errors in each model, using the code in section of the Demo Project.
+- Form the table comparing the model predictions, using the code in section 14.3. Compare the models in terms of MAPE, MSPE and maximum prediction error.
 
-What conclusions do you draw about which model (`model_10` or `model_04`) is preferable? Is this the same conclusion you drew in Question 5?
+Based on your results, what conclusions do you draw about which model (`model_10` or `model_04`) is preferable? Is this the same conclusion you drew in Question 5?
 
