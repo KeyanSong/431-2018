@@ -7,7 +7,7 @@
 
 ## Remaining Pre-Thanksgiving Deliverables
 
-- [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions, and you should be able to do them all.
+- [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework7/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions, and you should be able to do them all.
 - Remember that we will not have class again until Tuesday 2018-11-27. A great opportunity to work on your project!
 
 ## Coming ASAP
