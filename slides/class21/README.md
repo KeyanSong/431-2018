@@ -11,7 +11,7 @@
     - Before today's Class 21, you should have been able to do Questions 6-9.
     - After today's Class 21, you should be able to do all nine questions.
 
-## Also Now Available
+## Homework 6
 
 - The answer sketch for HW 6 is now posted, [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.pdf) and [R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.Rmd).
 - The rubric and grades should be available by 2018-11-15.
@@ -19,8 +19,21 @@
 ## Coming ASAP
 
 - Minute Paper after Class 21 will be posted soon. Please complete it by noon on Wednesday 2018-11-14.
-- Project Study 2 Demonstration
 - Homework 8
+
+## The International Prize in Statistics
+
+Occasionally described as the equivalent of the Nobel Prize, the [International Prize in Statistics](http://statprize.org/) recognizes a major achievement in the field of statistics, and this year's prize was awarded in recognition of Brad Efron, and the bootstrap. Quoting the press release from the American Statistical Association:
+
+> This novel method for assessing the uncertainty of scientific results, developed by Efron in 1977, has transformed our ability to use and understand data and had a major impact on science. 
+
+### The Bootstrap, Simplified (from [statprize.org](http://statprize.org/))
+
+> Suppose you want to know the average household income in your city. You can't afford a complete census, so you randomly sample 100 households, record the 100 incomes and take their average, say $29,308. That sounds precise, but you would like some estimate of how accurate it really is. A straightforward, but impractical, approach would be to take several more random samples of 100 households, compute the average each time and see how much the averages differed from each other.
+
+> The bootstrap lets you approximate this impractical approach using only the original sample's data. A bootstrap data set is a random sample of size 100 drawn from the original 100 incomes. You can imagine writing each of the original incomes on a slip of paper, putting the slips into a hat and randomly drawing a slip out. Record the number, put the slip back into the hat and repeat this process 99 more times. The result would be a bootstrap data set, and we can make as many bootstrap data sets as we wish, each time taking their average. Let's say we do 250 of them, giving 250 bootstrap averages. The variability of the 250 averages is the bootstrap estimate of accuracy for the original estimate $29,308.
+
+> The same idea can be applied to find the accuracy of any statistic, say the median income instead of the average or, perhaps, something much more complicated, which makes the bootstrap ideal for the often elaborate statistical methods of modern scientific practice.
 
 ## Project Updates
 
@@ -81,7 +94,7 @@ skimr::skim_with(numeric = list(hist = NULL),
 
 1. Today we'll discuss the projects by people whose family names start with S-Z in the [Approved Project Proposals](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md#s-v).
 
-2. The Project Study 2 Demonstration page will be available in time for our discussion in Class 22 (Thursday 2018-11-15).
+2. **The Demo Project is now available.** As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md) is complete.  We will discuss the material on that page in Class 22. Get the R Markdown and HTML files that I created for the Study 2 project at http://bit.ly/431-2018-demo-study2.
 
 3. Don't forget that [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
