@@ -98,6 +98,16 @@ skimr::skim_with(numeric = list(hist = NULL),
 
 3. Don't forget that [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 
+## Like `favstats` from the `mosaic` package?
+
+Then say hello to `inspect`. The `inspect` function (also within `mosaic`) provides a way to get results that are like `favstats` but for an entire data frame. It does one thing, but pretty well. I'll demonstrate today, and I've used it now in the just-completed [Project Study 2 Demonstration](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md).
+
+## R Studio preview version is updated again
+
+If you want to try out R Studio version 1.2.1114 (or later), you can do so by getting [the R Studio preview version](https://www.rstudio.com/products/rstudio/download/preview/). The main version is still 1.1.463, as of 2018-11-12. 
+
+- 1.2 is exciting and [adds a lot of nice features](https://www.rstudio.com/products/rstudio/download/preview-release-notes/), exactly **NONE** of which you will need or use in 431.
+
 ## Visualization of the Day/Week/Month/Year/Milennium?
 
 [A Timeline of Earth's Average Temperature, since the Last Ice Age Glaciation](https://xkcd.com/1732/) from [XKCD](https://xkcd.com/)
