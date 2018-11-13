@@ -11,15 +11,13 @@
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework7/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions.
     - Before today's Class 21, you should have been able to do Questions 6-9.
     - After today's Class 21, you should be able to do all nine questions.
+- Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
+- [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8) is now posted. It is due at noon on Friday 2018-11-30.
 
 ## Homework 6
 
 - The answer sketch for HW 6 is now posted, [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.pdf) and [R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.Rmd).
 - The rubric and grades should be available by 2018-11-15.
-
-## Homework 8 will be posted ASAP. It is due 2018-11-30.
-
-- You'll find it at https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8 as soon as I post it.
 
 ## The International Prize in Statistics
 
