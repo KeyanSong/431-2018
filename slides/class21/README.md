@@ -7,6 +7,7 @@
 
 ## Remaining Pre-Thanksgiving Deliverables
 
+- The Minute Paper after Class 21 is at http://bit.ly/431-2018-minute21. Please complete it by noon on Wednesday 2018-11-14.
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions.
     - Before today's Class 21, you should have been able to do Questions 6-9.
     - After today's Class 21, you should be able to do all nine questions.
@@ -16,10 +17,9 @@
 - The answer sketch for HW 6 is now posted, [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.pdf) and [R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework6/431-2018-hw6sketch.Rmd).
 - The rubric and grades should be available by 2018-11-15.
 
-## Coming ASAP
+## Homework 8 will be posted ASAP. It is due 2018-11-30.
 
-- Minute Paper after Class 21 will be posted soon. Please complete it by noon on Wednesday 2018-11-14.
-- Homework 8
+- You'll find it at https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8 as soon as I post it.
 
 ## The International Prize in Statistics
 
