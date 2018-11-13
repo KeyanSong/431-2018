@@ -103,8 +103,9 @@ Then say hello to `inspect`. The `inspect` function (also within `mosaic`) provi
 
 ## R Studio preview version is updated again
 
-If you want to try out R Studio version 1.2.1114 (or later), you can do so by getting [the R Studio preview version](https://www.rstudio.com/products/rstudio/download/preview/). The main version is still 1.1.463, as of 2018-11-12. 
+If you want to try out R Studio version 1.2.1114 (or later), you can do so by getting [the R Studio preview version](https://www.rstudio.com/products/rstudio/download/preview/). 
 
+- I expect most of you are using version 1.1.463, and if not, you probably should upgrade to that version.
 - 1.2 is exciting and [adds a lot of nice features](https://www.rstudio.com/products/rstudio/download/preview-release-notes/), exactly **NONE** of which you will need or use in 431.
 
 ## Visualization of the Day/Week/Month/Year/Milennium?
