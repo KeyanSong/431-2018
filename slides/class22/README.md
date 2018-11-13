@@ -9,13 +9,13 @@
 
 - [Homework 7](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework7/431-2018-hw7.md) is due to [Canvas](https://canvas.case.edu/) by noon on Friday 2018-11-16. There are 9 questions, and you should be able to do them all.
 - Remember that we will not have class again until Tuesday 2018-11-27. A great opportunity to work on your project!
+- Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
+- [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8) is now posted. It is due at noon on Friday 2018-11-30.
 
 ## Coming ASAP
 
 - Minute Paper after Class 21 results.
 - Homework 6 Grades
-- Details on Homework 8
-- Thanksgiving Break
 
 ## Project Updates
 
