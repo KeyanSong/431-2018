@@ -83,6 +83,13 @@ ggplot(ohio18, aes(x = "", y = outcomes)) +
   geom_boxplot() + coord_flip() + labs(x = "")
 ```
 
+## Use `inspect` to inspect the data frame?
+
+```{r}
+ohio18 %>% select(outcomes, behavior, clin_care) %>%
+  mosaic::inspect()
+```
+
 ## Key Measure Details
 
 - **outcomes** = quantity that describes the county's premature death and quality of life results, weighted equally and standardized (z scores).
