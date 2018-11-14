@@ -2,8 +2,8 @@
 
 ## Today's Materials
 
-- The slides for Class 21 are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class21/431_class-21-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class21/431_class-21-slides_2018.Rmd).
-- Class 21 audio files will be posted as soon as they are available.
+- The slides for Class 21 are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class21/431_class-21-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class21/431_class-21-slides_2018.Rmd). I revised these on 2018-11-13 after class to fix typos in slide 17.
+- Class 21 audio files are now posted, above.
 
 ## Remaining Pre-Thanksgiving Deliverables
 
