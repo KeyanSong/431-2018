@@ -1,0 +1,55 @@
+---
+title: "Building a Map of Delaware County, Oh"
+author: "Thomas E. Love"
+date: "`r Sys.Date()"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+
+```{r, message = FALSE}
+library(tigris)
+library(leaflet)
+library(tidyverse)
+```
+
+# Gather shape file data on Ohio counties, from TIGRIS
+
+```{r, eval = FALSE}
+oh_c <- counties("Ohio", cb = TRUE)
+
+oh_c <- sf::st_as_sf(oh_c)
+```
+
+```{r, include = FALSE, cache = TRUE, message = FALSE}
+oh_c <- counties("Ohio", cb = TRUE)
+
+oh_c <- sf::st_as_sf(oh_c)
+```
+
+# Using `geom_sf`
+
+```{r}
+oh_c <- oh_c %>%
+    mutate(del = factor(ifelse(NAME == "Delaware", 1, 0)))
+
+ggplot() +
+    geom_sf(data = oh_c, aes(fill = del)) +
+    scale_fill_viridis_d() +
+    guides(fill = FALSE) +
+    labs(title = "Where is Delaware County, Ohio?")
+```
+
+# Using `leaflet`
+
+```{r, message = FALSE, warning = FALSE}
+m <- leaflet(oh_c) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addPolygons(fill = (oh_c$del == 1),
+              fillColor = "yellow", 
+              fillOpacity = 0.6,
+              weight = 1)
+m  # Print the map
+```
