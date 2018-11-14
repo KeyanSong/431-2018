@@ -49,6 +49,15 @@ ohio18 <- read_xlsx("data/ohio_2018_rankings.xlsx") %>%
          behavior, clin_care, density, income)
 ```
 
+## Resulting Data Set / Tibble
+
+We want the response / outcome data in one column, and the grouping factor as another column.
+
+```{r}
+ohio18 %>% select(county, outcomes, behavior) %>% head()
+```
+
+
 ## Health Outcomes (Normally Distributed?)
 
 ```{r, echo = FALSE}
@@ -81,6 +90,23 @@ ggplot(ohio18, aes(x = clin_care, y = outcomes,
        title = "Health Outcomes across County Clinical Care Ranking",
        subtitle = "Ohio's 88 counties, 2018 County Health Rankings",
        caption = "Source: http://www.countyhealthrankings.org/app/ohio/2018/downloads")
+```
+
+## Numerical Summary of `outcomes` by `behavior`
+
+```{r}
+mosaic::favstats(outcomes ~ behavior, data = ohio18)
+```
+
+- Can we rank from strongest outcomes to weakest outcomes?
+- How does the assumption of equal variances look?
+
+## Linear Model that will yield our ANOVA
+
+```{r}
+model_unadj <- lm(outcomes ~ clin_care, data = ohio18)
+tidy(model_unadj)
+glance(model_unadj)
 ```
 
 ## Unadjusted - ANOVA and 90% Tukey HSD intervals
@@ -288,7 +314,7 @@ ggplot(tukey_adj, aes(x = reorder(comparison, -estimate),
   geom_text(aes(label = round(estimate,2)), nudge_x = 0.1) +
   theme_bw() +
   labs(x = "Comparison between Clinical Care Groups", 
-       y = "Effect, with 90% Tukey HSD interval",
+       y = "Adjusted Effect, with 90% Tukey HSD interval",
        title = "Adjusted Effect, with Tukey HSD 90% Confidence Intervals",
        subtitle = "Comparing Outcomes by Clinical Care adjusting for Income, Ohio18 data")
 ```
@@ -399,9 +425,25 @@ ohio18 %>% select(outcomes, income, density) %>% summary
 
 Where is Delaware County?
 
-## A map of Ohio, with Delaware County highlighted
+## Where is Delaware County?
 
-Build it.
+```{r, include = FALSE}
+library(tigris)
+oh_c <- counties("Ohio", cb = TRUE)
+oh_c <- sf::st_as_sf(oh_c)
+oh_c <- oh_c %>%
+    mutate(del = factor(ifelse(NAME == "Delaware", 1, 0)))
+```
+
+```{r, echo = FALSE}
+ggplot() +
+    geom_sf(data = oh_c, aes(fill = del)) +
+    scale_fill_viridis_d() +
+    guides(fill = FALSE) +
+    labs(title = "Where is Delaware County, Ohio?")
+```
+
+- Northern suburbs of Columbus
 
 ## Augmenting the data with our model's results
 
@@ -484,8 +526,11 @@ par(mfrow = c(1,2)); plot(model4, which = 4:5)
 
 - See github site for this.
 
+- Also posted at my RPubs site: http://rpubs.com/TELOVE
+
 ## Our Next Steps
 
+- Homework 7 due Friday at noon
 - Building and Using a Scatterplot Matrix (review)
 - Comparing Models, by splitting our data into training (model development) and test samples
   - Assessing training sample performance with adjusted R^2^, AIC and BIC
