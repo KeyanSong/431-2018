@@ -79,11 +79,8 @@ skimr::skim_with(numeric = list(hist = NULL),
 
 **The Demo Project is now available.** As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md) is now complete.  
 
-- We will discuss the material on that page today (Thursday 2018-11-15). Get the R Markdown and HTML files that I created for the Study 2 project at http://bit.ly/431-2018-demo-study2.
 - To make it easier to see, the Study 2 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study2-demo-431-2018.
-
-- Don't forget that [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
-
+- We will discuss this material today. Get the R Markdown and HTML files at http://bit.ly/431-2018-demo-study2.
 
 ## A Primer on Mapping Data
 
@@ -93,4 +90,13 @@ At some point in today's discussion, it will be useful for me to show you a map 
 
 ## Visualization of the Day
 
+"[How You Will Die]" from Nathan Yau at [FlowingData](https://flowingdata.com/)
+
 ## One Last Thing
+
+Wyatt Bensken was good enough to point me to an interesting research letter at *JAMA Oncology* from 2018-10-18 by Kevin T Nead, Mackenzie R Wehner and Nandita Mitra entited "[The use of "trend" statements to describe statistically nonsignificant results in the oncology literature](https://jamanetwork.com/journals/jamaoncology/article-abstract/2705969). As he notes:
+
+> They evaluated original research articles in four oncology journals and found that "8.7%  of original research articles used at least 1 trend statement to describe statistically nonsignificant results."
+
+A disturbing trend.
+
