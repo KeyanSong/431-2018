@@ -37,6 +37,8 @@ Occasionally described as the equivalent of the Nobel Prize, the [International 
 
 ### Study 1
 
+- To make it easier to see, the Study 1 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study1-demo-431-2018.
+
 Remaining steps I would take (were I you) for Project Study 1 are:
 
 1. Make decisions about how you will revise each of your six Analyses. Follow Dr. Love's [suggestions and comments on your Survey Comparison Plan materials from Task D](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md), and then be sure that for each Analysis where you've changed something, you verify the things specified for the affected Analyses in the [section on Getting the Revisions Right](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md#getting-the-revisions-right). 
@@ -90,6 +92,8 @@ skimr::skim_with(numeric = list(hist = NULL),
 5. Finally, for heaven’s sake, **DO NOT** use my words included in the demonstration project in your project for either Study 1 or Study 2. Rewrite **everything** other than perhaps the headings to make it your own, and make it relevant to your situation. Do not repeat my instructions back at me.
 
 ### Study 2
+
+- To make it easier to see, the Study 2 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study2-demo-431-2018.
 
 1. Today we'll discuss the projects by people whose family names start with S-Z in the [Approved Project Proposals](https://github.com/THOMASELOVE/431-2018-project/blob/master/OKtaskA.md#s-v).
 
