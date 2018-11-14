@@ -233,7 +233,7 @@ anova(model_one)
 
 ## So, what's in the ANOVA table? (df)
 
-The ANOVA table reports here on a single **factor** (behavior group) with 3 levels, and on the residual variation in health **outcomes** not accounted for by that factor.
+The ANOVA table reports here on a single **factor** (behavior group) with 4 levels, and on the residual variation in health **outcomes** not accounted for by that factor.
 
 ```{r}
 anova(model_one)[1:4]
@@ -243,7 +243,7 @@ anova(model_one)[1:4]
 
 - df for our factor (behavior) is one less than the number of categories. We have four behavior groups, so 3 degrees of freedom.
 - Adding df(behavior) + df(Residuals) = 3 + 84 = 87 = df(Total), one less than the number of observations (counties) in Ohio.
-- *n* observations and *g* groups yield $n - g - 1$ residual df in a one-factor ANOVA table.
+- *n* observations and *g* groups yield $n - g$ residual df in a one-factor ANOVA table.
 
 ## So, what's in the ANOVA table? (Sum of Squares)
 
