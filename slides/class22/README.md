@@ -21,6 +21,8 @@
 
 ### Study 1
 
+- To make it easier to see, the Study 1 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study1-demo-431-2018.
+
 Remaining steps I would take (were I you) for Project Study 1 are:
 
 1. Make decisions about how you will revise each of your six Analyses. Follow Dr. Love's [suggestions and comments on your Survey Comparison Plan materials from Task D](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md), and then be sure that for each Analysis where you've changed something, you verify the things specified for the affected Analyses in the [section on Getting the Revisions Right](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md#getting-the-revisions-right). 
@@ -78,7 +80,16 @@ skimr::skim_with(numeric = list(hist = NULL),
 **The Demo Project is now available.** As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md) is now complete.  
 
 - We will discuss the material on that page today (Thursday 2018-11-15). Get the R Markdown and HTML files that I created for the Study 2 project at http://bit.ly/431-2018-demo-study2.
+- To make it easier to see, the Study 2 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study2-demo-431-2018.
+
 - Don't forget that [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
+
+
+## A Primer on Mapping Data
+
+At some point in today's discussion, it will be useful for me to show you a map of Ohio, with Delaware County identified. I figured out two ways to obtain this plot quickly (this is new for me) so I thought I would pass them along. 
+
+- The [R Markdown file is here](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class22/mapping_primer.Rmd), but the HTML result shows up best [at this RPubs link](http://rpubs.com/TELOVE/class22-431-2018-mapping).
 
 ## Visualization of the Day
 
