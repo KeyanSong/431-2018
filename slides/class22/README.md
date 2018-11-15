@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides for Class 22 are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class22/431_class-22-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class22/431_class-22-slides_2018.Rmd).
-- Class 22 audio files will be posted as soon as they are available.
+- Class 22 audio files are now posted.
 
 ## Remaining Pre-Thanksgiving Deliverables
 
