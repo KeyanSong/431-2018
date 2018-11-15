@@ -23,64 +23,35 @@
 
 - To make it easier to see, the Study 1 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study1-demo-431-2018.
 
-Remaining steps I would take (were I you) for Project Study 1 are:
+As a reminder, the remaining steps I would take (were I you) for Project Study 1 are:
 
-1. Make decisions about how you will revise each of your six Analyses. Follow Dr. Love's [suggestions and comments on your Survey Comparison Plan materials from Task D](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md), and then be sure that for each Analysis where you've changed something, you verify the things specified for the affected Analyses in the [section on Getting the Revisions Right](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md#getting-the-revisions-right). 
+1. Make decisions about how you will revise each of your six Analyses. Follow Dr. Love's [suggestions and comments on your Survey Comparison Plan materials from Task D](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md), and  be sure that where you've changed something, you look at the [section on Getting the Revisions Right](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/plan-comments.md#getting-the-revisions-right). 
 
-2. Begin your actual work with the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1), which I **updated** slightly on 2018-11-12. Open the R Markdown file, and begin editing it. Your goal should be to have achieved the elements in Sections 1-5 of the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1) as soon as possible, and have a final, clean codebook. Once you've done that, the actual analyses in Sections 6-12 are pretty straightforward.
+2. Start with the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1), which I **updated** on 2018-11-12. 
 
-    - Use a template like the one used in the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1). The specific template I use is called `readthedown` format. 
-    - Other template options include the `material` format, and the `html_clean` format, also available in the `rmdformats` package, and [described at this Github site](https://github.com/juba/rmdformats). 
-    - I recommend `readthedown`, personally, because I like some of its idiosyncracies, and I have had less trouble working with it than the others in my own work. I use `readthedown` in both the Study 1 and Study 2 demonstration projects, and suggest you use it in both of your projects that you submit in the portfolio for Task G. There are better tools, but I think `readthedown` is a good place to be at the end of 431. (I'm aiming for us all to be building [Radix websites](https://rstudio.github.io/radix/) in 432, I think.)
-    - The key element of these approaches is the use of an attractively formatted (and dynamic) table of contents to help organize what we want to see, and to facilitate jumping around as I ask questions during your presentation, and during my evaluation of your work.
-
-3. You need to replace the data work throughout the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1) with the details from our 2018 data and your planned analyses.
-
+- Get through Sections 1-5 of the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1) as soon as possible.
     - This includes (but is not limited to) the required merging and combination of all five data sets, [as discussed and demonstrated here](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/surv2018_combining-datasets.md). Everyone needs to combine all five data sets to complete the project, although you will prune down the variables to your specific analytic data set at the end of section 2 (from the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1)), and then work only with those variables in sections 3-12.
     - This also includes the use of simple imputation, to deal with missingness (if it exists) in the variables you have selected for your analyses. [Imputation instructions and a demonstration are available here](https://github.com/THOMASELOVE/431-2018-project/blob/master/survey-results/impute_example.md).
+- Once you've done that, the analyses in Sections 6-12 should be more straightforward. The imputation is the only really new idea there. I encourage the use of the same `readthedown` formatting template I used in the demos in your Study 1 and Study 2.
 
-4. Review the **updated** [Task G](https://thomaselove.github.io/431-2018-project/taskG.html) and [Task H](https://thomaselove.github.io/431-2018-project/taskH.html) instructions to be sure that you have completed all necessary analyses for Project Study 1, and that you have a clear understanding of the things you'll need to do in your presentation regarding Study 1.
+3. Review the **updated** [Task G](https://thomaselove.github.io/431-2018-project/taskG.html) and [Task H](https://thomaselove.github.io/431-2018-project/taskH.html) instructions to be sure that you have completed all necessary analyses for Project Study 1, and that you have a clear understanding of the things you'll need to do in your presentation regarding Study 1. The main thing is to be sure you can move easily from Analysis to Analysis during the presentation.
 
-    - We covered all materials you would need to do Analyses 1, 2, 4, 5 and 6 prior to today's class.
-    - During class 22, we will cover Analysis 3.
-
-#### Some Tips
-
-1. **Naming Things** is hard. But don't make it harder on yourself by picking a very generic name (like `survey` for the data you will use. Even `sur431` is better than that, since `survey` is an important package name in R.
-2. **Getting Started in the RIGHT WAY** The biggest problem people struggle with is that packages fight each other for function names (like `select`). To avoid this, load every package you plan to use before you load the tidyverse. 
-3. This also means calling `source("Love-boost.R")` **prior** to the loading of packages, as opposed to after it, as I have now corrected the [Study 1 Demonstration Project](https://github.com/THOMASELOVE/431-2018-project/tree/master/demo_study1) to do. Be sure to make that change - **I will be looking to see that you have done this properly**. I expect most to begin section 2 of their Project with an initial setup that looks something like this...
-
-```
-## Load Love-boost then the packages
-source("Love-boost.R")
-
-library(knitr); library(rmdformats); library(magrittr)
-library(skimr); library(Hmisc); library(Epi); library(vcd)
-library(tidyverse) 
-
-## Global options
-
-options(max.print="75")
-opts_chunk$set(comment=NA,
-               message=FALSE,
-               warning=FALSE)
-opts_knit$set(width=75)
-
-## Skim options (leave out histograms)
-
-skimr::skim_with(numeric = list(hist = NULL),
-                 integer = list(hist = NULL))
-```
-
-4. The other thing I will absolutely be looking for is whether or not you remember to change the name of your project and the author to you. If yours says "431 Project Study 1 Demonstration" or says that the author is "Thomas E. Love" change that **NOW** so that you don't forget. "431 Project Study 1" is a boring but reasonable name for your work. But "431 Project Study 1 Demonstration" flags you as someone who didn't pay attention to details. Don't be in that situation.
-5. Finally, for heaven’s sake, **DO NOT** use my words included in the demonstration project in your project for either Study 1 or Study 2. Rewrite **everything** other than perhaps the headings to make it your own, and make it relevant to your situation. Do not repeat my instructions back at me.
+After today's class, we'll have demonstrated all necessary Analyses you'll use in Study 1.
 
 ### Study 2
 
-**The Demo Project is now available.** As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md) is now complete.  
+As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/THOMASELOVE/431-2018-project/blob/master/demo_study2/README.md) is now complete. Get the R Markdown, data and HTML files for this demo at http://bit.ly/431-2018-demo-study2.
 
-- To make it easier to see, the Study 2 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study2-demo-431-2018.
-- We will discuss this material today. Get the R Markdown and HTML files at http://bit.ly/431-2018-demo-study2.
+- To make it easier to discuss in class today, the Study 2 Demonstration HTML file is at http://rpubs.com/TELOVE/study2-demo-431-2018.
+ 
+### The Main Hint for the Project
+
+Get the little details and the big details right. This will be my final impression of you from 431, so put forward your best effort.
+
+- Change the name of the project and author to match what **you** are doing. 
+- Don't use my words (other than the headings) from the demonstration project to present your work. 
+- Don't repeat my instructions or suggestions about how to do things. 
+- Make careful decisions while coding and writing in R Markdown, and then review the HTML results to be sure they look clear and attractive. 
 
 ## A Primer on Mapping Data
 
