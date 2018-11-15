@@ -33,6 +33,13 @@ It's critical. You need to get both the little details and the big details right
     2. You will thus have a chance to look at the HTML with fresh eyes before you submit your final work, and this can be **very** helpful.
 - After today's class, you should absolutely be able to complete Study 1, and to do all of the work involved in cleaning and tidying Study 2, through the development of a codebook. The other pieces of Study 2 are laid out in detail in the Study 2 Demonstration project, which we'll discuss today, and which we'll essentially replicate in new data after Thanksgiving. Homework 8 also covers a lot of the same material we expect to see in Study 2.
 
+### How I Evaluate Your Presentation
+
+Each year, I build a Google Form to help me evaluate your project presentations. The draft version of this year’s form is available to you at http://bit.ly/431-2018-draft-project-eval-form. There is no form for evaluating the actual portfolios.
+
+- The only feedback you will get from me on your project will be what I say to you in the room. Your overall project grade (which is on a 100-point scale) is then part of your course grade. 
+- To be fair, most people know when they leave my office after their presentation whether it went well or poorly. Most people emerge  calmer post-presentation than when they arrive.
+
 ### Study 1
 
 - The Study 1 Demonstration project HTML can now be viewed at http://rpubs.com/TELOVE/study1-demo-431-2018.
