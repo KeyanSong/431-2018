@@ -12,15 +12,14 @@
 - Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8) is now posted. It is due at noon on Friday 2018-11-30.
 
-## Feedback
+## Homework 6
 
-- Homework 6 Grades will be posted to the usual Google Sheet at http://bit.ly/431-2018-hw-grades as soon as possible.
-- The [Homework 6 grading rubric](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework6) will be posted at the same time as the grades.
-- Dr. Love's response to the Minute Papers after Class 21 is found at http://bit.ly/431-2018-minute21-response.
+- Homework 6 Grades are now part of the usual Google Sheet at http://bit.ly/431-2018-hw-grades.
+- The [Homework 6 grading rubric](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework6) is now posted.
 
 ### Minute Paper Links
 
-In the Minute Paper responses, I make reference to several links. They are:
+Dr. Love's response to the Minute Papers after Class 21 is found at http://bit.ly/431-2018-minute21-response. In the Minute Paper responses, I make reference to several links. They are:
 
 - Rachael Dottle, Ella Koeze and Julia Wolfe at FiveThirtyEight on "[The 2018 Midterms, in 4 Charts](https://fivethirtyeight.com/features/the-2018-midterms-in-4-charts/)" from 2018-11-13.
 - Andrew Gelman at Slate on "[Why the 2018 Midterms May Have Been Bluer Than You Think](https://slate.com/news-and-politics/2018/11/midterms-blue-wave-statistics-data-analysis.html) from 2018-11-12.
