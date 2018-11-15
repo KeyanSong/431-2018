@@ -19,9 +19,22 @@
 
 ## Project Updates
 
+### Time Management for the Project
+
+It's critical. You need to get both the little details and the big details right in this setting. This will be my final impression of you from 431, so maximize your chance to put forward your best effort.
+
+- Change the name of the project and author to match what **you** are doing. 
+- Don't use my words (other than the headings) from the demonstration project to present your work. 
+- Don't repeat my instructions or suggestions about how to do things. 
+- Make careful decisions while coding and writing in R Markdown, and then review the HTML results to be sure they look clear and attractive. 
+- The most useful thing you can do is finish the project well in advance of the deadline, for two reasons.
+    1. You have a Quiz to take in December, and doing the Quiz may suggest things that would improve your project, and vice versa.
+    2. You will thus have a chance to look at the HTML with fresh eyes before you submit your final work, and this can be **very** helpful.
+- After today's class, you should absolutely be able to complete Study 1, and to do all of the work involved in cleaning and tidying Study 2, through the development of a codebook. The other pieces of Study 2 are laid out in detail in the Study 2 Demonstration project, which we'll discuss today, and which we'll essentially replicate in new data after Thanksgiving. Homework 8 also covers a lot of the same material we expect to see in Study 2.
+
 ### Study 1
 
-- To make it easier to see, the Study 1 Demonstration project HTML file is also at http://rpubs.com/TELOVE/study1-demo-431-2018.
+- The Study 1 Demonstration project HTML can now be viewed at http://rpubs.com/TELOVE/study1-demo-431-2018.
 
 As a reminder, the remaining steps I would take (were I you) for Project Study 1 are:
 
@@ -44,15 +57,6 @@ As of 2018-11-12, the [Project Study 2 Demonstration page](https://github.com/TH
 
 - To make it easier to discuss in class today, the Study 2 Demonstration HTML file is at http://rpubs.com/TELOVE/study2-demo-431-2018.
  
-### The Main Hint for the Project
-
-Get the little details and the big details right. This will be my final impression of you from 431, so put forward your best effort.
-
-- Change the name of the project and author to match what **you** are doing. 
-- Don't use my words (other than the headings) from the demonstration project to present your work. 
-- Don't repeat my instructions or suggestions about how to do things. 
-- Make careful decisions while coding and writing in R Markdown, and then review the HTML results to be sure they look clear and attractive. 
-
 ## A Primer on Mapping Data
 
 At some point in today's discussion, it will be useful for me to show you a map of Ohio, with Delaware County identified. I figured out two ways to obtain this plot quickly (this is new for me) so I thought I would pass them along. 
