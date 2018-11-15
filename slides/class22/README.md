@@ -12,10 +12,11 @@
 - Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28, after the Thanksgiving break.
 - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8) is now posted. It is due at noon on Friday 2018-11-30.
 
-## Coming ASAP
+## Feedback
 
-- Minute Paper after Class 21 results.
-- Homework 6 Grades
+- Homework 6 Grades will be posted to the usual Google Sheet at http://bit.ly/431-2018-hw-grades as soon as possible.
+- The [Homework 6 grading rubric](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework6) will be posted at the same time as the grades.
+- Dr. Love's response to the Minute Papers after Class 21 will be found at http://bit.ly/431-2018-minute21-response.
 
 ## Project Updates
 
