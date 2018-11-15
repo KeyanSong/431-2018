@@ -61,7 +61,7 @@ At some point in today's discussion, it will be useful for me to show you a map 
 
 ## Visualization of the Day
 
-"[How You Will Die]" from Nathan Yau at [FlowingData](https://flowingdata.com/)
+"[How You Will Die](https://flowingdata.com/2016/01/19/how-you-will-die/)" from Nathan Yau at [FlowingData](https://flowingdata.com/)
 
 ## One Last Thing
 
