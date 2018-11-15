@@ -16,7 +16,16 @@
 
 - Homework 6 Grades will be posted to the usual Google Sheet at http://bit.ly/431-2018-hw-grades as soon as possible.
 - The [Homework 6 grading rubric](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework6) will be posted at the same time as the grades.
-- Dr. Love's response to the Minute Papers after Class 21 will be found at http://bit.ly/431-2018-minute21-response.
+- Dr. Love's response to the Minute Papers after Class 21 is found at http://bit.ly/431-2018-minute21-response.
+
+### Minute Paper Links
+
+In the Minute Paper responses, I make reference to several links. They are:
+
+- Rachael Dottle, Ella Koeze and Julia Wolfe at FiveThirtyEight on "[The 2018 Midterms, in 4 Charts](https://fivethirtyeight.com/features/the-2018-midterms-in-4-charts/)" from 2018-11-13.
+- Andrew Gelman at Slate on "[Why the 2018 Midterms May Have Been Bluer Than You Think](https://slate.com/news-and-politics/2018/11/midterms-blue-wave-statistics-data-analysis.html) from 2018-11-12.
+- I'll also add FiveThirtyEight's politics chat from 2018-11-14 entitled "[Yes, It Was a Blue Wave](https://fivethirtyeight.com/features/yes-it-was-a-blue-wave/)".
+- The R Studio Conference, or [rstudio::conf](https://www.rstudio.com/conference/) is January 15-18, 2019 in Austin, Texas.
 
 ## Project Updates
 
