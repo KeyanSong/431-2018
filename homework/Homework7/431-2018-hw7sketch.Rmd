@@ -1,0 +1,147 @@
+---
+title: "Answer Sketch for Homework 7"
+author: "431 Staff and Professor Love"
+date: "`Due 2018-11-16, version `r Sys.Date()`"
+output:
+  pdf_document:
+    toc: yes
+    number_sections: yes
+  html_document:
+    code_folding: show
+    toc: yes
+    number_sections: yes
+---
+
+# Initial R Setup {-}
+
+Here's the R setup we used.
+
+```{r setup, message=FALSE}
+knitr::opts_chunk$set(comment=NA)
+
+library(tidyverse)
+```
+
+We'll read in each of the data sets, in case we need them.
+
+```{r read_data}
+coexpose1 <- read.csv("coexpose1.csv") %>% tbl_df
+coexpose2 <- read.csv("coexpose2.csv") %>% tbl_df
+```
+
+# Question 1
+
+The same data appear in the `coexpose1.csv` and the `coexpose2.csv` files. What is the difference between the two files, and which of the two files is more useful for fitting an ANOVA to compare the FEV~1~ means across the three medical centers?
+
+## Answer for Question 1
+
+```{r q1}
+glimpse(coexpose1)
+glimpse(coexpose2)
+```
+
+The `coexpose1` file contains `r nrow(coexpose1)` rows and `r ncol(coexpose1)` columns, labeled by the names of the three centers. Each column contains the response (FEV$_1$) for the subjects at that center. This is what is called data in the **wide** format, and is most appropriate when planning a matched samples analysis.
+
+The `coexpose2` file contains `r nrow(coexpose2)` rows and `r ncol(coexpose2)` columns, labeled `pt.id`, `fev1` and `center`. We have each patient's ID, their FEV$1$ value, and their center, laid out in **long** format, which is most appropriate for an independent samples analysis. These are tidy data.
+
+The ANOVA expects us to have a variable for our outcome (`fev1`) and the treatment/group identifier (`center` in this case), so the `coexpose2` data will be more useful for our purposes.
+
+# Question 2
+
+Produce a numerical summary to compare the means across the three centers, and specify the rank order (highest to lowest) of the sampled FEV~1~ levels.
+
+## Answer for Question 2
+
+There are several ways to accomplish this, but I expect most of you used `favstats` from the `mosaic` package ...
+
+```{r q2}
+mosaic::favstats(fev1 ~ center, data = coexpose2)
+```
+
+By the mean (or, in fact, the median) `fev1` value in each `center`, we'd rank `rancho.los.amigos` highest, followed by `st. louis` and finally `johns.hopkins`, with the smallest `fev1` mean/median. 
+
+# Question 3
+
+Produce a graphical summary to compare the three centers that allows you to assess the Normality and Equal Variances assumptions of an ANOVA to compare the FEV~1~ means across the three medical centers. What conclusion do you draw about the assumptions in this setting? Then do the actual comparison of the FEV~1~ means of the three different medical centers using an analysis of variance. What conclusion do you draw, using a **90%** confidence level?
+
+## Answer for Question 3
+
+I would be likely to use a combination boxplot and violin plot, although there are certainly other alternatives. There is one identified outlier in the Johns Hopkins data, but I see no serious concerns with either the Normality or the Constant Variance assumption.
+
+```{r q3a}
+ggplot(coexpose2, aes(y = fev1, x = center, fill = center)) +
+  geom_violin(alpha = 0.25) +
+  geom_boxplot(width = 0.3) + 
+  coord_flip() + 
+  labs(title = "FEV1 distributions within Centers", 
+       y = "FEV1 (%)", 
+       x = "") + 
+  guides(fill = FALSE) +
+  scale_fill_viridis_d() + 
+  theme_bw()
+```
+
+Here's the ANOVA table, comparing the mean FEV~1~ levels, by Center.
+
+```{r q7b}
+anova(lm(fev1 ~ center, data = coexpose2))
+```
+
+Since *p* < 0.10, at the 90% confidence level, we conclude that there is a statistically detectable difference in the means at the three centers.
+
+# Question 4
+
+Specify the linear model regression equation used to predict our FEV~1~ outcome on the basis of medical center. What fraction of the variation in FEV~1~ levels is explained by the medical center?
+
+## Answer for Question 4
+
+As we can see in the coefficients column of the output below, the equation is `fev1` = 2.63 + 0.41 (`rancho.los.amigos`) + 0.25 (`st.louis`). 
+
+```{r a8}
+summary(lm(fev1 ~ center, data = coexpose2))
+```
+
+The Johns Hopkins center patients are used as the baseline category in this case. Rancho Los Amigos patients had `fev1` values (on average) 0.41 points higher than did the Hopkins patients. St. Louis patients were (on average) 0.25 points higher than Hopkins.
+
+The multiple R^2^ = 0.099, alsofrom the output above, so 9.9% of the variation in `fev1` is accounted for by the linear model using `center`.
+
+# Question 5
+
+This is a pre-planned comparison, but the sample sizes differ across the groups being compared. Obtain the results from a Tukey HSD method and then a Bonferroni approach for pairwise comparisons of the population FEV~1~ means, in each case again using a 90\% confidence level. Do your conclusions differ? 
+
+## Answer for Question 5
+
+Using an $\alpha$ of 0.10, the only significant difference we see in either the Bonferroni or the Tukey results is that Rancho Los Amigos has a statistically significantly larger mean than does Johns Hopkins.
+
+```{r q5}
+pairwise.t.test(coexpose2$fev1, coexpose2$center, 
+                p.adjust.method="bonferroni")
+
+TukeyHSD(aov(coexpose2$fev1 ~ coexpose2$center), 
+         conf.level=.90)
+```
+
+We might also want to plot the confidence intervals from the Tukey procedure, but to do that, I will first create a new `center_f` factor that compresses the names of the centers, so they can fit more easily in the plot.
+
+```{r}
+coexpose2 <- coexpose2 %>%
+  mutate(center_f = fct_recode(center,
+          "RLA" = "rancho.los.amigos", 
+          "JH" = "johns.hopkins", 
+          "StL" = "st.louis"))
+
+plot(TukeyHSD(aov(fev1 ~ center_f, data = coexpose2),
+              conf.level = 0.90))
+```
+
+# Questions 6-9
+
+6. Find an example of a visualization designed to support a comparison of at least two population means or medians using either paired or independent samples in a published work (online or not) for which you can find the complete sourcing information, and which was built no earlier than January 1, 2013. Provide the complete reference and a copy of the image itself (including any captions or titles) and surrounding material for the visualization.
+
+7. In a few sentences, describe the purpose of the comparison being made in your example from Question 6. Explain its context and why it is important. Specify the research question that this comparison (and the accompanying p value or confidence interval based inference, if available) is providing to the reader.
+
+8. In a few sentences, describe the visualization that you found which relates to the comparison being made in your example from Question 6. Explain what you believe the visualization is trying to do. Specify why it is or is not effective, in your view.
+
+9. Provide your best suggestion as to how either the visualization or the comparison that you found in Question 6 might be improved, and explain why your change (or changes) would be an improvement.
+
+## We don't provide answer sketches for essay Questions, like 6-9
