@@ -17,6 +17,19 @@ Tell us about the most useful thing (an insight, example or key idea) that you l
 
 An appropriate response to this question will be 200-400 words long.
 
+## A note on the specifications for the essay
+
+In reading your essay, we will look for the following specifications to be met:
+
+1. Length is between 200 and 400 words.
+2. English is correctly used throughout, and there is no more than one typographical error and one grammatical / syntax error.
+3. A key idea is identified and clearly stated that actually appears in *The Signal and the Noise*.
+4. An accurate and properly cited quote from the book is provided that is relevant to the identified key idea.
+5. The context for the quote within Silver's book is described in the student's essay.
+6. The essay clearly specifies how the idea in the book has changed their way of thinking about something which is explained in the essay.
+7. The essay is clearly written, in general.
+8. The essay is interesting to read.
+
 # General Description of the Data for Questions 2-6
 
 Low dietary intake or low plasma concentrations of retinol, beta-carotene, or other carotenoids might be associated with increased risk of developing certain types of cancer. However, relatively few studies have investigated the determinants of plasma concentrations of these micronutrients. A cross-sectional study was designed to investigate the relationship between personal characteristics and dietary factors, and plasma concentrations of beta-carotene. Study subjects ($n = 300$) were patients who had an elective surgical procedure during a three-year period to biopsy or remove a lesion of the lung, colon, breast, skin, ovary or uterus that was found to be non-cancerous. 
