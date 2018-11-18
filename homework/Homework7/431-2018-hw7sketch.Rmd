@@ -74,7 +74,7 @@ ggplot(coexpose2, aes(y = fev1, x = center, fill = center)) +
   geom_boxplot(width = 0.3) + 
   coord_flip() + 
   labs(title = "FEV1 distributions within Centers", 
-       y = "FEV1 (%)", 
+       y = "FEV1 (liters)", 
        x = "") + 
   guides(fill = FALSE) +
   scale_fill_viridis_d() + 
