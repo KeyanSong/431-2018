@@ -5,6 +5,11 @@
 - The slides for Class 23 will appear [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class23/431_class-23-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class23/431_class-23-slides_2018.Rmd).
 - Class 23 audio files will appear above when they are available.
 
+## Homework 7 Materials
+
+- Homework 7's [answer sketch](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework7) and [grading rubric](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework7) are now available.
+- Grades for Homework 7 are in the usual place, at http://bit.ly/431-2018-hw-grades
+
 ## Remaining Course Deliverables
 
 - Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28.
@@ -17,3 +22,4 @@ Dr. Love emailed you a template for Project Study 1 on 2018-11-17. It is also av
 - The template has some nice features, and it should import the data properly, freeing you to start pruning the big data set down to what you actually need. 
 - The template assumes you have an R project directory for project study 1 containing this R Markdown file, the five data sets, and the Love-boost.R script, [all of which are posted here](https://github.com/THOMASELOVE/431-2018-project/tree/master/study1template).
 - If you want to see what the HTML file looks like that the template creates, it is [posted at this RPubs site](http://rpubs.com/TELOVE/Project-study1-template-431-2018).
+
