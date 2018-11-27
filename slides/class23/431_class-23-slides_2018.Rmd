@@ -9,7 +9,6 @@ output:
     colortheme: "whale"
     fig_height: 5.5
     fig_caption: false
-linkcolor: yellow
 ---
 
 ```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
@@ -464,8 +463,13 @@ plot(m_fin, which = 5)
 - Analysis of Variance to compare models
 - Collinearity and the Variance Inflation Factor
 - Stepwise Regression to help identify predictor sets
-- Imputation and its impact on the model
+- Simple imputation and its impact on the model
 - Making predictions / prediction vs. confidence intervals
+
+### And Maybe ...
+
 - Standardizing our regression inputs / outputs
+- Visualization of bootstrap estimated variation around our model
+- Fake data simulation for model checking
 
 plus many, many things that we'll do in 432.
