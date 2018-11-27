@@ -18,6 +18,7 @@
     - If you accomplish the task by noon Wednesday (+ 1 hour lag time), you will receive 5 points on your project.
 - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8) is due at noon on Friday 2018-11-30. Dr. Love posted a hint for Question 6 and some specifications on how we'll grade the essay in Question 1 to the [revised instructions for Homework 8](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8.md) on 2018-11-17.
 - The [Project Presentation Schedule](http://bit.ly/431-2018-project-schedule) has changed in a couple of tiny ways. If you're affected, you should already know about this. Please check to see that you're still all set for the time and date on [the Schedule](http://bit.ly/431-2018-project-schedule). Thanks!
+- The Course Evaluations, as you probably already know, are now available at https://webapps.case.edu/courseevals/. I am eager for you to fill one out before the 2018-12-19 deadline, but perhaps you should wait until **after** your project presentation.
 
 ## The Project Study 1 Template
 
