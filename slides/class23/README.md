@@ -22,8 +22,8 @@ The WOMAN-ETAC trial is a substudy of the WOMAN trial. The main result of [the W
     - D-dimer concentration = a D-dimer is a small protein fragment present in the blood after a clot breaks down. It is determined through a blood test, measured in mg/liter. Higher levels indicate more trouble.
     - Prothrombin time, the INR (International Normalized Ratio) and the Activated Partial Thromboplastin time are assays which evaluate coagulation. Each measure is used to describe the clotting tendency of blood. (In the real study, these are secondary outcomes).
 - The data are available through the FREEBIRD project at https://ctu-app.lshtm.ac.uk/freebird/ (registration required) and were posted there by researchers at the London School of Hygiene and Tropical Medicine on 2018-07-27.
-- I'll also provide [the PubMed link to the paper describing the study design](https://www.ncbi.nlm.nih.gov/pubmed/28317031) for your reference.
-- Today, we'll use the WOMAN - ETAC substudy to focus on 8 key steps that you'll be doing in many regression analyses, especially in Homework 8 and in Project Study 2.
+- I'll also provide [the PubMed link to the paper describing the WOMAN-ETAC study design](https://www.ncbi.nlm.nih.gov/pubmed/28317031) for your reference.
+- Today, we'll use data from 95 women in the WOMAN - ETAC substudy to focus on 8 key modeling and analytic steps that you'll be doing in many regression analyses, especially in Homework 8 and in Project Study 2.
 
 ## Homework 7 Materials
 
@@ -39,8 +39,33 @@ The WOMAN-ETAC trial is a substudy of the WOMAN trial. The main result of [the W
 
 Dr. Love emailed you a template for Project Study 1 on 2018-11-17. It is also available as an [R Markdown file here](https://github.com/THOMASELOVE/431-2018-project/blob/master/study1template/431-project-study1_template.Rmd). 
 
-- The template has some nice features, and it should import the data properly, freeing you to start pruning the big data set down to what you actually need. 
-- The template assumes you have an R project directory for project study 1 containing this R Markdown file, the five data sets, and the Love-boost.R script, [all of which are posted here](https://github.com/THOMASELOVE/431-2018-project/tree/master/study1template).
+- The template has some nice features, including tabs and chapter separations by headings, and it should import the data properly, freeing you to start pruning the big data set down to what you actually need. 
+- The template assumes you have an R project directory for project study 1 containing this R Markdown file, the five data sets, and the `Love-boost.R` script, [all of which are posted here](https://github.com/THOMASELOVE/431-2018-project/tree/master/study1template).
 - If you want to see what the HTML file looks like that the template creates, it is [posted at this RPubs site](http://rpubs.com/TELOVE/Project-study1-template-431-2018).
 
-## 
+## Simple Exploratory Data Analysis in one line of code?
+
+Check out [this blog post by Laura Ellis](https://www.littlemissdata.com/blog/simple-eda). In it, she describes several useful tools for initial data analysis. One of the most interesting to me (and to Laura) is a function in the `DataExplorer` package called `create_report()`, which provides an extensive data profile of your data frame in a single command, including "basic statistics, structure, missing data, distribution visualizations, correlation matrix and principal component analysis for your data frame"!
+
+So, in our case, I installed the `DataExplorer` package, and then ran the following commands:
+
+```
+library(DataExplorer)
+create_report(etac431)
+```
+
+and [the result can be seen here](http://htmlpreview.github.io/?https://github.com/THOMASELOVE/431-2018/blob/master/slides/class23/431_2018_Data_Profile_Report_ETAC.html).
+
+## What is a Successful Data Analysis?
+
+[What is a successful data analysis?](https://simplystatistics.org/2018/04/17/what-is-a-successful-data-analysis/) Roger Peng suggests ...
+
+> A data analysis is successful if the audience to which it is presented accepts the results.
+
+## Visualization of the Day
+
+Nathan Yau gives us "[A Day in the Life of Americans](https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/)"
+
+## One Last Thing
+
+- The `tidymodels` meta-package [is a thing](https://github.com/tidymodels/tidymodels). I'm hoping to learn more about it soon.
