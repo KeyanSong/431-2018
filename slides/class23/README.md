@@ -7,20 +7,20 @@
 
 ## Today's Main Example
 
-Today, we'll be working with a new data set, that comes from the WOMAN-ETAC trial, of the effect of tranexamic acid on coagulation and fibrinolysis in adult women with postpartum hemorrhage. The women were measured at baseline, and again after exposure to either tranexamic acid or placebo until follow-up was completed (death, discharge from hospital, or 42 days, whichever comes first.)
+Today, we'll be working with a new data set from the WOMAN-ETAC trial, of the effect of tranexamic acid on coagulation and fibrinolysis in adult women with postpartum hemorrhage. The women's blood samples were measured at baseline, and then again 30 minutes after the first dose of either tranexamic acid or placebo and then measured again at follow-up (death, discharge from hospital, or 42 days, whichever comes first.) The WOMAN-ETAC study involves women delivering at the University College Hospital, Ibadan, in Nigeria.
 
 The WOMAN-ETAC trial is a substudy of the WOMAN trial. The main result of [the WOMAN trial, as reported in a 2017 Open Access article in The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30638-4/fulltext) was that:
 
 > ... (TXA) reduces death due to bleeding in women with post-partum haemorrhage with no adverse effects. When used as a treatment for postpartum haemorrhage, tranexamic acid should be given as soon as possible after bleeding onset.
 
-- Here are a few key terms you might want to know from a clinical perspective.
+- Here are a few key terms you might want to know:
     - Hemorrhage = substantial bleeding, usually from a ruptured blood vessel
     - Postpartum = after vaginal delivery or cesarean section delivery of a baby
     - Coagulation = the process of blood changing to a solid or semi-solid state, forming a clot
     - Fibrinolysis = enzyme breakdown in blood clots (prevents clots from growing and becoming problematic)
     - Tranexamic Acid (abbreviated TXA) - medication used to prevent or treat excessive blood loss (in this case, it was injected)
     - D-dimer concentration = a D-dimer is a small protein fragment present in the blood after a clot breaks down. It is determined through a blood test, measured in mg/liter. Higher levels indicate more trouble.
-    - Prothrombin time, the INR (International Normalized Ratio) and the Activated Partial Thromboplastin time are assays which evaluate coagulation. Each measure is used to describe the clotting tendency of blood.
+    - Prothrombin time, the INR (International Normalized Ratio) and the Activated Partial Thromboplastin time are assays which evaluate coagulation. Each measure is used to describe the clotting tendency of blood. (In the real study, these are secondary outcomes).
 - The data are available through the FREEBIRD project at https://ctu-app.lshtm.ac.uk/freebird/ (registration required) and were posted there by researchers at the London School of Hygiene and Tropical Medicine on 2018-07-27.
 - I'll also provide [the PubMed link to the paper describing the study design](https://www.ncbi.nlm.nih.gov/pubmed/28317031) for your reference.
 - Today, we'll use the WOMAN - ETAC substudy to focus on 8 key steps that you'll be doing in many regression analyses, especially in Homework 8 and in Project Study 2.
@@ -43,3 +43,4 @@ Dr. Love emailed you a template for Project Study 1 on 2018-11-17. It is also av
 - The template assumes you have an R project directory for project study 1 containing this R Markdown file, the five data sets, and the Love-boost.R script, [all of which are posted here](https://github.com/THOMASELOVE/431-2018-project/tree/master/study1template).
 - If you want to see what the HTML file looks like that the template creates, it is [posted at this RPubs site](http://rpubs.com/TELOVE/Project-study1-template-431-2018).
 
+## 
