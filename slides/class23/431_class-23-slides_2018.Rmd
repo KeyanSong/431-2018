@@ -462,6 +462,7 @@ plot(m_fin, which = 5)
 
 - Box-Cox approach to identifying sensible re-expressions
 - Analysis of Variance to compare models
+- Collinearity and the Variance Inflation Factor
 - Stepwise Regression to help identify predictor sets
 - Imputation and its impact on the model
 - Making predictions / prediction vs. confidence intervals
