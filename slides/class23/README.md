@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides for Class 23 are now available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class23/431_class-23-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class23/431_class-23-slides_2018.Rmd).
-- Class 23 audio files will appear above after class.
+- Class 23 audio files are now posted.
 
 ## Homework 7 Materials
 
