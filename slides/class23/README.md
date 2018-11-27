@@ -43,6 +43,21 @@ Dr. Love emailed you a template for Project Study 1 on 2018-11-17. It is also av
 - The template assumes you have an R project directory for project study 1 containing this R Markdown file, the five data sets, and the `Love-boost.R` script, [all of which are posted here](https://github.com/THOMASELOVE/431-2018-project/tree/master/study1template).
 - If you want to see what the HTML file looks like that the template creates, it is [posted at this RPubs site](http://rpubs.com/TELOVE/Project-study1-template-431-2018).
 
+## Highlights from *The Signal and the Noise*
+
+The move to talking about *climate change* rather than *the greenhouse effect* has coincided with [all sorts of appalling things happening](https://twitter.com/existentialfish/status/1066711193170124800). If you cannot accept that atmospheric concentrations of greenhouse gases are increasing, and as a result of human activity - and this is also leading to increases in the amount of water vapor, which enhances warming, that's a problem. But usually that isn't the key problem. 
+
+Here are a few interesting points I hope you caught in Chapter 12, on climate change ...
+
+1. A simple regression analysis looking at the correlation between carbon dioxide levels and temperature may give a better predictive model than more sophisticated climate models.
+
+2. Where is the uncertainty around climate change predictions?
+    - In the models for the climate 
+    - In the assumptions about initial conditions
+    - In the assumptions we make about society's ability to adapt
+
+3. The amount of uncertainty can easily justify focus on mitigating climate change, because the risk of the problem being worse than expected entails more potential negative consequences than the consequences in the median case.
+
 ## Simple Exploratory Data Analysis in one line of code?
 
 Check out [this blog post by Laura Ellis](https://www.littlemissdata.com/blog/simple-eda). In it, she describes several useful tools for initial data analysis. One of the most interesting to me (and to Laura) is a function in the `DataExplorer` package called `create_report()`, which provides an extensive data profile of your data frame in a single command, including "basic statistics, structure, missing data, distribution visualizations, correlation matrix and principal component analysis for your data frame"!
@@ -68,7 +83,7 @@ At the end of the piece, he writes something which resonates with me a lot, espe
 
 ## Visualization of the Day
 
-Nathan Yau gives us "[A Day in the Life of Americans](https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/)"
+Nathan Yau gives us "[A Day in the Life of Americans](https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/)".
 
 ## One Last Thing
 
