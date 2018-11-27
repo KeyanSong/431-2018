@@ -34,9 +34,9 @@ etac431 <- read_csv("data/etac431.csv") %>%
 
 ## Today's Data come from the WOMAN-ETAC trial
 
-Effect of tranexamic acid on coagulation and fibrinolysis in women with postpartum haemorrhage (WOMAN-ETAC)
+Effect of tranexamic acid on coagulation and fibrinolysis in women with postpartum hemorrhage (WOMAN-ETAC)
 
-- Postpartum haemorrhage (PPH) is a leading cause of maternal death. Tranexamic acid has the potential to reduce bleeding and a large randomized controlled trial of its effect on maternal health outcomes in women with PPH (The WOMAN trial) is ongoing. 
+- Postpartum hemorrhage (PPH) is a leading cause of maternal death. Tranexamic acid has the potential to reduce bleeding and a large randomized controlled trial of its effect on maternal health outcomes in women with PPH (The WOMAN trial) is ongoing. 
 - WOMAN ETAC examined the effect of tranexamic acid on fibrinolysis and coagulation in a subset of WOMAN trial participants. 
 - Get a free account at https://ctu-app.lshtm.ac.uk/freebird/ to gain full access to the available data, as posted by the London School of Hygiene and Tropical Medicine on 2018-07-27.
 - The PubMed link to the design paper (free full text) is https://www.ncbi.nlm.nih.gov/pubmed/28317031
