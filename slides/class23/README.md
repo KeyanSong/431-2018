@@ -62,6 +62,10 @@ and [the result can be seen here](http://htmlpreview.github.io/?https://github.c
 
 > A data analysis is successful if the audience to which it is presented accepts the results.
 
+At the end of the piece, he writes something which resonates with me a lot, especially as I think about evaluating your projects next month.
+
+> Good communication with an audience can often play a much bigger role in success than whether you used a linear model or quadratic model. Trust between an analyst and audience is critical when an analyst must make choices about what to present and what to omit. Admitting that human nature plays a role in data analysis success is difficult because humans are highly subjective, inconsistent, and difficult to quantify. However, I think doing so gives us a better understanding about how to judge the quality of data analyses and how to improve them in the future.
+
 ## Visualization of the Day
 
 Nathan Yau gives us "[A Day in the Life of Americans](https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/)"
