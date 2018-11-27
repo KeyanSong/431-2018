@@ -32,7 +32,8 @@ The WOMAN-ETAC trial is a substudy of the WOMAN trial. The main result of [the W
 
 ## Remaining Course Deliverables
 
-- Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is due at noon on Wednesday 2018-11-28.
+- There is a Minute Paper After Class 23, to be found at http://bit.ly/431-2018-minute23. Please complete this by noon on Wednesday 2018-11-28.
+- Project [Task F](https://thomaselove.github.io/431-2018-project/taskF.html) (Sharing Study 2 Data), is also due at noon on Wednesday 2018-11-28. You submit this work via Canvas. Thanks to the six of you who've already done so. The grading on this couldn't be easier. If you accomplish the task by noon Wednesday (+ 1 hour lag time), you will receive 5 points on your project.
 - [Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework/Homework8) is due at noon on Friday 2018-11-30. Dr. Love posted a hint for Question 6 and some specifications on how we'll grade the essay in Question 1 to the [revised instructions for Homework 8](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8.md) on 2018-11-17.
 
 ## The Project Study 1 Template
