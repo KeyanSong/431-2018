@@ -24,6 +24,7 @@ options(width = 55)
 ### Today's R Setup
 
 ```{r setup, message = FALSE}
+library(knitr); library(kableExtra)
 library(GGally); library(janitor); library(broom)
 library(tidyverse) # always load tidyverse last
 
@@ -62,6 +63,18 @@ The trial data come from legally adult women with clinically diagnosed postpartu
 ### What's the goal of our modeling?
 
 Predict `dd_mgl_f` using `group` assignment and some baseline predictors.
+
+## Codebook (in Excel)
+
+![](images/etac_codebook.png)
+
+## Codebook (into R)
+
+```{r, message = FALSE}
+etac_code <- read_csv("data/etac_codebook.csv")
+
+etac_code %>% kable() 
+```
 
 ## The `etac431` data, as parsed by `read_csv`
 
