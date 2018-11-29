@@ -1,0 +1,754 @@
+---
+title: "431 Class 24"
+author: "Thomas E. Love"
+date: "2018-11-29"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+linkcolor: yellow
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's Agenda
+
+- Regression Analysis: What is new today?
+    - Box-Cox approach to identifying sensible re-expressions
+    - Analysis of Variance to compare models
+    - Collinearity and the Variance Inflation Factor
+    - Stepwise Regression to help identify predictor sets
+    - Imputation and its impact on the model
+    - Making predictions / prediction vs. confidence intervals
+- Modeling in the National Youth Fitness Survey data
+
+## Today's R Setup
+
+```{r setup, message = FALSE}
+library(GGally); library(car); library(simputation)
+library(janitor); library(broom); library(magrittr)
+library(tidyverse) # always load tidyverse last
+
+nnyfs_raw <- read_csv("data/nnyfs.csv") %>% 
+  clean_names() %>%
+  mutate_if(is.character, as.factor) %>%
+  mutate(seqn = as.character(seqn)) %>%
+  mutate(bmi_cat = fct_relevel(bmi_cat, "Obese", 
+          "Overweight", "Normal weight", "Underweight")) %>%
+  select(seqn, plank, age, gender, reth, inc_cat, incvspov,
+         bmi_cat, waist, mealsout, calories, sugar)
+```
+
+## Initial Look at the Data
+
+```{r}
+glimpse(nnyfs_raw)
+```
+
+## Codebook 
+
+![](images/nnyfs_codebook.png)
+
+- Data Source: https://www.cdc.gov/nchs/nnyfs/index.htm
+- Demographics (DEMO), Dietary (DR1TOT), Examination (BMX and PLX), Questionnaire (DBQ, HUQ) files imported into R as SAS .xpt files using the `haven` package's `read_xpt` function.
+
+## Plank Details
+
+Participants were instructed to lie face down on the mat resting on their elbows with their hands on the floor and their toes curled under their feet so that some of their weight was on the balls of their feet. Then they were told to tighten their stomach muscles and the muscles along the front of their thighs. Next, they were told to push off the floor and rise up onto their toes, keeping their elbows on the floor and their back straight.
+
+Participants were instructed to hold this position for as long as they could without letting their hips drop towards the floor or their knees bend. They were given one practice plank test before beginning the measured test. Participants were instructed to correct their position if they wobbled or moved out of position during the measured test. If it happened a second time the test was stopped. The test ended either when participants could no longer maintain the correct position, or when they requested the test be stopped.
+
+The number of seconds the plank position was held was recorded.
+
+## Our Modeling Goal
+
+Can we predict `plank` time using some/all of these 9 predictors?
+
+- `age`, `gender`, `reth`
+- `incvspov`, `mealsout`
+- `bmi_cat`, `waist`
+- `calories`, `sugar`
+
+![](images/plank.png)
+
+## `plank` Times, and `plank` Times by `gender`
+
+```{r, echo = FALSE}
+p1 <- ggplot(nnyfs_raw, aes(x = "1,352 children", y = plank)) +
+  geom_violin(fill = "royalblue", alpha = 0.25) +
+  geom_boxplot(fill = "royalblue", width = 0.25) +
+  coord_flip() +
+  guides(fill = FALSE) +
+  theme_bw() + labs(x = "", title = "NNYFS 2012 Plank Times",
+                    y = "Time holding Plank position, in seconds")
+
+p2 <- ggplot(nnyfs_raw, aes(x = gender, y = plank, fill = gender)) +
+  geom_violin(alpha = 0.25) +
+  geom_boxplot(width = 0.25, notch = T) +
+  coord_flip() +
+  guides(fill = FALSE) +
+  theme_bw() + labs(y = "Time holding Plank position, in seconds")
+
+gridExtra::grid.arrange(p1, p2, ncol = 1)
+```
+
+## `plank` Times by `reth` and by `bmi_cat`
+
+```{r, echo = FALSE}
+p1 <- ggplot(nnyfs_raw, aes(x = reth, y = plank, fill = reth)) +
+  geom_violin(alpha = 0.25) +
+  geom_boxplot(width = 0.25, notch = TRUE) +
+  coord_flip() +
+  guides(fill = FALSE) +
+  theme_bw() + labs(y = "Time holding Plank position, in seconds")
+
+p2 <- ggplot(nnyfs_raw, aes(x = bmi_cat, y = plank, fill = bmi_cat)) +
+  geom_violin(alpha = 0.25) +
+  geom_boxplot(width = 0.25, notch = TRUE) +
+  scale_fill_viridis_d() +
+  coord_flip() +
+  guides(fill = FALSE) +
+  theme_bw() + labs(y = "Time holding Plank position, in seconds")
+
+gridExtra::grid.arrange(p1, p2, ncol = 1)
+```
+
+## `plank` vs. the other 6 candidate predictors
+
+```{r, echo = FALSE, warning = FALSE}
+p1 <- ggplot(nnyfs_raw, aes(x = age, y = plank)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_bw() + labs(title = "plank vs. age")
+p2 <- ggplot(nnyfs_raw, aes(x = incvspov, y = plank)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_bw() + labs(title = "plank vs. incvspov")
+p3 <- ggplot(nnyfs_raw, aes(x = mealsout, y = plank)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_bw() + labs(title = "plank vs. mealsout")
+p4 <- ggplot(nnyfs_raw, aes(x = waist, y = plank)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_bw() + labs(title = "plank vs. waist")
+p5 <- ggplot(nnyfs_raw, aes(x = calories, y = plank)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_bw() + labs(title = "plank vs. calories")
+p6 <- ggplot(nnyfs_raw, aes(x = sugar, y = plank)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_bw() + labs(title = "plank vs. sugar")
+gridExtra::grid.arrange(p1, p2, p3, p4, p5, p6, nrow = 2)
+```
+
+Several warning messages suppressed here. (`warning = FALSE`)
+
+## Is Imputation Necessary?
+
+```{r}
+colSums(is.na(nnyfs_raw))
+
+nnyfs_raw %>% count(is.na(incvspov), is.na(mealsout))
+```
+
+## Impute missing values for `incvspov` and `mealsout`
+
+```{r}
+set.seed(20181129)
+nnyfs_imp <- nnyfs_raw %>%
+  impute_rlm(incvspov ~ inc_cat) %>%
+  impute_rlm(mealsout ~ age + incvspov + calories)
+
+colSums(is.na(nnyfs_imp))
+```
+
+## Partition the data
+
+The `nnyfs_imp` data set contains `r nrow(nnyfs_imp)` observations on `r ncol(nnyfs_imp)` variables.
+
+```{r}
+set.seed(20181129)
+nnyfs_train <- sample_frac(nnyfs_imp, size = 0.75)
+nnyfs_test <- anti_join(nnyfs_imp, nnyfs_train, 
+                        by = "seqn")
+```
+
+```{r}
+dim(nnyfs_train); dim(nnyfs_test)
+```
+
+## Distribution of `plank` - do we need to transform?
+
+```{r, echo = FALSE}
+ggplot(nnyfs_train, aes(x = plank)) + 
+  geom_histogram(fill = "tomato", col = "white", bins = 25) + 
+  theme_bw() + 
+  labs(caption = "nnyfs_train sample (n = 1,014)")
+```
+
+## Transforming / Re-expressing our Outcome?
+
+We can use the Box-Cox family of transformations to isolate specific choices of the power transformation parameter $\lambda$ for re-expressing our quantitative outcome which might lead to a more effective (yet still interpretable) model. 
+
+This approach is appropriate for strictly **positive** outcomes. If our minimum value is -14, we might add 15 to each observation before using Box-Cox.
+
+### Ladder of Power Transformations
+
+Power ($\lambda$) | Transformation
+-----: | :--------------:
+2 | $y^2$
+1 | $y$ (untransformed)
+0.5 | $\sqrt{y}$
+0 | log $y$
+-1 | $\frac{1}{y}$
+
+From the `car` package, we use `boxCox` and `powerTransform`.
+
+
+## Using the Box-Cox approach to pick a transformation
+
+```{r, eval = FALSE}
+m_start <- lm(plank ~ age + gender + reth + incvspov + 
+                mealsout + bmi_cat + waist + calories + 
+                sugar, data = nnyfs_train)
+
+boxCox(m_start)
+
+powerTransform(m_start)
+```
+
+- Results on next two slides
+
+## Box-Cox Plot based on `m_start`
+
+```{r, echo = FALSE, fig.height = 5.5, fig.width = 8}
+m_start <- lm(plank ~ age + gender + reth + incvspov + 
+                mealsout + bmi_cat + waist + calories + 
+                sugar, data = nnyfs_train)
+
+boxCox(m_start)
+```
+
+## Suggested Power Transformation
+
+```{r}
+powerTransform(m_start)
+```
+
+Power ($\lambda$) | Transformation
+-----: | :--------------:
+2 | $y^2$
+1 | $y$ (untransformed)
+0.5 | $\sqrt{y}$
+0 | log $y$
+-1 | $\frac{1}{y}$
+
+
+## Training Sample: `plank` and its square root
+
+```{r, echo = FALSE}
+p1 <- ggplot(nnyfs_train, aes(x = plank)) + 
+  geom_histogram(fill = "tomato", col = "white", bins = 25) + 
+  theme_bw()
+
+p2 <- ggplot(nnyfs_train, aes(x = sqrt(plank))) + 
+  geom_histogram(fill = "royalblue", col = "white", bins = 25) + 
+  theme_bw()
+
+gridExtra::grid.arrange(p1, p2, ncol = 1)
+```
+
+## Code for Scatterplot Matrix Plots
+
+```{r, eval = FALSE}
+nnyfs_train <- nnyfs_train %>% 
+  mutate(sqrt_plank = sqrt(plank))
+
+nnyfs_train %>%
+  select(sqrt_plank, age, gender, reth, incvspov) %>%
+  ggpairs(., title = "Scatterplot Matrix 1",
+          lower = list(combo = wrap("facethist", bins = 25)))
+```
+
+just building `sqrt_plank` for these plots, then...
+
+```{r, eval = FALSE}
+nnyfs_train %>%
+  select(sqrt_plank, bmi_cat, waist, mealsout, 
+         calories, sugar) %>%
+  ggpairs(., title = "Scatterplot Matrix 2",
+          lower = list(combo = wrap("facethist", bins = 25)))
+```
+
+## Scatterplot Matrix 1 (outcome + 4 predictors)
+
+```{r, echo = FALSE}
+nnyfs_train <- nnyfs_train %>% mutate(sqrt_plank = sqrt(plank))
+
+nnyfs_train %>%
+  select(sqrt_plank, age, gender, reth, incvspov) %>%
+  ggpairs(., title = "Scatterplot Matrix 1",
+          lower = list(combo = wrap("facethist", bins = 25)))
+```
+
+## Matrix 2 (outcome + other 5 predictors)
+
+```{r, echo = FALSE}
+nnyfs_train %>%
+  select(sqrt_plank, bmi_cat, waist, mealsout, calories, sugar) %>%
+  ggpairs(., title = "Scatterplot Matrix 2",
+          lower = list(combo = wrap("facethist", bins = 25)))
+```
+
+## Kitchen Sink Model
+
+```{r}
+m_ks <- lm(sqrt(plank) ~ age + gender + reth + 
+             incvspov + mealsout + bmi_cat + waist + 
+             calories + sugar, data = nnyfs_train)
+```
+
+## Tidied `m_ks` coefficients
+
+```{r, echo = FALSE}
+tidy(m_ks, conf.int = TRUE) %>% 
+  select(term, estimate, conf.low, conf.high, p.value) %>% 
+  knitr::kable(digits = 3)
+```
+
+## Snowflakes become seductive...
+
+![](images/seduction.png)
+
+## Summarizing the Fit of the Kitchen Sink Model
+
+```{r}
+glance(m_ks) %>% 
+  select(r.squared, adj.r.squared, sigma, 
+         AIC, BIC, p.value) %>%
+  knitr::kable(digits = 3)
+```
+
+or, from `summary(m_ks)`, we have:
+
+```
+Residual standard error: 2.334 on 1000 degrees of freedom
+Multiple R-squared: 0.3787,	Adjusted R-squared:  0.3707 
+F-statistic:  46.9 on 13 and 1000 DF,  p-value: < 2.2e-16
+```
+
+## ANOVA testing for Kitchen Sink Model
+
+```{r}
+anova(m_ks)
+```
+
+## Residual Plots for `m_ks`? (training sample)
+
+```{r}
+par(mfrow = c(1,2))
+plot(m_ks, which = 1:2)
+```
+
+## Checking `m_ks` Residual Plots (training sample)
+
+```{r}
+par(mfrow = c(1,2))
+plot(m_ks, which = c(3, 5))
+```
+
+## Who is observation 198?
+
+```{r}
+nnyfs_train %>% slice(198) %>% 
+  select(seqn, plank, age, gender, reth, bmi_cat) %>% 
+  knitr::kable()
+```
+
+```{r}
+mosaic::favstats(~ plank, data = nnyfs_train)
+```
+
+## Collinearity (Correlated Predictors) and VIF
+
+If two predictors (say A and B) are highly correlated (collinear) with each other, then the predictive value of the second one into the model (B) will be masked by its strong correlation with A (since A is already in the model.)
+
+- When we have larger models, it's helpful to look at the impact on the standard errors for the coefficient estimates that collinearity contributes. We'll do this using the **variance inflation factor** or VIF.
+
+The `car` package provides a VIF calculation for us, that applies to both simple settings (all quantitative or binary variables) and a generalized VIF (when multi-categorical predictors are involved)
+
+- In either case, a VIF exceeding 5 is of some concern.
+- Should we see a large VIF, it usually indicates that we would be better off including fewer of the predictors in the model, so that we avoid some of this masking.
+
+## Using `vif` from `car` to assess collineaity
+
+```{r}
+vif(m_ks)
+```
+
+- Lack of collinearity isn't technically an assumption of regression, but avoiding collinearity is a way to make things more interpretable, and avoid certain kinds of overfitting.
+
+## A Smaller (Two-Predictor) Model?
+
+```{r, echo = FALSE}
+nnyfs_train %>%
+  select(sqrt_plank, age, bmi_cat) %>%
+  ggpairs(., title = "Scatterplot Matrix 3",
+          lower = list(combo = wrap("facethist", bins = 25)))
+```
+
+## Build Two-Predictor Model
+
+```{r}
+m_2 <- lm(sqrt(plank) ~ age + bmi_cat, data = nnyfs_train)
+
+m_2
+```
+
+## Is collinearity still an issue in `m_2`?
+
+```{r}
+vif(m_2)
+```
+
+## Tidied `m_2` coefficients
+
+```{r}
+tidy(m_2, conf.int = TRUE) %>% 
+  select(term, estimate, conf.low, conf.high, p.value) %>% 
+  knitr::kable(digits = 2)
+```
+
+## `m_2` predictions for four new kids?
+
+Consider new kids, ages 6, 10, 10 and 14, and the first two are of Normal weight while the latter two are obese. Who does the model predict will hold the plank position longest?
+
+```{r}
+newkids <- data_frame(
+  age = c(6, 10, 10, 14), 
+  bmi_cat = c("Normal weight", "Normal weight", 
+              "Obese", "Obese"))
+
+predict(m_2, newdata = newkids, interval = "prediction",
+        level = 0.95)
+```
+
+## ANOVA for `m_2`?
+
+Are both `age` and `bmi_cat` important in my model?
+
+```{r}
+anova(m_2)
+```
+
+## Summarizing the Fit of `m_2`
+
+```{r}
+glance(m_2) %>% 
+  select(r.squared, adj.r.squared, sigma, 
+         statistic, p.value) %>%
+  knitr::kable(digits = 3)
+```
+
+and we can compare this to the kitchen sink results, below.
+
+```{r, echo = FALSE}
+glance(m_ks) %>% 
+  select(r.squared, adj.r.squared, sigma, 
+         statistic, p.value) %>%
+  knitr::kable(digits = 3)
+```
+
+## ANOVA comparison of our first two models
+
+Is there a statisically significant difference in prediction quality between the two models?
+
+```{r}
+anova(m_ks, m_2)
+```
+
+Which model does this significance test prefer?
+
+## AIC/BIC comparison of our first two models
+
+Which of these models does AIC prefer? How about BIC?
+
+```{r}
+AIC(m_ks, m_2); BIC(m_ks, m_2)
+```
+
+AIC (Akaike Information Criterion) and BIC (Bayesian Information Criterion) estimate the relative quality of statistical models for the same set of data.
+
+- Each trades off goodness of fit of the model and its simplicity (parsimony), as does adjusted R^2^.
+- We often use AIC to help us select a model with **stepwise regression**
+
+## Using stepwise regression and the `step` function
+
+The default choice is to use an idea called "backwards elimination" with the AIC as the key criterion to help you select a model. 
+- Step-by-step, the machine will consider whether removing each of the variables currently in the model will improve AIC. 
+- Then it will remove the "least useful" predictor, and repeat, until it cannot improve the AIC further.
+
+So we specify a "big model" and then let the stepwise algorithm assess how we can prune it down to a smaller set of variables...
+
+Here's how we get started...
+
+```{r, eval = F}
+step(m_ks)
+```
+
+## First Step in Stepwise Output
+
+```
+Start:  AIC=1732.7
+sqrt(plank) ~ age + gender + reth + incvspov + mealsout + 
+              bmi_cat + waist + calories + sugar
+
+           Df Sum of Sq    RSS    AIC
+- bmi_cat   3     13.37 5460.4 1729.2
+- reth      3     13.60 5460.6 1729.2
+- mealsout  1      2.55 5449.6 1731.2
+- sugar     1      4.99 5452.0 1731.6
+<none>                  5447.0 1732.7
+- calories  1     14.24 5461.2 1733.3
+- gender    1     15.49 5462.5 1733.6
+- incvspov  1     40.44 5487.4 1738.2
+- waist     1    314.70 5761.7 1787.7
+- age       1   1774.22 7221.2 2016.6
+```
+
+## Next Step in Stepwise Output
+
+```
+Step:  AIC=1729.19
+sqrt(plank) ~ age + gender + reth + incvspov + mealsout + 
+              waist + calories + sugar
+
+           Df Sum of Sq    RSS    AIC
+- reth      3     12.44 5472.8 1725.5
+- mealsout  1      2.22 5462.6 1727.6
+- sugar     1      4.29 5464.7 1728.0
+<none>                  5460.4 1729.2
+- calories  1     13.60 5474.0 1729.7
+- gender    1     15.12 5475.5 1730.0
+- incvspov  1     40.26 5500.6 1734.6
+- waist     1    846.01 6306.4 1873.2
+- age       1   2878.78 8339.2 2156.6
+```
+
+## Step 3 in Stepwise Output
+
+```
+Step:  AIC=1725.49
+sqrt(plank) ~ age + gender + incvspov + mealsout + waist + 
+              calories + sugar
+
+           Df Sum of Sq    RSS    AIC
+- mealsout  1      1.59 5474.4 1723.8
+- sugar     1      4.63 5477.4 1724.3
+<none>                  5472.8 1725.5
+- calories  1     13.55 5486.4 1726.0
+- gender    1     15.29 5488.1 1726.3
+- incvspov  1     48.61 5521.4 1732.5
+- waist     1    842.86 6315.7 1868.7
+- age       1   2892.77 8365.6 2153.8
+```
+
+## Step 4 in Stepwise Output
+
+```
+Step:  AIC=1723.79
+sqrt(plank) ~ age + gender + incvspov + waist + 
+              calories + sugar
+
+           Df Sum of Sq    RSS    AIC
+- sugar     1      4.46 5478.9 1722.6
+<none>                  5474.4 1723.8
+- calories  1     13.43 5487.8 1724.3
+- gender    1     15.52 5489.9 1724.7
+- incvspov  1     53.61 5528.0 1731.7
+- waist     1    841.99 6316.4 1866.9
+- age       1   2894.40 8368.8 2152.2
+```
+
+## Step 5 in Stepwise Output
+
+```
+Step:  AIC=1722.61
+sqrt(plank) ~ age + gender + incvspov + waist + calories
+
+           Df Sum of Sq    RSS    AIC
+- calories  1      9.77 5488.6 1722.4
+<none>                  5478.9 1722.6
+- gender    1     15.63 5494.5 1723.5
+- incvspov  1     56.46 5535.3 1731.0
+- waist     1    838.29 6317.1 1865.0
+- age       1   2894.12 8373.0 2150.7
+```
+
+## Step 6 in Stepwise Output
+
+```
+Step:  AIC=1722.42
+sqrt(plank) ~ age + gender + incvspov + waist
+
+           Df Sum of Sq    RSS    AIC
+<none>                  5488.6 1722.4
+- gender    1     20.24 5508.9 1724.2
+- incvspov  1     59.22 5547.9 1731.3
+- waist     1    856.27 6344.9 1867.4
+- age       1   3033.61 8522.2 2166.6
+```
+
+## Final Step in Stepwise Output
+
+```
+Call:
+lm(formula = sqrt(plank) ~ 
+       age + gender + incvspov + waist, data = nnyfs_train)
+
+Coefficients:
+(Intercept)      age genderMale incvspov    waist  
+    6.06270  0.64878    0.28291  0.14873 -0.07971  
+```
+
+We'll call this model `m_step`
+
+```{r}
+m_step <- lm(sqrt(plank) ~ age + gender + incvspov + waist,
+             data = nnyfs_train)
+```
+
+## Tidied Coefficients of `m_step`
+
+```{r}
+tidy(m_step, conf.int = TRUE) %>% 
+  select(term, estimate, conf.low, conf.high, p.value) %>% 
+  knitr::kable(digits = 2)
+```
+
+### Is collinearity an issue in `m_step`?
+
+```{r}
+vif(m_step)
+```
+
+## `glance` results for all 3 models
+
+```{r}
+a1 <- glance(m_ks) %>% mutate(model = "m_ks")
+a2 <- glance(m_2) %>% mutate(model = "m_2")
+a3 <- glance(m_step) %>% mutate(model = "m_step")
+
+bind_rows(a1, a2, a3) %>% 
+  select(model, df, r.squared, "Adj. R^2^" = adj.r.squared, 
+         sigma, p.value, AIC, BIC) %>%
+  knitr::kable(digits = 3)
+```
+
+## ANOVA comparison of `m_step` and `m_ks`
+
+Does stepping down from `m_ks` to `m_step` have a significant impact on predictive quality of the model?
+
+```{r}
+anova(m_ks, m_step)
+```
+
+## Setting up Out of Sample Validation
+
+```{r}
+test_m_ks <- augment(m_ks, newdata = nnyfs_test) %>%
+  mutate(modname = "m_ks", .fitsqr = .fitted^2, 
+         .resid = plank - .fitsqr) %>%
+  select(seqn, modname, plank, .fitsqr, .resid, .fitted)
+test_m_step <- augment(m_step, newdata = nnyfs_test) %>%
+  mutate(modname = "m_step", .fitsqr = .fitted^2, 
+         .resid = plank - .fitsqr) %>%
+  select(seqn, modname, plank, .fitsqr, .resid, .fitted)
+test_m_2 <- augment(m_2, newdata = nnyfs_test) %>%
+  mutate(modname = "m_2", .fitsqr = .fitted^2, 
+         .resid = plank - .fitsqr) %>%
+  select(seqn, modname, plank, .fitsqr, .resid, .fitted)
+
+temp <- union(test_m_ks, test_m_step)
+test_comp <- union(temp, test_m_2) %>%
+  arrange(seqn, modname)
+```
+
+## `test_comp` result
+
+```{r}
+test_comp %>% head() %>% knitr::kable(digits = 2)
+```
+
+## Three Models: Distribution of Errors (Test Sample)
+
+```{r, echo = FALSE}
+ggplot(test_comp, aes(x = modname, y = .resid, fill = modname)) +
+  geom_violin(alpha = 0.2) +
+  geom_boxplot(width = 0.25) + 
+  scale_fill_viridis_d(option = "plasma", begin = 0.4) +
+  guides(fill = FALSE) + 
+  coord_flip() +
+  theme_bw() + 
+  labs(y = "Prediction Errors in Test Sample", x = "")
+```
+
+## Three Models: Test Sample Error Summaries
+
+```{r}
+test_comp %>%
+  group_by(modname) %>%
+  summarize(n = n(),
+            MAPE = mean(abs(.resid)),
+            MSPE = mean(.resid^2),
+            max_error = max(abs(.resid))) %>%
+  knitr::kable(digits = 2)
+```
+
+## Training Sample and Test Sample Results
+
+- In the Training Sample, we had ...
+
+```{r, echo = FALSE}
+bind_rows(a1, a2, a3) %>% 
+  select(model, df, r.squared, "Adj. R^2^" = adj.r.squared, 
+         sigma, p.value, AIC, BIC) %>%
+  arrange(model) %>%
+  knitr::kable(digits = 3)
+```
+
+- In the Test Sample, we had...
+
+```{r, echo = FALSE}
+test_comp %>%
+  group_by(modname) %>%
+  summarize(n = n(),
+            MAPE = mean(abs(.resid)),
+            MSPE = mean(.resid^2),
+            max_error = max(abs(.resid))) %>%
+  arrange(modname) %>%
+  knitr::kable(digits = 2)
+```
+
+## Residual Plots for `m_step`? (training sample)
+
+```{r}
+par(mfrow = c(1,2))
+plot(m_step, which = 1:2)
+```
+
+## Checking `m_step` Residual Plots (training sample)
+
+```{r}
+par(mfrow = c(1,2))
+plot(m_step, which = c(3, 5))
+```
+
