@@ -70,7 +70,7 @@ Today's main example uses a new data set I've built including information from s
 
 I wanted to say a little about Chapter 9 (Rage Against the Machines), which is about computer chess. 
 
-- Chess is all over the news, thanks to the dramatics in London over the past few weeks, where Magnus Carlsen retained his World Chess Championship. Oliver Roeder has been all over the drama [in a series of articles at FiveThirtyEight](https://fivethirtyeight.com/tag/chess/).
+- Chess is all over the news, thanks to the dramatics in London over the past few weeks, where Magnus Carlsen retained his World Chess Championship. Oliver Roeder has been all over the story [in a series of articles at FiveThirtyEight](https://fivethirtyeight.com/tag/chess/).
 - I found the material about how computers "think" to be particularly interesting here, although I think the most general takeaway I can give you from the chapter has to do with the general belief that if you see something really surprising from a prediction model or forecasting engine, you should go in with a strong prior that you've got a "bug".
 - Jonah Sinick, in summarizing his thoughts on the chapter, [had this nice comment](https://www.lesswrong.com/posts/rGj2K8vu5qQCTWCar/some-highlights-from-nate-silver-s-the-signal-and-the-noise):
 
