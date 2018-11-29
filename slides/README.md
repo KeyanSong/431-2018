@@ -2,6 +2,7 @@
 
 Link | Date | Topics Discussed include...
 :----------: | :----------: | ------------------------------------------------------------------------------
+[Class 24](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class24) | 11-29 | Regression Models: Analysis of the NHANES National Youth Fitness Survey
 [Class 23](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class23) | 11-27 | Regression Models: The Fundamentals of a Reasoned Analysis: The WOMAN-ETAC trial
 [Class 22](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class22) | 11-15 | Regression Models: Augmenting ANOVA, Discussion of Project Study 2 Demo
 [Class 21](https://github.com/THOMASELOVE/431-2018/tree/master/slides/class21) | 11-13 | Analysis of Variance, Indicator Variable Regression
