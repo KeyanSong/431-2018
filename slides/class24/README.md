@@ -14,6 +14,10 @@
     3. Impute a new, more plausible, `betaplasma` value for the observation with `betaplasma` = 0. If you do this, we suggest you replace the `0` with the new value `10`.
     4. Keep the observation with `betaplasma` = 0 but put it in the test set, rather than the training set, so that it doesn't come into play when you are making a transformation decision. I did this with a split into 240 observations in the training set using the seed `431008`.
 
+## Minute Paper Feedback is at http://bit.ly/431-2018-minute23-response
+
+Please take a look. I separated the comments into Project Things and Everything Else. About 3/4 of the class seems to feel like they are in good shape (6 or higher on the 1-10 scale) on both Project 1 and Project 2, and that's great.
+
 ## Project Task F
 
 Almost everyone is done, and that's great. You're done if you have an OK from me on Canvas, and a non-zero grade there.
@@ -48,10 +52,6 @@ After Homework 8, the remaining deadlines for the course are:
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 - After you give your presentation, we hope you will fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
 
-## Minute Paper Feedback is at http://bit.ly/431-2018-minute23-response
-
-Please take a look. I separated the comments into Project Things and Everything Else. About 3/4 of the class seems to feel like they are in good shape (6 or higher on the 1-10 scale) on both Project 1 and Project 2, and that's great.
-
 ## Getting Help
 
 - **Office Hours** TA office hours continue through Friday 2018-12-07. `431-help` will be open until I finish with projects on Thursday 2017-12-13. If you need to meet with a TA outside of office hours, arrange that through 431-help.
@@ -61,10 +61,6 @@ Please take a look. I separated the comments into Project Things and Everything 
     3. If this is about "your data" **send the data** set(s) that your R Markdown calls. If this is about the class survey data, we have that. But we (431-help) don't have your data.
     4. Please don't wait until you've been struggling with a problem so long that you feel frustrated or feel the need to tell us how long that's been to garner our sympathy. Struggle for 15 minutes with the demonstration files, then Google or search the course notes for at most another 15 minutes, then email us, is a reasonable workflow. Coding is hard enough with help.
     5. **Don't wait** until the last day. If you need instant help, we can rarely provide that, and never when you need it most, as it turns out. Somehow, the world will conspire to guarantee that we are  unavailable at the exact moment when you need an incredibly fast response. So don't need one. I warn you that I am unavailable on the evenings of Mon 12-10 and Tue 12-11.
-
-## Today's Main Example
-
-Today's main example uses a new data set I've built including information from several parts of the [NHANES National Youth Fitness Survey](https://www.cdc.gov/nchs/nnyfs/index.htm), which was conducted in 2012. Back in Part A, we studied a different data set from the same source, and the data are also discussed in [Chapter 7 of the Course Notes](https://thomaselove.github.io/2018-431-book/NYFS-Study.html).
 
 ## Highlights from *The Signal and the Noise*
 
@@ -81,6 +77,10 @@ I wanted to say a little about Chapter 9 (Rage Against the Machines), which is a
 ## Visualization of the Day
 
 [Why Do People Visit the Emergency Room?](https://flowingdata.com/2016/02/09/why-people-visit-the-emergency-room/) by Nathan Yau again.
+
+## Today's Main Example
+
+Today's main example uses a new data set I've built including information from several parts of the [NHANES National Youth Fitness Survey](https://www.cdc.gov/nchs/nnyfs/index.htm), which was conducted in 2012. Back in Part A, we studied a different data set from the same source, and the data are also discussed in [Chapter 7 of the Course Notes](https://thomaselove.github.io/2018-431-book/NYFS-Study.html).
 
 ## One Last Thing
 
