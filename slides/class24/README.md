@@ -54,8 +54,8 @@ Please take a look. I separated the comments into Project Things and Everything 
 
 ## Getting Help
 
-- **Office Hours** TA office hours conclude on Friday 2018-12-07. 431-help remains open through Thursday 2017-12-13. If you need to meet with a TA outside of office hours, arrange that through 431-help.
-- If you are having trouble with R, and asking for help at 431-help, we need to first replicate your problem in order to solve it. So, **PLEASE PLEASE PLEASE, WE'RE BEGGING YOU, PLEASE PLEASE PLEASE**:
+- **Office Hours** TA office hours continue through Friday 2018-12-07. `431-help` will be open until I finish with projects on Thursday 2017-12-13. If you need to meet with a TA outside of office hours, arrange that through 431-help.
+- If you are having trouble with R, and asking for help at 431-help, we need to first replicate your problem in order to solve it. So...
     1. Send your **entire** R Markdown file. All of it. Not pieces of it. All of it.
     2. Send a **screenshot** of the error message you are receiving, AND specify the line number where things break down if you can in your email. Or ask a specific and detailed question - as specific and detailed as you can make it.
     3. If this is about "your data" **send the data** set(s) that your R Markdown calls. If this is about the class survey data, we have that. But we (431-help) don't have your data.
@@ -67,6 +67,16 @@ Please take a look. I separated the comments into Project Things and Everything 
 Today's main example uses a new data set I've built including information from several parts of the [NHANES National Youth Fitness Survey](https://www.cdc.gov/nchs/nnyfs/index.htm), which was conducted in 2012. Back in Part A, we studied a different data set from the same source, and the data are also discussed in [Chapter 7 of the Course Notes](https://thomaselove.github.io/2018-431-book/NYFS-Study.html).
 
 ## Highlights from *The Signal and the Noise*
+
+I wanted to say a little about Chapter 9 (Rage Against the Machines), which is about computer chess. 
+
+- Chess is all over the news, thanks to the dramatics in London over the past few weeks, where Magnus Carlsen retained his World Chess Championship. Oliver Roeder has been all over the drama [in a series of articles at FiveThirtyEight](https://fivethirtyeight.com/tag/chess/).
+- I found the material about how computers "think" to be particularly interesting here.
+- Jonah Sinick, in summarizing his thoughts on the chapter, [had this nice comment](https://www.lesswrong.com/posts/rGj2K8vu5qQCTWCar/some-highlights-from-nate-silver-s-the-signal-and-the-noise):
+
+> Our use of prediction heuristics makes us vulnerable to opponents who are aware of the heuristics that we're using and who can therefore act in unexpected ways that we're not prepared for.
+
+- Finally, perhaps you know something about Amazon's [Mechanical Turk](https://www.mturk.com/)? If not, you might be interested.
 
 ## Visualization of the Day
 
