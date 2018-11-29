@@ -1,0 +1,13 @@
+Name,Type,Description,Original Source
+seqn,character,ID code,SEQN
+plank,integer,"# of seconds plank position is held, range from 1 to 450",MPXPLANK
+age,integer,"3 to 16, although just a few were 16, in years",RIDEXAGY
+gender,2-level,Female or Male,RIAGENDR
+reth,4-level,"Hispanic, Non-Hispanic Black, Non-Hispanic White, Other Race",RIDRETH1
+inc_cat,4-level,"Below $20K, 20 to 44K, 45 to 74K, Above 75K",INDFMIN2
+incvspov,quantity,ranges from 0 to 5.00 [multiple of poverty level],INDFMPIR
+bmi_cat,4-level,"Underweight, Normal weight, Overweight, Obese",BMDBMIC
+waist,quantity,"ranges from 44.1 to 144.7, in cm",BMXWAIST
+mealsout,quantity,"# of meals not home prepared last 7 days, ranges from 0 to 20",DBD895
+calories,quantity,"ranges from 257 to 5265 kcal, from dietary recall",DR1TKCAL
+sugar,quantity,"ranges from 1 to 405.5 grams, from dietary recall",DR1TSUGR
