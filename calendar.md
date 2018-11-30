@@ -62,9 +62,9 @@ Date | Class | Description or Deliverable
 11-30 | -- | **[Homework 8](https://github.com/THOMASELOVE/431-2018/tree/master/homework) due** at noon
 12-04 | 25 | Regression Models: TBA
 12-06 | 26 | Final class of the semester
-12-07 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** by noon.
+12-06 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) released to you** by 5 PM.
 12-10 | -- | First Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
-12-11 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) due at noon**. 
+12-11 | -- | **[Quiz 2](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes) due at 5 PM**. 
 12-11 | -- | Second Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
 12-13 | -- | Third Set of [Project Presentations](https://thomaselove.github.io/431-2018-project/taskH.html). The [schedule is here](http://bit.ly/431-2018-project-schedule).
 12-13 | -- | **[Course Project](https://github.com/THOMASELOVE/431-2018-project) Task G (The Portfolio)**  due at noon
