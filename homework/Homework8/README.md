@@ -8,3 +8,11 @@ Homework 8 is due at noon on Friday 2018-11-30. It contains six questions. Pleas
 Any assignment received more than 60 minutes after the deadline is considered late. **Don't be late.**
 
 Refer to the previous assignments for general advice on submitting Homework.
+
+## Answer Sketch
+
+The Answer Sketch for Homework 8 will be posted on 2018-11-30 at about 3 PM. 
+
+You'll find it [in PDF at this link](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.pdf) and [in R Markdown at this one](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.Rmd).
+
+The Homework 8 grading rubric and grades will appear as soon as possible, and no later than Tuesday, December 11.
