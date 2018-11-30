@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides for Class 24 are now available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class24/431_class-24-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class24/431_class-24-slides_2018.Rmd).
-- Class 24 audio files will be posted after class.
+- Class 24 audio files are now posted.
 
 ## Homework 8
 
