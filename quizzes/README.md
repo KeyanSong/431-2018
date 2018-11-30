@@ -30,7 +30,7 @@ There are enough items on every Quiz that a perfect score is rare. A score of 85
 - The last page of Quiz 1 looks like this:
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class11/quiz1_lastpage.png)
 
-2. Quiz 2 will be released to you on 2018-12-07, and will be due on 2018-12-11 at noon.
+2. Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM.
     - Quiz 2 will include material from the entire course, focusing on Parts B and C.
         - This includes all material described above for Quiz 1 and all assigned readings in **Silver**, **Leek** and **R4DS**.
         - Quiz 2 will cover the entire course, and will be in your hands by noon on Friday 2018-12-07, and will be due at noon on Tuesday 2018-12-11, giving you an extra 24 hours over the original plan. Remember, Project Presentations begin on Monday 2018-12-10.
