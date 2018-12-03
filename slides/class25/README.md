@@ -17,7 +17,7 @@
 
 ## Office Hours and `431-help`
 
-- **Office Hours** TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`.
+- TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`.
 - `431-help` will be open until I finish with projects at on Thursday 2017-12-13. 
 
 ## Questions on Projects
