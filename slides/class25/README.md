@@ -26,7 +26,7 @@
 
 **Which of my six analyses should I choose to present to you for Study 1?** Whichever one provides the most interesting result, in your opinion. Remember that I will pick one of the other six, not completely at random, so you need to be ready to present any of them.
 
-**Which part of Study 2 will I have to present?** Potentially, everything, Practically, we'll have more fun if we focus less on data cleaning and management than on interpreting and understanding what your models have to say about the data. So be sure you're as clear as possible with regard to everything you've done to get the data into good shape.
+**Which part of Study 2 will I have to present?** Potentially, anything. Practically, we'll have more fun if we focus less on data cleaning and management than on interpreting and understanding what your models have to say about the data. So be sure you're as clear as possible with regard to everything you've done to get the data into good shape, so we can move past that quickly.
 
 ## References From Today's Slides
 
