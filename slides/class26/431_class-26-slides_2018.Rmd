@@ -1,0 +1,354 @@
+---
+title: "431 Class 26"
+author: "Thomas E. Love"
+date: "2018-12-06"
+output:
+  beamer_presentation:
+    theme: "Madrid"
+    fonttheme: "structurebold"
+    colortheme: "whale"
+    fig_height: 5.5
+    fig_caption: false
+---
+
+```{r set-options, echo=FALSE, cache=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 55)
+```
+
+## Today's R Setup
+
+```{r, message = FALSE}
+library(broom); library(tidyverse)
+```
+
+## A Quartet of Simple Linear Regressions
+
+```{r}
+glimpse(anscombe)
+```
+
+## Anscombe Model 1
+
+```{r}
+ans_1 <- lm(y1 ~ x1, data = anscombe)
+
+tidy(ans_1) %>%
+  knitr::kable(digits = 2)
+
+glance(ans_1) %>%
+  select(r.squared, adj.r.squared, sigma, p.value) %>%
+  knitr::kable(digits = 2)
+```
+
+## Plot of `y1` vs. `x1`
+
+```{r, echo = FALSE}
+ggplot(anscombe, aes(x = x1, y = y1)) +
+  geom_point(size = 3, pch = 1, col = "navy") + 
+  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
+  theme_bw() + labs(title = "Anscombe y1 vs x1") +
+  geom_text(x = 11, y = 4.5, size = 5, col = "royalblue", 
+            label = "R-square = 0.67, y1 = 3.0 + 0.5 x1")
+```
+
+## Residual Plots for Anscombe Model 1
+
+```{r, echo = FALSE, fig.height = 7}
+par(mfrow = c(2,2))
+plot(ans_1)
+```
+
+## Anscombe Model 2
+
+```{r}
+ans_2 <- lm(y2 ~ x2, data = anscombe)
+
+tidy(ans_2) %>%
+  knitr::kable(digits = 2)
+
+glance(ans_2) %>%
+  select(r.squared, adj.r.squared, sigma, p.value) %>%
+  knitr::kable(digits = 2)
+```
+
+## Anscombe Model 3
+
+```{r}
+ans_3 <- lm(y3 ~ x3, data = anscombe)
+
+tidy(ans_3) %>%
+  knitr::kable(digits = 2)
+
+glance(ans_3) %>%
+  select(r.squared, adj.r.squared, sigma, p.value) %>%
+  knitr::kable(digits = 2)
+```
+
+## Anscombe Model 4
+
+```{r}
+ans_4 <- lm(y4 ~ x4, data = anscombe)
+
+tidy(ans_4) %>%
+  knitr::kable(digits = 2)
+
+glance(ans_4) %>%
+  select(r.squared, adj.r.squared, sigma, p.value) %>%
+  knitr::kable(digits = 2)
+```
+
+# Models 1-4 all look about the same, but what happens if we plot the data?
+
+## Plot the Data (and the regression lines)
+
+```{r, echo = FALSE}
+p1 <- ggplot(anscombe, aes(x = x1, y = y1)) +
+  geom_point(size = 3, col = "#0D0887FF") + 
+  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
+  theme_bw()
+
+p2 <- ggplot(anscombe, aes(x = x2, y = y2)) +
+  geom_point(size = 3, col = "#7701A8FF") + 
+  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
+  theme_bw()
+
+p3 <- ggplot(anscombe, aes(x = x3, y = y3)) +
+  geom_point(size = 3, col = "#C33D80FF") + 
+  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
+  theme_bw()
+
+p4 <- ggplot(anscombe, aes(x = x4, y = y4)) +
+  geom_point(size = 3, col = "blue") + 
+  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
+  theme_bw()
+
+gridExtra::grid.arrange(p1, p2, p3, p4, nrow=2)
+```
+
+## Do Residuals vs. Fitted Plots reveal the problems?
+
+```{r, echo = FALSE, fig.height = 7}
+par(mfrow=c(2,2))
+plot(lm(y1 ~ x1, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y1 by X1")
+plot(lm(y2 ~ x2, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y2 by X2")
+plot(lm(y3 ~ x3, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y3 by X3")
+plot(lm(y4 ~ x4, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y4 by X4")
+```
+
+## https://xkcd.com/1725/
+
+![](images/linear_regression.png)
+
+---
+
+![](images/elephant.png)
+
+# p Hacking and "Researcher Degrees of Freedom"
+
+## Hack Your Way To Scientific Glory
+
+https://fivethirtyeight.com/features/science-isnt-broken
+
+![](images/hacking.png)
+
+## What can you get?
+
+I was able to get 
+
+- *p* < 0.01 (positive effect of Democrats on economy)
+- *p* = 0.01 (negative effect of Democrats)
+- *p* = 0.03 (negative effect of Democrats)
+- *p* = 0.03 (positive effect of Democrats)
+
+but also ...
+
+- *p* = 0.05, 0.06, 0.07, 0.09, 0.17, 0.19, 0.20, 0.22, 0.23, 0.47, 0.51
+
+without even switching parties, exclusively by changing my definitions of terms (section 2 of the graphic.)
+
+## "Researcher Degrees of Freedom", 1
+
+> [I]t is unacceptably easy to publish "statistically significant" evidence consistent with any hypothesis.
+
+> The culprit is a construct we refer to as **researcher degrees of freedom**. In the course of collecting and analyzing data, researchers have many decisions to make: Should more data be collected? Should some observations be excluded? Which conditions should be combined and which ones compared? Which control variables should be considered? Should specific measures be combined or transformed or both?
+
+Simmons et al. [$\textcolor{blue}{link}$](http://journals.sagepub.com/doi/abs/10.1177/0956797611417632) 
+
+## "Researcher Degrees of Freedom", 2
+
+> ... It is rare, and sometimes impractical, for researchers to make all these decisions beforehand. Rather, it is common (and accepted practice) for researchers to explore various analytic alternatives, to search for a combination that yields statistical significance, and to then report only what worked. The problem, of course, is that the likelihood of at least one (of many) analyses producing a falsely positive finding at the 5% level is necessarily greater than 5%.
+
+For more, see 
+
+- Gelman's blog [$\textcolor{blue}{2012-11-01}$](http://andrewgelman.com/2012/11/01/researcher-degrees-of-freedom/) "Researcher Degrees of Freedom", 
+- Paper by [$\textcolor{blue}{Simmons}$](http://journals.sagepub.com/doi/abs/10.1177/0956797611417632) and others, defining the term.
+
+## And this is really hard to deal with...
+
+**The garden of forking paths**: Why multiple comparisons can be a problem, even when there is no fishing expedition or p-hacking and the research hypothesis was posited ahead of time
+
+> Researcher degrees of freedom can lead to a multiple comparisons problem, even in settings
+where researchers perform only a single analysis on their data. The problem is there can be a
+large number of potential comparisons when the details of data analysis are highly contingent on
+data, without the researcher having to perform any conscious procedure of fishing or examining
+multiple p-values. We discuss in the context of several examples of published papers where
+data-analysis decisions were theoretically-motivated based on previous literature, but where the
+details of data selection and analysis were not pre-specified and, as a result, were contingent on
+data.
+
+- [$\textcolor{blue}{Link}$](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf) to the paper from Gelman and Loken
+
+## Benjamin et al 2017 Redefine Statistical Significance
+
+We propose to change the default P-value threshold for statistical significance for claims of new discoveries from 0.05 to 0.005.
+
+- 0.005 is stringent enough to "break" the current system - makes it very difficult for researchers to reach threshold with noisy, useless studies.
+
+Visit the main [$\textcolor{blue}{article}$](https://psyarxiv.com/mky9j/). Visit an explanatory piece in [$\textcolor{blue}{Science}$](http://www.sciencemag.org/news/2017/07/it-will-be-much-harder-call-new-findings-significant-if-team-gets-its-way).
+
+### Lakens et al. Justify Your Alpha
+
+"In response to recommendations to redefine statistical significance to $p \leq .005$, we propose that researchers should transparently report and justify all choices they make when designing a study, including the alpha level." Visit [$\textcolor{blue}{link}$](https://psyarxiv.com/9s3y6).
+
+---
+
+![](images/bear.jpg)
+
+## Why not post hoc power analysis?
+
+So you collected data and analyzed the results. Now you want to do an after data gathering (post hoc) power analysis.
+
+1. What will you use as your "true" effect size? 
+    - Often, point estimate from data - yuck - results very misleading - power is generally seriously overestimated when computed on the basis of statistically significant results.
+    - Much better (but rarer) to identify plausible effect sizes based on external information rather than on your sparkling new result.
+2. What are you trying to do? (too often)
+    - get researcher off the hook (I didn't get p < 0.05 because I had low power - an alibi to explain away non-significant findings) or
+    - encourage overconfidence in the finding.
+
+## The Impact of Study Design (Gelman)
+
+Applied statistics is hard. 
+
+- Doing a statistical analysis is like playing basketball, or knitting a sweater. You can get better with practice.
+- Incompetent statistics does not necessarily doom a research paper: some findings are solid enough that they show up even when there are mistakes in the data collection and data analyses. But we've also seen many examples where incompetent statistics led to conclusions that made no sense but still received publication and publicity.
+- We should be thinking not just about data analysis, but also data quality.
+
+---
+
+![](images/bigsmall.png)
+
+# So, what have we learned so far?
+
+## Ten Simple Rules for Effective Statistical Practice
+
+From *PLoS Comput Biol* [$\textcolor{blue}{link}$](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004961)
+
+1. Statistical Methods Should Enable Data to Answer Scientific Questions
+2. Signals Always Come with Noise
+3. Plan Ahead, Really Ahead
+4. Worry About Data Quality
+5. Statistical Analysis Is More Than a Set of Computations
+6. Keep it Simple
+7. Provide Assessments of Variability
+8. Check Your Assumptions
+9. When Possible, Replicate!
+10. Make Your Analysis Reproducible
+
+## On Planning Ahead - Really Ahead...
+
+"To consult the statistician after an experiment is finished is often merely to ask him to conduct a post mortem examination. He can perhaps say what the experiment died of."
+
+- Sir Ronald Fisher
+
+## Goals of Reproducible Research
+
+The goal of reproducible research is to tie specific instructions to data analysis so that scholarship can be recreated, better understood and verified. This is usually facilitated by literate programming: a document that combines content and data analytic code. Software? R and R Studio, mostly.
+
+1. Be able to reproduce your own results and allow others to reproduce your results
+2. Reproduce an entire report / manuscript / thesis / book / website with a single system command when changes occur (in operating system, statistical software, graphics engines, source data, derived variables, analysis, interpretation).
+3. Save time.
+4. Provide the ultimate documentation of work done.
+
+Vanderbilt [$\textcolor{blue}{Tutorial}$](http://biostat.mc.vanderbilt.edu/wiki/pub/Main/ReproducibleResearchTutorial/HarrellScottTutorial-useR2012.pdf)
+
+## Why I Do This...
+
+![](images/broman1.png)
+
+## Five Practical Tips
+
+1. Document everything.
+2. Everything is a (text) file.
+3. All files should be human-readable.
+4. Explicitly tie your files together.
+5. Have a plan to organize, store and make your files available.
+
+The papers/slideshows/abstracts are not the research. The research is the full software environment, code and data that produced the results. (Donoho, 2010). Separating research from its advertisement makes it hard for others to verify or reproduce our findings.
+
+**Your closest collaborator is you, six months ago, but you don't respond to emails**. (Holder via Broman)
+
+Karl Broman, Steps Towards Reproducible Research [$\textcolor{blue}{link}$](http://kbroman.org/steps2rr/)
+
+## Build Tidy Data Sets
+
+- Each variable you measure should be in one column.
+- Each different observation of that variable should be in a different row.
+- There should be one table for each "kind" of variable.
+- If you have multiple tables, they should include a column in the table that allows them to be linked.
+- Include a row at the top of each data table that contains real row names. `Age_at_Diagnosis` is a much much better name than `ADx`.
+- Build useful codebooks.
+
+Jeff Leek: "How to share data with a statistician" [$\textcolor{blue}{link}$](https://github.com/jtleek/datasharing)
+
+## Wisdom from DL Donoho (2010) re: Open-Source
+
+But other people will use my data and code to compete with me?
+
+>- True.
+>- But competition means that strangers will read your work, try to learn from you, cite you, and try to do things even better.
+>- If you prefer obscurity, why are you publishing?
+
+## A Most Important Tip (@drob)
+
+![](images/gradschool.png)
+
+## From Kass et al.'s Ten Simple Rules...
+
+"A central and common task for us as research investigators is to decipher what our data are able to say about the problems we are trying to solve. Statistics is a language constructed to assist this process, with probability as its grammar. While rudimentary conversations are possible without good command of the language (and are conducted routinely), principled statistical analysis is critical in grappling with many subtle phenomena to ensure that nothing serious will be lost in translation and to increase the likelihood that your research findings will stand the test of time."
+
+> Among the many articles reporting on the ASA's statement on p-values, we particularly liked a quote from biostatistician Andrew Vickers: **Treat statistics as a science, not a recipe.**
+
+## The Signal and The Noise
+
+- Nature's laws do not change very much.
+- There is no reason to conclude that the affairs of men are becoming more predictable. The opposite may well be true.
+
+Thinking Probabilistically, and using the Bayesian way of thinking about prediction
+
+- Don't fall into the comforting trap of binary thinking. Expressions of uncertainty are not admissions of weakness.
+- Know Where You're Coming From - state explicitly how likely we believe an event is to occur *before* we begin to weigh the evidence.
+- The volume of information is increasing exponentially. But the signal-to-noise ratio may be waning. We need better ways of distinguishing the two.
+
+Our bias is to think that we are better at prediction than we really are.
+
+## The Course So Far
+
+1. Statistics is too important to be left to statisticians.
+2. Models and visualization are the big takeaways, but don't forget about methods for making statistical inferences.
+3. Reproducible research is the current wave. 
+4. Things are changing quickly. We live in interesting times.
+
+### What About 432?
+
+- What do you want to know?
+
+## https://leanpub.com/modernscientist
+
+![](images/modern.png)
+
+
+
+---
+
+![](images/allfolks.png)
