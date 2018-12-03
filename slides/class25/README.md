@@ -8,7 +8,8 @@
 ## Remaining Deliverables
 
 - The Minute Paper after Class 25 will be posted on Tuesday and due at noon Wednesday 2018-12-05.
-- Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM. This is a change, to give you a little more time.
+- Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM. 
+  - This is a change, to give you a little more time.
 - The [Project Presentation (Task H) Schedule](http://bit.ly/431-2018-project-schedule) specifies your time and date (12-10, 12-11 or 12-13).
 - Project Task G (the Portfolio) is due Thursday 2018-12-13 at noon, regardless of when you give your presentation.
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
