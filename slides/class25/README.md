@@ -36,6 +36,10 @@ From [Andrew Gelman's blog](https://andrewgelman.com/), which we'll spend more t
 - 2016-11-05: [Why I prefer 50% rather than 95% intervals](https://andrewgelman.com/2016/11/05/why-i-prefer-50-to-95-intervals/)
 - 2016-11-23: [Abraham Lincoln and confidence intervals](https://andrewgelman.com/2016/11/23/abraham-lincoln-confidence-intervals/)
 
+## XKCD's Latest, on Cohort and Age Effects, at https://xkcd.com/2080/
+
+![](https://imgs.xkcd.com/comics/cohort_and_age_effects.png)
+
 ## gendercodeR is [now available](https://github.com/ropenscilabs/gendercoder)
 
 > Researchers who collect self-reported demographic data from respondents occasionally collect gender using a free-text response option. This has the advantage of respecting the gender diversity of respondents without prompting users and potentially including misleading responses. However, this presents a challenge to researchers in that some inconsistencies in typography and spelling create a larger set of responses than would be required to fully capture the demographic characteristics of the sample.
