@@ -19,4 +19,7 @@
 - **Office Hours** TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`.
 - `431-help` will be open until I finish with projects at on Thursday 2017-12-13. 
 
-## More to come.
+## Comments on the Projects
+
+**When should I transform/impute/drop missing outcomes/check residual plots/look at AIC and BIC in my project?** Whenever works best for you. The demonstration projects are not edicts to be followed slavishly. They are a demonstration of one potentially useful way to get the job done. If it makes more sense to you to do B then A, instead of A then B, go ahead.
+
