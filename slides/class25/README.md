@@ -45,6 +45,15 @@ From [Andrew Gelman's blog](https://andrewgelman.com/), which we'll spend more t
 > Researchers who collect self-reported demographic data from respondents occasionally collect gender using a free-text response option. This has the advantage of respecting the gender diversity of respondents without prompting users and potentially including misleading responses. However, this presents a challenge to researchers in that some inconsistencies in typography and spelling create a larger set of responses than would be required to fully capture the demographic characteristics of the sample.
 > This package uses dictionaries of common misspellings to recode these freetext responses into a consistent set of responses.
 
+## The Signal and the Noise
+
+- The main chapters we've yet to discuss in any meaningful way are 10 (Poker), 11 (Stock Market) and 13 (Terrorism).
+  - The key points in the poker chapter are about the value of Bayesian reasoning, and the difficulty of getting past the 80-20 issue. Specifically, in poker, most of the real opportunities now aren't as good as they were in the midst of the poker boom, because everyone who is playing high-stakes poker is already up to speed on the mathematics, and so this doesn't lend itself well to the ideal scenario, where a small amount of effort can result in large improvements. It's too competitive now.
+  - The key point in the stock market chapter (also a highly competitive marketplace) is that it's hard to distinguish signal from noise there. It's not hard to see/predict a bubble, but hard to time it. Most investors are investing money that is not their own, and are relatively shortsighted.
+- The most important chapters we haven't spent much time on in class are 7 (Disease outbreaks) and 8 (Bayes' Theorem).
+
+All are worthy of your review, but if I was trying to get up to speed, I would focus on 7, 8 and 13, before you take Quiz 2.
+
 ## Visualization of the Day
 
 For those of you who cannot get enough of election maps, try this one from https://xkcd.com/1939/
