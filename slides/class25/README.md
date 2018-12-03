@@ -23,3 +23,10 @@
 
 **When should I transform/impute/drop missing outcomes/check residual plots/look at AIC and BIC in my project?** Whenever works best for you. The demonstration projects are not edicts to be followed slavishly. They are a demonstration of one potentially useful way to get the job done. If it makes more sense to you to do B then A, instead of A then B, go ahead.
 
+## References From Today's Slides
+
+From [Andrew Gelman's blog](https://andrewgelman.com/), which we'll spend more time with in 432:
+
+- 2010-12-21: [Instead of "confidence interval," let's say "uncertainty interval"](https://andrewgelman.com/2010/12/21/lets_say_uncert/)
+- 2016-11-05: [Why I prefer 50% rather than 95% intervals](https://andrewgelman.com/2016/11/05/why-i-prefer-50-to-95-intervals/)
+- 2016-11-23: [Abraham Lincoln and confidence intervals](https://andrewgelman.com/2016/11/23/abraham-lincoln-confidence-intervals/)
