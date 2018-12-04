@@ -8,7 +8,7 @@
 ## Remaining Deliverables
 
 - Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM. 
-  - Quiz links will be posted at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02).
+  - Quiz links will be posted at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02). The instructions are available there now. Let us know at `431-help` if you have any questions.
 - The [Project Presentation (Task H) Schedule](http://bit.ly/431-2018-project-schedule) specifies your time and date (12-10, 12-11 or 12-13).
 - [Project Task G (the Portfolio)](https://thomaselove.github.io/431-2018-project/taskG.html) is due Thursday 2018-12-13 at noon, regardless of when you give your presentation. Submit it via [Canvas](https://canvas.case.edu/).
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
