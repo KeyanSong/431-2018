@@ -3,7 +3,7 @@
 ## Today's Materials
 
 - The slides for Class 25 are available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class25/431_class-25-slides_2018.pdf) and [in R Markdown](https://github.com/THOMASELOVE/THOMASELOVE/431-2018/master/slides/class25/431_class-25-slides_2018.Rmd).
-- Class 25 audio files will be posted after class.
+- Class 25 audio files are now posted.
 
 ## Remaining Deliverables
 
