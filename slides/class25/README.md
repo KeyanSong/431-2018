@@ -7,7 +7,7 @@
 
 ## Remaining Deliverables
 
-- The Minute Paper after Class 25 will be posted on Tuesday and due at noon Wednesday 2018-12-05.
+- The Minute Paper after Class 25 is available at http://bit.ly/431-2018-minute25. It is due at 2 PM Wednesday 2018-12-05.
 - Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM. 
   - This is a change, to give you a little more time.
 - The [Project Presentation (Task H) Schedule](http://bit.ly/431-2018-project-schedule) specifies your time and date (12-10, 12-11 or 12-13).
