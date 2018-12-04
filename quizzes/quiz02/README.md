@@ -44,3 +44,9 @@ The packages we loaded in R to complete the Answer Sketch for this Quiz were:
 You are welcome to consult the materials provided on the course website, but you are not allowed to discuss the questions on this quiz with anyone other than Professor Love and the teaching assistants at `431-help at case dot edu`. Please submit any questions you have about the Quiz to `431-help` through email. 
 
 Good Luck!
+
+## Link to the Google Form to Take the Quiz
+
+will be posted to this page by 5 PM on Thursday 2018-12-06.
+
+
