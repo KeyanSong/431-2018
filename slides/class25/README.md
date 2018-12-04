@@ -10,8 +10,9 @@
 - The Minute Paper after Class 25 is available at http://bit.ly/431-2018-minute25. It is due at 2 PM Wednesday 2018-12-05.
 - Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM. 
   - This is a change, to give you a little more time.
+  - Quiz links will be posted at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02).
 - The [Project Presentation (Task H) Schedule](http://bit.ly/431-2018-project-schedule) specifies your time and date (12-10, 12-11 or 12-13).
-- [Project Task G (the Portfolio)](https://thomaselove.github.io/431-2018-project/taskG.html) is due Thursday 2018-12-13 at noon, regardless of when you give your presentation.
+- [Project Task G (the Portfolio)](https://thomaselove.github.io/431-2018-project/taskG.html) is due Thursday 2018-12-13 at noon, regardless of when you give your presentation. Submit it via [Canvas](https://canvas.case.edu/).
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 - After you give your presentation, we hope you will fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
 
