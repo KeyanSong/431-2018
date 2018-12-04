@@ -41,12 +41,17 @@ The packages we loaded in R to complete the Answer Sketch for this Quiz were:
 - You may also need to use a function from the `vcd` package, which should also be installed on your machine.
 - As mentioned above, we also sourced in the `Love-boost.R` script.
 
+## Taking the Quiz
+
+By 5 PM on Thursday 2018-12-06, we will post, to this page:
+
+- The link to the Google Form to take Quiz 2
+- The necessary data sets
+- A PDF file containing all questions on the Quiz to this page. 
+  - All responses must be posted to the Google Form, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
+
+## And finally ...
+
 You are welcome to consult the materials provided on the course website, but you are not allowed to discuss the questions on this quiz with anyone other than Professor Love and the teaching assistants at `431-help at case dot edu`. Please submit any questions you have about the Quiz to `431-help` through email. 
 
 Good Luck!
-
-## Link to the Google Form to Take the Quiz
-
-will be posted to this page by 5 PM on Thursday 2018-12-06, and the necessary data sets will be posted then, as well.
-
-
