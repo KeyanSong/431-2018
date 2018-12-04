@@ -48,8 +48,8 @@ By 5 PM on Thursday 2018-12-06, we will post, to this page:
 
 - The link to the Google Form to take Quiz 2
 - The necessary data sets
-- A PDF file containing all questions on the Quiz to this page. 
-  - All responses must be posted to the Google Form, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
+- A PDF file containing all questions on the Quiz. 
+  - All responses **must be posted to the Google Form**, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
 
 ## And finally ...
 
