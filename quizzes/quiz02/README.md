@@ -6,8 +6,6 @@ This will be the main page for materials related to Quiz 2.
 
 The deadline for completing this quiz is **5 PM on Tuesday 2018-12-11**, and this is a firm deadline. Do not miss the deadline.
 
-If you wish to work on some of the quiz and then return to it later, you can do this by [1] scrolling down to the final question which asks you to type in your full name, affirming that you have done the work for the quiz alone, and then [2] submitting the quiz. You will then receive a link at your CWRU email which will allow you to return to the quiz without losing your progress.
-
 There are 40 questions, labeled Q01 through Q40. The maximum score available is 110 points.
 
 - Each question is worth between 2 and 6 points. Partial credit is available on some questions.
@@ -15,6 +13,9 @@ There are 40 questions, labeled Q01 through Q40. The maximum score available is 
 - The order of the questions is arbitrary. Some are meant to be easy, some are not.
 - You should attempt to answer every question. There is no advantage to failing to give a response, as an incorrect response is always at least as valuable as a missing one.
 - Please select or type in your best response (or responses, as indicated) for each question.
+- If you wish to work on some of the quiz and then return to it later, you can do this by 
+  1. scrolling down to the final question which asks you to type in your full name, affirming that you have done the work for the quiz alone, and then 
+  2. submitting the quiz. You will then receive a link at your CWRU email which will allow you to return to the quiz without losing your progress.
 
 ## Data Sets
 
