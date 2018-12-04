@@ -37,7 +37,7 @@ Please use `set.seed(2018)` whenever you need to do work that requires random sa
 
 The packages we loaded in R to complete the Answer Sketch for this Quiz were:
 
-- `Hmisc`, `fivethirtyeight`, `car`, `broom`, `magrittr`, and the `tidyverse`.
+- `Hmisc`, `fivethirtyeight`, `car`, `broom`, `Epi`, `magrittr`, and the `tidyverse`.
 - We also made use of functions from `knitr`, `mosaic` and `gridExtra` and those were installed, but not loaded with `library()`.
 - You may also need to use a function from the `vcd` package, which should also be installed on your machine.
 - As mentioned above, we also sourced in the `Love-boost.R` script.
