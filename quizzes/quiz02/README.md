@@ -4,7 +4,7 @@ This will be the main page for materials related to Quiz 2.
 
 ## General Instructions
 
-The deadline for completing this quiz is 5 PM on Tuesday 2018-12-11, and this is a firm deadline. Do not miss the deadline.
+The deadline for completing this quiz is **5 PM on Tuesday 2018-12-11**, and this is a firm deadline. Do not miss the deadline.
 
 If you wish to work on some of the quiz and then return to it later, you can do this by [1] scrolling down to the final question which asks you to type in your full name, affirming that you have done the work for the quiz alone, and then [2] submitting the quiz. You will then receive a link at your CWRU email which will allow you to return to the quiz without losing your progress.
 
