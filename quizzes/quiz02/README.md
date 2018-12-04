@@ -47,6 +47,6 @@ Good Luck!
 
 ## Link to the Google Form to Take the Quiz
 
-will be posted to this page by 5 PM on Thursday 2018-12-06.
+will be posted to this page by 5 PM on Thursday 2018-12-06, and the necessary data sets will be posted then, as well.
 
 
