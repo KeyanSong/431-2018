@@ -18,127 +18,254 @@ options(width = 55)
 
 ## Today's R Setup
 
+```{r, echo = FALSE}
+# install gganimate with 
+# devtools::install_github('thomasp85/gganimate')
+
+library(gganimate)
+
+# install datasauRus from CRAN as usual
+
+library(datasauRus)
+```
+
 ```{r, message = FALSE}
-library(broom); library(tidyverse)
+library(knitr); library(broom); library(tidyverse)
 ```
 
-## A Quartet of Simple Linear Regressions
+and a couple of secrets, hidden for now.
 
-```{r}
-glimpse(anscombe)
-```
-
-## Anscombe Model 1
-
-```{r}
-ans_1 <- lm(y1 ~ x1, data = anscombe)
-
-tidy(ans_1) %>%
-  knitr::kable(digits = 2)
-
-glance(ans_1) %>%
-  select(r.squared, adj.r.squared, sigma, p.value) %>%
-  knitr::kable(digits = 2)
-```
-
-## Plot of `y1` vs. `x1`
+## 13 Data Sets (summarized) in the `d_long` tibble:
 
 ```{r, echo = FALSE}
-ggplot(anscombe, aes(x = x1, y = y1)) +
-  geom_point(size = 3, pch = 1, col = "navy") + 
-  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
-  theme_bw() + labs(title = "Anscombe y1 vs x1") +
-  geom_text(x = 11, y = 4.5, size = 5, col = "royalblue", 
-            label = "R-square = 0.67, y1 = 3.0 + 0.5 x1")
+dd <- datasaurus_dozen_wide
+
+d_long <- datasaurus_dozen
+
+d_long <- d_long %>%
+  mutate(set = as.numeric(factor(dataset)))
+
+d_long %>% group_by(set) %>%
+  summarize(n = n(), mean_x = round(mean(x), 2), 
+            sd_x = round(sd(x),1), 
+            mean_y = round(mean(y), 2), 
+            sd_y = round(sd(y),1), 
+            cor(x, y)) %>%
+   round(digits = 2)
 ```
 
-## Residual Plots for Anscombe Model 1
+## New Data: Model for Set 1
 
-```{r, echo = FALSE, fig.height = 7}
-par(mfrow = c(2,2))
-plot(ans_1)
-```
+````{r}
+set_1 <- lm(y ~ x, data = d_long %>% filter(set == 1))
 
-## Anscombe Model 2
+tidy(set_1) %>% kable(digits = 2)
 
-```{r}
-ans_2 <- lm(y2 ~ x2, data = anscombe)
-
-tidy(ans_2) %>%
-  knitr::kable(digits = 2)
-
-glance(ans_2) %>%
+glance(set_1) %>%
   select(r.squared, adj.r.squared, sigma, p.value) %>%
-  knitr::kable(digits = 2)
+  kable(digits = 3)
 ```
 
-## Anscombe Model 3
+## New Data: Model for Set 2
 
-```{r}
-ans_3 <- lm(y3 ~ x3, data = anscombe)
+````{r}
+set_2 <- lm(y ~ x, data = d_long %>% filter(set == 2))
 
-tidy(ans_3) %>%
-  knitr::kable(digits = 2)
+tidy(set_2) %>% kable(digits = 2)
 
-glance(ans_3) %>%
+glance(set_2) %>%
   select(r.squared, adj.r.squared, sigma, p.value) %>%
-  knitr::kable(digits = 2)
+  kable(digits = 3)
 ```
 
-## Anscombe Model 4
 
-```{r}
-ans_4 <- lm(y4 ~ x4, data = anscombe)
+## New Data: Model for Set 3
 
-tidy(ans_4) %>%
-  knitr::kable(digits = 2)
+````{r}
+set_3 <- lm(y ~ x, data = d_long %>% filter(set == 3))
 
-glance(ans_4) %>%
+tidy(set_3) %>% kable(digits = 2)
+
+glance(set_3) %>%
   select(r.squared, adj.r.squared, sigma, p.value) %>%
-  knitr::kable(digits = 2)
+  kable(digits = 3)
 ```
 
-# Models 1-4 all look about the same, but what happens if we plot the data?
-
-## Plot the Data (and the regression lines)
+## All 13 Models, at a glance
 
 ```{r, echo = FALSE}
-p1 <- ggplot(anscombe, aes(x = x1, y = y1)) +
-  geom_point(size = 3, col = "#0D0887FF") + 
-  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
-  theme_bw()
+set_1 <- lm(y ~ x, data = d_long %>% filter(set == 1))
+set_2 <- lm(y ~ x, data = d_long %>% filter(set == 2))
+set_3 <- lm(y ~ x, data = d_long %>% filter(set == 3))
+set_4 <- lm(y ~ x, data = d_long %>% filter(set == 4))
+set_5 <- lm(y ~ x, data = d_long %>% filter(set == 5))
+set_6 <- lm(y ~ x, data = d_long %>% filter(set == 6))
+set_7 <- lm(y ~ x, data = d_long %>% filter(set == 7))
+set_8 <- lm(y ~ x, data = d_long %>% filter(set == 8))
+set_9 <- lm(y ~ x, data = d_long %>% filter(set == 9))
+set_10 <- lm(y ~ x, data = d_long %>% filter(set == 10))
+set_11 <- lm(y ~ x, data = d_long %>% filter(set == 11))
+set_12 <- lm(y ~ x, data = d_long %>% filter(set == 12))
+set_13 <- lm(y ~ x, data = d_long %>% filter(set == 13))
 
-p2 <- ggplot(anscombe, aes(x = x2, y = y2)) +
-  geom_point(size = 3, col = "#7701A8FF") + 
-  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
-  theme_bw()
+a1 <- glance(set_1) %>% mutate(dataset = 1)
+a2 <- glance(set_2) %>% mutate(dataset = 2)
+a3 <- glance(set_3) %>% mutate(dataset = 3)
+a4 <- glance(set_4) %>% mutate(dataset = 4)
+a5 <- glance(set_5) %>% mutate(dataset = 5)
+a6 <- glance(set_6) %>% mutate(dataset = 6)
+a7 <- glance(set_7) %>% mutate(dataset = 7)
+a8 <- glance(set_8) %>% mutate(dataset = 8)
+a9 <- glance(set_9) %>% mutate(dataset = 9)
+a10 <- glance(set_10) %>% mutate(dataset = 10)
+a11 <- glance(set_11) %>% mutate(dataset = 11)
+a12 <- glance(set_12) %>% mutate(dataset = 12)
+a13 <- glance(set_13) %>% mutate(dataset = 13)
 
-p3 <- ggplot(anscombe, aes(x = x3, y = y3)) +
-  geom_point(size = 3, col = "#C33D80FF") + 
-  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
-  theme_bw()
+a <- bind_rows(a1, a2, a3, a4, a5, a6, a7, a8, 
+               a9, a10, a11, a12, a13) %>%
+  mutate(sigma = round(sigma,2),
+         p.value = round(p.value, 2),
+         AIC = round(AIC, 0),
+         BIC = round(BIC, 0)) %>%
+  select(dataset, r.squared, adj.r.squared, sigma, 
+         p.value, AIC, BIC) 
 
-p4 <- ggplot(anscombe, aes(x = x4, y = y4)) +
-  geom_point(size = 3, col = "blue") + 
-  geom_smooth(method = "lm", se = FALSE, col = "royalblue") + 
-  theme_bw()
-
-gridExtra::grid.arrange(p1, p2, p3, p4, nrow=2)
+a %>% kable(digits = 3)
 ```
 
-## Do Residuals vs. Fitted Plots reveal the problems?
+## Plot for Set 1 (code)
 
-```{r, echo = FALSE, fig.height = 7}
-par(mfrow=c(2,2))
-plot(lm(y1 ~ x1, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y1 by X1")
-plot(lm(y2 ~ x2, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y2 by X2")
-plot(lm(y3 ~ x3, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y3 by X3")
-plot(lm(y4 ~ x4, data = anscombe), which = 1, caption = "Residuals vs. Fitted: Y4 by X4")
+```{r, eval = FALSE}
+d_long %>%
+  filter(set == 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  theme_bw()
+```
+
+## Plot for Set 1 (result)
+
+```{r, echo = FALSE}
+d_long %>%
+  filter(set == 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  theme_bw()
 ```
 
 ## https://xkcd.com/1725/
 
 ![](images/linear_regression.png)
+
+## Plot for Set 1 (with linear model and loess smooth)
+
+```{r, echo = FALSE}
+d_long %>%
+  filter(set == 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "red") +
+  geom_smooth(method = "loess", col = "blue", se = FALSE) +
+  theme_bw()
+```
+
+- Added `geom_smooth(method = "lm", col = "red")` and 
+- `geom_smooth(method = "loess", col = "blue", se = FALSE)`
+
+## Residuals Plots for Set 1 Model
+
+```{r, echo = FALSE, fig.height = 7}
+par(mfrow=c(2,2))
+plot(set_1)
+```
+
+## Models 2-13
+
+Models 2-13 all look about the same in terms of means, medians, correlations, regression models, but what happens if we plot the data?
+
+```{r, eval = FALSE}
+d_long %>%
+  filter(set != 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  theme_bw() +
+  facet_wrap(~ set, labeller = "label_both")
+```
+
+## The Other 12 Data Sets
+
+```{r, fig.height = 6.8, echo = FALSE}
+d_long %>%
+  filter(set != 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  theme_bw() +
+  facet_wrap(~ set, labeller = "label_both")
+```
+
+## Actually, each of these sets has a name
+
+```{r, fig.height = 6.8, echo = FALSE}
+d_long %>%
+  filter(set != 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  theme_bw() +
+  facet_wrap(~ dataset, labeller = "label_both")
+```
+
+## And a linear model yields the same fit for each
+
+```{r, fig.height = 6.8, echo = FALSE}
+d_long %>%
+  filter(set != 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "red") +
+  theme_bw() +
+  facet_wrap(~ dataset, labeller = "label_both")
+```
+
+## And a loess smooth?
+
+```{r, fig.height = 6.8, echo = FALSE}
+d_long %>%
+  filter(set != 1) %>%
+  ggplot(., aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "loess", col = "blue", se = FALSE) +
+  theme_bw() +
+  facet_wrap(~ dataset, labeller = "label_both", 
+             scales = "free_y")
+```
+
+
+## And the data come from
+
+These are the datasauRus dozen data sets, available in the datasauRus package, which you can install from CRAN.
+
+```
+library(datasauRus)
+d_long <- datasaurus_dozen
+```
+
+## A cool thing, available online...
+
+Visit https://r-mageddon.netlify.com/post/reanimating-the-datasaurus/
+
+```{r, eval = FALSE}
+library(datasauRus)
+library(ggplot2)
+library(gganimate)
+
+ggplot(datasaurus_dozen, aes(x=x, y=y))+
+  geom_point()+
+  theme_minimal() +
+  transition_states(dataset, 3, 1)
+```
+
+More on `gganimate` (I hope) in 432.
 
 ---
 
