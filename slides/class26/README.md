@@ -40,16 +40,26 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 
 ## Visualization of the Day
 
-Coming soon.
+- 
 
-## One Last Thing
+- 
 
-Coming soon.
+
+## Three Last Things
+
+1. Here is Jeff Leek's [Non-comprehensive list of awesome things other people did in 2017](https://simplystatistics.org/2017/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2017/)
+  - The [Exploring Histograms](http://tinlizzie.org/histograms/) essay by Aran Lunzer and Amelia McNamara, for example, is something to see.
+
+2. Here is a [Master List of Top 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+
+3. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 1.
+
 
 ## References From Today's Slides
 
 - [p-Hack Your Way to Scientific Glory](https://fivethirtyeight.com/features/science-isnt-broken/#part1) at FiveThirtyEight
 - Jeff Leek's [How to Be a Modern Scientist](https://leanpub.com/modernscientist) is a book we'll read in 432.
+- [Ten Simple Rules for Effective Statistical Practice](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004961) from *PLOS Computational Biology*
 - XKCD on [Linear Regression](https://xkcd.com/1725/)
 - Joseph P Simmons, Leif D Nelson and Uri Simonsohn [False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant](https://journals.sagepub.com/doi/abs/10.1177/0956797611417632) at https://doi.org/10.1177%2F0956797611417632, defining the term "researcher degrees of freedom"
 - Andrew Gelman's Blog
@@ -61,7 +71,6 @@ Coming soon.
 - Jeff Leek alerted me to the [Sad P-value Bear meme](https://simplystatistics.org/2013/08/26/statistics-meme-sad-p-value-bear/)
   - Some of you may be interested in the Tumbler: [Biostatistics Ryan Gosling](http://biostatisticsryangoslingreturns.tumblr.com/).
 - [Big Data, Small Data, Great Data?](https://www.shutterstock.com/image-illustration/lets-shrink-big-data-into-small-221282206)
-- [Ten Simple Rules for Effective Statistical Practice](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004961) from *PLOS Computational Biology*
 - Vanderbilt University [Tutorial on Reproducible Research](http://biostat.mc.vanderbilt.edu/wiki/pub/Main/ReproducibleResearchTutorial/HarrellScottTutorial-useR2012.pdf)
 - Karl Broman's [Initial Steps Towards Reproducible Research](http://kbroman.org/steps2rr/)
 - Jeff Leek's [How To Share Data with a Statistician](https://github.com/jtleek/datasharing)
