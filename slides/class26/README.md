@@ -35,12 +35,8 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 
 ## Office Hours and `431-help`
 
-- TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`.
+- TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`. They are doing this on a volunteer basis, so no promises of availability are possible. If you need help, use `431-help`.
 - `431-help` will be open until I finish with projects at on Thursday 2017-12-13. 
-
-## References From Today's Slides
-
-Coming soon.
 
 ## Visualization of the Day
 
@@ -49,3 +45,27 @@ Coming soon.
 ## One Last Thing
 
 Coming soon.
+
+## References From Today's Slides
+
+- [p-Hack Your Way to Scientific Glory](https://fivethirtyeight.com/features/science-isnt-broken/#part1) at FiveThirtyEight
+- Jeff Leek's [How to Be a Modern Scientist](https://leanpub.com/modernscientist) is a book we'll read in 432.
+- XKCD on [Linear Regression](https://xkcd.com/1725/)
+- Joseph P Simmons, Leif D Nelson and Uri Simonsohn [False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant](https://journals.sagepub.com/doi/abs/10.1177/0956797611417632) at https://doi.org/10.1177%2F0956797611417632, defining the term "researcher degrees of freedom"
+- Andrew Gelman's Blog
+  - 2012-11-01 [Researcher Degrees of Freedom](https://andrewgelman.com/2012/11/01/researcher-degrees-of-freedom/)
+  - The p-hacking paper "[The garden of forking paths](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)" by Gelman and Eric Loken
+- Benjamin et al "[Redefine Statistical Significance](https://psyarxiv.com/mky9j/)"
+  - An accompanying explanatory piece in *Science*: "[It will be much harder to call new findings ‘significant’ if this team gets its way](http://www.sciencemag.org/news/2017/07/it-will-be-much-harder-call-new-findings-significant-if-team-gets-its-way)" by Kelly Servick
+  - Lakens et al. respond with "[Justify Your Alpha](https://psyarxiv.com/9s3y6)"
+- Jeff Leek alerted me to the [Sad P-value Bear meme](https://simplystatistics.org/2013/08/26/statistics-meme-sad-p-value-bear/)
+  - Some of you may be interested in the Tumbler: [Biostatistics Ryan Gosling](http://biostatisticsryangoslingreturns.tumblr.com/).
+- [Big Data, Small Data, Great Data?](https://www.shutterstock.com/image-illustration/lets-shrink-big-data-into-small-221282206)
+- [Ten Simple Rules for Effective Statistical Practice](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004961) from *PLOS Computational Biology*
+- Vanderbilt University [Tutorial on Reproducible Research](http://biostat.mc.vanderbilt.edu/wiki/pub/Main/ReproducibleResearchTutorial/HarrellScottTutorial-useR2012.pdf)
+- Karl Broman's [Initial Steps Towards Reproducible Research](http://kbroman.org/steps2rr/)
+- Jeff Leek's [How To Share Data with a Statistician](https://github.com/jtleek/datasharing)
+- [American Statistical Association's Statement on P Values](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2016.1154108)
+- John Cook on [Fitting an Elephant with Four Paramaters](https://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/)
+- Here is the [Wiki for the `gganimate` package](https://github.com/thomasp85/gganimate/wiki)
+- and here is the great post on "[Reanimating the Datasaurus](https://r-mageddon.netlify.com/post/reanimating-the-datasaurus/)" that makes nice use of the `gganimate` package. 
