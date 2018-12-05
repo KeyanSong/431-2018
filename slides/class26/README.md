@@ -18,6 +18,10 @@
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 - After you give your presentation, we hope you will fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
 
+## Minute Paper After Class 25
+
+My feedback is available at http://bit.ly/431-2018-minute25-response.
+
 ## Projects: What am I thinking about in reviewing your work?
 
 - Introducing the material in such a way as to allow me to understand the problem sufficiently.
