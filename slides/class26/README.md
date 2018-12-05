@@ -18,6 +18,15 @@
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 - After you give your presentation, we hope you will fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
 
+## After Today's Class Audio is Posted, Where Do I Go for Updates?
+
+I'll be posting things at https://github.com/THOMASELOVE/431-2018/tree/master/slides/postclass. When I post something there for the first time, I'll send you an email.
+
+## Office Hours and `431-help`
+
+- TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`. They are doing this on a volunteer basis, so no promises of availability are possible. If you need help, use `431-help`.
+- `431-help` will be open until I finish with projects at on Thursday 2017-12-13. 
+
 ## Minute Paper After Class 25
 
 My feedback is available at http://bit.ly/431-2018-minute25-response.
@@ -32,11 +41,6 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 - Making clear recommendations and supporting them with analytic results.
 - Effectively and appropriately responding to questions.
 - Avoiding making clearly incorrect statements about data, statistical methods, or the subject matter.
-
-## Office Hours and `431-help`
-
-- TA office hours continue through Friday 2018-12-07. If you need to meet with a TA outside of office hours, arrange that through `431-help`. They are doing this on a volunteer basis, so no promises of availability are possible. If you need help, use `431-help`.
-- `431-help` will be open until I finish with projects at on Thursday 2017-12-13. 
 
 ## Visualization of the Day
 
@@ -76,4 +80,6 @@ Here is a [Master List of 50 ggplot2 Visualizations with full R code](http://r-s
 - John Cook on [Fitting an Elephant with Four Paramaters](https://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/)
 - Here is the [Wiki for the `gganimate` package](https://github.com/thomasp85/gganimate/wiki)
 - and here is the great post on "[Reanimating the Datasaurus](https://r-mageddon.netlify.com/post/reanimating-the-datasaurus/)" that makes nice use of the `gganimate` package. 
-- The datasaurus idea comes from [Justin Matejka and George Fitzmaurice](https://www.autodeskresearch.com/publications/samestats).
+- The datasaurus idea comes from [Justin Matejka and George Fitzmaurice](https://www.autodeskresearch.com/publications/samestats). It's based in part on [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), which is what I used to use to teach this material, and which is available in R, through the command `anscombe`.
+
+
