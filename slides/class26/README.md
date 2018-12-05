@@ -40,10 +40,7 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 
 ## Visualization of the Day
 
-- 
-
-- 
-
+To come.
 
 ## Three Last Things
 
@@ -52,8 +49,11 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 
 2. Here is a [Master List of Top 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
 
-3. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 1.
+3. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 7 and Number 1.
 
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class26/reproducible.png)
+
+![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class26/data-exists.png)
 
 ## References From Today's Slides
 
