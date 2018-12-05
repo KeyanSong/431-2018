@@ -40,16 +40,14 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 
 ## Visualization of the Day
 
-To come.
+Here is a [Master List of Top 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
 
-## Three Last Things
+## Two Last Things
 
 1. Here is Jeff Leek's [Non-comprehensive list of awesome things other people did in 2017](https://simplystatistics.org/2017/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2017/)
   - The [Exploring Histograms](http://tinlizzie.org/histograms/) essay by Aran Lunzer and Amelia McNamara, for example, is something to see.
 
-2. Here is a [Master List of Top 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
-
-3. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 7 and Number 1.
+2. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 7 and Number 1.
 
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class26/reproducible.png)
 
@@ -78,3 +76,4 @@ To come.
 - John Cook on [Fitting an Elephant with Four Paramaters](https://www.johndcook.com/blog/2011/06/21/how-to-fit-an-elephant/)
 - Here is the [Wiki for the `gganimate` package](https://github.com/thomasp85/gganimate/wiki)
 - and here is the great post on "[Reanimating the Datasaurus](https://r-mageddon.netlify.com/post/reanimating-the-datasaurus/)" that makes nice use of the `gganimate` package. 
+- The datasaurus idea comes from [Justin Matejka and George Fitzmaurice](https://www.autodeskresearch.com/publications/samestats).
