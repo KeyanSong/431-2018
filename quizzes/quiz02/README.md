@@ -19,7 +19,7 @@ There are 40 questions, labeled Q01 through Q40. The maximum score available is 
 
 ## Data Sets
 
-Data sets are available for several of the questions. Those data sets will be posted at https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02 at the time the quiz is made available. 
+Data sets are available for several of the questions. The final version of the data sets will be posted at https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02 at the time the quiz is made available. 
 
 - Our usual `Love-boost.R` script will also be used in developing the answer sketch, and you should assume you will use it in the Quiz, as well.
 
