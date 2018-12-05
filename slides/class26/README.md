@@ -40,7 +40,7 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 
 ## Visualization of the Day
 
-Here is a [Master List of Top 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+Here is a [Master List of 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html) by Selva Prabhakaran.
 
 ## Two Last Things
 
