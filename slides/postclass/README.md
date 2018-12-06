@@ -1,5 +1,10 @@
 # Material Posted By Dr. Love After the Final Class of 431
 
+## Quiz 2 is due on 2018-12-11 at 5 PM. 
+
+- All of the information you need (including the link to the Google Form) is at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02). Let us know at `431-help` if you have any questions.
+- You should know your grade on Quiz 2 by 5 PM on 2018-12-14.
+
 ## Course Evaluations
 
 PLEASE complete a [course evaluation for 431](https://webapps.case.edu/courseevals/) by visiting https://webapps.case.edu/courseevals/ before 2018-12-19.
