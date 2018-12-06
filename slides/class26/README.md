@@ -18,9 +18,17 @@
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
 - After you give your presentation, we hope you will fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
 
+## Homework 8 Grades/Rubric/Sketch
+
+- Homework 8 grades, as well as course homework grades, are now posted to the usual Google Sheet roster at http://bit.ly/431-2018-hw-grades.
+- The Answer Sketch for Homework 8 is available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.pdf) and [in R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.Rmd).
+- The Homework 8 grading rubric is [also available now in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8rubric.pdf).
+
 ## After Today's Class Audio is Posted, Where Do I Go for Updates?
 
-I'll be posting things at https://github.com/THOMASELOVE/431-2018/tree/master/slides/postclass. When I post something there for the first time, I'll send you an email.
+I'll be posting things at https://github.com/THOMASELOVE/431-2018/tree/master/slides/postclass. 
+
+- All that is there now is a description of how your grade in the course will be calculated.
 
 ## Office Hours and `431-help`
 
