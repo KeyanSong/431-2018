@@ -2,6 +2,16 @@
 
 This will be the main page for materials related to Quiz 2.
 
+# Taking the Quiz - [Link to the Google Form](http://bit.ly/431-2018-quiz2-due-12-11-5PM)
+
+**The Google Form on which you take Quiz 2** is at http://bit.ly/431-2018-quiz2-due-12-11-5PM
+
+See below for all pertinent details.
+
+- The necessary data sets are posted above.
+- A PDF file containing all questions on the Quiz is [posted here].
+  - All responses **must be posted to the Google Form**, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
+
 ## General Instructions
 
 The deadline for completing this quiz is **5 PM on Tuesday 2018-12-11**, and this is a firm deadline. Do not miss the deadline.
@@ -42,14 +52,10 @@ The packages we loaded in R to complete the Answer Sketch for this Quiz were:
 - You may also need to use a function from the `vcd` package, which should also be installed on your machine.
 - As mentioned above, we also sourced in the `Love-boost.R` script.
 
-## Taking the Quiz
+## The Google Form
 
-By 5 PM on Thursday 2018-12-06, we will post, to this page:
+**The Google Form on which you take Quiz 2** is at http://bit.ly/431-2018-quiz2-due-12-11-5PM
 
-- The link to the Google Form to take Quiz 2
-- The necessary data sets
-- A PDF file containing all questions on the Quiz. 
-  - All responses **must be posted to the Google Form**, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
 
 ## And finally ...
 
