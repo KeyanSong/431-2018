@@ -11,8 +11,6 @@ Refer to the previous assignments for general advice on submitting Homework.
 
 ## Answer Sketch
 
-The Answer Sketch for Homework 8 will be posted on 2018-11-30 at about 3 PM. 
-
-You'll find it [in PDF at this link](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.pdf) and [in R Markdown at this one](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.Rmd).
-
-The Homework 8 grading rubric and grades will appear as soon as possible, and no later than Tuesday, December 11.
+- The Answer Sketch for Homework 8 is available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.pdf) and [in R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.Rmd).
+- Homework 8 grades, and course homework grades, are now posted to the usual Google Sheet roster at http://bit.ly/431-2018-hw-grades.
+- The Homework 8 grading rubric is also available now in PDF.
