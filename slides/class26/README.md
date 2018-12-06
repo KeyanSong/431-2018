@@ -51,6 +51,8 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 - Effectively and appropriately responding to questions.
 - Avoiding making clearly incorrect statements about data, statistical methods, or the subject matter.
 
+My Best Advice? **Be prepared.**
+
 ## What is the most important tool I use in R to debug your code?
 
 Counting things. Running your code about a column `col` in your data frame `df`, and then inspect it (usually with `df %>% count(col, sort = TRUE)`) to see what it produces.
