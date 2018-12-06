@@ -16,7 +16,7 @@
 - [Project Task G (the Portfolio)](https://thomaselove.github.io/431-2018-project/taskG.html) is due Thursday 2018-12-13 at noon, regardless of when you give your presentation. Submit it via [Canvas](https://canvas.case.edu/).
   - If you need to resubmit your data (because of changes you've made), you can do so now through Project Task F on Canvas (which has been re-opened for this purpose) or you can just submit it along with your portfolio as part of Task G.
 - The [Homework Grading Appeals form](https://goo.gl/forms/G4ZZ1Fge1ZkQVKzy2) is also due Thursday 2018-12-13 at noon, if you want to make an appeal. See the last section of the [Syllabus](https://thomaselove.github.io/2018-431-syllabus/) for more details.
-- After you give your presentation, we hope you will fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
+- After you give your presentation, please fill out a [Course Evaluation](https://webapps.case.edu/courseevals/) from CWRU by their 2018-12-19 deadline.
 
 ## Homework 8 Grades/Rubric/Sketch
 
@@ -26,9 +26,10 @@
 
 ## After Today's Class Audio is Posted, Where Do I Go for Updates?
 
-I'll be posting things at https://github.com/THOMASELOVE/431-2018/tree/master/slides/postclass. 
+I'll be posting things at https://github.com/THOMASELOVE/431-2018/tree/master/slides/postclass. Right now, you'll find:
 
-- All that is there now is a description of how your grade in the course will be calculated.
+- Details on grading in 431 (how I get your course grade and when you'll know your grade, etc.)
+- Some information on the 432 and 500 courses.
 
 ## Office Hours and `431-help`
 
@@ -50,16 +51,23 @@ My feedback is available at http://bit.ly/431-2018-minute25-response.
 - Effectively and appropriately responding to questions.
 - Avoiding making clearly incorrect statements about data, statistical methods, or the subject matter.
 
+## What is the most important tool I use in R to debug your code?
+
+Counting things. Running your code about a column `col` in your data frame `df`, and then inspect it (usually with `df %>% count(col, sort = TRUE)`) to see what it produces.
+
 ## Visualization of the Day
 
-Here is a [Master List of 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html) by Selva Prabhakaran.
+[Bussed Out: How America Moves its Homeless](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study), by Nadieh Bremer, from [The Guardian, 2017-12-20](https://www.theguardian.com/us-news/ng-interactive/2017/dec/20/bussed-out-america-moves-homeless-people-country-study). The key visualization just won an [Information Is Beautiful Award](https://www.informationisbeautifulawards.com/showcase/3134-bussed-out-how-america-moves-its-homeless).
 
-## Two Last Things
+
+## Three Last Things
 
 1. Here is Jeff Leek's [Non-comprehensive list of awesome things other people did in 2017](https://simplystatistics.org/2017/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2017/)
   - The [Exploring Histograms](http://tinlizzie.org/histograms/) essay by Aran Lunzer and Amelia McNamara, for example, is something to see.
+  
+2. Here is a [Master List of 50 ggplot2 Visualizations with full R code](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html) by Selva Prabhakaran.
 
-2. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 7 and Number 1.
+3. [The Ten Fallacies of Data Science](https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862) is great. I particularly like Number 7 and Number 1.
 
 ![](https://github.com/THOMASELOVE/431-2018/blob/master/slides/class26/reproducible.png)
 
