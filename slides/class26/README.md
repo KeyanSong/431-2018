@@ -20,7 +20,7 @@
 
 ## Homework 8 Grades/Rubric/Sketch
 
-- Homework 8 grades, as well as course homework grades, are now posted to the usual Google Sheet roster at http://bit.ly/431-2018-hw-grades.
+- Homework 8 grades, as well as course homework grades, are posted to http://bit.ly/431-2018-hw-grades.
 - The Answer Sketch for Homework 8 is available [in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.pdf) and [in R Markdown](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8sketch.Rmd).
 - The Homework 8 grading rubric is [also available now in PDF](https://github.com/THOMASELOVE/431-2018/blob/master/homework/Homework8/431-2018-hw8rubric.pdf).
 
