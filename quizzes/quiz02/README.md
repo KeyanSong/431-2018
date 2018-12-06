@@ -1,7 +1,5 @@
 # 431 Quiz 2 for 2018
 
-This will be the main page for materials related to Quiz 2.
-
 # Taking the Quiz - [Link to the Google Form](http://bit.ly/431-2018-quiz2-due-12-11-5PM)
 
 **The Google Form on which you take Quiz 2** is at http://bit.ly/431-2018-quiz2-due-12-11-5PM
@@ -9,7 +7,7 @@ This will be the main page for materials related to Quiz 2.
 See below for all pertinent details.
 
 - The necessary data sets are posted above.
-- A PDF file containing all questions on the Quiz is [posted here].
+- A PDF file containing all questions on the Quiz is [posted here](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz02/431-2018-quiz2.pdf).
   - All responses **must be posted to the Google Form**, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
 
 ## General Instructions
