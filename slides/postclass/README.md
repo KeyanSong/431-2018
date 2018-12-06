@@ -26,3 +26,7 @@ Substantial information will be available no later than 2019-01-11. I will send 
 - You will need to purchase at least one book for that course, and it is Paul Rosenbaum's **Observation and Experiment: An Introduction to Causal Inference**. It is available, for instance, at Amazon.com in both Kindle and Hardcover editions, the more expensive of which is $25 at this writing. 
 - Dr. Love will be away January 14-18, so the first class meeting will be **Thursday 2018-01-23** starting at 8:30 AM.
   - I intend to start addressing emailed questions about 500 around 2019-01-07.
+
+## Dr. Love's Availability
+
+Dr. Love's email will be paused from 2018-12-21 through 2019-01-02.
