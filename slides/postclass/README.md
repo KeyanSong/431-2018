@@ -6,4 +6,4 @@ PLEASE complete a [course evaluation for 431](https://webapps.case.edu/courseeva
 
 ## Grading and How I Do It
 
-If you want to know anything about course grading, [read this document](https://github.com/THOMASELOVE/431-2018/blob/master/slides/postclass/grades.md).
+If you want to know everything Dr. Love can think of related to course grading and grades, [read this document](https://github.com/THOMASELOVE/431-2018/blob/master/slides/postclass/grades.md).
