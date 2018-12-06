@@ -7,8 +7,8 @@
 
 ## Remaining Deliverables
 
-- Quiz 2 will be released to you by 5 PM on 2018-12-06, and will be due on 2018-12-11 at 5 PM. 
-  - Quiz links will be posted at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02). The instructions are available there now. Let us know at `431-help` if you have any questions.
+- Quiz 2 has been released. It is due on 2018-12-11 at 5 PM. 
+  - All of the information you need (including the link to the Google Form) is at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02). Let us know at `431-help` if you have any questions.
 - The [Project Presentation (Task H) Schedule](http://bit.ly/431-2018-project-schedule) specifies your time and date (12-10, 12-11 or 12-13).
   - If you are unsure whether to use your Markdown file or build a separate Powerpoint for your presentation, here's my advice:
       - For most people, I recommend you use Markdown/HTML for both Studies.
