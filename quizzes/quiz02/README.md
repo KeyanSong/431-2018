@@ -6,7 +6,7 @@
 
 See below for all pertinent details.
 
-- The necessary data sets are posted above.
+- The necessary data sets are [posted above](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02).
 - A PDF file containing all questions on the Quiz is [posted here](https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz02/431-2018-quiz2.pdf).
   - All responses **must be posted to the Google Form**, but downloading the PDF may be helpful to those of you who plan to do most of the work offline.
 
@@ -27,8 +27,14 @@ There are 40 questions, labeled Q01 through Q40. The maximum score available is 
 
 ## Data Sets
 
-Data sets are available for several of the questions. The final version of the data sets will be posted at https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02 at the time the quiz is made available. 
+Data sets are available for several of the questions. The final version of the data sets are at https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02.
 
+- The `oscar_A` and `oscar_B` data sets apply to Q01 and Q02.
+- The `swordfish` data set applies to Q03 and Q04.
+- The `limestone` data set applies to Q12.
+- The `wc_code.R` bit of R code applies to Q22.
+- The `hospsim` data set applies to Q26 - Q32.
+- The `wcgs` data set was used to develop Q19, but you will not actually use it in responding to the quiz.
 - Our usual `Love-boost.R` script will also be used in developing the answer sketch, and you should assume you will use it in the Quiz, as well.
 
 ## Assumptions We Want You To Make
