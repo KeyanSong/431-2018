@@ -34,7 +34,7 @@ Data sets are available for several of the questions. The final version of the d
 - The `limestone` data set applies to Q12.
 - The `wc_code.R` bit of R code applies to Q22.
 - The `hospsim` data set applies to Q26 - Q32.
-- The `wcgs` data set was used to develop Q19, but you will not actually use it in responding to the quiz.
+- The `wcgs` data set (that we have used in earlier settings this semester) was used to develop Q19, but you will not actually use it in responding to the quiz.
 - Our usual `Love-boost.R` script will also be used in developing the answer sketch, and you should assume you will use it in the Quiz, as well.
 
 ## Assumptions We Want You To Make
