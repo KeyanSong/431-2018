@@ -13,7 +13,13 @@ PLEASE complete a [course evaluation for 431](https://webapps.case.edu/courseeva
 
 If you want to know everything Dr. Love can think of related to course grading and grades, [read this document](https://github.com/THOMASELOVE/431-2018/blob/master/slides/postclass/grades.md).
 
-## When Will Information Be Posted About 432?
+## Interested in participating in a 5-minute survey from R Studio?
+
+**RStudio asks**: Do you wonder how and why people learn R? If you've learned or are planning to learn R, fill out our 5 minute survey, and we'll present the findings at `rstudio::conf 2019` in Austin, TX. Full disclosure of how the data will be used is on the first page of the survey, which you'll find at https://t.co/MKehzVAGtw
+
+## When Will Information Be Posted About ...
+
+### 432?
 
 Substantial information will be available no later than 2019-01-11. I will send out an email to everyone registered for 432 (or who has requested my permission to enroll in that course) later in December.
 
@@ -23,7 +29,7 @@ Substantial information will be available no later than 2019-01-11. I will send 
 - Dr. Love will be away January 14-18, so the first class meeting will be **Tuesday 2019-01-21** starting at 1 PM.
   - I intend to start addressing emailed questions about 432 will be addressed starting around 2019-01-07.
 
-## When Will Information Be Posted About 500?
+### 500?
 
 Substantial information will be available no later than 2019-01-11. I will send out an email to everyone registered for 500 (or who has requested my permission to enroll in that course) later in December.
 
