@@ -41,4 +41,4 @@ Substantial information will be available no later than 2019-01-11. I will send 
 ## Dr. Love's Availability
 
 - I will pause my email starting around noon on 2018-12-21 until 2019-01-02.
-- I will be at the rstudio conf and thus generally not responsive from 2019-01-14 through 2019-01-18.
+- I will be at [rstudio::conf 2019L](https://www.rstudio.com/conference/) and not very responsive 2019-01-14 through 2019-01-18.
