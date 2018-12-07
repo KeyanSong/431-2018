@@ -27,7 +27,6 @@ Substantial information will be available no later than 2019-01-11. I will send 
 - Another text we will use in 432 is Grolemund and Wickham's [R for Data Science](https://r4ds.had.co.nz/), which, of course, you've already seen in 431.
 - There may be another book to buy. You will learn that no later than 2019-01-11.
 - Dr. Love will be away January 14-18, so the first class meeting will be **Tuesday 2019-01-21** starting at 1 PM.
-  - I intend to start addressing emailed questions about 432 will be addressed starting around 2019-01-07.
 
 ### 500?
 
@@ -36,7 +35,6 @@ Substantial information will be available no later than 2019-01-11. I will send 
 - For those of you taking the course while you're taking 432, you'll need to get up to speed on logistic regression quickly. I built a [primer on logistic regression modeling in R], based on some material from old 432 notes.
 - You will need to purchase at least one book for that course, and it is Paul Rosenbaum's **Observation and Experiment: An Introduction to Causal Inference**. It is available, for instance, at Amazon.com in both Kindle and Hardcover editions, the more expensive of which is $25 at this writing. 
 - Dr. Love will be away January 14-18, so the first class meeting will be **Thursday 2018-01-23** starting at 8:30 AM.
-  - I intend to start addressing emailed questions about 500 around 2019-01-07.
 
 ## Dr. Love's Availability
 
