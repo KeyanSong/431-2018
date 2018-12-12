@@ -16,10 +16,11 @@
 
 3. Your grade on the quizzes consists of two elements:
     - A = Your Quiz 1 grade (which was on a scale of 0-100 points)
-    - B = Your Quiz 2 grade (which we expect to be out of 110 points) divided by 1.1 (so as to put it on a scale of 0-100 points) 
+    - B = Your Quiz 2 grade (out of 110 points, but we pretend it is out of 100) 
     - Your **course quiz grade** will be the larger of:
         - 0.40 times A + 0.60 times B, or
         - 0.33 times A + 0.67 times B
+        - as long as that score is below 100. If it is above 100, your grade on the quizzes will be 100.
     - You will know your score on Quiz 2 before the end of the day on 2018-12-14.
 
 4. Your **course project grade** is also on a scale of 0-100 points, comprised of:
