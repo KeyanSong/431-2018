@@ -1,9 +1,11 @@
 # Material Posted By Dr. Love After the Final Class of 431
 
-## Quiz 2 is due on 2018-12-11 at 5 PM. 
+## Quiz 2 grades and answers are now available.
 
-- All of the information you need (including the link to the Google Form) is at the [Quiz 2 home page](https://github.com/THOMASELOVE/431-2018/tree/master/quizzes/quiz02). Let us know at `431-help` if you have any questions.
-- You should know your grade on Quiz 2 by 5 PM on 2018-12-14.
+- I have graded Quiz 2. The answer sketch (which includes information on grading for each item) is available now at https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz02/431-2018-quiz2sketch.pdf. 
+  - At the end of that document, I summarize the grades, as well as at the end of the sketch for each item, where I tell you how the class did. 
+  - Essentially, the quiz was out of 110 points, but I'm just going to pretend it was really out of 100 points, so if you get 90/110, I'll treat that as if it were 90/100.
+  - Your individual Quiz 2 grade for each item and the Quiz as a whole is now posted as a tab in [the homework grading roster](http://bit.ly/431-2018-hw-grades). There is also a tab with your combined Quiz grade across the two quizzes.
 
 ## Course Evaluations
 
