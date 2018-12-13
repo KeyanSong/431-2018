@@ -4,10 +4,12 @@
 
 - I have graded Quiz 2. The answer sketch (which includes information on grading for each item) is available now at https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz02/431-2018-quiz2sketch.pdf. 
   - At the end of that document, I summarize the grades, as well as at the end of the sketch for each item, where I tell you how the class did. 
-  - Essentially, the quiz was out of 110 points, but I'm just going to pretend it was really out of 100 points, so if you get 90/110, I'll treat that as if it were 90/100.
+  - Essentially, the quiz was out of 109 points, but I'm just going to pretend it was really out of 109 points, so if you get 90/109, I'll treat that as if it were 90/100. 
   - Your individual Quiz 2 grade for each item and the Quiz as a whole is now posted as a tab in [the homework grading roster](http://bit.ly/431-2018-hw-grades). There is also a tab with your combined Quiz grade across the two quizzes.
 
 **Note**: As of 8 AM 2018-12-12, I fixed an error in one question (#15), which adjusted some people from a grade of 3/4 to 4/4 and one person from 4/4 down to 3/4, and I also addressed typos (that did not affect grading) on page 63 of the sketch, and in question 10, which was worth 2 points (and graded as such) even though the sketch originally said 3. The grades are fixed in the online roster, and the sketch has been reposted. Thank you to the eagle-eyed student who caught these errors.
+
+**Note**: As of 9 AM 2018-12-13, a student was good enough to point out to me that instead of 110 points (as I'd originally intended, the quiz was actually out of 109 points, because I graded Question 6 as a 2-point rather than a 3-point question.) Doesn't change anything, but your raw score was actually out of 109 instead of 110, as is now indicated above.
 
 ## Course Evaluations
 
