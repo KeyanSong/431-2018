@@ -4,6 +4,10 @@
 
 PLEASE complete a [course evaluation for 431](https://webapps.case.edu/courseevals/) by visiting https://webapps.case.edu/courseevals/ before 2018-12-19.
 
+## Report after the Project Presentations
+
+- Some of my thoughts on [the project presentations are available now](https://github.com/THOMASELOVE/431-2018/blob/master/slides/postclass/presentation-thoughts.md).
+
 ## When Will Information Be Posted About ...
 
 ### 432?
@@ -23,10 +27,6 @@ Substantial information will be available no later than 2019-01-11. I will send 
 - For those of you taking the course while you're taking 432, you'll need to get up to speed on logistic regression quickly. I built a [primer on logistic regression modeling in R], based on some material from old 432 notes.
 - You will need to purchase at least one book for that course, and it is Paul Rosenbaum's **Observation and Experiment: An Introduction to Causal Inference**. It is available, for instance, at Amazon.com in both Kindle and Hardcover editions, the more expensive of which is $25 at this writing. 
 - Dr. Love will be away January 14-18, so the first class meeting will be **Thursday 2018-01-23** starting at 8:30 AM.
-
-## Report after the Project Presentations
-
-- The paper I discussed with many of you at your presentation that we will be reading in 432 is "[Data Organization in Spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)" from Karl W. Broman and Kara H. Woo, published in a special edition of *The American Statistician* earlier this year. [Mara Averick's great tweet @DataandMe](https://twitter.com/dataandme/status/1071172388027539464) identified key points from the paper as "Commandments".
 
 ## Quiz 2 grades and answers are now available.
 
