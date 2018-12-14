@@ -12,11 +12,12 @@
 2. Your **course homework grade** is posted to http://bit.ly/431-2018-hw-grades. It is the minimum of:
     - The sum of your grade on the 8 assignments, divided by 8, and
     - 100
-    - and see below about regrade requests.
+
+There were four students who requested reviews of their homework grades. I have responded to them via email.
 
 3. Your grade on the quizzes consists of two elements:
     - A = Your Quiz 1 grade (which was on a scale of 0-100 points)
-    - B = Your Quiz 2 grade (out of 110 points, but we pretend it is out of 100) 
+    - B = Your Quiz 2 grade (out of 109 points, but we pretend it is out of 100) 
     - Your **course quiz grade** will be the larger of:
         - 0.40 times A + 0.60 times B, or
         - 0.33 times A + 0.67 times B
@@ -36,21 +37,15 @@ Your **course score** (on a scale from 0-100) is then determined by adding:
     - 30% of your course quiz grade
     - 30% of your course project grade
     
-I have not yet decided what the cutoff for an A/B will be, but will be no lower than 85.0 and no higher than 88.0, and I will not make that determination until after all course scores are available to me, on 2018-12-13. 
+### Final Grade Assignment
 
-- A **course score** of 70.0 - 84.9 will definitely receive a grade of B in the course. 
-- A **course score** of 88.0 - 100.0 will definitely receive a grade of A in the course. 
-- **Course scores** of 85.0 - 87.9 will be the range where I review all materials again carefully, to make a final determination. 
-
-## Special Circumstances
-
-**Homework Regrade Requests** Students who have a **course score** of 88 or higher (without reviewing the homework regrade requests) will not have their homework reviewed. All others will be reviewed, and homework scores changed appropriately, before I make final determinations of course grades.
-
-- Students with a **course score** below 70 are rare, but it has happened. If it does this year, I'll review the situation after the projects are complete and make a determination about what to do at that time. The main options are C and Incomplete, practically.
+- The cutoff was 86.5% for an A. Students with a course score of 86.5 or higher received an A.
+- Students with course scores between 70 and 84 received a B.
+- No one wound up with a course score between 84 and 86.5, nor did anyone wind up with a score below 70.
 
 ## When Will Grades Be Available?
 
-I expect to post course grades to SIS on 2018-12-14, in the afternoon. You should anticipate that the grade will be available to you on SIS sometime on 2018-12-17.
+I expect to post course grades to SIS on 2018-12-14, in the afternoon. You should anticipate that the grade will be available to you on SIS sometime on 2018-12-17, perhaps earlier, but I have no control over that.
 
-- I do not post individual elements of project or presentation grades, nor will I send them out via email. 
-- If you have further questions, Dr. Love will be available to review emails through 2018-12-21, at which point he will close the books on 431.
+- I do not post individual elements of project or presentation grades, nor will I send them out via email. I am at CWRU on Monday 2018-12-17 between 1 PM and 3 PM and again on Thursday 2018-12-20 from 11 AM to Noon. If you wish to speak with me in those windows in person or by phone, please request an appointment via email. 
+- If you have further questions, I will be available to review emails through 2018-12-21, at which point I will close the books on 431.
