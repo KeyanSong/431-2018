@@ -1,5 +1,33 @@
 # Material Posted By Dr. Love After the Final Class of 431
 
+## Course Evaluations
+
+PLEASE complete a [course evaluation for 431](https://webapps.case.edu/courseevals/) by visiting https://webapps.case.edu/courseevals/ before 2018-12-19.
+
+## When Will Information Be Posted About ...
+
+### 432?
+
+Substantial information will be available no later than 2019-01-11. I will send out an email to everyone registered for 432 (or who has requested my permission to enroll in that course) later in December.
+
+- You will need to purchase at least one book for 432, and it is Jeff Leek's [How to Be a Modern Scientist](https://leanpub.com/modernscientist). The suggested price is $10.
+- There may be another book to buy. You will learn that no later than 2019-01-11.
+- Another text we will use in 432 is Grolemund and Wickham's [R for Data Science](https://r4ds.had.co.nz/), which, of course, you've already seen in 431.
+- The paper I discussed with many of you at your presentation that we will be reading in 432 is "[Data Organization in Spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)" from Karl W. Broman and Kara H. Woo, published in a special edition of *The American Statistician* earlier this year. [Mara Averick's great tweet @DataandMe](https://twitter.com/dataandme/status/1071172388027539464) identified key points from the paper as "Commandments".
+- Dr. Love will be away January 14-18, so the first class meeting will be **Tuesday 2019-01-21** starting at 1 PM.
+
+### 500?
+
+Substantial information will be available no later than 2019-01-11. I will send out an email to everyone registered for 500 (or who has requested my permission to enroll in that course) later in December.
+
+- For those of you taking the course while you're taking 432, you'll need to get up to speed on logistic regression quickly. I built a [primer on logistic regression modeling in R], based on some material from old 432 notes.
+- You will need to purchase at least one book for that course, and it is Paul Rosenbaum's **Observation and Experiment: An Introduction to Causal Inference**. It is available, for instance, at Amazon.com in both Kindle and Hardcover editions, the more expensive of which is $25 at this writing. 
+- Dr. Love will be away January 14-18, so the first class meeting will be **Thursday 2018-01-23** starting at 8:30 AM.
+
+## Report after the Project Presentations
+
+- The paper I discussed with many of you at your presentation that we will be reading in 432 is "[Data Organization in Spreadsheets](https://doi.org/10.1080/00031305.2017.1375989)" from Karl W. Broman and Kara H. Woo, published in a special edition of *The American Statistician* earlier this year. [Mara Averick's great tweet @DataandMe](https://twitter.com/dataandme/status/1071172388027539464) identified key points from the paper as "Commandments".
+
 ## Quiz 2 grades and answers are now available.
 
 - I have graded Quiz 2. The answer sketch (which includes information on grading for each item) is available now at https://github.com/THOMASELOVE/431-2018/blob/master/quizzes/quiz02/431-2018-quiz2sketch.pdf. 
@@ -11,10 +39,6 @@
 
 **Note**: As of 9 AM 2018-12-13, a student was good enough to point out to me that instead of 110 points (as I'd originally intended, the quiz was actually out of 109 points, because I graded Question 6 as a 2-point rather than a 3-point question.) Doesn't change anything, but your raw score was actually out of 109 instead of 110, as is now indicated above.
 
-## Course Evaluations
-
-PLEASE complete a [course evaluation for 431](https://webapps.case.edu/courseevals/) by visiting https://webapps.case.edu/courseevals/ before 2018-12-19.
-
 ## Grading and How I Do It
 
 If you want to know everything Dr. Love can think of related to course grading and grades, [read this document](https://github.com/THOMASELOVE/431-2018/blob/master/slides/postclass/grades.md).
@@ -23,26 +47,7 @@ If you want to know everything Dr. Love can think of related to course grading a
 
 **RStudio asks**: Do you wonder how and why people learn R? If you've learned or are planning to learn R, fill out our 5 minute survey, and we'll present the findings at `rstudio::conf 2019` in Austin, TX. Full disclosure of how the data will be used is on the first page of the survey, which you'll find at https://t.co/MKehzVAGtw
 
-## When Will Information Be Posted About ...
-
-### 432?
-
-Substantial information will be available no later than 2019-01-11. I will send out an email to everyone registered for 432 (or who has requested my permission to enroll in that course) later in December.
-
-- You will need to purchase at least one book for that course, and it is Jeff Leek's [How to Be a Modern Scientist](https://leanpub.com/modernscientist). The suggested price is $10.
-- Another text we will use in 432 is Grolemund and Wickham's [R for Data Science](https://r4ds.had.co.nz/), which, of course, you've already seen in 431.
-- There may be another book to buy. You will learn that no later than 2019-01-11.
-- Dr. Love will be away January 14-18, so the first class meeting will be **Tuesday 2019-01-21** starting at 1 PM.
-
-### 500?
-
-Substantial information will be available no later than 2019-01-11. I will send out an email to everyone registered for 500 (or who has requested my permission to enroll in that course) later in December.
-
-- For those of you taking the course while you're taking 432, you'll need to get up to speed on logistic regression quickly. I built a [primer on logistic regression modeling in R], based on some material from old 432 notes.
-- You will need to purchase at least one book for that course, and it is Paul Rosenbaum's **Observation and Experiment: An Introduction to Causal Inference**. It is available, for instance, at Amazon.com in both Kindle and Hardcover editions, the more expensive of which is $25 at this writing. 
-- Dr. Love will be away January 14-18, so the first class meeting will be **Thursday 2018-01-23** starting at 8:30 AM.
-
-## Dr. Love's Availability
+## Dr. Love's Availability between Sessions
 
 - I will pause my email starting around noon on 2018-12-21 until 2019-01-02.
 - I will be at [rstudio::conf 2019L](https://www.rstudio.com/conference/) and not very responsive 2019-01-14 through 2019-01-18.
