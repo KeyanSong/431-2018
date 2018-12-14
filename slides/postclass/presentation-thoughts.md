@@ -26,7 +26,7 @@ Min | Q1 | Median | Q3 | Max | Mean | SD
 10. Show how to execute some of the more exotic power transformations, in particular the inverse square and inverse square root.
 11. Move the Box-Cox work and transformation assessment for the outcome in a regression model together, and use that transformation in building a scatterplot matrix.
 12. Also move up the collinearity check with vif to follow the scatterplot matrix more closely.
-13. We may want to read Broman and Woo in 431, much earlier than this year.
+13. We may want to read [Broman and Woo](https://doi.org/10.1080/00031305.2017.1375989) in 431, much earlier than this year.
 14. I also expect to think through "Data Management in R" as a separate topic in some contexts. I have an old document on this, and should revisit that.
 
 ## Some Things I'm Thinking About Moving Earlier in 432 this Spring
