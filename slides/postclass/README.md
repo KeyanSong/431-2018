@@ -51,3 +51,4 @@ If you want to know everything Dr. Love can think of related to course grading a
 
 - I will pause my email starting around noon on 2018-12-21 until 2019-01-02.
 - I will be at [rstudio::conf 2019L](https://www.rstudio.com/conference/) and not very responsive 2019-01-14 through 2019-01-18.
+- `431-help` will re-open on 2019-01-22.
